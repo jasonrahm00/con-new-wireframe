@@ -1,3 +1,7 @@
+/****************************************
+          BASE STYLES
+****************************************/
+
 * {
   border-collapse: collapse;
 }
@@ -10,6 +14,18 @@ body {
 main {
   margin-top: 45px;
 }
+
+.red {
+  color: red;
+}
+
+.yellow {
+  background: yellow;
+}
+
+/****************************************
+          NAVIGATION
+****************************************/
 
 nav {
   position: fixed;
@@ -33,7 +49,15 @@ nav>ul>li>a {
   padding: 1rem;
 }
 
+nav>ul>li:hover {
+  background: whitesmoke;
+}
+
 nav>ul>li:hover>.submenu {
+  display: block;
+}
+
+nav>ul>li:hover>.submenu.mega {
   display: flex;
 }
 
@@ -41,12 +65,16 @@ nav>ul>li:hover>.submenu {
   background: whitesmoke;
   border-radius: 4px;
   display: none;
-  justify-content: space-between;
-  left: 0;
-  min-width: 300px;
+  min-width: 250px;
   padding: 1rem;
   position: absolute;
   z-index: 1000;  
+}
+
+.submenu.mega {
+  justify-content: space-between;
+  left: 0;
+  width: 960px;
 }
 
 .submenu span {
