@@ -1,0 +1,60 @@
+* {
+  border-collapse: collapse;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+main {
+  margin-top: 45px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+  z-index: 100;
+}
+
+nav>ul>li>a {
+  padding: 1rem;
+}
+
+nav>ul>li:hover>.submenu {
+  display: flex;
+}
+
+.submenu {
+  background: whitesmoke;
+  border-radius: 4px;
+  display: none;
+  justify-content: space-between;
+  left: 0;
+  min-width: 300px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1000;  
+}
+
+.submenu span {
+  font-weight: bold;
+  font-size: 1.10rem;
+}
+
+.submenu a {
+  display: block;
+  padding: .5rem .5rem .5rem 0;
+}
