@@ -15,6 +15,11 @@ main {
   margin-top: 45px;
 }
 
+.main-page-link {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
 .red {
   color: red;
 }
@@ -45,26 +50,35 @@ nav>ul>li {
   z-index: 100;
 }
 
+
 nav>ul>li>a {
   padding: 1rem;
 }
 
-nav>ul>li:hover {
+nav>ul>li:hover>a {
   background: whitesmoke;
 }
 
-nav>ul>li:hover>.submenu {
+nav>ul>li.active>a {
+  background: whitesmoke;
+}
+
+nav>ul>li>ul {
+  display: none;
+}
+
+nav>ul>li.active>.submenu {
   display: block;
 }
 
-nav>ul>li:hover>.submenu.mega {
+nav>ul>li.active>.submenu.mega {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .submenu {
   background: whitesmoke;
   border-radius: 4px;
-  display: none;
   min-width: 250px;
   padding: 1rem;
   position: absolute;
