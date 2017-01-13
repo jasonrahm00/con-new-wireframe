@@ -1,0 +1,44 @@
+[
+  {
+    "level": "Undergraduate Programs",
+    "courses": [
+      "Nursing BS - Traditional",
+      "Nursing BS-UCAN",
+      "RN to Nursing BS (online)",
+      "Integrated Nursing Pathway",
+      "BS Honors Program"
+    ]
+  },
+  {
+    "level": "Graduate Programs",
+    "courses": [
+      "Masters Program",
+      "BS-DNP Program",
+      "BS-PhD Program",
+      "Post-Graduate Certificates",
+      "PhD Program"
+    ] 
+  },
+  {
+    "level": "Graduate Specialties",
+    "courses": [
+      "Adult Gerontology",
+      "Pediatrics",
+      "Psychiatric Mental Health",
+      "Family Nurse Practitioner",
+      "Nurse-Midwifery",
+      "Women's Health Practitioner",
+      "Health Care Informatics",
+      "i-LEAD Nursing Leadership"
+    ]
+  },
+  {
+    "level": "Additional Programs",
+    "courses": [
+      "DNP Program",
+      "Dual Degree Program",
+      "Continuing Education",
+      "Veteran & Military Academic Programs"
+    ]
+  }
+] 

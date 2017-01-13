@@ -1,2 +1,66 @@
-<h1>Main Academics Page</h1>
-<p>This page should have a way to narrow down degree fields. Start with the selecct dropdown from the existing site or copy what UCDenver has.</p>
+<div>
+  <h1>Main Academics Page</h1>
+  <p>This page should have a way to narrow down degree fields. Start with the selecct dropdown from the existing site or copy what UCDenver has.</p>  
+  
+  <section class="dynamic-container">
+    <h2>Explore Available Degrees</h2>
+    
+    <div>
+      <label  data-ng-repeat="program in programs" class="button">{{ program.level }}
+        <input type="radio" name="degreeLevel" value="{{ program.level }}" data-ng-model="$parent.programLevel">
+      </label>
+    </div>
+    
+    <section data-ng-if="programLevel">
+      <h3>Available {{ programLevel }} Degrees</h3>
+      <div class="program-cards" data-ng-repeat="program in programs" data-ng-if="program.level === programLevel">
+        <a data-ng-repeat="course in program.courses" data-ui-sref="program-landing-page">
+          <p><strong> {{ course }} </strong></p>
+          <p>Brief course decription</p>
+        </a>
+      </div>
+    </section>
+    
+  </section>
+  
+  <section class="dynamic-container">
+    
+    <h2>Already Have A Degree?</h2>
+    
+    <p>Create radio buttons and functionality based off of current homepage selector.</p>
+<!--
+    <div>
+      <label class="button">
+        High School Diploma
+        <input type="radio" name="currentDegree" value="1" data-ng-model="currentDegree">
+      </label>
+      <label class="button">
+        RN (ADN) Licens
+        <input type="radio" name="currentDegree" value="2" data-ng-model="currentDegree">
+      </label>
+      <label class="button">
+        Associate Degree or Some College
+        <input type="radio" name="currentDegree" value="3" data-ng-model="currentDegree">
+      </label>
+      <label class="button">
+        BS in Nursing with RN License
+        <input type="radio" name="currentDegree" value="4" data-ng-model="currentDegree">
+      </label>
+      <label class="button">
+        BS or BA, Not in Nursing
+        <input type="radio" name="currentDegree" value="5" data-ng-model="currentDegree">
+      </label>
+      <label class="button">
+        MS Degree in Nursing
+        <input type="radio" name="currentDegree" value="6" data-ng-model="currentDegree">
+      </label>
+    </div>
+-->
+    
+    <section>
+      <h3>Possibe Next Steps</h3>
+    </section>
+    
+  </section>
+  
+</div>

@@ -15,7 +15,8 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       url: '/academics',
       templateUrl: '/pages/academics/academics-landing.html',
       data: {
-        title: 'Academcis'
+        title: 'Academcis',
+        breadcrumb: 'Home > Academics'
       }
     })
     .state('section-landing-page', {
