@@ -12,16 +12,91 @@ body {
 }
 
 main {
-  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
 }
+
+aside {
+  margin-right: 2rem;
+  min-width: 20%;
+}
+
+aside a:hover {
+  cursor: pointer;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.breadcrumb {
+  display: block;
+  font-size: .85rem;
+  margin-top: 60px;
+}
+
+.button {
+  background: black;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #cfb77c;
+  cursor: pointer;
+}
+
 
 .main-page-link {
   margin-bottom: 1rem;
   width: 100%;
 }
 
+.program-tabs {
+  display:flex;
+  list-style-type: none;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.program-tabs li {
+  background: #cfb77c;
+  color: white;
+}
+
+.program-tabs li:hover {
+  background: #000;
+  cursor: pointer;
+}
+
+.program-tabs a {
+  display: block;
+  padding: 1rem;
+}
+
+.program-tabs li:first-child,
+.program-tabs li:nth-child(2) {
+  margin-right: 5px;
+}
+
 .red {
   color: red;
+}
+
+.side-nav li {
+  padding: .5rem 0;
+}
+
+.side-nav span {
+  font-weight: bold;
+}
+
+.side-nav ul {
+  padding-left: .5rem;
 }
 
 .yellow {
@@ -29,7 +104,7 @@ main {
 }
 
 /****************************************
-          NAVIGATION
+          MAIN NAVIGATION
 ****************************************/
 
 nav {

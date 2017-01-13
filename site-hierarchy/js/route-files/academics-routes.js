@@ -29,7 +29,8 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       url: '/academics/program-landing-page',
       templateUrl: '/pages/academics/program-landing.html',
       data: {
-        title: 'Academic Program Landing Page'
+        title: 'Academic Program Landing Page',
+        breadcrumb: 'Home > Academics > Program Section > Program Name'
       }
     });
   
