@@ -50,6 +50,10 @@ nav>ul>li {
   z-index: 100;
 }
 
+nav>ul>li:first-child a {
+  color: black;
+  text-decoration: none;
+}
 
 nav>ul>li>a {
   padding: 1rem;
@@ -83,6 +87,10 @@ nav>ul>li.active>.submenu.mega {
   padding: 1rem;
   position: absolute;
   z-index: 1000;  
+}
+
+.submenu-trigger:hover {
+  cursor: pointer;  
 }
 
 .submenu.mega {
