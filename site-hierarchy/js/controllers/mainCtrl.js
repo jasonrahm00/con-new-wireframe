@@ -23,10 +23,4 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, programF
       console.log(error.message);
   });
   
-  $scope.$watch('programLevel', function(newValue, oldValue) {
-    if(newValue !== oldValue) {
-      console.log(newValue);
-    }
-  });
-  
 });
