@@ -4,6 +4,7 @@
 
 * {
   border-collapse: collapse;
+  border-radius: 4px;
 }
 
 html {
@@ -42,6 +43,18 @@ label.button {
   margin-right: 10px;
 }
 
+.alumni-snapshot>div {
+  border: 1px solid #ddd;
+  margin: 0px 15px;
+  padding: 1.25rem;
+}
+
+.alumni-snapshot img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
 .breadcrumb {
   display: block;
   font-size: .85rem;
@@ -50,7 +63,6 @@ label.button {
 
 .button {
   background: black;
-  border-radius: 4px;
   color: #fff;
   font-weight: bold;
   padding: 5px;
@@ -62,6 +74,15 @@ label.button {
   cursor: pointer;
 }
 
+.careers>div {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 550px;
+  
+}
+
 .dynamic-container {
   min-height: 400px;
 }
@@ -69,6 +90,26 @@ label.button {
 .main-page-link {
   margin-bottom: 1rem;
   width: 100%;
+}
+
+.next-steps>ul {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.next-steps a {
+  background: black;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  padding: 1.25rem;
+  text-decoration: none;
+}
+
+.next-steps a:hover {
+  background: #cfb77c;
 }
 
 .program-cards {
@@ -80,7 +121,6 @@ label.button {
 .program-cards>a {
   background: whitesmoke;
   border: 1px solid black;
-  border-radius: 4px;
   margin-bottom: 10px;
   padding: .5rem;
   text-decoration: none;
@@ -139,6 +179,7 @@ label.button {
 ****************************************/
 
 nav {
+  background: #fff;
   position: fixed;
   top: 0;
 }
@@ -188,7 +229,6 @@ nav>ul>li.active>.submenu.mega {
 
 .submenu {
   background: whitesmoke;
-  border-radius: 4px;
   min-width: 250px;
   padding: 1rem;
   position: absolute;
@@ -213,4 +253,46 @@ nav>ul>li.active>.submenu.mega {
 .submenu a {
   display: block;
   padding: .5rem .5rem .5rem 0;
+}
+
+
+
+/****************************************
+          ACCORDION
+****************************************/
+
+.accordion-header {
+  background: whitesmoke;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 1rem;
+}
+
+.accordion-header h3 {
+  margin: 0;
+}
+
+.accordion-header span {
+  font-size: .85rem;
+  font-weight: normal;
+  margin-top: 3px;
+}
+
+.accordion-header:hover {
+  cursor: pointer;
+}
+
+.accordion-body {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 0;
+  display: none;
+  padding: 1rem;
+}
+
+.custom-accordion section:last-child .accordion-body {
+  border-bottom: 1px solid #ddd;
 }

@@ -1,42 +1,103 @@
-<aside>
-  <ul class="side-nav">
-    <li>
-      <span><a>Admissions</a></span>
-      <ul>
-        <li><a>Requirements</a></li>
-        <li><a>Admission Steps</a></li>
-        <li><a>Deadlines</a></li>
-        <li><a>International Students</a></li>
-        <li><a>Apply Now</a></li>
-      </ul>
-    </li>
-    <li>
-      <span><a>Tuition and Funding</a></span>
-      <ul>
-        <li><a>Tuition and Fees</a></li>
-        <li><a>Scholarships</a></li>
-        <li><a>WICHE Tuition Assistance</a></li>
-      </ul>
-    </li>    
-    <li><span><a>FAQs</a></span></li>
-  </ul>
-</aside>
-
-<article>
+<div>
   <header>
     <h1>Individual Academic Program Landing Page</h1>
+    <h2>Program Description</h2>
     <p>This page is where the user will go to find program description and relevant information. There should be a link to admissions requirements and apply now for each particular program.</p>
-  </header>
-  <div>
-    <p>The main section should include an intro blurb about the program and an image if desired</p>
-  </div>
-  <div>
-    <p>Below the intro there should be tabs with program information. Basically, whatever's on the existing 'Program Info' pages. These could be improved later, as they are the most improtant pages for the programs, but copying and pasting what's already there will work for the re-platform.</p>
+    <p>The main section should include one or two intro paragraphs about the program... possibly a full-width hero image</p>
     <a class="button">Apply Now</a>
-    <ul class="program-tabs">
-      <li><a>Program Overview</a></li>
-      <li><a>Careers</a></li>
-      <li><a>Clinical Experience</a></li>
+  </header>
+  
+  <section>
+    <h2>Courses</h2>
+    <p>When they're available. Give a full list of core classes for the chosen degree, inside an accordion, with a brief program description inside the accordion body. Total credit hours for each course would also be nice, so they can see how many semesters it will take.</p>
+    <div class="custom-accordion" data-toggle-speed="fast" data-toggle-easing="linear" data-slide-up-speed="fast" data-slide-up-easing="linear">
+      
+      <section>
+        <div class="accordion-header">
+          <h3>Course 1</h3>
+          <span>Credit Hours</span>
+        </div>
+        <div class="accordion-body">
+          <p>Brief course description</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="accordion-header">
+          <h3>Course 2</h3>
+          <span>Credit Hours</span>
+        </div>
+        <div class="accordion-body">
+          <p>Brief course description</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="accordion-header">
+          <h3>Course 3</h3>
+          <span>Credit Hours</span>
+        </div>
+        <div class="accordion-body">
+          <p>Brief course description</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="accordion-header">
+          <h3>Course 4</h3>
+          <span>Credit Hours</span>
+        </div>
+        <div class="accordion-body">
+          <p>Brief course description</p>
+        </div>
+      </section>
+      
+    </div>
+  </section>
+  
+  <section class="careers">
+    <h2>Career Possibilities</h2>
+    <p>This section should list a handful of possible careers one can achieve with the degree offered. Don't say something to the effect of 'With this degree there are a variety of different carreers you can have'. Give an actual list of job titles. Don't leave it open-ended and rhetorical.</p>
+    <div>
+      <ul>
+        <li>Career 1</li>
+        <li>Career 2</li>
+        <li>Career 3</li>
+        <li>Career 4</li>
+      </ul>
+      <ul>
+        <li>Career 5</li>
+        <li>Career 6</li>
+        <li>Career 7</li>
+        <li>Career 8</li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="alumni-snapshot">
+    <h2>Alumni Snapshot</h2>
+    <div>
+      <img src="/images/woman-headshot-silhouette.png" alt="">
+      <p>
+        <strong>Person's Name</strong><br>
+        Grauation Date<br>
+        <em>Current Job Title and Employer</em>        
+      </p>
+      <p>Give an excerpt or brief summary of this person's current job experience and/or their thoughts on CON as a whole. If this were an eCommerce site, this is the place for customer feedback. This person has a degree in this field from the CON and we have an alumni profile page on them. Use that info to create this content and also provide link to that writeup.</p>
+      <a href="">Read More About <em>This Person</em></a>
+    </div>
+  </section>
+  
+  <section class="next-steps">
+    <h2>Next Steps</h2>
+    <p>In this section, give user places to go next with calls to action and links to the appropriate pages on the site.</p>
+    <ul>
+      <li><a href="">Apply Now</a></li>
+      <li><a href="">Visit Admissions</a></li>
+      <li><a href="">Understand Tuition</a></li>
+      <li><a href="">Find Scholarships</a></li>
+      <li><a href="">Contact Us</a></li>
     </ul>
-  </div>
-</article>
+  </section>
+  
+</div>
