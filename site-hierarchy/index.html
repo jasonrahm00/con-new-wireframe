@@ -57,7 +57,7 @@
             <li data-ng-repeat="program in programs">
               <span><a data-ui-sref="section-landing-page">{{ program.level }}</a></span>
               <ul>
-                <li data-ng-repeat="course in program.courses"><a data-ui-sref="program-landing-page">{{ course }}</a></li>
+                <li data-ng-repeat="course in program.courses"><a data-ui-sref="program-landing-page">{{ course.name }}</a></li>
               </ul>
             </li>
           </ul>

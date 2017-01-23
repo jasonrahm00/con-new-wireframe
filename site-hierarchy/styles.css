@@ -118,7 +118,7 @@ label.button {
   justify-content: space-between;
 }
 
-.program-cards>a {
+.program-cards a {
   background: whitesmoke;
   border: 1px solid black;
   margin-bottom: 10px;

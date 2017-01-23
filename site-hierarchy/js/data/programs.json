@@ -2,43 +2,109 @@
   {
     "level": "Undergraduate Programs",
     "courses": [
-      "Nursing BS - Traditional",
-      "Nursing BS-UCAN",
-      "RN to Nursing BS (online)",
-      "Integrated Nursing Pathway",
-      "BS Honors Program"
+      {
+        "name": "Nursing BS - Traditional",
+        "audience": [1, 3, 5]
+      },
+      {
+        "name": "Nursing BS-UCAN",
+        "audience": [5]
+      },
+      {
+        "name": "RN to Nursing BS (online)",
+        "audience": [2]
+      },
+      {
+        "name": "Integrated Nursing Pathway",
+        "audience": [1, 3]
+      },
+      {
+        "name": "BS Honors Program",
+        "audience": []
+      }    
     ]
   },
   {
     "level": "Graduate Programs",
     "courses": [
-      "Masters Program",
-      "BS-DNP Program",
-      "BS-PhD Program",
-      "Post-Graduate Certificates",
-      "PhD Program"
+      {
+        "name": "Masters Program",
+        "audience": []
+      },
+      {
+        "name": "BS-DNP Program",
+        "audience": [4]
+      },
+      {
+        "name": "BS-PhD Program",
+        "audience": [4]
+      },
+      {
+        "name": "Post-Graduate Certificates",
+        "audience": [6]
+      },
+      {
+        "name": "PhD Program",
+        "audience": [6]
+      }      
     ] 
   },
   {
     "level": "Graduate Specialties",
     "courses": [
-      "Adult Gerontology",
-      "Pediatrics",
-      "Psychiatric Mental Health",
-      "Family Nurse Practitioner",
-      "Nurse-Midwifery",
-      "Women's Health Practitioner",
-      "Health Care Informatics",
-      "i-LEAD Nursing Leadership"
+      {
+        "name": "Adult Gerontology",
+        "audience": []
+      },
+      {
+        "name": "Pediatrics",
+        "audience": []
+      },
+      {
+        "name": "Psychiatric Mental Health",
+        "audience": []
+      },
+      {
+        "name": "Family Nurse Practitioner",
+        "audience": []
+      },
+      {
+        "name": "Nurse-Midwifery",
+        "audience": []
+      },
+      {
+        "name": "Women's Health Practitioner",
+        "audience": []
+      },
+      {
+        "name": "Health Care Informatics",
+        "audience": []
+      },
+      {
+        "name": "i-LEAD Nursing Leadership",
+        "audience": []
+      }      
     ]
   },
   {
     "level": "Additional Programs",
     "courses": [
-      "DNP Program",
-      "Dual Degree Program",
-      "Continuing Education",
-      "Veteran & Military Academic Programs"
+      {
+        "name": "DNP Program",
+        "audience": [6]
+      },
+      {
+        "name": "Dual Degree Program",
+        "audience": []
+      },
+      {
+        "name": "Continuing Education",
+        "audience": [4,6]
+      },
+      {
+        "name": "Veteran & Military Academic Programs",
+        "audience": []
+      }
     ]
   }
 ] 

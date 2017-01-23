@@ -1,21 +1,45 @@
 <div>
   <h1>Main Academics Page</h1>
   <p>This page should have a way to narrow down degree fields. Start with the selecct dropdown from the existing site or copy what UCDenver has.</p>  
-  
+
   <section class="dynamic-container">
     <h2>Explore Available Degrees</h2>
     
-    <div>
-      <label  data-ng-repeat="program in programs" class="button">{{ program.level }}
-        <input type="radio" name="degreeLevel" value="{{ program.level }}" data-ng-model="$parent.programLevel">
+    <div style="padding-bottom: 20px;">
+      <p class="red">Pageload view. Need to decide how page should look on load. All degrees exposed with sorting after, or no degrees displayed with message encouraging filtering.</p>
+      <label class="button">Empty Container
+        <input type="radio" name="pageload" value="empty" data-ng-model="pageloadView">
+      </label>
+      <label class="button">All Programs
+        <input type="radio" name="pageload" value="all" data-ng-model="pageloadView">
       </label>
     </div>
     
+    <div>
+      <label data-ng-repeat="program in programs" class="button">{{ program.level }}
+        <input type="radio" name="degreeLevel" value="{{ program.level }}" data-ng-model="$parent.programLevel">
+      </label>
+    </div>
+
+    <section data-ng-if="!programLevel && pageloadView === 'all'">
+      <h3>All Available Degrees</h3>
+      <div class="program-cards">
+          <a data-ng-repeat="program in allPrograms" data-ui-sref="program-landing-page">
+            <p><strong> {{ program.name }} </strong></p>
+            <p>Brief course decription</p>
+          </a>
+      </div>
+    </section>
+    
+    <section data-ng-if="!programLevel && pageloadView === 'empty'">
+      <h3>Choose an Option to See Available Programs</h3>
+    </section>
+    
     <section data-ng-if="programLevel">
-      <h3>Available {{ programLevel }} Degrees</h3>
+      <h3><span data-ng-if="programLevel !== 'Additional Programs' ">Available </span>{{ programLevel }}</h3>
       <div class="program-cards" data-ng-repeat="program in programs" data-ng-if="program.level === programLevel">
         <a data-ng-repeat="course in program.courses" data-ui-sref="program-landing-page">
-          <p><strong> {{ course }} </strong></p>
+          <p><strong> {{ course.name }} </strong></p>
           <p>Brief course decription</p>
         </a>
       </div>
@@ -25,42 +49,35 @@
   
   <section class="dynamic-container">
     
-    <h2>Already Have A Degree?</h2>
+    <h2>Choose Based on Current Education Level</h2>
     
-    <p>Create radio buttons and functionality based off of current homepage selector.</p>
-<!--
     <div>
-      <label class="button">
-        High School Diploma
-        <input type="radio" name="currentDegree" value="1" data-ng-model="currentDegree">
-      </label>
-      <label class="button">
-        RN (ADN) Licens
-        <input type="radio" name="currentDegree" value="2" data-ng-model="currentDegree">
-      </label>
-      <label class="button">
-        Associate Degree or Some College
-        <input type="radio" name="currentDegree" value="3" data-ng-model="currentDegree">
-      </label>
-      <label class="button">
-        BS in Nursing with RN License
-        <input type="radio" name="currentDegree" value="4" data-ng-model="currentDegree">
-      </label>
-      <label class="button">
-        BS or BA, Not in Nursing
-        <input type="radio" name="currentDegree" value="5" data-ng-model="currentDegree">
-      </label>
-      <label class="button">
-        MS Degree in Nursing
-        <input type="radio" name="currentDegree" value="6" data-ng-model="currentDegree">
-      </label>
+      <label for="resourcesFor">Current level of education:</label><br>
+      <select  id="resourcesFor" data-ng-model="currentEdLevel" data-ng-change="edLevelSort()" data-ng-init="currentEdLevel = '0'">
+        <option value="0" disabled>-- Select Education Level --</option>
+        <option value="1">High school diploma</option>
+        <option value="2">RN (ADN) license</option>
+        <option value="3">Associate degee or some college</option>
+        <option value="4">BS in Nursing with RN license</option>
+        <option value="5">BS or BA, not in nursing</option>
+        <option value="6">MS degree in Nursing</option>
+      </select>
     </div>
--->
     
     <section>
-      <h3>Possibe Next Steps</h3>
+      <h3>Available Degree Paths</h3>
     </section>
     
   </section>
+  
+  <div class="next-steps">
+    <ul>
+      <li><a href="">Apply Now</a></li>
+      <li><a href="">See Deadlines</a></li>
+      <li><a href="">Understand Tuition</a></li>
+      <li><a href="">Find Scholarships</a></li>
+      <li><a href="">Contact Us</a></li>
+    </ul>
+  </div>
   
 </div>
