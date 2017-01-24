@@ -9,7 +9,6 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, programF
   $scope.programs;
   $scope.programLevel;
   
-  
   programFactory.getPrograms()
     .then(function(response) {
       $scope.programs = response.data;

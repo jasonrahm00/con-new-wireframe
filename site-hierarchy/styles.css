@@ -76,7 +76,6 @@ label.button {
 
 .careers>div {
   display: flex;
-  flex-direction: horizontal;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 550px;
@@ -94,7 +93,6 @@ label.button {
 
 .next-steps>ul {
   display: flex;
-  flex-direction: horizontal;
   justify-content: space-between;
   list-style-type: none;
 }
@@ -265,7 +263,6 @@ nav>ul>li.active>.submenu.mega {
   background: whitesmoke;
   border: 1px solid #ddd;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin: 0;
   padding: 1rem;
