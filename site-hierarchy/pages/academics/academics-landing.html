@@ -5,16 +5,6 @@
   <section class="dynamic-container">
     <h2>Explore Available Degrees</h2>
     
-    <div style="padding-bottom: 20px;" class="yellow">
-      <p class="red">Pageload view. Need to decide how page should look on load. All degrees exposed with sorting after, or no degrees displayed with message encouraging filtering.</p>
-      <label class="button">Empty Container
-        <input type="radio" name="pageload" value="empty" data-ng-model="pageloadView">
-      </label>
-      <label class="button">All Programs
-        <input type="radio" name="pageload" value="all" data-ng-model="pageloadView">
-      </label>
-    </div>
-    
     <div>
       <label data-ng-repeat="program in programs" class="button">{{ program.level }}
         <input type="radio" name="degreeLevel" value="{{ program.level }}" data-ng-model="$parent.programLevel">
@@ -24,21 +14,17 @@
     <section data-ng-if="!programLevel && pageloadView === 'all'">
       <h3>All Available Degrees</h3>
       <div class="program-cards">
-          <a data-ng-repeat="program in allPrograms" data-ui-sref="program-landing-page">
+          <a data-ng-repeat="program in allPrograms">
             <p><strong> {{ program.name }} </strong></p>
             <p>Brief course decription</p>
           </a>
       </div>
     </section>
     
-    <section data-ng-if="!programLevel && pageloadView === 'empty'">
-      <h3>Choose an Option to See Available Programs</h3>
-    </section>
-    
     <section data-ng-if="programLevel">
       <h3><span data-ng-if="programLevel !== 'Additional Programs' ">Available </span>{{ programLevel }}</h3>
       <div class="program-cards" data-ng-repeat="program in programs" data-ng-if="program.level === programLevel">
-        <a data-ng-repeat="course in program.courses" data-ui-sref="program-landing-page">
+        <a data-ng-repeat="course in program.courses" data-ui-sref="{{ program.url }}">
           <p><strong> {{ course.name }} </strong></p>
           <p>Brief course decription</p>
         </a>

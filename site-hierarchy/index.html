@@ -57,10 +57,7 @@
             <li data-ng-repeat="program in programs">
               <span>{{ program.level }}</span>
               <ul>
-                <li data-ng-repeat="course in program.courses" data-ng-if="program.level === 'Undergraduate Programs' "><a data-ui-sref="undergrad-landing-page">{{ course.name }}</a></li>
-                <li data-ng-repeat="course in program.courses" data-ng-if="program.level === 'Graduate Programs' "><a data-ui-sref="grad-landing-page">{{ course.name }}</a></li>
-                <li data-ng-repeat="course in program.courses" data-ng-if="program.level === 'Graduate Specialties' "><a data-ui-sref="specialty-landing-page">{{ course.name }}</a></li>
-                <li data-ng-repeat="course in program.courses" data-ng-if="program.level === 'Additional Programs' "><a data-ui-sref="additional-landing-page">{{ course.name }}</a></li>
+                <li data-ng-repeat="course in program.courses"><a data-ui-sref="{{ program.url }}">{{ course.name }}</a></li>
               </ul>
             </li>
           </ul>

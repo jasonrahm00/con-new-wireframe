@@ -8,6 +8,7 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, programF
   $scope.pageloadView = 'all';
   $scope.programs;
   $scope.programLevel;
+  var testArray = [];
   
   programFactory.getPrograms()
     .then(function(response) {
@@ -18,9 +19,9 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, programF
   });
   
   function pushAllPrograms(x) {
-    var courses = [];
     for(var i = 0; i < x.length; i++) {
-      var level = x[i].courses
+      var level = x[i].courses;
+      var link = x[i].url;
       for(var j = 0; j < level.length; j++)
         $scope.allPrograms.push(level[j]);
     }

@@ -1,6 +1,7 @@
 [
   {
     "level": "Undergraduate Programs",
+    "url": "undergrad-landing-page",
     "courses": [
       {
         "name": "Nursing BS - Traditional",
@@ -26,6 +27,7 @@
   },
   {
     "level": "Graduate Programs",
+    "url": "grad-landing-page",
     "courses": [
       {
         "name": "Masters Program",
@@ -51,6 +53,7 @@
   },
   {
     "level": "Graduate Specialties",
+    "url": "specialty-landing-page",
     "courses": [
       {
         "name": "Adult Gerontology",
@@ -88,6 +91,7 @@
   },
   {
     "level": "Additional Programs",
+    "url": "additional-landing-page",
     "courses": [
       {
         "name": "DNP Program",
