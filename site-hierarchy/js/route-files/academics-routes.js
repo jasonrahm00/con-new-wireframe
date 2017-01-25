@@ -26,12 +26,36 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         title: 'Program Section Landing Page'
       }
     })
-    .state('program-landing-page', {
-      url: '/academics/program-landing-page',
-      templateUrl: '/pages/academics/program-landing.html',
+    .state('undergrad-landing-page', {
+      url: '/academics/undergrad-program-page',
+      templateUrl: '/pages/academics/undergrad-landing.html',
       data: {
-        title: 'Academic Program Landing Page',
-        breadcrumb: 'Home > Academics > Program Section > Program Name'
+        title: 'Undergarduate Program Page',
+        breadcrumb: 'Home > Academics > Undergrad Program Name'
+      }
+    })
+    .state('grad-landing-page', {
+      url: '/academics/graduate-program-page',
+      templateUrl: '/pages/academics/grad-landing.html',
+      data: {
+        title: 'Graduate Program Page',
+        breadcrumb: 'Home > Academics > Graduate Program Name'
+      }
+    })
+    .state('specialty-landing-page', {
+      url: '/academics/specialty-program-page',
+      templateUrl: '/pages/academics/specialty-landing.html',
+      data: {
+        title: 'Specialty Program Page',
+        breadcrumb: 'Home > Academics > Specialty Program Name'
+      }
+    })
+    .state('additional-landing-page', {
+      url: '/academics/additional-program-page',
+      templateUrl: '/pages/academics/additional-landing.html',
+      data: {
+        title: 'Additional Programs Page',
+        breadcrumb: 'Home > Academics > Additional Program Name'
       }
     });
   
