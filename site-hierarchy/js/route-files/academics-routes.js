@@ -26,12 +26,12 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         title: 'Program Section Landing Page'
       }
     })
-    .state('undergrad-landing-page', {
-      url: '/academics/undergrad-program-page',
-      templateUrl: '/pages/academics/undergrad-landing.html',
+    .state('default-program-page', {
+      url: '/academics/default-program-page',
+      templateUrl: '/pages/academics/default-program-landing.html',
       data: {
-        title: 'Undergarduate Program Page',
-        breadcrumb: 'Home > Academics > Undergrad Program Name'
+        title: 'Program Page',
+        breadcrumb: 'Home > Academics > Program Name'
       }
     })
     .state('grad-landing-page', {
