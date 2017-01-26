@@ -16,6 +16,7 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, programF
       console.log(error.message);
   });
   
+  
 //  $scope.edLevelSort = function() {
 //    for(var i = 0; i < $scope.allPrograms.length; i++) {
 //      var program = $scope.allPrograms[i];

@@ -5,18 +5,19 @@
     <p>This page is to describe the degree level and expose core courses required for each specialty to achieve that degree.</p>
   </header>
   
-  <section class="dynamic-container">
+  <section class="dynamic-container specialty-selector">
     <h2>Grad Program Specialties and Coursework</h2>
     <p>Select the specialty you wish to study to read a brief description and see an accordion of required courses.</p>
     
-    <div>
-      <label class="button">Undergraduate Programs
-        <input type="radio" name="degreeLevel" value="Undergraduate Programs" data-ng-model="programLevel">
-      </label>
+    <div> 
+      <label for="specialtyChoice">Choose a Specialty</label>
+      <select id="specialtyChoice" data-ng-model="specialtyChoice" data-ng-options="program.name for program in programs | filter: {level: 'Graduate Specialties'}">
+        <option value="" disabled> -- Specialties -- </option>
+      </select>
     </div>
     
-    <section>
-      <h3>Required Courses to Achieve a <em>Degree Level</em> in <em>Specialty</em></h3>
+    <section data-ng-if="specialtyChoice">
+      <h3>Required Courses to Earn a <em class="red">Degree Level</em> in {{ specialtyChoice.name }}</h3>
       <div class="custom-accordion large-margin-bottom" data-toggle-speed="fast" data-toggle-easing="linear" data-slide-up-speed="fast" data-slide-up-easing="linear">
       
         <section>
@@ -61,8 +62,7 @@
 
       </div>
       
-      <a class="button" data-ui-sref="specialty-landing-page">Learn More About the Specialty Program</a>
-      <a class="button" href="">Apply to the Specialty Program</a>
+      <a class="button" data-ui-sref="specialty-landing-page">Learn More About {{ specialtyChoice.name }}</a>
     </section>
     
     
