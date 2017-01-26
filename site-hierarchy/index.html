@@ -53,13 +53,32 @@
         </li>
         <li><a class="submenu-trigger">Academics</a>
           <ul class="submenu mega">
-            <li class="main-page-link"><a data-ui-sref="academics">Visit Academics Page</a></li>
-            <li data-ng-repeat="program in programs">
-              <span>{{ program.level }}</span>
+            <li class="main-page-link"><a data-ui-sref="academics">Visit Academics Page</a></li>          
+            <li>
+              <span>Undergraduate Programs</span>
               <ul>
-                <li data-ng-repeat="course in program.courses"><a data-ui-sref="{{ program.url }}">{{ course.name }}</a></li>
+                <li data-ng-repeat="program in programs" data-ng-if="program.level === 'Undergraduate Programs' "><a data-ui-sref="{{ program.url }}">{{ program.name }}</a></li>
               </ul>
             </li>
+            <li>
+              <span>Graduate Programs</span>
+              <ul>
+                <li data-ng-repeat="program in programs" data-ng-if="program.level === 'Graduate Programs' "><a data-ui-sref="{{ program.url }}">{{ program.name }}</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>Graduate Specialties</span>
+              <ul>
+                <li data-ng-repeat="program in programs" data-ng-if="program.level === 'Graduate Specialties' "><a data-ui-sref="{{ program.url }}">{{ program.name }}</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>Additional Programs</span>
+              <ul>
+                <li data-ng-repeat="program in programs" data-ng-if="program.level === 'Additional Specialties' "><a data-ui-sref="{{ program.url }}">{{ program.name }}</a></li>
+              </ul>
+            </li>
+            
           </ul>
         </li>
         <li><a class="submenu-trigger">Patients</a>

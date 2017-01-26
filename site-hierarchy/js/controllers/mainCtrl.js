@@ -2,30 +2,19 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, programF
   
   'use strict';
   
-  $scope.allPrograms = [];
   $scope.currentEdLevel;
   $scope.degreePathSort = [];
   $scope.pageloadView = 'all';
   $scope.programs;
   $scope.programLevel;
-  var testArray = [];
+  $scope.specialtyChoice;
   
   programFactory.getPrograms()
     .then(function(response) {
       $scope.programs = response.data;
-      pushAllPrograms($scope.programs);
     }, function(error) {
       console.log(error.message);
   });
-  
-  function pushAllPrograms(x) {
-    for(var i = 0; i < x.length; i++) {
-      var level = x[i].courses;
-      var link = x[i].url;
-      for(var j = 0; j < level.length; j++)
-        $scope.allPrograms.push(level[j]);
-    }
-  }
   
 //  $scope.edLevelSort = function() {
 //    for(var i = 0; i < $scope.allPrograms.length; i++) {

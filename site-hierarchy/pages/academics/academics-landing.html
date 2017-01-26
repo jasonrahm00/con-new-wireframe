@@ -6,26 +6,39 @@
     <h2>Explore Available Degrees</h2>
     
     <div>
-      <label data-ng-repeat="program in programs" class="button">{{ program.level }}
-        <input type="radio" name="degreeLevel" value="{{ program.level }}" data-ng-model="$parent.programLevel">
+      <label class="button">Undergraduate Programs
+        <input type="radio" name="degreeLevel" value="Undergraduate Programs" data-ng-model="programLevel">
+      </label>
+      <label class="button">Graduate Programs
+        <input type="radio" name="degreeLevel" value="Graduate Programs" data-ng-model="programLevel">
+      </label>
+      <label class="button">Graduate Specialties
+        <input type="radio" name="degreeLevel" value="Graduate Specialties" data-ng-model="programLevel">
+      </label>
+      <label class="button">Additional Specialties
+        <input type="radio" name="degreeLevel" value="Additional Specialties" data-ng-model="programLevel">
+      </label>
+      <label class="button">All Programs
+        <input type="radio" name="degreeLevel" value="" data-ng-model="programLevel">
       </label>
     </div>
 
     <section data-ng-if="!programLevel && pageloadView === 'all'">
-      <h3>All Available Degrees</h3>
+      <h3>All Available Programs</h3>
       <div class="program-cards">
-          <a data-ng-repeat="program in allPrograms">
-            <p><strong> {{ program.name }} </strong></p>
-            <p>Brief course decription</p>
-          </a>
+        <a data-ng-repeat="program in programs" data-ui-sref="{{ program.url }}">
+          <p><strong> {{ program.name }} </strong></p>
+          <p>Brief course decription</p>
+        </a>
       </div>
+      
     </section>
     
     <section data-ng-if="programLevel">
       <h3><span data-ng-if="programLevel !== 'Additional Programs' ">Available </span>{{ programLevel }}</h3>
-      <div class="program-cards" data-ng-repeat="program in programs" data-ng-if="program.level === programLevel">
-        <a data-ng-repeat="course in program.courses" data-ui-sref="{{ program.url }}">
-          <p><strong> {{ course.name }} </strong></p>
+      <div class="program-cards" >
+        <a data-ng-repeat="program in programs" data-ui-sref="{{ program.url }}" data-ng-if="program.level === programLevel">
+          <p><strong> {{ program.name }} </strong></p>
           <p>Brief course decription</p>
         </a>
       </div>

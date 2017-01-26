@@ -16,25 +16,6 @@ body {
   margin: 0 auto;
 }
 
-main {
-  display: flex;
-  justify-content: space-between;
-}
-
-aside {
-  margin-right: 2rem;
-  min-width: 20%;
-}
-
-aside a:hover {
-  cursor: pointer;
-}
-
-aside ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 input[type="radio"] {
   display: none;
 }
@@ -95,6 +76,7 @@ label.button {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  padding: 0;
 }
 
 .next-steps a {
@@ -125,28 +107,6 @@ label.button {
   width: 20%;
 }
 
-.program-tabs {
-  display:flex;
-  list-style-type: none;
-  margin-top: 2rem;
-  padding: 0;
-}
-
-.program-tabs li {
-  background: #cfb77c;
-  color: white;
-}
-
-.program-tabs li:hover {
-  background: #000;
-  cursor: pointer;
-}
-
-.program-tabs a {
-  display: block;
-  padding: 1rem;
-}
-
 .program-tabs li:first-child,
 .program-tabs li:nth-child(2) {
   margin-right: 5px;
@@ -171,6 +131,26 @@ label.button {
 .yellow {
   background: yellow;
 }
+
+
+
+/****************************************
+        PADDING AND MARGINS
+****************************************/
+
+.small-margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.medium-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+
+.large-margin-bottom {
+  margin-bottom: 2rem; 
+}
+
+
 
 /****************************************
           MAIN NAVIGATION

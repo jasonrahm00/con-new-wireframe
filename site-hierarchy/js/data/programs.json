@@ -2,113 +2,133 @@
   {
     "level": "Undergraduate Programs",
     "url": "undergrad-landing-page",
-    "courses": [
-      {
-        "name": "Nursing BS - Traditional",
-        "audience": [1, 3, 5]
-      },
-      {
-        "name": "Nursing BS-UCAN",
-        "audience": [5]
-      },
-      {
-        "name": "RN to Nursing BS (online)",
-        "audience": [2]
-      },
-      {
-        "name": "Integrated Nursing Pathway",
-        "audience": [1, 3]
-      },
-      {
-        "name": "BS Honors Program",
-        "audience": []
-      }    
-    ]
+    "name": "Nursing BS - Traditional",
+    "audience": [1, 3, 5]
+  },
+  {
+    "level": "Undergraduate Programs",
+    "url": "undergrad-landing-page",
+    "name": "Nursing BS-UCAN",
+    "audience": [5]
+  },
+  {
+    "level": "Undergraduate Programs",
+    "url": "undergrad-landing-page",
+    "name": "RN to Nursing BS (online)",
+    "audience": [2]
+  },
+  {
+    "level": "Undergraduate Programs",
+    "url": "undergrad-landing-page",
+    "name": "Integrated Nursing Pathway",
+    "audience": [1, 3]
+  },
+  {
+    "level": "Undergraduate Programs",
+    "url": "undergrad-landing-page",
+    "name": "BS Honors Program",
+    "audience": []
   },
   {
     "level": "Graduate Programs",
     "url": "grad-landing-page",
-    "courses": [
-      {
-        "name": "Masters Program",
-        "audience": []
-      },
-      {
-        "name": "BS-DNP Program",
-        "audience": [4]
-      },
-      {
-        "name": "BS-PhD Program",
-        "audience": [4]
-      },
-      {
-        "name": "Post-Graduate Certificates",
-        "audience": [6]
-      },
-      {
-        "name": "PhD Program",
-        "audience": [6]
-      }      
-    ] 
+    "name": "Masters Program",
+    "audience": []
+  },
+  {
+    "level": "Graduate Programs",
+    "url": "grad-landing-page",
+    "name": "BS-DNP Program",
+    "audience": [4]
+  },
+  {
+    "level": "Graduate Programs",
+    "url": "grad-landing-page",
+    "name": "BS-PhD Program",
+    "audience": [4]
+  },
+  {
+    "level": "Graduate Programs",
+    "url": "grad-landing-page",
+    "name": "Post-Graduate Certificates",
+    "audience": [6]
+  },
+  {
+    "level": "Graduate Programs",
+    "url": "grad-landing-page",
+    "name": "PhD Program",
+    "audience": [6]
   },
   {
     "level": "Graduate Specialties",
     "url": "specialty-landing-page",
-    "courses": [
-      {
-        "name": "Adult Gerontology",
-        "audience": []
-      },
-      {
-        "name": "Pediatrics",
-        "audience": []
-      },
-      {
-        "name": "Psychiatric Mental Health",
-        "audience": []
-      },
-      {
-        "name": "Family Nurse Practitioner",
-        "audience": []
-      },
-      {
-        "name": "Nurse-Midwifery",
-        "audience": []
-      },
-      {
-        "name": "Women's Health Practitioner",
-        "audience": []
-      },
-      {
-        "name": "Health Care Informatics",
-        "audience": []
-      },
-      {
-        "name": "i-LEAD Nursing Leadership",
-        "audience": []
-      }      
-    ]
+    "name": "Adult Gerontology",
+    "audience": []
   },
   {
-    "level": "Additional Programs",
+    "level": "Graduate Specialties",
+    "url": "specialty-landing-page",
+    "name": "Pediatrics",
+    "audience": []
+  },
+  {
+    "level": "Graduate Specialties",
+    "url": "specialty-landing-page",
+    "name": "Psychiatric Mental Health",
+    "audience": []
+  },
+  {
+    "level": "Graduate Specialties",
+    "url": "specialty-landing-page",
+    "name": "Family Nurse Practitioner",
+    "audience": []
+  },
+  {
+    "level": "Graduate Specialties",
+    "url": "specialty-landing-page",
+    "name": "Nurse-Midwifery",
+    "audience": []
+  },
+  {
+    "level": "Graduate Specialties",
+    "url": "specialty-landing-page",
+    "name": "Women's Health Practitioner",
+    "audience": []
+  },
+  {
+    "level": "Graduate Specialties",
+    "url": "specialty-landing-page",
+    "name": "Health Care Informatics",
+    "audience": []
+  },
+  {
+    "level": "Graduate Specialties",
+    "url": "specialty-landing-page",
+    "name": "i-LEAD Nursing Leadership",
+    "audience": []
+  },
+  {
+    "level": "Additional Specialties",
     "url": "additional-landing-page",
-    "courses": [
-      {
-        "name": "DNP Program",
-        "audience": [6]
-      },
-      {
-        "name": "Dual Degree Program",
-        "audience": []
-      },
-      {
-        "name": "Continuing Education",
-        "audience": [4,6]
-      },
-      {
-        "name": "Veteran & Military Academic Programs",
-        "audience": []
-      }
-    ]
+    "name": "DNP Program",
+    "audience": [6]
+  },
+  {
+    "level": "Additional Specialties",
+    "url": "additional-landing-page",
+    "name": "Dual Degree Program",
+    "audience": []
+  },
+  {
+    "level": "Additional Specialties",
+    "url": "additional-landing-page",
+    "name": "Continuing Education",
+    "audience": [4,6]
+  },
+  {
+    "level": "Additional Specialties",
+    "url": "additional-landing-page",
+    "name": "Veteran & Military Academic Programs",
+    "audience": []
   }
 ] 
