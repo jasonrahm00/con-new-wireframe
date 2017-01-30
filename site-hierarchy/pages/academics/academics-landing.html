@@ -36,7 +36,7 @@
     
     <section data-ng-if="programLevel">
       <h3><span data-ng-if="programLevel !== 'Additional Programs' ">Available </span>{{ programLevel }}</h3>
-      <div class="program-cards" >
+      <div class="program-cards">
         <a data-ng-repeat="program in programs" data-ui-sref="{{ program.url }}" data-ng-if="program.level === programLevel">
           <p><strong> {{ program.name }} </strong></p>
           <p>Brief course decription</p>
@@ -52,7 +52,7 @@
     
     <div>
       <label for="resourcesFor">Current level of education:</label><br>
-      <select  id="resourcesFor" data-ng-model="currentEdLevel" data-ng-change="edLevelSort()" data-ng-init="currentEdLevel = '0'">
+      <select  id="resourcesFor" data-ng-model="currentEdLevel" data-ng-init="currentEdLevel = '0'" data-ng-change="edLevelSort(currentEdLevel)">
         <option value="0" disabled>-- Select Education Level --</option>
         <option value="1">High school diploma</option>
         <option value="2">RN (ADN) license</option>
@@ -65,6 +65,12 @@
     
     <section>
       <h3>Available Degree Paths</h3>
+      <div class="program-cards" data-ng-if="degreePathSort">
+        <a data-ng-repeat="program in degreePathSort" data-ui-sref="{{ program.url }}">
+          <p><strong> {{ program.name }} </strong></p>
+          <p>Brief course decription</p>
+        </a>
+      </div>
     </section>
     
   </section>
