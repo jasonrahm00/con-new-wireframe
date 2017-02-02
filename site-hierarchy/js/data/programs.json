@@ -8,6 +8,12 @@
   {
     "level": "Undergraduate Programs",
     "url": "default-program-page",
+    "name": "Dual Enrollment AAS and Nursing BS (online)",
+    "audience": []
+  },
+  {
+    "level": "Undergraduate Programs",
+    "url": "default-program-page",
     "name": "Nursing BS-UCAN",
     "audience": [5]
   },
