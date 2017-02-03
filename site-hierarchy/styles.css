@@ -109,11 +109,15 @@ label.button {
 
 .program-cards a {
   background: whitesmoke;
-  border: 1px solid black;
+  border: 2px solid black;
   margin: 0 1.5rem 1.5rem 0;
   padding: .5rem;
   text-decoration: none;
   width: 20%;
+}
+
+.program-cards a:hover {
+  border: 2px solid #cfb77c;
 }
 
 .program-tabs li:first-child,

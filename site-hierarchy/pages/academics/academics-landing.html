@@ -6,21 +6,29 @@
     <h2>Explore Available Degrees</h2>
     
     <div>
-      <label class="button">Undergraduate Programs
-        <input type="radio" name="degreeLevel" value="Undergraduate Programs" data-ng-model="programLevel">
-      </label>
-      <label class="button">Graduate Programs
-        <input type="radio" name="degreeLevel" value="Graduate Programs" data-ng-model="programLevel">
-      </label>
-      <label class="button">Graduate Specialties
-        <input type="radio" name="degreeLevel" value="Graduate Specialties" data-ng-model="programLevel">
-      </label>
-      <label class="button">Additional Specialties
-        <input type="radio" name="degreeLevel" value="Additional Specialties" data-ng-model="programLevel">
-      </label>
-      <label class="button">All Programs
+      <label class="button" data-ng-class="!programLevel ? 'gold-background' : 'black-background' ">All Programs
         <input type="radio" name="degreeLevel" value="" data-ng-model="programLevel">
       </label>
+<!--
+      Need to figure out model change for this to work
+      <label class="button" data-ng-repeat="program in programs | unique: 'level' ">{{ program.level }}
+        <input type="radio" name="degreeLevel" value="{{ program.level }}" data-ng-model="programLevel">
+      </label>
+-->
+      
+      <label class="button" data-ng-class="programLevel == 'Undergraduate Programs' ? 'gold-background' : 'black-background' ">Undergraduate Programs
+        <input type="radio" name="degreeLevel" value="Undergraduate Programs" data-ng-model="programLevel">
+      </label>
+      <label class="button" data-ng-class="programLevel == 'Graduate Programs' ? 'gold-background' : 'black-background' ">Graduate Programs
+        <input type="radio" name="degreeLevel" value="Graduate Programs" data-ng-model="programLevel">
+      </label>
+      <label class="button" data-ng-class="programLevel == 'Graduate Specialties' ? 'gold-background' : 'black-background' ">Graduate Specialties
+        <input type="radio" name="degreeLevel" value="Graduate Specialties" data-ng-model="programLevel">
+      </label>
+      <label class="button" data-ng-class="programLevel == 'Additional Specialties' ? 'gold-background' : 'black-background' ">Additional Specialties
+        <input type="radio" name="degreeLevel" value="Additional Specialties" data-ng-model="programLevel">
+      </label>
+      
     </div>
 
     <section data-ng-if="!programLevel && pageloadView === 'all'">
@@ -78,6 +86,7 @@
   <div class="next-steps">
     <ul>
       <li><a href="">Apply Now</a></li>
+      <li><a href="">Visit Admissions</a></li>
       <li><a href="">See Deadlines</a></li>
       <li><a href="">Understand Tuition</a></li>
       <li><a href="">Find Scholarships</a></li>
