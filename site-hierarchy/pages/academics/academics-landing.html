@@ -3,19 +3,13 @@
   <p>This page should have a way to narrow down degree fields. Start with the selecct dropdown from the existing site or copy what UCDenver has.</p>  
 
   <section class="dynamic-container">
-    <h2>Explore Available Degrees</h2>
+    <h2>Explore Programs and Specialties</h2>
     
     <div>
+      
       <label class="button" data-ng-class="!programLevel ? 'gold-background' : 'black-background' ">All Programs
         <input type="radio" name="degreeLevel" value="" data-ng-model="programLevel">
-      </label>
-<!--
-      Need to figure out model change for this to work
-      <label class="button" data-ng-repeat="program in programs | unique: 'level' ">{{ program.level }}
-        <input type="radio" name="degreeLevel" value="{{ program.level }}" data-ng-model="programLevel">
-      </label>
--->
-      
+      </label>    
       <label class="button" data-ng-class="programLevel == 'Undergraduate Programs' ? 'gold-background' : 'black-background' ">Undergraduate Programs
         <input type="radio" name="degreeLevel" value="Undergraduate Programs" data-ng-model="programLevel">
       </label>
@@ -28,7 +22,7 @@
       <label class="button" data-ng-class="programLevel == 'Additional Specialties' ? 'gold-background' : 'black-background' ">Additional Specialties
         <input type="radio" name="degreeLevel" value="Additional Specialties" data-ng-model="programLevel">
       </label>
-      
+
     </div>
 
     <section data-ng-if="!programLevel && pageloadView === 'all'">
@@ -39,11 +33,10 @@
           <p>Brief course decription</p>
         </a>
       </div>
-      
     </section>
     
     <section data-ng-if="programLevel">
-      <h3><span data-ng-if="programLevel !== 'Additional Programs' ">Available </span>{{ programLevel }}</h3>
+      <h3><span data-ng-if="programLevel !== 'Additional Programs' ">Available</span> {{ programLevel }}</h3>
       <div class="program-cards">
         <a data-ng-repeat="program in programs" data-ui-sref="{{ program.url }}" data-ng-if="program.level === programLevel">
           <p><strong> {{ program.name }} </strong></p>
