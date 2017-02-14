@@ -126,15 +126,21 @@
     "audience": []
   },
   {
-    "level": "Additional Specialties",
-    "url": "additional-landing-page",
-    "name": "Continuing Education",
+    "level": "Additional Programs",
+    "url": "non-degree-education",
+    "name": "Non-Degree Certificates",
     "audience": [4,6]
   },
   {
-    "level": "Additional Specialties",
-    "url": "additional-landing-page",
+    "level": "Graduate Specialties",
+    "url": "specialty-landing-page",
     "name": "Veteran & Military Academic Programs",
+    "audience": []
+  },
+  {
+    "level": "Additional Programs",
+    "url": "post-grad-certificate",
+    "name": "Post-Graduate Certificates",
     "audience": []
   }
 ] 

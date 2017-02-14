@@ -50,12 +50,20 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         breadcrumb: 'Home > Academics > Specialty Program Name'
       }
     })
-    .state('additional-landing-page', {
-      url: '/academics/additional-program-page',
-      templateUrl: '/pages/academics/additional-landing.html',
+    .state('post-grad-certificate', {
+      url: '/academics/post-graduate-certificate',
+      templateUrl: '/pages/academics/post-grad.html',
       data: {
-        title: 'Additional Programs Page',
-        breadcrumb: 'Home > Academics > Additional Program Name'
+        title: 'Post-Graduate Certificates',
+        breadcrumb: 'Home > Academics > Post Graduate Certificates'
+      }
+    })
+  .state('non-degree-education', {
+      url: '/academics/non-degree-education',
+      templateUrl: '/pages/academics/non-degree.html',
+      data: {
+        title: 'Non-Degree Education',
+        breadcrumb: 'Home > Academics > Non-Degree Education'
       }
     });
   

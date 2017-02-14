@@ -1,133 +1,130 @@
-<div>
-  <header>
-    <h1>Graduate Program Landing Page (Specialty-Required Template)</h1>
-    <h2>Program Description</h2>
-    <p>This page is to describe the degree level and expose core courses required for each specialty to achieve that degree.</p>
-  </header>
-  
-  <section class="dynamic-container">
-    <h2>Grad Program Core Courses</h2>
-    <p>Each degree should have a set of core courses that need to be completed. List these here in a separate accordion before showing courses for the specialty.</p>
-    <div class="custom-accordion large-margin-bottom" data-toggle-speed="fast" data-toggle-easing="linear" data-slide-up-speed="fast" data-slide-up-easing="linear">
-      
-        <section>
-          <div class="accordion-header">
-            <h3>Course 1</h3>
-            <span>Credit Hours</span>
-          </div>
-          <div class="accordion-body">
-            <p>Brief course description</p>
-          </div>
-        </section>
+<header>
+  <h1>Graduate Program Landing Page (Specialty-Required Template)</h1>
+  <h2>Program Description</h2>
+  <p>This page is to describe the degree level and expose core courses required for each specialty to achieve that degree.</p>
+</header>
 
-        <section>
-          <div class="accordion-header">
-            <h3>Course 2</h3>
-            <span>Credit Hours</span>
-          </div>
-          <div class="accordion-body">
-            <p>Brief course description</p>
-          </div>
-        </section>
+<section class="dynamic-container">
+  <h2>Grad Program Core Courses</h2>
+  <p>Each degree should have a set of core courses that need to be completed. List these here in a separate accordion before showing courses for the specialty.</p>
+  <div class="custom-accordion large-margin-bottom" data-toggle-speed="fast" data-toggle-easing="linear" data-slide-up-speed="fast" data-slide-up-easing="linear">
 
-        <section>
-          <div class="accordion-header">
-            <h3>Course 3</h3>
-            <span>Credit Hours</span>
-          </div>
-          <div class="accordion-body">
-            <p>Brief course description</p>
-          </div>
-        </section>
+      <section>
+        <div class="accordion-header">
+          <h3>Course 1</h3>
+          <span>Credit Hours</span>
+        </div>
+        <div class="accordion-body">
+          <p>Brief course description</p>
+        </div>
+      </section>
 
-        <section>
-          <div class="accordion-header">
-            <h3>Course 4</h3>
-            <span>Credit Hours</span>
-          </div>
-          <div class="accordion-body">
-            <p>Brief course description</p>
-          </div>
-        </section>
+      <section>
+        <div class="accordion-header">
+          <h3>Course 2</h3>
+          <span>Credit Hours</span>
+        </div>
+        <div class="accordion-body">
+          <p>Brief course description</p>
+        </div>
+      </section>
 
-      </div>
-  </section>
-  
-  <section class="dynamic-container specialty-selector">
-    <h2>Grad Program Specialties and Coursework</h2>
-    <p>Select the specialty you wish to study to read a brief description and see an accordion of required courses.</p>
-    
-    <div> 
-      <label for="specialtyChoice">Choose a Specialty</label>
-      <select id="specialtyChoice" data-ng-model="specialtyChoice" data-ng-options="program.name for program in programs | filter: {level: 'Graduate Specialties'}">
-        <option value="" disabled> -- Specialties -- </option>
-      </select>
+      <section>
+        <div class="accordion-header">
+          <h3>Course 3</h3>
+          <span>Credit Hours</span>
+        </div>
+        <div class="accordion-body">
+          <p>Brief course description</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="accordion-header">
+          <h3>Course 4</h3>
+          <span>Credit Hours</span>
+        </div>
+        <div class="accordion-body">
+          <p>Brief course description</p>
+        </div>
+      </section>
+
     </div>
-    
-    <section data-ng-if="specialtyChoice">
-      <h3>Required Courses to Earn a <em class="red">Degree Level</em> in {{ specialtyChoice.name }}</h3>
-      <p>Inculde brief description of specialty, so they can make an informed decision before going on to next steps or to the program page.</p>
-      <div class="custom-accordion large-margin-bottom" data-toggle-speed="fast" data-toggle-easing="linear" data-slide-up-speed="fast" data-slide-up-easing="linear">
-      
-        <section>
-          <div class="accordion-header">
-            <h3>Course 1</h3>
-            <span>Credit Hours</span>
-          </div>
-          <div class="accordion-body">
-            <p>Brief course description</p>
-          </div>
-        </section>
+</section>
 
-        <section>
-          <div class="accordion-header">
-            <h3>Course 2</h3>
-            <span>Credit Hours</span>
-          </div>
-          <div class="accordion-body">
-            <p>Brief course description</p>
-          </div>
-        </section>
+<section class="dynamic-container specialty-selector">
+  <h2>Grad Program Specialties and Coursework</h2>
+  <p>Select the specialty you wish to study to read a brief description and see an accordion of required courses.</p>
 
-        <section>
-          <div class="accordion-header">
-            <h3>Course 3</h3>
-            <span>Credit Hours</span>
-          </div>
-          <div class="accordion-body">
-            <p>Brief course description</p>
-          </div>
-        </section>
+  <div> 
+    <label for="specialtyChoice">Choose a Specialty</label>
+    <select id="specialtyChoice" data-ng-model="specialtyChoice" data-ng-options="program.name for program in programs | filter: {level: 'Graduate Specialties'}">
+      <option value="" disabled> -- Specialties -- </option>
+    </select>
+  </div>
 
-        <section>
-          <div class="accordion-header">
-            <h3>Course 4</h3>
-            <span>Credit Hours</span>
-          </div>
-          <div class="accordion-body">
-            <p>Brief course description</p>
-          </div>
-        </section>
+  <section data-ng-if="specialtyChoice">
+    <h3>Required Courses to Earn a <em class="red">Degree Level</em> in {{ specialtyChoice.name }}</h3>
+    <p>Inculde brief description of specialty, so they can make an informed decision before going on to next steps or to the program page.</p>
+    <div class="custom-accordion large-margin-bottom" data-toggle-speed="fast" data-toggle-easing="linear" data-slide-up-speed="fast" data-slide-up-easing="linear">
 
-      </div>
-      
-      <a class="button" data-ui-sref="specialty-landing-page">Learn More About {{ specialtyChoice.name }}</a>
-    </section>
-    
-    
-  </section>  
-  
-  <section class="next-steps">
-    <h2>Next Steps</h2>
-    <p>In this section, give user places to go next with calls to action and links to the appropriate pages on the site.</p>
-    <ul>
-      <li><a href="">Apply Now</a></li>
-      <li><a href="">Visit Admissions</a></li>
-      <li><a href="">Understand Tuition</a></li>
-      <li><a href="">Find Scholarships</a></li>
-      <li><a href="">See Deadlines</a></li>
-      <li><a href="">Contact Us</a></li>
-    </ul>
+      <section>
+        <div class="accordion-header">
+          <h3>Course 1</h3>
+          <span>Credit Hours</span>
+        </div>
+        <div class="accordion-body">
+          <p>Brief course description</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="accordion-header">
+          <h3>Course 2</h3>
+          <span>Credit Hours</span>
+        </div>
+        <div class="accordion-body">
+          <p>Brief course description</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="accordion-header">
+          <h3>Course 3</h3>
+          <span>Credit Hours</span>
+        </div>
+        <div class="accordion-body">
+          <p>Brief course description</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="accordion-header">
+          <h3>Course 4</h3>
+          <span>Credit Hours</span>
+        </div>
+        <div class="accordion-body">
+          <p>Brief course description</p>
+        </div>
+      </section>
+
+    </div>
+
+    <a class="button" data-ui-sref="specialty-landing-page">Learn More About {{ specialtyChoice.name }}</a>
   </section>
-  
-</div>
+
+
+</section>  
+
+<section class="next-steps">
+  <h2>Next Steps</h2>
+  <p>In this section, give user places to go next with calls to action and links to the appropriate pages on the site.</p>
+  <ul>
+    <li><a href="">Apply Now</a></li>
+    <li><a href="">Visit Admissions</a></li>
+    <li><a href="">Understand Tuition</a></li>
+    <li><a href="">Find Scholarships</a></li>
+    <li><a href="">See Deadlines</a></li>
+    <li><a href="">Contact Us</a></li>
+  </ul>
+</section>
