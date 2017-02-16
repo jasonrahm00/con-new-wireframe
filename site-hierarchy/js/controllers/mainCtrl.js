@@ -1,4 +1,4 @@
-angular.module('conWireframe').controller('mainCtrl', function ($scope, programFactory) {
+angular.module('conWireframe').controller('mainCtrl', function ($scope, dataFactory) {
   
   'use strict';
   
@@ -8,7 +8,7 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, programF
   $scope.programLevel;
   $scope.specialtyChoice;
   
-  programFactory.getPrograms()
+  dataFactory.getData('programs')
     .then(function(response) {
       $scope.programs = response.data;
     }, function(error) {
