@@ -16,6 +16,11 @@ body {
   margin: 0 auto;
 }
 
+iframe {
+  height: 1200px;
+  width: 100%;
+}
+
 input[type="radio"] {
   display: none;
 }

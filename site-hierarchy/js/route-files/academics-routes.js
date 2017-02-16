@@ -65,6 +65,22 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         title: 'Non-Degree Education',
         breadcrumb: 'Home > Academics > Non-Degree Education'
       }
+    })
+  .state('grad-certificate', {
+      url: '/academics/graduate-level-certificate',
+      templateUrl: '/pages/academics/grad-certificate.html',
+      data: {
+        title: 'Graduate-Level Certificate',
+        breadcrumb: 'Home > Academics > Graduate-Level Certificate'
+      }
+    })
+  .state('cepd', {
+      url: '/academics/continuing-education-professional-development',
+      templateUrl: '/pages/academics/cepd.html',
+      data: {
+        title: 'Continuing Education and Professional Development',
+        breadcrumb: 'Home > Academics > Continuing Education and Professional Development'
+      }
     });
   
   $urlRouterProvider.otherwise('/');
