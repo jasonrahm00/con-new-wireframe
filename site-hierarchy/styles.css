@@ -4,7 +4,6 @@
 
 * {
   border-collapse: collapse;
-  border-radius: 4px;
 }
 
 html {
@@ -26,7 +25,15 @@ input[type="radio"] {
 }
 
 label.button {
-  margin-right: 10px;
+  border: 1px solid #ddd;
+  color: black;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 3px;
+  min-width: 12%;
+  padding: 10px;
+  text-align: center;
 }
 
 .alumni-snapshot>div {
@@ -105,26 +112,6 @@ label.button {
   background: #cfb77c;
 }
 
-.program-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 1rem;
-}
-
-.program-cards a {
-  background: whitesmoke;
-  border: 2px solid #ddd;
-  margin: 0 1.5rem 1.5rem 0;
-  padding: .5rem;
-  text-decoration: none;
-  width: 20%;
-}
-
-.program-cards a:hover {
-  border: 2px solid #cfb77c;
-}
-
 .program-tabs li:first-child,
 .program-tabs li:nth-child(2) {
   margin-right: 5px;
@@ -148,6 +135,10 @@ label.button {
 
 .yellow {
   background: yellow;
+}
+
+.white-background {
+  background: #fff;
 }
 
 
@@ -290,4 +281,62 @@ nav>ul>li.active>.submenu.mega {
 
 .custom-accordion section:last-child .accordion-body {
   border-bottom: 1px solid #ddd;
+}
+
+
+
+/****************************************
+          Program Cards
+****************************************/
+
+.program-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 170px;
+  padding: 1rem;
+}
+
+.program-cards>div {
+  margin-bottom: 2rem;
+  width: 350px;
+}
+
+.toggle-content {
+  background: whitesmoke;
+  border: 1px solid #ddd;
+  border-top: none;
+  display: none;
+  padding: 1rem .75rem;
+}
+
+.toggle-content a {
+  background: #000;
+  color: white;
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 1rem;
+  text-align: center;
+  text-decoration: none;
+  padding: .5rem;
+}
+
+.toggle-content a:hover {
+  color: #cfb77c;
+  text-decoration: none;
+}
+
+.toggle-target {
+  color: #000;
+  border: 1px solid #ddd;
+  display: block;
+  font-size: .85rem;
+  padding: 1rem .75rem;
+  text-align: center;
+}
+
+.toggle-target:hover {
+  border-color: #cfb87c;
+  cursor: pointer;
 }

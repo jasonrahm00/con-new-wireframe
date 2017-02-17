@@ -2,32 +2,29 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, dataFact
   
   'use strict';
   
-  $scope.degreePathSort = [];
-  $scope.pageloadView = 'all';
   $scope.programs;
-  $scope.programLevel;
-  $scope.specialtyChoice;
+  $scope.programLevel = 'all';
+  $scope.sortedPrograms = [];
   
   dataFactory.getData('programs')
     .then(function(response) {
-      $scope.programs = response.data;
+      $scope.programs = response.data.sort(function (a,b) {
+        return (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0);
+      });
     }, function(error) {
       console.log(error.message);
   });
 
-  $scope.edLevelSort = function(x) {
-    console.log(x);
-    $scope.degreePathSort = [];
-    for(var i = 0; i < $scope.programs.length; i++) {
-      var program = $scope.programs[i];
-      for(var j = 0; j < program.audience.length; j++) {
-        var audience = program.audience[j];
-        if(audience === parseInt(x)) {
-          $scope.degreePathSort.push(program);
-        }
+  $scope.programSort = function(x) {
+    var programs = $scope.programs;
+    $scope.sortedPrograms = [];
+    $scope.programLevel = x;
+    for (var i = 0; i < programs.length; i++) {
+      if(programs[i].level === x) {
+        $scope.sortedPrograms.push(programs[i]);
       }
     }
-    console.log($scope.degreePathSort);
+    
   };
   
   jQuery(window).click(function () {
@@ -39,5 +36,5 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, dataFact
     jQuery('nav>ul>li').not(this).removeClass('active');
     jQuery(this).toggleClass('active');
   });
-  
+    
 });

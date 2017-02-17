@@ -6,70 +6,44 @@
 
   <div>
 
-    <label class="button" data-ng-class="!programLevel ? 'gold-background' : 'black-background' ">All Programs
-      <input type="radio" name="degreeLevel" value="" data-ng-model="programLevel">
+    <label class="button" data-ng-class="programLevel == 'all' ? 'gold-background' : 'white-background' ">All Programs
+      <input type="radio" name="degreeLevel" value="all" data-ng-model="programLevel" data-ng-change="programSort('all')">
     </label>    
-    <label class="button" data-ng-class="programLevel == 'Undergraduate Programs' ? 'gold-background' : 'black-background' ">Undergraduate Programs
-      <input type="radio" name="degreeLevel" value="Undergraduate Programs" data-ng-model="programLevel">
+    <label class="button" data-ng-class="programLevel == 'undergraduate' ? 'gold-background' : 'white-background' ">Undergraduate Programs
+      <input type="radio" name="degreeLevel" value="undergraduate" data-ng-model="programLevel" data-ng-change="programSort('undergraduate')">
     </label>
-    <label class="button" data-ng-class="programLevel == 'Graduate Programs' ? 'gold-background' : 'black-background' ">Graduate Programs
-      <input type="radio" name="degreeLevel" value="Graduate Programs" data-ng-model="programLevel">
+    <label class="button" data-ng-class="programLevel == 'graduate' ? 'gold-background' : 'white-background' ">Graduate Programs
+      <input type="radio" name="degreeLevel" value="graduate" data-ng-model="programLevel" data-ng-change="programSort('graduate')">
     </label>
-    <label class="button" data-ng-class="programLevel == 'Graduate Specialties' ? 'gold-background' : 'black-background' ">Graduate Specialties
-      <input type="radio" name="degreeLevel" value="Graduate Specialties" data-ng-model="programLevel">
+    <label class="button" data-ng-class="programLevel == 'specialties' ? 'gold-background' : 'white-background' ">Graduate Specialties
+      <input type="radio" name="degreeLevel" value="specialties" data-ng-model="programLevel" data-ng-change="programSort('specialties')">
     </label>
-    <label class="button" data-ng-class="programLevel == 'Additional Programs' ? 'gold-background' : 'black-background' ">Additional Programs
-      <input type="radio" name="degreeLevel" value="Additional Programs" data-ng-model="programLevel">
+    <label class="button" data-ng-class="programLevel == 'additional' ? 'gold-background' : 'white-background' ">Additional Programs
+      <input type="radio" name="degreeLevel" value="additional" data-ng-model="programLevel" data-ng-change="programSort('additional')">
     </label>
 
-  </div>
-
-  <section data-ng-if="!programLevel && pageloadView === 'all'">
-    <h3>All Available Programs</h3>
-    <div class="program-cards">
-      <a data-ng-repeat="program in programs" data-ui-sref="{{ program.url }}">
-        <p><strong> {{ program.name }} </strong></p>
-        <p>Brief course decription</p>
-      </a>
-    </div>
-  </section>
-
-  <section data-ng-if="programLevel">
-    <h3><span data-ng-if="programLevel !== 'Additional Programs' ">Available</span> {{ programLevel }}</h3>
-    <div class="program-cards">
-      <a data-ng-repeat="program in programs" data-ui-sref="{{ program.url }}" data-ng-if="program.level === programLevel">
-        <p><strong> {{ program.name }} </strong></p>
-        <p>Brief course decription</p>
-      </a>
-    </div>
-  </section>
-
-</section>
-
-<section class="dynamic-container">
-
-  <h2>Choose Based on Current Education Level</h2>
-
-  <div>
-    <label for="resourcesFor">Current level of education:</label><br>
-    <select  id="resourcesFor" data-ng-model="currentEdLevel" data-ng-init="currentEdLevel = '0'" data-ng-change="edLevelSort(currentEdLevel)">
-      <option value="0" disabled>-- Select Education Level --</option>
-      <option value="1">High school diploma</option>
-      <option value="2">RN (ADN) license</option>
-      <option value="3">Associate degee or some college</option>
-      <option value="4">BS in Nursing with RN license</option>
-      <option value="5">BS or BA, not in nursing</option>
-      <option value="6">MS degree in Nursing</option>
-    </select>
   </div>
 
   <section>
-    <h3>Available Degree Paths</h3>
-    <div class="program-cards" data-ng-if="degreePathSort">
-      <a data-ng-repeat="program in degreePathSort" data-ui-sref="{{ program.url }}">
-        <p><strong> {{ program.name }} </strong></p>
-        <p>Brief course decription</p>
-      </a>
+    <h3>Choose Your Area of Interest</h3>
+    <div class="program-cards">
+      
+      <div data-ng-repeat="program in programs" data-ng-if="programLevel === 'all'">
+        <span class="toggle-target card-directive">{{ program.name }}</span>
+        <div class="toggle-content">
+          <p>Program Description</p>
+          <a data-ui-sref="{{ program.url }}">Visit Page</a>
+        </div>
+      </div>
+      
+      <div data-ng-repeat="program in sortedPrograms" data-ng-if="programLevel !== 'all'">
+        <span class="toggle-target card-directive">{{ program.name }}</span>
+        <div class="toggle-content">
+          <p>Program Description</p>
+          <a data-ui-sref="{{ program.url }}">Visit Page</a>
+        </div>
+      </div>
+      
     </div>
   </section>
 
