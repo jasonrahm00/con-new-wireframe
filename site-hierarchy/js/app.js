@@ -7,3 +7,18 @@ angular.module('conWireframe').run(function($rootScope, $state) {
   })
   
 });
+
+angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvider) {
+  
+  $stateProvider
+  
+    .state('home', {
+      url: '/',
+      templateUrl: '/pages/home.html',
+      data: {
+        title: 'CON Wireframe'
+      }
+    });
+  $urlRouterProvider.otherwise('/');
+  
+});

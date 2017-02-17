@@ -21,7 +21,7 @@
         <li><a data-ui-sref="home">Home</a></li>
         <li><a class="submenu-trigger">Admissions &amp; Aid</a>
           <ul class="submenu mega">
-            <li class="main-page-link"><a href="">Admissions Homepage</a></li>
+            <li class="main-page-link"><a data-ui-sref="admissions">Admissions Homepage</a></li>
             <li><button class="red yellow">Apply Now</button></li>
             <li>
               <span>Info and Deadlines</span>
@@ -32,13 +32,16 @@
                 <li><a href="">Contact Admissions</a></li>
               </ul>
             </li>
-            <li class="yellow">
-              <span class="red">Program Admissions</span>
+            <li>
+              <span>Program Admissions</span>
               <ul>
+                <li><a data-ui-sref="admissions-requirements">Admissions Requirements</a></li>
+<!--
                 <li><a href="">Undergraduate Admissions</a></li>
                 <li><a href="">Graduate Admissions</a></li>
                 <li><a href="">PhD Admissions</a></li>
                 <li><a href="">Specialty Program Admissions</a></li>
+-->
               </ul>
             </li>
             <li>
@@ -182,7 +185,7 @@
     
     <!-- JS Files -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
     <script src="https://unpkg.com/angular-ui-router@0.3.2/release/angular-ui-router.min.js"></script>
     
@@ -191,6 +194,7 @@
     
     <!-- Route Files -->
     <script src="js/route-files/academics-routes.js"></script>
+    <script src="js/route-files/admissions-routes.js"></script>
     
     <!-- Factories -->
     <script src="js/factories/data-factory.js"></script>
@@ -201,6 +205,8 @@
     
     <!-- Controllers -->
     <script src="js/controllers/mainCtrl.js"></script>
+    <script src="js/controllers/academicsCtrl.js"></script>
+    <script src="js/controllers/admissionsCtrl.js"></script>
     
   </body>
   

@@ -3,9 +3,6 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, dataFact
   'use strict';
   
   $scope.programs;
-  $scope.programLevel = 'all';
-  $scope.sortedPrograms = [];
-  $scope.specialtyChoice;
   
   dataFactory.getData('programs')
     .then(function(response) {
@@ -15,18 +12,6 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, dataFact
     }, function(error) {
       console.log(error.message);
   });
-
-  $scope.programSort = function(x) {
-    var programs = $scope.programs;
-    $scope.sortedPrograms = [];
-    $scope.programLevel = x;
-    for (var i = 0; i < programs.length; i++) {
-      if(programs[i].level === x) {
-        $scope.sortedPrograms.push(programs[i]);
-      }
-    }
-    
-  };
   
   jQuery(window).click(function () {
     jQuery('nav>ul>li').removeClass('active');
