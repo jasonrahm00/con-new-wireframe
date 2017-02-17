@@ -5,6 +5,7 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, dataFact
   $scope.programs;
   $scope.programLevel = 'all';
   $scope.sortedPrograms = [];
+  $scope.specialtyChoice;
   
   dataFactory.getData('programs')
     .then(function(response) {

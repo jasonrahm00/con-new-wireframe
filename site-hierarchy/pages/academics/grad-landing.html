@@ -58,7 +58,7 @@
 
   <div> 
     <label for="specialtyChoice">Choose a Specialty</label>
-    <select id="specialtyChoice" data-ng-model="specialtyChoice" data-ng-options="program.name for program in programs | filter: {level: 'Graduate Specialties'}">
+    <select id="specialtyChoice" data-ng-model="specialtyChoice" data-ng-options="program.name for program in programs | filter: {level: 'specialties'}">
       <option value="" disabled> -- Specialties -- </option>
     </select>
   </div>
