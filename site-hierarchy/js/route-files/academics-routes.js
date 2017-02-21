@@ -75,12 +75,12 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       },
       controller: 'academicsCtrl'
     })
-  .state('cepd', {
+  .state('continuing-education', {
       url: '/academics/continuing-education-professional-development',
       templateUrl: '/pages/academics/cepd.html',
       data: {
-        title: 'Continuing Education and Professional Development',
-        breadcrumb: 'Home > Academics > Continuing Education and Professional Development'
+        title: 'Continuing Nursing Education',
+        breadcrumb: 'Home > Academics > Continuing Nursing Education'
       },
       controller: 'academicsCtrl'
     });

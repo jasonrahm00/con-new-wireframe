@@ -340,3 +340,30 @@ nav>ul>li.active>.submenu.mega {
   border-color: #cfb87c;
   cursor: pointer;
 }
+
+
+
+/****************************************
+          Admission Pages
+****************************************/
+
+.admission-selector {
+  display: flex;
+  justify-content: space-around;
+}
+
+.admission-selector>div {
+  margin: 1rem 0;
+  text-align: center;
+  width: 30%;
+}
+
+.admission-selector label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.admission-selector select {
+  width: 100%;
+}
