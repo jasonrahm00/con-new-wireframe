@@ -3,6 +3,8 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, dataFact
   'use strict';
   
   $scope.programs;
+  $scope.programChoice;
+  $scope.programLevel;
   
   dataFactory.getData('programs')
     .then(function(response) {
@@ -12,6 +14,10 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, dataFact
     }, function(error) {
       console.log(error.message);
   });
+  
+  $scope.setProgramLevel = function(x) {
+    $scope.programLevel = x;
+  };
   
   jQuery(window).click(function () {
     jQuery('nav>ul>li').removeClass('active');

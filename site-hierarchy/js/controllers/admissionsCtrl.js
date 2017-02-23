@@ -2,10 +2,9 @@ angular.module('conWireframe').controller('admissionsCtrl', function ($scope) {
   
   'use strict';
     
-  $scope.programLevel;
   $scope.programChoices = [];
   $scope.exposeButtons;
-  $scope.programChoice;
+  //$scope.programChoice;
   
   $scope.getPrograms = function() {
     $scope.programChoices = [];
@@ -17,13 +16,17 @@ angular.module('conWireframe').controller('admissionsCtrl', function ($scope) {
     }
   };
   
+  $scope.getPrograms();
+  
   $scope.showButtons = function() {
-    if($scope.programChoice === null) {
+    if($scope.programChoice === null || $scope.programChoice === undefined) {
       $scope.exposeButtons = false;
     } else {
       $scope.exposeButtons = true;
       jQuery('.flex-container-around').slideUp().slideDown();
     }
   };
+  
+  $scope.showButtons();
     
 });
