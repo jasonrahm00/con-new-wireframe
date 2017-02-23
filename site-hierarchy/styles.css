@@ -83,6 +83,11 @@ label.button {
   min-height: 400px;
 }
 
+.flex-container-around {
+  display: flex;
+  justify-content: space-around;
+}
+
 .gold-background {
   background: #cfb77c;
 }
@@ -366,4 +371,8 @@ nav>ul>li.active>.submenu.mega {
 
 .admission-selector select {
   width: 100%;
+}
+
+.step-two {
+  min-height: 165px;
 }

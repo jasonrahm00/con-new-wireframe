@@ -8,35 +8,51 @@
 
 <section>
   <h2>Program Admissions</h2>
-  <p>Dynamically load admission requirements for each degree... reuse where we can.</p>
-  <p>Two-step sorting, degree level then degree itself? Second selection takes you to the admissions page for that program.</p>
-  
-  <div class="admission-selector">
-    
-    <div>
-      <label for="programLevel">Select Your Desired Program Type</label>
-      <select id="programLevel" data-ng-model="programLevel" data-ng-options="program.level as (program.level | capitalize) for program in programs | unique:'level'" data-ng-change="getPrograms()">
-        <option value="" disabled> -- Program Category -- </option>
-      </select>
-    </div>
-    
-    <div>
-      <label for="program">Select Your Desired Program</label>
-      <select id="program" data-ng-model="programChoice" data-ng-disabled="!programLevel" data-ng-options="program.name for program in programChoices">
-        <option value="" disabled> -- Program -- </option>
-      </select>
-    </div>
-  
-  </div>
 
-  <section>
-    <h3>Program Admission Requirements</h3>
-    <p>Program Level: {{ programLevel }}</p>
-    <p>Program Choice: {{ programChoice }}</p>
+  <section class="step-one">
+    <h3>Step 1: Choose a Program</h3>
+    
+    <div class="admission-selector">
+    
+      <div>
+        <label for="programLevel">Select Your Desired Program Type</label>
+        <select id="programLevel" data-ng-model="programLevel" data-ng-options="program.level as (program.level | capitalize) for program in programs | unique:'level' | filter: {level: '!specialties'}" data-ng-change="getPrograms()">
+          <option value="" disabled> -- Program Category -- </option>
+        </select>
+      </div>
+
+      <div>
+        <label for="program">Select Your Desired Program</label>
+        <select id="program" data-ng-model="programChoice" data-ng-disabled="!programLevel" data-ng-options="program.name for program in programChoices" data-ng-change="showButtons()">
+          <option value="" disabled> -- Program -- </option>
+        </select>
+      </div>
+
+    </div>
+
   </section>
   
-  <section>
-    <h3>Apply</h3>
+  <section class="step-two">
+    <h3>Step 2: Gather Required Materials</h3>
+    <p class="red">How-to-Apply pages not needed. That step is, click apply button and follow application directions.</p>
+    <div class="flex-container-around" data-ng-if="exposeButtons">
+      <a class="button">Admission Requirements</a>
+      <a class="button" data-ui-sref="{{ programChoice.url }}">Visit Program Page</a>
+    </div>
+  </section>
+  
+  <section class="step-three">
+    <h3>Step 3: Apply</h3>
+    <p>Mention application fees</p>
+    <p>Apply button dynamically generated depending on degree selected. CAS, Nanda's Application, UC Denver page.</p>
   </section>
 
+</section>
+
+<section>
+  <h2>Applied</h2>
+  <p>What do you do after you've applied?</p>
+  <p>Check application status</p>
+  <p>Interview dates? Separate from deadlines</p>
+  <p>Accept application?</p>
 </section>
