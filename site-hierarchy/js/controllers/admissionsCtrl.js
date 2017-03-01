@@ -4,7 +4,7 @@ angular.module('conWireframe').controller('admissionsCtrl', function ($scope) {
     
   $scope.programChoices = [];
   $scope.exposeButtons;
-  //$scope.programChoice;
+  $scope.programChoice;
   
   $scope.getPrograms = function() {
     $scope.programChoices = [];
@@ -23,7 +23,7 @@ angular.module('conWireframe').controller('admissionsCtrl', function ($scope) {
       $scope.exposeButtons = false;
     } else {
       $scope.exposeButtons = true;
-      jQuery('.flex-container-around').slideUp().slideDown();
+      //jQuery('.step-two>div').slideUp().slideDown();
     }
   };
   

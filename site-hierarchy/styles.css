@@ -48,6 +48,10 @@ label.button {
   margin-bottom: 40px;
 }
 
+.around {
+  justify-content: space-around;
+}
+
 .black-background {
   background: #fff;
 }
@@ -83,9 +87,8 @@ label.button {
   min-height: 400px;
 }
 
-.flex-container-around {
+.flex-container {
   display: flex;
-  justify-content: space-around;
 }
 
 .gold-background {
@@ -374,5 +377,40 @@ nav>ul>li.active>.submenu.mega {
 }
 
 .step-two {
-  min-height: 165px;
+  min-height: 235px;
+}
+
+.step-two .flex-container.around>div:first-child {
+  position: relative;
+}
+
+.step-two .flex-container.around a {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.step-two .flex-container.around a:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
+.snapshot {
+  background: #ddd;
+  padding: 1rem;
+}
+
+.snapshot h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.snapshot ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.snapshot li {
+  margin: .5rem 0;
 }

@@ -2,7 +2,10 @@
   {
     "level": "undergraduate",
     "url": "default-program-page",
-    "name": "Nursing BS - Traditional"
+    "name": "Nursing BS - Traditional",
+    "essay": "500 - 700",
+    "gpa": "3.0",
+    "interview": "January 2018"
   },
   {
     "level": "undergraduate",
@@ -12,7 +15,10 @@
   {
     "level": "undergraduate",
     "url": "default-program-page",
-    "name": "Nursing BS-UCAN"
+    "name": "Nursing BS-UCAN",
+    "essay": "500 - 700",
+    "gpa": "3.0",
+    "interview": "July 20, 2017"
   },
   {
     "level": "undergraduate",
@@ -23,11 +29,6 @@
     "level": "undergraduate",
     "url": "default-program-page",
     "name": "Integrated Nursing Pathway"
-  },
-  {
-    "level": "undergraduate",
-    "url": "default-program-page",
-    "name": "BS Honors Program"
   },
   {
     "level": "graduate",
