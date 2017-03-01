@@ -36,23 +36,42 @@
     <p class="red">How-to-Apply pages not needed. That step is, click apply button and follow application directions.</p>
     <div class="flex-container around" data-ng-if="exposeButtons">
       <div>
-        <a class="button" data-ui-sref="program-admissions">View Admission Requirements</a>
-        <a class="button" data-ui-sref="{{ programChoice.url }}">Visit Program Page</a>
+        <a class="button" data-ui-sref="program-admissions" data-ng-click="setProgramChoice(programChoice)">View Admission Requirements</a>
+        <a class="button" data-ui-sref="{{ programChoice.url }}" data-ng-click="setProgramChoice(programChoice)">Visit Program Page</a>
       </div>
       <div class="snapshot">
         <h4>Requirements Snapshot</h4>
-        <ul>
-          <li><strong>GPA:</strong> 
+        
+        <ul data-ng-if="programChoice.level === 'undergraduate'">
+          <li><strong>GPA:</strong>&nbsp;
             <span data-ng-if="programChoice.gpa">{{ programChoice.gpa }}</span>
             <span data-ng-if="!programChoice.gpa">N/A</span>
           </li>
-          <li><strong>Interview:</strong> 
+          <li><strong>Interview:</strong>&nbsp;
             <span data-ng-if="programChoice.interview">{{ programChoice.interview }}</span>
             <span data-ng-if="!programChoice.interview">N/A</span>
           </li>
-          <li><strong>Essay:</strong> 
+          <li><strong>Essay:</strong>&nbsp;
             <span data-ng-if="programChoice.essay">{{ programChoice.essay }} Words</span>
             <span data-ng-if="!programChoice.essay">N/A</span>
+          </li>
+        </ul>
+        
+        <ul data-ng-if="programChoice.level === 'graduate'">
+          <li>
+            <strong>Degree:</strong>&nbsp;
+            <span data-ng-if="programChoice.degree">{{ programChoice.degree }}</span>
+            <span data-ng-if="!programChoice.degree">N/A</span>
+          </li>
+          <li>
+            <strong>Interview:</strong>&nbsp;
+            <span data-ng-if="programChoice.interview">{{ programChoice.interview }}</span>
+            <span data-ng-if="!programChoice.interview">N/A</span>
+          </li>
+          <li>
+            <strong>References:</strong>&nbsp;
+            <span data-ng-if="programChoice.references">{{ programChoice.references }}</span>
+            <span data-ng-if="!programChoice.references">N/A</span>
           </li>
         </ul>
       </div>
@@ -63,9 +82,14 @@
   <section class="step-three">
     <h3>Step 3: Apply</h3>
     
-    <div data-ng-if="programChoice">
+    <div data-ng-if="programChoice && programChoice.name !== 'PhD Program'">
       <a class="button" href="https://nursingcas.liaisoncas.com/applicant-ux/#/login" target="_blank">Apply through NursingCAS</a>
       <p>All applicants are required to pay a fee to both NursingCAS and the College of Nursing. The College of Nursing application fee is $50, paid through the application website. Visit the <a href="http://www.nursingcas.org/prepare-to-apply/fees/" target="_blank">NursingCAS fees page</a> to view additional costs.</p>
+    </div>
+    
+    <div data-ng-if="programChoice.name === 'PhD Program'">
+      <a class="button" href="https://soa.prod.cu.edu/degreeprog/applyDEGREEPROG_CUDEN/login.action" target="_blank">Apply through CU Denver Site</a>
+      <p>All applicants are required to pay a fee of $50 ($75 for international applications) during the application process or through the mail. The application cannot be processed until the fee is received.</p>
     </div>
     
   </section>

@@ -4,8 +4,7 @@ angular.module('conWireframe').controller('admissionsCtrl', function ($scope) {
     
   $scope.programChoices = [];
   $scope.exposeButtons;
-  $scope.programChoice;
-  
+
   $scope.getPrograms = function() {
     $scope.programChoices = [];
     var programs = $scope.programs;

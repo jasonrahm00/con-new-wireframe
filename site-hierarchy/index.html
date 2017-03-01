@@ -57,25 +57,33 @@
             <li>
               <span>Undergraduate Programs</span>
               <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'undergraduate'"><a data-ui-sref="{{ program.url }}">{{ program.name }}</a></li>
+                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'undergraduate'">
+                  <a data-ui-sref="{{ program.url }}" data-ng-click="setProgramChoice(program)">{{ program.name }}</a>
+                </li>
               </ul>
             </li>
             <li>
               <span>Graduate Programs</span>
               <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'"><a data-ui-sref="{{ program.url }}">{{ program.name }}</a></li>
+                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'">
+                  <a data-ui-sref="{{ program.url }}" data-ng-click="setProgramChoice(program)">{{ program.name }}</a>
+                </li>
               </ul>
             </li>
             <li>
               <span>Graduate Specialties</span>
               <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'specialties'"><a data-ui-sref="{{ program.url }}">{{ program.name }}</a></li>
+                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'specialties'">
+                  <a data-ui-sref="{{ program.url }}" data-ng-click="setProgramChoice(program)">{{ program.name }}</a>
+                </li>
               </ul>
             </li>
             <li>
               <span>Additional Programs</span>
               <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'additional'"><a data-ui-sref="{{ program.url }}">{{ program.name }}</a></li>
+                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'additional'">
+                  <a data-ui-sref="{{ program.url }}" data-ng-click="setProgramChoice(program)">{{ program.name }}</a>
+                </li>
               </ul>
             </li>
             
@@ -199,6 +207,7 @@
     <!-- Directives -->
     <script src="js/directives/accordion-directive.js"></script>
     <script src="js/directives/card-directive.js"></script>
+    <script src="js/directives/button-directives.js"></script>
     
     <!-- Controllers -->
     <script src="js/controllers/mainCtrl.js"></script>

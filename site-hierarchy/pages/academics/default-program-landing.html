@@ -1,5 +1,5 @@
 <header>
-  <h1>Academic Program Landing Page (Default Template)</h1>
+  <h1><span data-ng-if="programChoice">{{ programChoice.name }}</span><span data-ng-if="!programChoice">Academic Program</span> Page (Default Template)</h1>
   <h2>Program Description</h2>
   <p>This page is where the user will go to find program description and relevant information. There should be a link to admissions requirements and apply now for each particular program.</p>
   <p>The main section should include one or two intro paragraphs about the program... possibly a full-width hero image</p>
@@ -95,8 +95,8 @@
   <h2>Next Steps</h2>
   <p>In this section, give user places to go next with calls to action and links to the appropriate pages on the site.</p>
   <ul>
-    <li><a href="">Apply Now</a></li>
-    <li><a href="">Visit Admissions</a></li>
+    <li><apply-now></apply-now></li>
+    <li><admission-requirements></admission-requirements></li>
     <li><a href="">Understand Tuition</a></li>
     <li><a href="">Find Scholarships</a></li>
     <li><a href="">See Deadlines</a></li>

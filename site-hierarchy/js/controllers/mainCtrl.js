@@ -19,6 +19,10 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, dataFact
     $scope.programLevel = x;
   };
   
+  $scope.setProgramChoice = function(x) {
+    $scope.programChoice = x;
+  }
+  
   jQuery(window).click(function () {
     jQuery('nav>ul>li').removeClass('active');
   });

@@ -1,5 +1,5 @@
 <header>
-  <h1>Graduate Program Landing Page (Specialty-Required Template)</h1>
+  <h1><span data-ng-if="programChoice">{{ programChoice.name }}</span><span data-ng-if="!programChoice">Graduate Program</span> Page (Specialty-Required Template)</h1>
   <h2>Program Description</h2>
   <p>This page is to describe the degree level and expose core courses required for each specialty to achieve that degree.</p>
 </header>
@@ -120,8 +120,8 @@
   <h2>Next Steps</h2>
   <p>In this section, give user places to go next with calls to action and links to the appropriate pages on the site.</p>
   <ul>
-    <li><a href="">Apply Now</a></li>
-    <li><a href="">Visit Admissions</a></li>
+    <li><apply-now></apply-now></li>
+    <li><admission-requirements></admission-requirements></li>
     <li><a href="">Understand Tuition</a></li>
     <li><a href="">Find Scholarships</a></li>
     <li><a href="">See Deadlines</a></li>

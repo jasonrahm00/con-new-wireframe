@@ -376,6 +376,28 @@ nav>ul>li.active>.submenu.mega {
   width: 100%;
 }
 
+.snapshot {
+  background: #ddd;
+  padding: 1rem;
+  width: 320px;
+}
+
+.snapshot h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.snapshot ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.snapshot li {
+  margin: .5rem 0;
+}
+
 .step-two {
   min-height: 235px;
 }
@@ -395,22 +417,6 @@ nav>ul>li.active>.submenu.mega {
   bottom: 0;
 }
 
-.snapshot {
-  background: #ddd;
-  padding: 1rem;
-}
-
-.snapshot h4 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.snapshot ul {
-  margin: 0;
-  list-style-type: none;
-}
-
-.snapshot li {
-  margin: .5rem 0;
+.step-three {
+  min-height: 120px;
 }

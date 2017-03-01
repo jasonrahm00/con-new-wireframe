@@ -33,7 +33,10 @@
   {
     "level": "graduate",
     "url": "grad-landing-page",
-    "name": "Masters Program"
+    "name": "Masters Program",
+    "degree": "Bachelor of Science Nursing",
+    "interview": "April",
+    "references": "Four (at least one academic)"
   },
   {
     "level": "graduate",
