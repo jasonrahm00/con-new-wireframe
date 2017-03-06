@@ -1,7 +1,7 @@
 angular.module('conWireframe').directive('customAccordion', function(){
   
   return {
-    restrict: 'AEC',
+    restrict: 'C',
     scope: {
       // default: '400ms'
       // options: 'milliseconds', 'slow', or 'fast'

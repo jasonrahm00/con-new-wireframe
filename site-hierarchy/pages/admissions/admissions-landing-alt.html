@@ -1,0 +1,44 @@
+<h1>CU College of Nursing Admissions</h1>
+
+<section>
+  <h2>Application Deadlines</h2>
+  <p>Table or table-styled divs to display.</p>
+  <p>CU Boulder Admissions pages for inspiration.</p>
+</section>
+
+<section>
+<h2>Admission Requirements</h2>
+  
+  <div class="flex-container around">
+    <section>
+      <h3>Undergraduate Admissions</h3>
+      <ul>
+        <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'undergraduate'">
+          <a data-ui-sref="program-admissions" data-ng-click="setProgramChoice(program)">{{ program.name }} Admissions</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Graduate Admissions</h3>
+      <ul>
+        <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'">
+          <a data-ui-sref="program-admissions" data-ng-click="setProgramChoice(program)">{{ program.name }} Admissions</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  
+</section>
+
+<section>
+  <h2>Applied</h2>
+  <p>What do you do after you've applied?</p>
+  <p>Check application status</p>
+  <p>Interview dates? Separate from deadlines?</p>
+  <p>Accept application?</p>
+</section>
+
+<section>
+  <h2>Accepted</h2>
+  <p>Look for an email that contains important information on how to submit letter of intent and other stuff.</p>
+</section>
