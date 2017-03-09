@@ -36,6 +36,24 @@ label.button {
   text-align: center;
 }
 
+.after-apply {
+  margin: 3.5rem 0;
+}
+
+.after-apply section {
+  width: 20%;
+}
+
+.after-apply section:first-child {
+  border-right: 1px solid #ddd;
+  padding-right: 10%;
+}
+
+.after-apply section:last-child {
+  border-left: 1px solid #ddd;
+  padding-left: 10%;
+}
+
 .alumni-snapshot>div {
   border: 1px solid #ddd;
   margin: 0px 15px;
