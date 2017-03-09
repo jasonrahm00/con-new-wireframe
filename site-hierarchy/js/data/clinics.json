@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Belleview Point Clinic",
+    "street": "5001 S. Parker Rd. | Suite 215",
+    "city": "Aurora, CO",
+    "zip": 80015,
+    "lat": 0,
+    "long": 0,
+    "phone": "303-315-6200",
+    "email": "hcp.belleviewpoint@ucdenver.edu",
+    "daysOpen": [
+      {
+        "day": "Monday",
+        "open": "9:30",
+        "close": "5:00",
+        "closed": false
+      },
+      {
+        "day": "Tuesday",
+        "open": "9:30",
+        "close": "5:00",
+        "closed": false
+      },
+      {
+        "day": "Wednesday",
+        "open": "10:00",
+        "close": "5:00",
+        "closed": false
+      },
+      {
+        "day": "Thursday",
+        "open": "9:30",
+        "close": "5:00",
+        "closed": false
+      },
+      {
+        "day": "Friday",
+        "open": "8:30",
+        "close": "4:00",
+        "closed": false
+      },
+      {
+        "day": "Saturday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Sunday",
+        "open": "",
+        "close": "",
+        "closed": true
+      }
+    ]
+  },
+  {
+    "name": "Anschutz Campus Health Center",
+    "street": "12348 E. Montview Blvd. | 2nd Floor",
+    "city": "Aurora, CO",
+    "zip": 80045,
+    "lat": 0,
+    "long": 0,
+    "phone": "303-724-6242",
+    "email": "con.chc@ucdenver.edu",
+    "daysOpen": [
+      {
+        "day": "Monday",
+        "open": "7:00",
+        "close": "7:00",
+        "closed": false
+      },
+      {
+        "day": "Tuesday",
+        "open": "7:00",
+        "close": "7:00",
+        "closed": false
+      },
+      {
+        "day": "Wednesday",
+        "open": "7:00",
+        "close": "7:00",
+        "closed": false
+      },
+      {
+        "day": "Thursday",
+        "open": "7:00",
+        "close": "7:00",
+        "closed": false
+      },
+      {
+        "day": "Friday",
+        "open": "7:00",
+        "close": "7:00",
+        "closed": false
+      },
+      {
+        "day": "Saturday",
+        "open": "9:00",
+        "close": "1:00",
+        "closed": false
+      },
+      {
+        "day": "Sunday",
+        "open": "",
+        "close": "",
+        "closed": true
+      }
+    ]
+  }
+]
