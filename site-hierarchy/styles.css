@@ -459,3 +459,23 @@ nav>ul>li.active>.submenu.mega {
 .step-three {
   min-height: 120px;
 }
+
+
+/****************************************
+          Clinic Pages
+****************************************/
+
+.clinic {
+  border-bottom: 1px solid #ddd;
+  height: 180px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.clinic:last-child {
+  border-bottom: 0;
+}
+
+.clinic>div {
+  width: 250px;
+}

@@ -1,1 +1,5 @@
-<h1>Individual Clinci Page (default)</h1>
+<h1>
+  <span data-ng-if="selectedClinic.name">{{ selectedClinic.name }} </span>
+  <span data-ng-if="!selectedClinic.name">Individual Clinic </span>
+  Page (default)
+</h1>
