@@ -1,4 +1,4 @@
-angular.module('conWireframe').controller('patientsCtrl', function ($scope, clinicFactory) {
+angular.module('conWireframe').controller('patientsCtrl', function ($scope, $window, clinicFactory) {
 
   'use strict';
   
@@ -10,5 +10,13 @@ angular.module('conWireframe').controller('patientsCtrl', function ($scope, clin
   $scope.selectClinic = function(clinic) {
     clinicFactory.selectClinic(clinic);
   };
+  
+  $window.map = new google.maps.Map(document.getElementById('mapContainer'), {
+    center: {
+      lat: 39.7392,
+      lng: -104.9903
+    },
+    zoom: 8
+  });
   
 });

@@ -199,6 +199,7 @@ nav {
   background: #fff;
   position: fixed;
   top: 0;
+  z-index: 999999999;
 }
 
 nav li {
@@ -211,7 +212,6 @@ nav ul {
 
 nav>ul>li {
   display: inline-block;
-  z-index: 100;
 }
 
 nav>ul>li:first-child a {
