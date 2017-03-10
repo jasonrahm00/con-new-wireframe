@@ -27,3 +27,14 @@ angular.module('conWireframe').directive('programPage', function(){
   };
   
 });
+
+angular.module('conWireframe').directive('programLink', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    template: '<a data-ui-sref="{{ program.url }}" data-ng-click="setProgramChoice(program)">{{ program.name }}</a>'
+  };
+  
+});
+

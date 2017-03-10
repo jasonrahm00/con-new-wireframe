@@ -1,27 +1,12 @@
-angular.module('conWireframe').controller('mainCtrl', function ($scope, dataFactory) {
+angular.module('conWireframe').controller('mainCtrl', function ($scope, programFactory) {
   
   'use strict';
   
-  $scope.programs;
-  $scope.programChoice;
-  $scope.programLevel;
+  $scope.programs = programFactory.programs;
   
-  dataFactory.getData('programs')
-    .then(function(response) {
-      $scope.programs = response.data.sort(function (a,b) {
-        return (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0);
-      });
-    }, function(error) {
-      console.log(error.message);
-  });
-  
-  $scope.setProgramLevel = function(x) {
-    $scope.programLevel = x;
+  $scope.setProgramChoice = function(program) {
+    programFactory.setProgramChoice(program);
   };
-  
-  $scope.setProgramChoice = function(x) {
-    $scope.programChoice = x;
-  }
   
   jQuery(window).click(function () {
     jQuery('nav>ul>li').removeClass('active');

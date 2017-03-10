@@ -1,5 +1,5 @@
 <header>
-  <h1><span data-ng-if="programChoice">{{ programChoice.name }}</span><span data-ng-if="!programChoice">Graduate Specialty</span> Page (Specialty Template)</h1>
+  <h1><span data-ng-if="programChoice">{{ programChoice.name }}</span><span data-ng-if="!programChoice.name">Graduate Specialty</span> Page (Specialty Template)</h1>
   <h2>Program Description</h2>
   <p>Use this page, and possible sub-pages, to describe the specialty. Don't mention any coursework, but talk about the specialty field and link to available graduate degrees for this specialty. Also provide information on possible jobs, a program video and some Alumni snapshots</p>
 </header>
@@ -56,7 +56,7 @@
   <h2>Next Steps</h2>
   <p>In this section, give user places to go next with calls to action and links to the appropriate pages on the site.</p>
   <ul>
-    <li><a data-ui-sref="admissions" data-ng-click="setProgramLevel('graduate')">Visit Admissions</a></li>
+    <li><a data-ui-sref="admissions">Visit Admissions</a></li>
     <li><a href="">Understand Tuition</a></li>
     <li><a href="">Find Scholarships</a></li>
     <li><a href="">See Deadlines</a></li>

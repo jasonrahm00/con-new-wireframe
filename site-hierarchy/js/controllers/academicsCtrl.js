@@ -1,10 +1,12 @@
-angular.module('conWireframe').controller('academicsCtrl', function ($scope) {
+angular.module('conWireframe').controller('academicsCtrl', function ($scope, programFactory) {
   
   'use strict';
   
   $scope.programLevel = 'all';
   $scope.sortedPrograms = [];
   $scope.specialtyChoice;
+  $scope.programs = programFactory.programs[0];
+  $scope.programChoice = programFactory.programChoice;
   
   $scope.programSort = function(x) {
     var programs = $scope.programs;

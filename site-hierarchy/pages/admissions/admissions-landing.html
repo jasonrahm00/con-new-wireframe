@@ -1,117 +1,56 @@
 <h1>CU College of Nursing Admissions</h1>
 
+<img src="" alt="Full-width image here">
+
 <section>
-  <h2>Application Deadlines</h2>
-  <p>Table or table-styled divs to display.</p>
-  <p>CU Boulder Admissions pages for inspiration.</p>
+<h2>Admission Requirements</h2>
+  
+  <div class="flex-container around">
+    <section>
+      <h3>Undergraduate Admissions</h3>
+      <ul>
+        <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'undergraduate'">
+          <a data-ui-sref="program-admissions" data-ng-click="setProgramChoice(program)">{{ program.name }} Admissions</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Graduate Admissions</h3>
+      <ul>
+        <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'">
+          <a data-ui-sref="program-admissions" data-ng-click="setProgramChoice(program)">{{ program.name }} Admissions</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  
 </section>
 
-<section>
-  <h2>Program Admissions</h2>
+<div class="flex-container around after-apply">
   
-  <section class="step-one">
-    <h3>Step 1: Choose a Program</h3>
-    
-    <div class="admission-selector">
-    
-      <div>
-        <label for="programLevel">Select Your Desired Program Type</label>
-        <select id="programLevel" data-ng-model="programLevel" data-ng-options="program.level as (program.level | capitalize) for program in programs | unique:'level' | filter: {level: '!specialties'}" data-ng-change="getPrograms()">
-          <option value="" disabled> -- Program Category -- </option>
-        </select>
-      </div>
-
-      <div>
-        <label for="program">Select Your Desired Program</label>
-        <select id="program" data-ng-model="programChoice" data-ng-disabled="!programLevel" data-ng-options="program.name for program in programChoices" data-ng-change="showButtons()">
-          <option value="" disabled> -- Program -- </option>
-        </select>
-      </div>
-
-    </div>
+  <section>
+    <h2>Applied</h2>
+    <p>Regularly check the application portal to track the status of your application and verify that all required materials were received.</p>
   </section>
   
-  <section class="step-two">
-    <h3>Step 2: Fulfill Admission Requirements</h3>
-<!--    <p>How-to-Apply pages not needed. That step is, click apply button and follow application directions.</p>-->
-    <div class="flex-container around" data-ng-if="exposeButtons">
-      <div>
-        <admission-requirements></admission-requirements>
-        <program-page></program-page>
-      </div>
-      <div class="snapshot">
-        <h4>Requirements Snapshot</h4>
-        
-        <ul data-ng-if="programChoice.level === 'undergraduate'">
-          <li><strong>GPA:</strong>&nbsp;
-            <span data-ng-if="programChoice.gpa">{{ programChoice.gpa }}</span>
-            <span data-ng-if="!programChoice.gpa">N/A</span>
-          </li>
-          <li><strong>Interview:</strong>&nbsp;
-            <span data-ng-if="programChoice.interview">{{ programChoice.interview }}</span>
-            <span data-ng-if="!programChoice.interview">N/A</span>
-          </li>
-          <li><strong>Essay:</strong>&nbsp;
-            <span data-ng-if="programChoice.essay">{{ programChoice.essay }} Words</span>
-            <span data-ng-if="!programChoice.essay">N/A</span>
-          </li>
-        </ul>
-        
-        <ul data-ng-if="programChoice.level === 'graduate'">
-          <li>
-            <strong>Degree:</strong>&nbsp;
-            <span data-ng-if="programChoice.degree">{{ programChoice.degree }}</span>
-            <span data-ng-if="!programChoice.degree">N/A</span>
-          </li>
-          <li>
-            <strong>Interview:</strong>&nbsp;
-            <span data-ng-if="programChoice.interview">{{ programChoice.interview }}</span>
-            <span data-ng-if="!programChoice.interview">N/A</span>
-          </li>
-          <li>
-            <strong>References:</strong>&nbsp;
-            <span data-ng-if="programChoice.references">{{ programChoice.references }}</span>
-            <span data-ng-if="!programChoice.references">N/A</span>
-          </li>
-        </ul>
-      </div>
-      
-    </div>
+  <section>
+    <h2>Accepted</h2>
+    <p>Check your email for next steps to confirm your acceptance. Also, prepare to attend the <a href="">interview day</a> for your program (if required).</p>
   </section>
   
-  <section class="step-three">
-    <h3>Step 3: Apply</h3>
-    
-    <div data-ng-if="programChoice && programChoice.name !== 'PhD Program'">
-      <span data-ng-if="programChoice.name !== 'RN to Nursing BS (online)'">
-        <a class="button" href="https://nursingcas.liaisoncas.com/applicant-ux/#/login" target="_blank" >Apply through NursingCAS</a>
-        <p>All applicants are required to pay a fee to both NursingCAS and the College of Nursing. The College of Nursing application fee is $50, paid through the application website. Visit the <a href="http://www.nursingcas.org/prepare-to-apply/fees/" target="_blank">NursingCAS fees page</a> to view additional costs.</p>
-      </span>
-      
-      <span data-ng-if="programChoice.name === 'RN to Nursing BS (online)'">
-        <a class="button" href="https://soa.prod.cu.edu/degreeprog/applyDEGREEPROG_CUDEN/login.action" target="_blank" data-ng-if="programChoice.name === 'RN to Nursing BS (online)'">Apply through CU Denver Site</a>
-        <p>All applicants are required to pay a fee of $65 ($75 for international applications) during the application process or through the mail. The application cannot be processed until the fee is received.</p>
-      </span>
-    </div>
-    
-    <div data-ng-if="programChoice.name === 'PhD Program'">
-      <a class="button" href="https://soa.prod.cu.edu/degreeprog/applyDEGREEPROG_CUDEN/login.action" target="_blank">Apply through CU Denver Site</a>
-      <p>All applicants are required to pay a fee of $50 ($75 for international applications) during the application process or through the mail. The application cannot be processed until the fee is received.</p>
-    </div>
-    
+  <section>
+    <h2>Comfirmed</h2>
+    <p class="red">Complete all necessary new-student paperwork and attend the campus orientation. Online-only students, be ready to learn when the program starts.</p>
   </section>
+  
+</div>
 
-</section>
-
-<section>
-  <h2>Applied</h2>
-  <p>What do you do after you've applied?</p>
-  <p>Check application status</p>
-  <p>Interview dates? Separate from deadlines?</p>
-  <p>Accept application?</p>
-</section>
-
-<section>
-  <h2>Accepted</h2>
-  <p>Look for an email that contains important information on how to submit letter of intent and other stuff.</p>
-</section>
+<div class="next-steps">
+  <ul>
+    <li><a href="">Deadlines</a></li>
+    <li><a href="">Info Sessions</a></li>
+    <li><a href="">Tuition &amp; Fees</a></li>
+    <li><a href="">Scholarsips</a></li>
+    <li><a href="">Contact Admissions</a></li>
+  </ul>
+</div>

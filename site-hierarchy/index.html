@@ -21,7 +21,7 @@
         <li><a data-ui-sref="home">Home</a></li>
         <li><a class="submenu-trigger">Admissions &amp; Aid</a>
           <ul class="submenu mega">
-            <li class="main-page-link"><a data-ui-sref="admissions-alt">Admissions Homepage</a></li>
+            <li class="main-page-link"><a data-ui-sref="admissions">Admissions Homepage</a></li>
             <li>
               <span>Info and Deadlines</span>
               <ul>
@@ -29,17 +29,6 @@
                 <li><a href="">Contact Admissions</a></li>
                 <li><a href="">Language Requirements</a></li>
                 <li><a href="">Transfer Credit</a></li>
-              </ul>
-            </li>
-            <li>
-              <span>Program Admissions</span>
-              <ul>
-                <li><a data-ui-sref="admissions" data-ng-click="setProgramLevel('undergraduate')">Undergraduate Admissions</a></li>
-                <li><a data-ui-sref="admissions" data-ng-click="setProgramLevel('graduate')">Graduate Admissions</a></li>
-                <li><a href="">Post-Graduate Certificate Admissions</a></li>
-                <li><a href="">Graduate Certificate Admissions</a></li>
-                <li><a href="">Non-Degree Admissions</a></li>
-                <li><a href="">International Student Admissions</a></li>
               </ul>
             </li>
             <li>
@@ -58,32 +47,32 @@
             <li>
               <span>Undergraduate Programs</span>
               <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'undergraduate'">
-                  <a data-ui-sref="{{ program.url }}" data-ng-click="setProgramChoice(program)">{{ program.name }}</a>
+                <li data-ng-repeat="program in programs[0] | orderBy:'name'" data-ng-if="program.level === 'undergraduate'">
+                  <program-link></program-link>
                 </li>
               </ul>
             </li>
             <li>
               <span>Graduate Programs</span>
               <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'">
-                  <a data-ui-sref="{{ program.url }}" data-ng-click="setProgramChoice(program)">{{ program.name }}</a>
+                <li data-ng-repeat="program in programs[0] | orderBy:'name'" data-ng-if="program.level === 'graduate'">
+                  <program-link></program-link>
                 </li>
               </ul>
             </li>
             <li>
               <span>Graduate Specialties</span>
               <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'specialties'">
-                  <a data-ui-sref="{{ program.url }}" data-ng-click="setProgramChoice(program)">{{ program.name }}</a>
+                <li data-ng-repeat="program in programs[0] | orderBy:'name'" data-ng-if="program.level === 'specialties'">
+                  <program-link></program-link>
                 </li>
               </ul>
             </li>
             <li>
               <span>Additional Programs</span>
               <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'additional'">
-                  <a data-ui-sref="{{ program.url }}" data-ng-click="setProgramChoice(program)">{{ program.name }}</a>
+                <li data-ng-repeat="program in programs[0] | orderBy:'name'" data-ng-if="program.level === 'additional'">
+                  <program-link></program-link>
                 </li>
               </ul>
             </li>
@@ -205,11 +194,12 @@
     
     <!-- Factories -->
     <script src="js/factories/data-factory.js"></script>
+    <script src="js/factories/program-factory.js"></script>
     
     <!-- Directives -->
     <script src="js/directives/accordion-directive.js"></script>
     <script src="js/directives/card-directive.js"></script>
-    <script src="js/directives/button-directives.js"></script>
+    <script src="js/directives/link-directives.js"></script>
     
     <!-- Controllers -->
     <script src="js/controllers/mainCtrl.js"></script>
