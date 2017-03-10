@@ -1,19 +1,19 @@
 <h1>Find a Clinic</h1>
-<div data-ng-repeat="clinic in clinics" class="flex-container around">
+<section data-ng-repeat="clinic in clinics[0]" class="flex-container around clinic">
   <div>
     <strong>{{ clinic.name }}</strong><br>
-    {{ clinic.street }}<br>
-    {{ clinic.city }}, {{ clinic.zip }}<br>
+    <a class="map-link" href="{{ clinic.mapUrl }}" target="_blank">
+      {{ clinic.street }}<br>
+      {{ clinic.city }}, {{ clinic.zip }}<br>
+    </a>
     Phone: <a href="tel:{{ clinic.phone }}">{{ clinic.phone }}</a><br>
-    Email: <a href="mailto:{{ clinic.email }}">{{ clinic.email }}</a><br>
+    <span data-ng-if="clinic.email">Email: <a href="mailto:{{ clinic.email }}">{{ clinic.email }}</a><br></span>
     <div class="flex-container between">
-      <a href="">Get Directions</a><br>
       <a data-ui-sref="clinic-location">Visit Clinic Page</a>
     </div>
     
   </div>
   <div>
-    <strong>Hours of Operation</strong><br>
     <ul>
       <li data-ng-repeat="dayOpen in clinic.daysOpen">
         <span data-ng-if="dayOpen.closed === false">{{ dayOpen.day }}: {{ dayOpen.open }}am - {{ dayOpen.close }}pm</span>
@@ -21,4 +21,4 @@
       </li>
     </ul>
   </div>
-</div>
+</section>
