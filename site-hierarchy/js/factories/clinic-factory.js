@@ -3,7 +3,8 @@ angular.module('conWireframe').factory('clinicFactory', function(dataFactory){
   'use strict';
   
   var clinics = {
-    "locations": []
+    "locations": [],
+    "selected": {}
   };
   
   dataFactory.getData('clinics')
@@ -14,6 +15,11 @@ angular.module('conWireframe').factory('clinicFactory', function(dataFactory){
     }, function(error) {
       console.log(error.message);
   });
+  
+  clinics.selectClinic = function(x) {
+    this.selected = x;
+    return this;
+  };
   
   /* 
   Dynamically display if clinic is open or closed based on current time of day. Need to call functions after data is returnd from getter.

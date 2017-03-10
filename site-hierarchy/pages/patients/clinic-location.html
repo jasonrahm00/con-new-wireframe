@@ -1,2 +1,5 @@
-<h1>Individual Clinic Page (default)</h1>
-<p data-ng-repeat="clinic in clinics2[0]">{{ clinic.name }}</p>
+<h1>
+  <span data-ng-if="selectedClinic.name">{{ selectedClinic.name }} </span>
+  <span data-ng-if="!selectedClinic.name">Individual Clinic </span>
+  Page (default)
+</h1>

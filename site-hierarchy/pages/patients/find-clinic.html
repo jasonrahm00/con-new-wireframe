@@ -9,7 +9,7 @@
     Phone: <a href="tel:{{ clinic.phone }}">{{ clinic.phone }}</a><br>
     <span data-ng-if="clinic.email">Email: <a href="mailto:{{ clinic.email }}">{{ clinic.email }}</a><br></span>
     <div class="flex-container between">
-      <a data-ui-sref="clinic-location">Visit Clinic Page</a>
+      <a data-ui-sref="clinic-location" data-ng-click="selectClinic(clinic)">Visit Clinic Page</a>
     </div>
     
   </div>
