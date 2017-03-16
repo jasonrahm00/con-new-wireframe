@@ -13,15 +13,6 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       },
       controller: 'patientsCtrl'
     })
-  .state('center-home', {
-      url: '/center-home',
-      templateUrl: '/pages/patients/center-home.html',
-      data: {
-        title: 'Center Home',
-        breadcrumb: 'Home > Patients > Center Home'
-      },
-      controller: 'patientsCtrl'
-    })
   .state('clinic-location', {
       url: '/clinic-location',
       templateUrl: '/pages/patients/clinic-location.html',
@@ -37,6 +28,15 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       data: {
         title: 'Find a Clinic',
         breadcrumb: 'Home > Patients > Find a Clinic'
+      },
+      controller: 'patientsCtrl'
+    })
+  .state('midwifery-center', {
+      url: '/midwifery-center',
+      templateUrl: '/pages/patients/midwifery-center.html',
+      data: {
+        title: 'Clinic Location',
+        breadcrumb: 'Home > Patients > Center for Midwifery'
       },
       controller: 'patientsCtrl'
     });

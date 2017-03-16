@@ -10,8 +10,8 @@
     <!-- Style Sheets -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="styles.css" rel="stylesheet">
-    <!-- endbuild -->
 
+    <!-- JS Files -->
     <script src="https://maps.googleapis.com/maps/api/js?language=en"></script>
     
   </head>
@@ -49,7 +49,7 @@
             <li>
               <span>Undergraduate Programs</span>
               <ul>
-                <li data-ng-repeat="program in programs[0] | orderBy:'name'" data-ng-if="program.level === 'undergraduate'">
+                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'undergraduate'">
                   <program-link></program-link>
                 </li>
               </ul>
@@ -57,7 +57,7 @@
             <li>
               <span>Graduate Programs</span>
               <ul>
-                <li data-ng-repeat="program in programs[0] | orderBy:'name'" data-ng-if="program.level === 'graduate'">
+                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'">
                   <program-link></program-link>
                 </li>
               </ul>
@@ -65,7 +65,7 @@
             <li>
               <span>Graduate Specialties</span>
               <ul>
-                <li data-ng-repeat="program in programs[0] | orderBy:'name'" data-ng-if="program.level === 'specialties'">
+                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'specialties'">
                   <program-link></program-link>
                 </li>
               </ul>
@@ -73,7 +73,7 @@
             <li>
               <span>Additional Programs</span>
               <ul>
-                <li data-ng-repeat="program in programs[0] | orderBy:'name'" data-ng-if="program.level === 'additional'">
+                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'additional'">
                   <program-link></program-link>
                 </li>
               </ul>
@@ -87,7 +87,7 @@
             <li><a data-ui-sref="find-clinic">Find a Clinic</a></li>
             <li><a href="">Services Offered</a></li>            
             <li><a data-ui-sref="center-home">Sheridan Health Services</a></li>
-            <li><a data-ui-sref="center-home">The Center for Midwifery</a></li>
+            <li><a data-ui-sref="midwifery-center">The Center for Midwifery</a></li>
             <li><a data-ui-sref="center-home">Anschutz Campus Health Center</a></li>
             <li><a data-ui-sref="center-home">University Nurse Midwives</a></li>
           </ul>

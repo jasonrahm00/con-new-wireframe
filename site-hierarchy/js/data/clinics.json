@@ -10,6 +10,8 @@
     "phone": "303-315-6200",
     "email": "hcp.belleviewpoint@ucdenver.edu",
     "pageUrl": "",
+    "region": "",
+    "serviceCategory": "",
     "services": ["Primary Care", "Convenient Care", "Behavioral Health"],
     "daysOpen": [
       {
@@ -67,6 +69,8 @@
     "phone": "303-724-6242",
     "email": "con.chc@ucdenver.edu",
     "pageUrl": "",
+    "region": "",
+    "serviceCategory": "",
     "services": ["Respiratory Care", "Gastorintestinal", "Urinary Tract Infections", "Blood Pressure Check", "Dermatology", "Immunizations", "Lab Tests", "Minor Injuries/Wounds", "PPD Testing", "STI Evaluation", "Women's Exams", "Behavioral Health"],
     "daysOpen": [
       {
@@ -115,7 +119,7 @@
   },
   {
     "name": "Anschutz Outpatient Pavilion",
-    "street": "1635 Aurora Ct. | Suite 3425",
+    "street": "1635 Aurora Ct.",
     "city": "Aurora, CO",
     "zip": 80045,
     "mapUrl": "https://goo.gl/maps/cbjjF7sgi5P2",
@@ -123,7 +127,9 @@
     "long": -104.8394653,
     "phone": "720-848-1700",
     "email": "",
-    "pageUrl": "",
+    "pageUrl": "midwifery-center",
+    "region": "metro",
+    "serviceCategory": "Midwifery",
     "services": ["Gynecological Exam", "Preconception Counseling", "Family Planning", "Prenatal Care", "Breastfeeding Counseling", "Labor and Birth", "Vaginal Birth after Cesarean Section", "Postpartum Care", "Labor Support"],
     "daysOpen": [
       {
@@ -180,7 +186,9 @@
     "long": -104.893519,
     "phone": "720-848-1700",
     "email": "",
-    "pageUrl": "",
+    "pageUrl": "midwifery-center",
+    "region": "metro",
+    "serviceCategory": "Midwifery",
     "services": ["Gynecological Exam", "Preconception Counseling", "Family Planning", "Prenatal Care", "Breastfeeding Counseling", "Labor and Birth", "Vaginal Birth after Cesarean Section", "Postpartum Care", "Labor Support"],
     "daysOpen": [
       {
@@ -237,7 +245,9 @@
     "long": -104.8784145,
     "phone": "720-848-1700",
     "email": "",
-    "pageUrl": "",
+    "pageUrl": "midwifery-center",
+    "region": "metro",
+    "serviceCategory": "Midwifery",
     "services": ["Gynecological Exam", "Preconception Counseling", "Family Planning", "Prenatal Care", "Breastfeeding Counseling", "Labor and Birth", "Vaginal Birth after Cesarean Section", "Postpartum Care", "Labor Support"],
     "daysOpen": [
       {
@@ -295,6 +305,8 @@
     "phone": "303-315-6150",
     "email": "",
     "pageUrl": "",
+    "region": "",
+    "serviceCategory": "",
     "services": ["Adult", "Maternity", "Behavioral Health", "Dental"],
     "daysOpen": [
       {
@@ -352,6 +364,8 @@
     "phone": "303-315-6150",
     "email": "",
     "pageUrl": "",
+    "region": "",
+    "serviceCategory": "",
     "services": ["Pediatric", "Behavioral Health"],
     "daysOpen": [
       {
@@ -408,7 +422,9 @@
     "long": -104.8394653,
     "phone": "720-848-1060",
     "email": "",
-    "pageUrl": "",
+    "pageUrl": "midwifery-center",
+    "region": "",
+    "serviceCategory": "",
     "services": ["Gynecological Exams", "Preconception Counseling", "Family Planning", "Prenatal Care", "Breastfeeding Consultation", "Labor and Birth", "Vaginal Birth after Cesarean Section", "Postpartum Care", "Labor Support"],
     "daysOpen": [
       {
@@ -466,6 +482,8 @@
     "phone": "720-848-1060",
     "email": "",
     "pageUrl": "",
+    "region": "",
+    "serviceCategory": "",
     "services": [],
     "daysOpen": [
       {
@@ -485,6 +503,183 @@
         "open": "",
         "close": "",
         "closed": true
+      },
+      {
+        "day": "Thursday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Friday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Saturday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Sunday",
+        "open": "",
+        "close": "",
+        "closed": true
+      }
+    ]
+  },
+  {
+    "name": "Boulder Health Center",
+    "street": "5495 Arapahoe Ave",
+    "city": "Boulder, CO",
+    "zip": 80303,
+    "mapUrl": "https://goo.gl/maps/cZvaqSVZf6v",
+    "lat": 40.0150815,
+    "long": -105.226161,
+    "phone": "720-494-3128",
+    "email": "",
+    "pageUrl": "midwifery-center",
+    "region": "north",
+    "serviceCategory": "Midwifery",
+    "services": ["Well Woman", "Gynecological", "Family Planning", "Prenatal Services", "Water Birth Option", "Labor and Birth"],
+    "daysOpen": [
+      {
+        "day": "Monday",
+        "open": "8:00",
+        "close": "5:00",
+        "closed": false
+      },
+      {
+        "day": "Tuesday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Wednesday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Thursday",
+        "open": "8:00",
+        "close": "5:00",
+        "closed": false
+      },
+      {
+        "day": "Friday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Saturday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Sunday",
+        "open": "",
+        "close": "",
+        "closed": true
+      }
+    ]
+  },
+  {
+    "name": "Carbon Valley Health Center",
+    "street": "11083 Colorado Boulevard",
+    "city": "Firestone, CO",
+    "zip": 80504,
+    "mapUrl": "https://goo.gl/maps/5TrYUP5SPoC2",
+    "lat": 40.1613753,
+    "long": -104.9427151,
+    "phone": "720-494-3128",
+    "email": "",
+    "pageUrl": "midwifery-center",
+    "region": "north",
+    "serviceCategory": "Midwifery",
+    "services": ["Well Woman", "Gynecological", "Family Planning", "Prenatal Services", "Water Birth Option", "Labor and Birth"],
+    "daysOpen": [
+      {
+        "day": "Monday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Tuesday",
+        "open": "8:00",
+        "close": "5:00",
+        "closed": false
+      },
+      {
+        "day": "Wednesday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Thursday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Friday",
+        "open": "8:00",
+        "close": "5:00",
+        "closed": false
+      },
+      {
+        "day": "Saturday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Sunday",
+        "open": "",
+        "close": "",
+        "closed": true
+      }
+    ]
+  },
+  {
+    "name": "Longmont Clinic",
+    "street": "1925 W. Mountain View Avenue",
+    "city": "Longmont, CO",
+    "zip": 80501,
+    "mapUrl": "https://goo.gl/maps/tqDng2gXUep",
+    "lat": 40.1809583,
+    "long": -105.1249203,
+    "phone": "720-494-3128",
+    "email": "",
+    "pageUrl": "midwifery-center",
+    "region": "north",
+    "serviceCategory": "Midwifery",
+    "services": ["Well Woman", "Gynecological", "Family Planning", "Prenatal Services", "Water Birth Option", "Labor and Birth"],
+    "daysOpen": [
+      {
+        "day": "Monday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Tuesday",
+        "open": "",
+        "close": "",
+        "closed": true
+      },
+      {
+        "day": "Wednesday",
+        "open": "8:00",
+        "close": "5:00",
+        "closed": false
       },
       {
         "day": "Thursday",

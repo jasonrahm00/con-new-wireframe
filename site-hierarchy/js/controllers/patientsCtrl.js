@@ -11,12 +11,14 @@ angular.module('conWireframe').controller('patientsCtrl', function ($scope, $win
     clinicFactory.selectClinic(clinic);
   };
   
-  $window.map = new google.maps.Map(document.getElementById('mapContainer'), {
-    center: {
-      lat: 39.7392,
-      lng: -104.9903
-    },
-    zoom: 8
-  });
+  $scope.loadMap = function() {
+    $window.map = new google.maps.Map(document.getElementById('mapContainer'), {
+      center: {
+        lat: 39.7392,
+        lng: -104.9903
+      },
+      zoom: 8
+    });
+  };
   
 });

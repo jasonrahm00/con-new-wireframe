@@ -1,8 +1,8 @@
 <h1>Find a Clinic</h1>
 
-<div id="mapContainer" style="height: 480px;"></div>
+<div id="mapContainer" style="height: 480px;" data-ng-init="loadMap()"></div>
 
-<section data-ng-repeat="clinic in clinics[0]" class="flex-container around clinic">
+<section data-ng-repeat="clinic in clinics" class="flex-container around clinic">
   <div>
     <strong>{{ clinic.name }}</strong><br>
     <a class="map-link" href="{{ clinic.mapUrl }}" target="_blank">
@@ -10,17 +10,20 @@
       {{ clinic.city }}, {{ clinic.zip }}<br>
     </a>
     Phone: <a href="tel:{{ clinic.phone }}">{{ clinic.phone }}</a><br>
-    <span data-ng-if="clinic.email">Email: <a href="mailto:{{ clinic.email }}">{{ clinic.email }}</a><br></span>
     <div class="flex-container between">
-      <a data-ui-sref="clinic-location" data-ng-click="selectClinic(clinic)">Visit Clinic Page</a>
+      
+      <span data-ng-if="clinic.pageUrl === ''"><a data-ui-sref="clinic-location" data-ng-click="selectClinic(clinic)">Visit Clinic Page</a></span>
+      
+      <span data-ng-if="clinic.pageUrl !== ''"><a data-ui-sref="{{ clinic.pageUrl }}" data-ng-click="selectClinic(clinic)">Visit Clinic Page</a></span>
+      
     </div>
     
   </div>
   <div>
     <ul>
       <li data-ng-repeat="dayOpen in clinic.daysOpen">
-        <span data-ng-if="dayOpen.closed === false">{{ dayOpen.day }}: {{ dayOpen.open }}am - {{ dayOpen.close }}pm</span>
-        <span data-ng-if="dayOpen.closed === true">{{ dayOpen.day }}: Closed</span>
+        <span data-ng-if="dayOpen.open !== '' || dayOpen.close !== '' ">{{ dayOpen.day }}: {{ dayOpen.open }}am - {{ dayOpen.close }}pm</span>
+        <span data-ng-if="dayOpen.open === '' || dayOpen.close === ''">{{ dayOpen.day }}: Closed</span>
       </li>
     </ul>
   </div>

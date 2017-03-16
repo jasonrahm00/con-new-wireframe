@@ -1,0 +1,161 @@
+<h1>The Center for Midwifery</h1>
+<img src="" alt="Banner image goes here">
+<p>Convallis lorem, venenatis massa iaculis. Ultricies pellentesque aliquam risus eros nullam consequat non vehicula curae; suspendisse tristique. Mi. Amet facilisis class aliquet interdum et tempus pulvinar tempor turpis dis dignissim sit ullamcorper netus ut eu dui, nam malesuada convallis donec.</p>
+<p>Amet curabitur lobortis vitae est felis ligula duis Sit neque dignissim vitae. Sed venenatis sed tristique litora dui rutrum torquent vestibulum sollicitudin. Convallis. Id phasellus Sodales. Libero gravida ultricies. Facilisis non aliquet mattis morbi. Lacus. Aptent vitae dui lobortis dolor semper. Class, fames suspendisse magnis leo aenean porta vel mus, sed taciti. Arcu nisl placerat duis nostra velit blandit praesent magna. Posuere, consectetuer elit, bibendum. Dolor ante fringilla.</p>
+<button>Request Appointment</button>
+  
+<section class="large-margin-bottom">
+  <h2 class="center">Denver Metro Locations</h2>
+
+  <div class="flex-container around">
+    <div class="flex-container flex-wrap-wrap">
+
+      <section class="full-width">
+        <h3>Services</h3>
+        <ul>
+          <li>Annual Gynecologic Exams</li>
+          <li>Breastfeeding Consultation</li>
+          <li>Family Planning</li>
+          <li>Gynecelogical Care</li>
+          <li>Labor and Birth</li>
+          <li>Labor Support</li>
+          <li>Nitrous Oxide</li>
+          <li>Preconception Counseling</li>
+          <li>Prenatal Care</li>
+          <li>Postpartum Care</li>
+          <li>Vaginal Birth after Cesarean Section</li>
+          <li>Water Birth</li>
+        </ul>
+      </section>
+
+      <section class="align-self-end">
+        <h3>Births</h3>
+        <p>Births take place at the <a href="https://uchealth.org" target="_blank">University of Colorado Hospital</a></p>
+      </section>
+      
+    </div>
+    
+    <section>
+      
+      <section>
+        <h3>Phone</h3>
+        <p>720-848-1700</p>
+      </section>
+      
+      <h3>Locations</h3>
+      <div data-ng-repeat="clinic in clinics" data-ng-if="clinic.serviceCategory === 'Midwifery' && clinic.region=== 'metro'">
+        <p>
+          <strong>{{ clinic.name }}</strong><br>
+          <a class="map-link" href="{{ clinic.mapUrl }}" target="_blank">
+            {{ clinic.street }}<br>
+            {{ clinic.city }}, {{ clinic.zip }}
+          </a><br>
+          <span data-ng-if="clinic.name !== 'Anschutz Outpatient Pavilion'">8:00am - 5:00pm (Mon - Fri)</span>
+          <span data-ng-if="clinic.name === 'Anschutz Outpatient Pavilion'">
+            8:00am - 5:00pm (Mon, Wed - Fri)<br>
+            9:00am - 7:00pm (Tues)
+          </span>
+        </p>
+      </div>
+    </section>
+  </div>  
+
+</section>
+
+<section class="large-margin-bottom">
+  <h2 class="center">Boulder and Weld County Locations</h2>
+  
+  <div class="flex-container around">
+    <div class="flex-container flex-wrap-wrap">
+
+      <section class="full-width">        
+        <h3>Services</h3>
+        <ul>
+          <li>Family Planning</li>
+          <li>Gynecological</li>
+          <li>Labor and Birth</li>
+          <li>Prenatal Services</li>
+          <li>Referrals</li>
+          <li>Water Birth Option</li>
+          <li>Well Woman</li>
+        </ul>
+      </section>
+
+      <section class="align-self-end">
+        <h3>Births</h3>
+        <p>Births take place at the <a href="https://www.uchealth.org/locations/uchealth-longs-peak-hospital" target="_blank">UC Health Longs Peak Hospital</a></p>
+      </section>
+      
+    </div>
+    
+    <section>
+      
+      <section>
+        <h3>Phone</h3>
+        <p>720-494-3128</p>
+      </section>
+      
+      <h3>Locations</h3>
+      <div data-ng-repeat="clinic in clinics" data-ng-if="clinic.serviceCategory === 'Midwifery' && clinic.region=== 'north'">
+        <p>
+          <strong>{{ clinic.name }}</strong><br>
+          <a class="map-link" href="{{ clinic.mapUrl }}" target="_blank">
+            {{ clinic.street }}<br>
+            {{ clinic.city }}, {{ clinic.zip }}
+          </a><br>
+          <span data-ng-if="clinic.name === 'Boulder Health Center'">8:00am - 5:00pm (Mon &amp; Thur)</span>
+          <span data-ng-if="clinic.name === 'Carbon Valley Health Center'">8:00am - 5:00pm (Tues &amp; Fri)</span>
+          <span data-ng-if="clinic.name === 'Longmont Clinic'">8:00am - 5:00pm (Wed)</span>
+        </p>
+      </div>
+    </section>
+  </div>  
+
+</section>
+
+<section>
+  <h2>Meet Our Midwives</h2>
+  <ul>
+    <li>Jessica Anderson, MSN</li>
+    <li>Nichol Chesser, DNP</li>
+    <li>Sarah Drexler, MS, CNM</li>
+    <li>Jessica Howard, MSN, MSW</li>
+    <li>Jennifer Lake, MSN, CNM</li>
+    <li>Julianne Williams, CNM, MS</li>
+    <li>Molly Yeoman, MS, CNM</li>
+    <li>Ana Williams, MS, CNM, IBCLC (Boulder/Weld County)</li>
+    <li>Sheri Williams, MS, CNM (Boulder/Weld County)</li>
+  </ul>
+</section>
+<!--
+
+  "region": "north",
+    "serviceCategory": "Midwifery",
+
+<section data-ng-repeat="clinic in clinics[0]" class="flex-container around clinic">
+  <div>
+    <strong>{{ clinic.name }}</strong><br>
+    <a class="map-link" href="{{ clinic.mapUrl }}" target="_blank">
+      {{ clinic.street }}<br>
+      {{ clinic.city }}, {{ clinic.zip }}<br>
+    </a>
+    Phone: <a href="tel:{{ clinic.phone }}">{{ clinic.phone }}</a><br>
+    <span data-ng-if="clinic.email">Email: <a href="mailto:{{ clinic.email }}">{{ clinic.email }}</a><br></span>
+    <div class="flex-container between">
+      
+      <span data-ng-if="clinic.pageUrl === ''"><a data-ui-sref="clinic-location" data-ng-click="selectClinic(clinic)">Visit Clinic Page</a></span>
+      
+      <span data-ng-if="clinic.pageUrl !== ''"><a data-ui-sref="{{ clinic.pageUrl }}" data-ng-click="selectClinic(clinic)">Visit Clinic Page</a></span>
+      
+    </div>
+    
+  </div>
+  <div>
+    <ul>
+      <li data-ng-repeat="dayOpen in clinic.daysOpen">
+        <span data-ng-if="dayOpen.open !== '' || dayOpen.close !== '' ">{{ dayOpen.day }}: {{ dayOpen.open }}am - {{ dayOpen.close }}pm</span>
+        <span data-ng-if="dayOpen.open === '' || dayOpen.close === ''">{{ dayOpen.day }}: Closed</span>
+      </li>
+    </ul>
+  </div>
+</section>-->

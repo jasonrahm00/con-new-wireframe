@@ -11,9 +11,12 @@ angular.module('conWireframe').factory('programFactory', function(dataFactory){
   
   dataFactory.getData('programs')
     .then(function(response) {
-      programObject.programs.push(response.data.sort(function (a,b) {
+      var dataArray = response.data.sort(function (a,b) {
         return (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0);
-      }));
+      });
+      dataArray.forEach(function (x) {
+        programObject.programs.push(x);
+      });
     }, function(error) {
       console.log(error.message);
   });

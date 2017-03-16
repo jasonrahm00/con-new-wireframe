@@ -5,7 +5,7 @@ angular.module('conWireframe').controller('academicsCtrl', function ($scope, pro
   $scope.programLevel = 'all';
   $scope.sortedPrograms = [];
   $scope.specialtyChoice;
-  $scope.programs = programFactory.programs[0];
+  $scope.programs = programFactory.programs;
   $scope.programChoice = programFactory.programChoice;
   
   $scope.programSort = function(x) {
