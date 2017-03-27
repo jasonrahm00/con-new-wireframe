@@ -1,23 +1,26 @@
-angular.module('conWireframe').factory('clinicFactory', function(dataFactory){
+angular.module('conWireframe').factory('clinicFactory', function($q, dataService){
 
   'use strict';
-  
+
   var clinicObject = {
     "locations": [],
     "selected": {}
   };
   
-  dataFactory.getData('clinics')
-    .then(function(response) {
-      var dataArray = response.data.sort(function (a,b) {
-        return (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0);
-      });
-      dataArray.forEach(function(x) {
-        clinicObject.locations.push(x);
-      });
-    }, function(error) {
-      console.log(error.message);
-  });
+  clinicObject.getClinics = function() {
+    var deferred = $q.defer();
+    return dataService.getData('/js/data/clinics.json')
+      .then(function(response) {
+        clinicObject.locations = response;
+        deferred.resolve(response);
+        return deferred.promise;
+    }, function(response) {
+        console.log(response);
+        deferred.reject(response);
+        return deferred.promise;
+    });
+    return this;
+  };
   
   clinicObject.selectClinic = function(x) {
     this.selected = x;

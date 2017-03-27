@@ -1,9 +1,9 @@
-angular.module('conWireframe').controller('patientsCtrl', function ($scope, $window, clinicFactory) {
+angular.module('conWireframe').controller('patientsCtrl', function ($scope, $q, $window, clinicFactory) {
 
   'use strict';
 
   $scope.selectedClinic = clinicFactory.selected;
-  $scope.clinics = clinicFactory.locations;
+  $scope.clinics;
   
   $scope.selectClinic = function(clinic) {
     clinicFactory.selectClinic(clinic);
@@ -13,6 +13,10 @@ angular.module('conWireframe').controller('patientsCtrl', function ($scope, $win
   $scope.getServices = function(clinic) {
     return clinicFactory.getServices(clinic);
   };
+
+  clinicFactory.getClinics().then(function() {
+    $scope.clinics = clinicFactory.locations;
+  })
   
   /******************************* Map *******************************/
   //gMaps Fiddle: http://jsfiddle.net/Wijmo/Rqcsj/
