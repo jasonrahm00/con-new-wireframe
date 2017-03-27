@@ -1,4 +1,4 @@
-angular.module('conWireframe').factory('programFactory', function(dataService){
+angular.module('conWireframe').factory('programFactory', function($q, dataService){
 
   'use strict';
   
@@ -9,28 +9,31 @@ angular.module('conWireframe').factory('programFactory', function(dataService){
     "programChoice": {}
   };
   
-//  dataFactory.getData('/js/data/programs.json')
-//    .then(function(response) {
-//      var dataArray = response.data.sort(function (a,b) {
-//        return (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0);
-//      });
-//      dataArray.forEach(function (x) {
-//        programObject.programs.push(x);
-//      });
-//    }, function(error) {
-//      console.log(error.message);
-//  });
-//  
-//  programObject.setProgramLevel = function(x) {
-//    this.programLevel = x;
-//    return this;
-//  };
-//  
-//  programObject.setProgramChoice = function(x) {
-//    this.programChoice = x;
-//    return this;
-//  };
+  programObject.getPrograms = function() {
+    var deferred = $q.defer();
+    return dataService.getData('/js/data/programs.json')
+      .then(function(response) {
+        programObject.programs = response;
+        deferred.resolve(response);
+        return deferred.promise;
+    }, function(response) {
+        console.log(response);
+        deferred.reject(response);
+        return deferred.promise;
+    });
+    return this;
+  };
   
+  programObject.setProgramLevel = function(x) {
+    this.programLevel = x;
+    return this;
+  };
+  
+  programObject.setProgramChoice = function(x) {
+    this.programChoice = x;
+    return this;
+  };
+
   return programObject;
   
 });

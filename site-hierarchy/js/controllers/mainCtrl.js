@@ -1,8 +1,10 @@
-angular.module('conWireframe').controller('mainCtrl', function ($scope, programFactory) {
+angular.module('conWireframe').controller('mainCtrl', function ($scope, $q, programFactory) {
   
   'use strict';
-  
-  $scope.programs = programFactory.programs;
+
+  programFactory.getPrograms().then(function() {
+    $scope.programs = programFactory.programs;
+  });
   
   $scope.setProgramChoice = function(program) {
     programFactory.setProgramChoice(program);

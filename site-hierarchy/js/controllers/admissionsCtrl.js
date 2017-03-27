@@ -2,7 +2,6 @@ angular.module('conWireframe').controller('admissionsCtrl', function ($scope, pr
   
   'use strict';
     
-  $scope.programs = programFactory.programs;
   $scope.programChoice = programFactory.programChoice;
     
 });
