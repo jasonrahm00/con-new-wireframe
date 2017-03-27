@@ -1,8 +1,6 @@
 angular.module('conWireframe').controller('patientsCtrl', function ($scope, $window, clinicFactory) {
 
   'use strict';
-  
-  //gMaps Fiddle: http://jsfiddle.net/Wijmo/Rqcsj/
 
   $scope.selectedClinic = clinicFactory.selected;
   $scope.clinics = clinicFactory.locations;
@@ -11,14 +9,22 @@ angular.module('conWireframe').controller('patientsCtrl', function ($scope, $win
     clinicFactory.selectClinic(clinic);
   };
   
-  $scope.loadMap = function() {
-    $window.map = new google.maps.Map(document.getElementById('mapContainer'), {
-      center: {
-        lat: 39.7392,
-        lng: -104.9903
-      },
-      zoom: 8
-    });
+  //returns an array of services for each location to be iterated over in the view
+  $scope.getServices = function(clinic) {
+    return clinicFactory.getServices(clinic);
   };
+  
+  /******************************* Map *******************************/
+  //gMaps Fiddle: http://jsfiddle.net/Wijmo/Rqcsj/
+  
+//  $scope.loadMap = function() {
+//    $window.map = new google.maps.Map(document.getElementById('mapContainer'), {
+//      center: {
+//        lat: 39.7392,
+//        lng: -104.9903
+//      },
+//      zoom: 10
+//    });
+//  };
   
 });

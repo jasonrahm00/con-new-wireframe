@@ -4,7 +4,7 @@
 <p>Amet curabitur lobortis vitae est felis ligula duis Sit neque dignissim vitae. Sed venenatis sed tristique litora dui rutrum torquent vestibulum sollicitudin. Convallis. Id phasellus Sodales. Libero gravida ultricies. Facilisis non aliquet mattis morbi. Lacus. Aptent vitae dui lobortis dolor semper. Class, fames suspendisse magnis leo aenean porta vel mus, sed taciti. Arcu nisl placerat duis nostra velit blandit praesent magna. Posuere, consectetuer elit, bibendum. Dolor ante fringilla.</p>
 <button>Request Appointment</button>
   
-<section class="large-margin-bottom">
+<section class="margin-bottom-large">
   <h2 class="center">Denver Metro Locations</h2>
 
   <div class="flex-container around">
@@ -62,7 +62,7 @@
 
 </section>
 
-<section class="large-margin-bottom">
+<section class="margin-bottom-large">
   <h2 class="center">Boulder and Weld County Locations</h2>
   
   <div class="flex-container around">
@@ -127,35 +127,3 @@
     <li>Sheri Williams, MS, CNM (Boulder/Weld County)</li>
   </ul>
 </section>
-<!--
-
-  "region": "north",
-    "serviceCategory": "Midwifery",
-
-<section data-ng-repeat="clinic in clinics[0]" class="flex-container around clinic">
-  <div>
-    <strong>{{ clinic.name }}</strong><br>
-    <a class="map-link" href="{{ clinic.mapUrl }}" target="_blank">
-      {{ clinic.street }}<br>
-      {{ clinic.city }}, {{ clinic.zip }}<br>
-    </a>
-    Phone: <a href="tel:{{ clinic.phone }}">{{ clinic.phone }}</a><br>
-    <span data-ng-if="clinic.email">Email: <a href="mailto:{{ clinic.email }}">{{ clinic.email }}</a><br></span>
-    <div class="flex-container between">
-      
-      <span data-ng-if="clinic.pageUrl === ''"><a data-ui-sref="clinic-location" data-ng-click="selectClinic(clinic)">Visit Clinic Page</a></span>
-      
-      <span data-ng-if="clinic.pageUrl !== ''"><a data-ui-sref="{{ clinic.pageUrl }}" data-ng-click="selectClinic(clinic)">Visit Clinic Page</a></span>
-      
-    </div>
-    
-  </div>
-  <div>
-    <ul>
-      <li data-ng-repeat="dayOpen in clinic.daysOpen">
-        <span data-ng-if="dayOpen.open !== '' || dayOpen.close !== '' ">{{ dayOpen.day }}: {{ dayOpen.open }}am - {{ dayOpen.close }}pm</span>
-        <span data-ng-if="dayOpen.open === '' || dayOpen.close === ''">{{ dayOpen.day }}: Closed</span>
-      </li>
-    </ul>
-  </div>
-</section>-->

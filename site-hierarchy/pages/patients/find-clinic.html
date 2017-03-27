@@ -1,24 +1,27 @@
 <h1>Find a Clinic</h1>
 
-<div id="mapContainer" style="height: 480px;" data-ng-init="loadMap()"></div>
+<!--<div id="mapContainer" style="height: 480px;" data-ng-init="loadMap()"></div>-->
+<clinic-map></clinic-map>
 
-<section data-ng-repeat="clinic in clinics" class="flex-container around clinic">
-  <div>
-    <strong>{{ clinic.name }}</strong><br>
+<section data-ng-repeat="clinic in clinics" class="flex-container around clinic flex-wrap-wrap">
+  <h2 class="full-width center">{{ clinic.name }}</h2>
+  <div class="margin-top-x-small">
     <a class="map-link" href="{{ clinic.mapUrl }}" target="_blank">
       {{ clinic.street }}<br>
       {{ clinic.city }}, {{ clinic.zip }}<br>
     </a>
     Phone: <a href="tel:{{ clinic.phone }}">{{ clinic.phone }}</a><br>
-    <div class="flex-container between">
-      
-      <span data-ng-if="clinic.pageUrl === ''"><a data-ui-sref="clinic-location" data-ng-click="selectClinic(clinic)">Visit Clinic Page</a></span>
-      
-      <span data-ng-if="clinic.pageUrl !== ''"><a data-ui-sref="{{ clinic.pageUrl }}" data-ng-click="selectClinic(clinic)">Visit Clinic Page</a></span>
-      
-    </div>
     
+    <span data-ng-if="clinic.pageUrl === ''"><a data-ui-sref="clinic-location" data-ng-click="selectClinic(clinic)">Visit Clinic Page</a></span>
+    <span data-ng-if="clinic.pageUrl !== ''"><a data-ui-sref="{{ clinic.pageUrl }}" data-ng-click="selectClinic(clinic)">Visit Clinic Page</a></span>
   </div>
+  
+  <div>
+    <ul>
+      <li data-ng-repeat="service in getServices(clinic) | orderBy:service"> {{ service }} </li>
+    </ul>
+  </div>
+  
   <div>
     <ul>
       <li data-ng-repeat="dayOpen in clinic.daysOpen">

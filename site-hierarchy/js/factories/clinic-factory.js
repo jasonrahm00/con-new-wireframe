@@ -24,6 +24,11 @@ angular.module('conWireframe').factory('clinicFactory', function(dataFactory){
     return this;
   };
   
+  clinicObject.getServices = function(x) {
+    return x.services;
+    return this;
+  };
+  
   /* 
   Dynamically display if clinic is open or closed based on current time of day. 
   Change the "open": true/false property on each clinic object to indicate if it is currently open
