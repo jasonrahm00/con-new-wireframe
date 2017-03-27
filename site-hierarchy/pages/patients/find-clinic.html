@@ -1,7 +1,7 @@
 <h1>Find a Clinic</h1>
 
 <!--<div id="mapContainer" style="height: 480px;" data-ng-init="loadMap()"></div>-->
-<clinic-map></clinic-map>
+<clinic-map data-locations='clinics' data-ng-if="clinicsLoaded"></clinic-map>
 
 <section data-ng-repeat="clinic in clinics" class="flex-container around clinic flex-wrap-wrap">
   <h2 class="full-width center">{{ clinic.name }}</h2>

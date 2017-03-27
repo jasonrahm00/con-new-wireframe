@@ -3,7 +3,7 @@ angular.module('conWireframe').controller('patientsCtrl', function ($scope, $q, 
   'use strict';
 
   $scope.selectedClinic = clinicFactory.selected;
-  
+  $scope.clinicsLoaded = false;
   $scope.selectClinic = function(clinic) {
     clinicFactory.selectClinic(clinic);
   };
@@ -15,6 +15,7 @@ angular.module('conWireframe').controller('patientsCtrl', function ($scope, $q, 
 
   clinicFactory.getClinics().then(function() {
     $scope.clinics = clinicFactory.locations;
+    $scope.clinicsLoaded = true;
   });
   
   /******************************* Map *******************************/
