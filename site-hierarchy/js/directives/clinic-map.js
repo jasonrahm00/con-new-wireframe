@@ -3,10 +3,6 @@ angular.module('conWireframe').directive('clinicMap', function($compile){
   //https://jsfiddle.net/Xeoncross/k5c2ndyL/
   //https://plnkr.co/edit/gJiK6N90xf22yJjyb9g8?p=preview
   
-  //$compile
-  //http://stackoverflow.com/questions/37466637/how-can-i-change-state-using-ui-router-inside-a-google-maps-marker
-  //http://stackoverflow.com/questions/31640951/angularjs-google-maps-ui-sref-inside-of-a-marker
-  
   // directive link function
   var link = function(scope, element, attrs) {
     var map, infoWindow;
@@ -63,8 +59,6 @@ angular.module('conWireframe').directive('clinicMap', function($compile){
     
     //create map
     initMap();
-
-    console.log(locations);
     
   };
 

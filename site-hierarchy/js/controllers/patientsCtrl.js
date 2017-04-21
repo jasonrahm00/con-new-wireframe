@@ -18,6 +18,13 @@ angular.module('conWireframe').controller('patientsCtrl', function ($scope, $q, 
     $scope.clinicsLoaded = true;
   });
   
+  //Clinic Search
+  $scope.filteredClinics;
+  
+  $scope.clinicSearch = function() {
+    console.log($scope.filteredClinics);
+  }
+  
   /******************************* Map *******************************/
   //gMaps Fiddle: http://jsfiddle.net/Wijmo/Rqcsj/
   
