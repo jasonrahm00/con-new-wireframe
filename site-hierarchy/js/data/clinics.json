@@ -12,36 +12,36 @@
     "pageUrl": "",
     "region": "",
     "serviceCategory": "",
-    "services": ["Primary Care", "Convenient Care", "Behavioral Health"],
+    "services": ["Primary Care", "Convenient Care", "Behavioral Health", "DOT Exams", "School Physicals"],
     "daysOpen": [
       {
         "day": "Monday",
-        "open": "9:30",
+        "open": "9:00",
         "close": "5:00",
         "closed": false
       },
       {
         "day": "Tuesday",
-        "open": "9:30",
-        "close": "5:00",
+        "open": "11:00",
+        "close": "7:00",
         "closed": false
       },
       {
         "day": "Wednesday",
-        "open": "10:00",
+        "open": "9:00",
         "close": "5:00",
         "closed": false
       },
       {
         "day": "Thursday",
-        "open": "9:30",
-        "close": "5:00",
+        "open": "11:00",
+        "close": "7:00",
         "closed": false
       },
       {
         "day": "Friday",
-        "open": "8:30",
-        "close": "4:00",
+        "open": "9:00",
+        "close": "5:00",
         "closed": false
       },
       {
@@ -71,7 +71,7 @@
     "pageUrl": "",
     "region": "",
     "serviceCategory": "",
-    "services": ["Respiratory Care", "Gastorintestinal", "Urinary Tract Infections", "Blood Pressure Check", "Dermatology", "Immunizations", "Lab Tests", "Minor Injuries/Wounds", "PPD Testing", "STI Evaluation", "Women's Exams", "Behavioral Health"],
+    "services": ["Behavioral and Counseling Services", "Flu Shots", "Physical and General Services"],
     "daysOpen": [
       {
         "day": "Monday",
@@ -130,7 +130,7 @@
     "pageUrl": "midwifery-center",
     "region": "metro",
     "serviceCategory": "Midwifery",
-    "services": ["Gynecological Exam", "Preconception Counseling", "Family Planning", "Prenatal Care", "Breastfeeding Counseling", "Labor and Birth", "Vaginal Birth after Cesarean Section", "Postpartum Care", "Labor Support"],
+    "services": ["Annual Gynecologic Exams", "Breastfeeding Consultation", "Family Planning", "Gynecologic Care", "Labor and Birth", "Labor Support", "Nitrous Oxide", "Preconception Counseling", "Prenatal Care", "Postpartum Care", "Vaginal Birth after Cesarean Section", "Water Birth"],
     "daysOpen": [
       {
         "day": "Monday",
@@ -141,7 +141,7 @@
       {
         "day": "Tuesday",
         "open": "9:00",
-        "close": "5:00",
+        "close": "7:00",
         "closed": false
       },
       {
@@ -189,7 +189,7 @@
     "pageUrl": "midwifery-center",
     "region": "metro",
     "serviceCategory": "Midwifery",
-    "services": ["Gynecological Exam", "Preconception Counseling", "Family Planning", "Prenatal Care", "Breastfeeding Counseling", "Labor and Birth", "Vaginal Birth after Cesarean Section", "Postpartum Care", "Labor Support"],
+    "services": ["Annual Gynecologic Exams", "Breastfeeding Consultation", "Family Planning", "Gynecologic Care", "Labor and Birth", "Labor Support", "Nitrous Oxide", "Preconception Counseling", "Prenatal Care", "Postpartum Care", "Vaginal Birth after Cesarean Section", "Water Birth"],
     "daysOpen": [
       {
         "day": "Monday",
@@ -217,8 +217,8 @@
       },
       {
         "day": "Friday",
-        "open": "8:00",
-        "close": "5:00",
+        "open": "",
+        "close": "",
         "closed": false
       },
       {
@@ -248,7 +248,7 @@
     "pageUrl": "midwifery-center",
     "region": "metro",
     "serviceCategory": "Midwifery",
-    "services": ["Gynecological Exam", "Preconception Counseling", "Family Planning", "Prenatal Care", "Breastfeeding Counseling", "Labor and Birth", "Vaginal Birth after Cesarean Section", "Postpartum Care", "Labor Support"],
+    "services": ["Annual Gynecologic Exams", "Breastfeeding Consultation", "Family Planning", "Gynecologic Care", "Labor and Birth", "Labor Support", "Nitrous Oxide", "Preconception Counseling", "Prenatal Care", "Postpartum Care", "Vaginal Birth after Cesarean Section", "Water Birth"],
     "daysOpen": [
       {
         "day": "Monday",
@@ -258,9 +258,9 @@
       },
       {
         "day": "Tuesday",
-        "open": "",
-        "close": "",
-        "closed": true
+        "open": "8:00",
+        "close": "5:00",
+        "closed": false
       },
       {
         "day": "Wednesday",
@@ -276,9 +276,9 @@
       },
       {
         "day": "Friday",
-        "open": "",
-        "close": "",
-        "closed": true
+        "open": "8:00",
+        "close": "5:00",
+        "closed": false
       },
       {
         "day": "Saturday",
@@ -307,7 +307,7 @@
     "pageUrl": "",
     "region": "",
     "serviceCategory": "",
-    "services": ["Adult", "Maternity", "Behavioral Health", "Dental"],
+    "services": ["Adult Services", "Behavioral Health", "Case Management", "Dental Services", "Maternity Services"],
     "daysOpen": [
       {
         "day": "Monday",
@@ -366,7 +366,7 @@
     "pageUrl": "",
     "region": "",
     "serviceCategory": "",
-    "services": ["Pediatric", "Behavioral Health"],
+    "services": ["Behavioral Health" ,"Children and Teen Services"],
     "daysOpen": [
       {
         "day": "Monday",
@@ -417,7 +417,7 @@
     "street": "1635 Aurora Ct. | Floor 3, Desk B",
     "city": "Aurora, CO",
     "zip": 80045,
-    "mapUrl": "https://goo.gl/maps/cbjjF7sgi5P2",
+    "mapUrl": "https://goo.gl/maps/MVpuP55ihS12",
     "lat": 39.742571,
     "long": -104.8394653,
     "phone": "720-848-1060",
@@ -425,7 +425,7 @@
     "pageUrl": "midwifery-center",
     "region": "",
     "serviceCategory": "",
-    "services": ["Gynecological Exams", "Preconception Counseling", "Family Planning", "Prenatal Care", "Breastfeeding Consultation", "Labor and Birth", "Vaginal Birth after Cesarean Section", "Postpartum Care", "Labor Support"],
+    "services": ["Annual Gynecologic Exams", "Breastfeeding Consultation", "Family Planning", "Labor and Birth", "Labor Support", "Postpartum Care", "Preconception Counseling", "Prenatal Care", "Vaginal Birth after Cesarean Section"],
     "daysOpen": [
       {
         "day": "Monday",
@@ -472,65 +472,6 @@
     ]
   },
   {
-    "name": "PROMISE Clinic",
-    "street": "1635 Aurora Ct. | Floor 3",
-    "city": "Aurora, CO",
-    "zip": 80045,
-    "mapUrl": "https://goo.gl/maps/cbjjF7sgi5P2",
-    "lat": 39.742571,
-    "long": -104.8394653,
-    "phone": "720-848-1060",
-    "email": "",
-    "pageUrl": "",
-    "region": "",
-    "serviceCategory": "",
-    "services": [],
-    "daysOpen": [
-      {
-        "day": "Monday",
-        "open": "",
-        "close": "",
-        "closed": true
-      },
-      {
-        "day": "Tuesday",
-        "open": "",
-        "close": "",
-        "closed": true
-      },
-      {
-        "day": "Wednesday",
-        "open": "",
-        "close": "",
-        "closed": true
-      },
-      {
-        "day": "Thursday",
-        "open": "",
-        "close": "",
-        "closed": true
-      },
-      {
-        "day": "Friday",
-        "open": "",
-        "close": "",
-        "closed": true
-      },
-      {
-        "day": "Saturday",
-        "open": "",
-        "close": "",
-        "closed": true
-      },
-      {
-        "day": "Sunday",
-        "open": "",
-        "close": "",
-        "closed": true
-      }
-    ]
-  },
-  {
     "name": "Boulder Health Center",
     "street": "5495 Arapahoe Ave",
     "city": "Boulder, CO",
@@ -543,7 +484,7 @@
     "pageUrl": "midwifery-center",
     "region": "north",
     "serviceCategory": "Midwifery",
-    "services": ["Well Woman", "Gynecological", "Family Planning", "Prenatal Services", "Water Birth Option", "Labor and Birth"],
+    "services": ["Annual Gynecologic Exams", "Breastfeeding Consultation", "Family Planning", "Gynecologic Care", "Labor and Birth", "Labor Support", "Nitrous Oxide", "Preconception Counseling", "Prenatal Care", "Postpartum Care", "Vaginal Birth after Cesarean Section", "Water Birth"],
     "daysOpen": [
       {
         "day": "Monday",
@@ -602,7 +543,7 @@
     "pageUrl": "midwifery-center",
     "region": "north",
     "serviceCategory": "Midwifery",
-    "services": ["Well Woman", "Gynecological", "Family Planning", "Prenatal Services", "Water Birth Option", "Labor and Birth"],
+    "services": ["Annual Gynecologic Exams", "Breastfeeding Consultation", "Family Planning", "Gynecologic Care", "Labor and Birth", "Labor Support", "Nitrous Oxide", "Preconception Counseling", "Prenatal Care", "Postpartum Care", "Vaginal Birth after Cesarean Section", "Water Birth"],
     "daysOpen": [
       {
         "day": "Monday",
@@ -661,7 +602,7 @@
     "pageUrl": "midwifery-center",
     "region": "north",
     "serviceCategory": "Midwifery",
-    "services": ["Well Woman", "Gynecological", "Family Planning", "Prenatal Services", "Water Birth Option", "Labor and Birth"],
+    "services": ["Annual Gynecologic Exams", "Breastfeeding Consultation", "Family Planning", "Gynecologic Care", "Labor and Birth", "Labor Support", "Nitrous Oxide", "Preconception Counseling", "Prenatal Care", "Postpartum Care", "Vaginal Birth after Cesarean Section", "Water Birth"],
     "daysOpen": [
       {
         "day": "Monday",
