@@ -295,7 +295,7 @@
     ]
   },
   {
-    "name": "Sheridan Health Services Community Clinic",
+    "name": "Sheridan Community Clinic",
     "street": "3525 West Oxford Ave. | Unit G3",
     "city": "Denver, CO",
     "zip": 80236,
@@ -354,7 +354,7 @@
     ]
   },
   {
-    "name": "Sheridan Health Services School-Based Clinic",
+    "name": "Sheridan School-Based Clinic",
     "street": "4107B S. Federal Blvd.",
     "city": "Sheridan, CO",
     "zip": 80110,
@@ -418,8 +418,8 @@
     "city": "Aurora, CO",
     "zip": 80045,
     "mapUrl": "https://goo.gl/maps/MVpuP55ihS12",
-    "lat": 39.742571,
-    "long": -104.8394653,
+    "lat": 39.7428842,
+    "long": -104.8389848,
     "phone": "720-848-1060",
     "email": "",
     "pageUrl": "midwifery-center",
