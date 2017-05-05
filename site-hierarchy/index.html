@@ -34,6 +34,22 @@
               </ul>
             </li>
             <li>
+              <span>Undergrad Admissions</span>
+              <ul>
+                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'undergraduate'">
+                  <a data-ui-sref="program-admissions" data-ng-click="setProgramChoice(program)">{{ program.name }} Admissions</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span>Graduate Admissions</span>
+              <ul>
+                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'">
+                  <a data-ui-sref="program-admissions" data-ng-click="setProgramChoice(program)">{{ program.name }} Admissions</a>
+                </li>
+              </ul>
+            </li>
+            <li>
               <span>Tuition and Funding</span>
               <ul>
                 <li><a href="">Tuition and Fees</a></li>
@@ -94,6 +110,7 @@
         </li>
         <li><a class="submenu-trigger">Students</a>
           <ul class="submenu mega">
+            <li class="main-page-link"><a data-ui-sref="students">College of Nursing Student Life</a></li> 
             <li><span>Student Resources</span>
               <ul>
                 <li><a href="">Academic Calendar &amp; Resources</a></li>
@@ -111,8 +128,9 @@
               </ul>
             </li>
             <li>
-              <span>Student Life</span>
+              <span>Campus Life</span>
               <ul>
+                <li><a href="">Life in Colorado</a></li>
                 <li><a href="">Clubs &amp; Organizations</a></li>
                 <li><a href="">Student Ambassadors</a></li>
               </ul>
@@ -194,6 +212,7 @@
     <script src="js/route-files/academics-routes.js"></script>
     <script src="js/route-files/admissions-routes.js"></script>
     <script src="js/route-files/patient-routes.js"></script>
+    <script src="js/route-files/student-routes.js"></script>
 
     <!-- Services -->
     <script src="js/services/data-service.js"></script>

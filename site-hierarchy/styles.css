@@ -132,11 +132,6 @@ label.button {
   background: #cfb77c;
 }
 
-.main-page-link {
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
 .next-steps>ul {
   display: flex;
   justify-content: space-between;
@@ -253,14 +248,19 @@ nav>ul>li.active>.submenu.mega {
   z-index: 1000;  
 }
 
-.submenu-trigger:hover {
-  cursor: pointer;  
+.submenu.mega .main-page-link {
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 .submenu.mega {
   justify-content: space-between;
   left: 0;
   width: 960px;
+}
+
+.submenu-trigger:hover {
+  cursor: pointer;  
 }
 
 .submenu span {
