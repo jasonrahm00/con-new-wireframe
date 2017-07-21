@@ -14,7 +14,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       controller: 'patientsCtrl'
     })
   .state('clinic-location', {
-      url: '/clinic-location',
+      url: '/patients/clinic-location',
       templateUrl: '/pages/patients/clinic-location.html',
       data: {
         title: 'Clinic Location',
@@ -23,7 +23,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       controller: 'patientsCtrl'
     })
   .state('find-clinic', {
-      url: '/find-clinic',
+      url: '/patients/find-clinic',
       templateUrl: '/pages/patients/find-clinic.html',
       data: {
         title: 'Find a Clinic',
@@ -32,7 +32,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       controller: 'patientsCtrl'
     })
   .state('midwifery-center', {
-      url: '/midwifery-center',
+      url: '/patients/midwifery-center',
       templateUrl: '/pages/patients/midwifery-center.html',
       data: {
         title: 'Clinic Location',
