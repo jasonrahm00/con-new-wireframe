@@ -12,22 +12,6 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         breadcrumb: 'Home > Students'
       }
     })
-  .state('clubs-organizations', {
-      url: '/students/clubs-organizations',
-      templateUrl: '/pages/students/clubs-organizations.html',
-      data: {
-        title: 'Clubs and Organizations',
-        breadcrumb: 'Home > Students > Clubs and Organizations'
-      }
-    })
-  .state('life-in-colorado', {
-      url: '/students/life-in-colorado',
-      templateUrl: '/pages/students/life-in-colorado.html',
-      data: {
-        title: 'Life in Colorado',
-        breadcrumb: 'Home > Students > Life in Colorado'
-      }
-    })
   .state('student-ambassadors', {
       url: '/students/student-ambassadors',
       templateUrl: '/pages/students/student-ambassadors.html',
