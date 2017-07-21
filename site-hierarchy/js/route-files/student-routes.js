@@ -11,14 +11,6 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         title: 'College of Nursing Student Life',
         breadcrumb: 'Home > Students'
       }
-    })
-  .state('student-ambassadors', {
-      url: '/students/student-ambassadors',
-      templateUrl: '/pages/students/student-ambassadors.html',
-      data: {
-        title: 'Student Ambassadors',
-        breadcrumb: 'Home > Students > Student Ambassadors'
-      }
     });
   
 });
