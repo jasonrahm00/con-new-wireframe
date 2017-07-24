@@ -21,6 +21,15 @@ angular.module('conWireframe').factory('adminFactory', function($q, dataService)
     });
     return this;
   };
+  
+  adminObject.selectTeam = function(x) {
+    for(var i = 0; i < adminObject.allTeams.length; i++) {
+      if(adminObject.allTeams[i].office.toLowerCase().indexOf(x) > -1) {
+        adminObject.selectedTeam = adminObject.allTeams[i];
+      }
+    }
+    return this;
+  }
 
   return adminObject;
   

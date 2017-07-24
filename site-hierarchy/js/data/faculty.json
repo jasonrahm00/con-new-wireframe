@@ -1,0 +1,36 @@
+[
+  {
+    "name": "",
+    "title": "",
+    "headshot": "",
+    "email": "",
+    "phone": "",
+    "bio": [
+      "",
+      ""
+    ],
+    "education": [
+      {
+        "degree": "",
+        "institution": "",
+        "field": "",
+        "date"
+      }
+    ],
+    "honors": [
+      {
+        "name": "",
+        "organization": "",
+        "year": []
+      }
+    ],
+    "research": [
+      {
+        "year": "",
+        "name": ""
+      }
+    ],
+    "practice": [],
+    "publications": []
+   }
+]

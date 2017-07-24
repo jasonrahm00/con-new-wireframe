@@ -171,18 +171,6 @@ main {
   color: red;
 }
 
-.side-nav li {
-  padding: .5rem 0;
-}
-
-.side-nav span {
-  font-weight: bold;
-}
-
-.side-nav ul {
-  padding-left: .5rem;
-}
-
 .yellow {
   background: yellow;
 }
@@ -193,6 +181,43 @@ main {
 
 #mapContainer {
   height: 480px;
+}
+
+
+/****************************************
+          TABLE STYLES
+****************************************/
+
+table {
+  width: 100%;
+}
+
+
+thead {
+  background-color: #89abe3;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  border-right: 1px solid #fff;
+  padding: .85rem 0;
+}
+
+tr:nth-child(2n) {
+  background-color: whitesmoke;
+}
+
+tr:nth-child(2n) td {
+  border-right: 1px solid #fff;
+}
+
+td {
+  border-right: 1px solid #ddd;
+  padding: .65rem .25rem;
+}
+
+td:last-child {
+  border-right: 0;
 }
 
 
@@ -281,6 +306,35 @@ nav>ul>li.active>.submenu.mega {
 .submenu a {
   display: block;
   padding: .5rem .5rem .5rem 0;
+}
+
+
+
+/****************************************
+          SIDE NAVIGATION
+****************************************/
+
+main nav {
+  position: initial;
+  top: initial;
+  width: 20%;
+  z-index: 1;
+}
+
+main nav>ul>li {
+  display: block;
+}
+
+main nav li a {
+  display: table-cell;
+  padding: 1rem; 
+}
+main nav li:hover a {
+  cursor: pointer;
+}
+
+main nav + div {
+  width: 70%;
 }
 
 
@@ -488,6 +542,70 @@ nav>ul>li.active>.submenu.mega {
 
 .clinic>div {
   width: 250px;
+}
+
+
+
+/**********************************************************
+    
+                  Custom Widths
+
+**********************************************************/
+
+.full-width {
+  width: 100%;
+}
+
+.width-75 {
+  width: 75%;
+}
+
+.width-70 {
+  width: 70%;
+}
+
+.width-65 {
+  width: 65%;
+}
+
+.width-60 {
+  width: 60%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-45 {
+  width: 45%;
+}
+
+.width-40 {
+  width: 40%;
+}
+
+.width-35 {
+  width: 35%;
+}
+
+.width-30 {
+  width: 30%;
+}
+
+.width-25 {
+  width: 25%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.width-15 {
+  width: 15%;
+}
+
+.width-10 {
+  width: 10%;
 }
 
 

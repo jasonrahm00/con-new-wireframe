@@ -6,5 +6,10 @@ angular.module('conWireframe').controller('administrationCtrl', function ($scope
     $scope.allTeams = adminFactory.allTeams;
     console.log($scope.allTeams);
   });
+  
+  $scope.selectTeam = function(team) {
+    adminFactory.selectTeam(team);
+    $scope.selectedTeam = adminFactory.selectedTeam;
+  }
     
 });

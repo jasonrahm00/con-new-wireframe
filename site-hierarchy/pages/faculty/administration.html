@@ -1,1 +1,53 @@
-<h1>Administration</h1>
+<div class="flex-container between flex-wrap-wrap">
+  <nav>
+    <ul>
+      <li><a data-ng-click="selectTeam('dean')">Dean's Office</a></li>
+      <li><a data-ng-click="selectTeam('research')">Office of Research and Scholarship</a></li>
+      <li><a data-ng-click="selectTeam('marketing')">Marketing &amp; Communications</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <header>
+      <h1>Administration</h1>
+      <p>The College of Nursing is a multi-faceted and complex organization with many resources available to help you advance, engage and innovate. College administration supports the educational programs, student admissions and academic life, faculty research and divisions and general faculty and staff support.</p>
+      <p>We are located on the Anschutz Medical Campus in Aurora, Colorado. Students, faculty, staff, visitors, and alumni are welcome to contact any of our administrative areas for information or assistance.</p>
+    </header>
+    
+    <div class="margin-top-medium" data-ng-if="!selectedTeam">
+      <p><em>Please select an office from the left to view information.</em></p>
+    </div>
+    
+    <section class="margin-top-medium" data-ng-if="selectedTeam">
+      <header class="margin-bottom-small">
+        <h2>{{ selectedTeam.office }}</h2>
+        <p>{{ selectedTeam.description }}</p>
+        <p data-ng-if="selectedTeam.teamEmail">For more information, please emai: <a href="mailto:{{selectedTeam.teamEmail}}"> {{ selectedTeam.teamEmail }}</a></p>
+      </header>
+      
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Title</th>
+            <th scope="col">Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-ng-repeat="person in selectedTeam.staff">
+            <td class="width-45">
+              <span data-ng-if="person.profileUrl"><a href="{{ person.profileUrl }}" target="_blank">{{ person.name }}</a></span>
+              <span data-ng-if="!person.profileUrl"><a href="mailto: {{ person.email }}">{{ person.name }}</a></span>
+            </td>
+            <td class="width-30">{{ person.title }}</td>
+            <td>
+              <span data-ng-if="person.phone">{{ person.phone }}</span>
+              <span data-ng-if="!person.phone">&nbsp;</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+  </div>
+</div>
