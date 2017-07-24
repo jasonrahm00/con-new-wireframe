@@ -1,0 +1,65 @@
+[
+  {
+    "office": "Office of the Dean",
+    "description": "The dean of the College of Nursing is one of six deans at the Anschutz Medical Campus and is the chief academic and administrative officer of the college. Responsible for serving as an advocate and effective spokesperson for the college, the dean manages all aspects of the college’s education programs, research and extramural activities, clinical care programs and community service.",
+    "teamEmail": "",
+    "staff": [
+      {
+        "name": "Sarah A. Thompson, PhD, RN, FAAN",
+        "title": "Dean and Professor",
+        "phone": "303-724-1679",
+        "email": "sarah.thompson@ucdenver.edu",
+        "profileUrl": "http://www.ucdenver.edu/academics/colleges/nursing/faculty-staff/faculty/Pages/s_thompson.aspx" 
+      },
+      {
+        "name": "Michelle Porter, BS",
+        "title": "Executive Assistant to the Dean",
+        "phone": "303-724-1679",
+        "email": "michelle.porter@ucdenver.edu",
+        "profileUrl": "" 
+      }
+    ]
+  },
+  {
+    "office": "Office of Research and Scholarship",
+    "description": "The mission of the Office of Research and Scholarship (ORS) is to champion College of Nursing faculty and students in converting empirical research to nursing knowledge.  This mission is carried out through (a) consultation, (b) identification of funding sources, (c) grant development and management, (d) data analysis, and (e) publication of research activities.",
+    "teamEmail": "",
+    "staff": [
+      {
+        "name": "Peter Kaufmann, PhD",
+        "title": "Associate Dean for Research & Scholarship",
+        "phone": "303-724-8538",
+        "email": "peter.kaufmann@ucdenver.edu",
+        "profileUrl": "" 
+      },
+      {
+        "name": "Barbara Creswell, MMA",
+        "title": "PreAward Grants and Contracts Specialist",
+        "phone": "303-724-8551",
+        "email": "barbara.creswell@ucdenver.edu",
+        "profileUrl": "" 
+      }
+    ]
+  },
+  {
+    "office": "Marketing & Communications",
+    "description": "Provide all forms of marketing assistance to the College of Nursing as well as manage the website.",
+    "teamEmail": "CON.Marketing@ucdenver.edu",
+    "staff": [
+      {
+        "name": "Katherine Tippins Sylvestre, MA",
+        "title": "Marketing & Communications Manager",
+        "phone": "303-724-1698",
+        "email": "Katherine.Sylvestre@ucdenver.edu",
+        "profileUrl": "" 
+      },
+      {
+        "name": "Jason Rahm, BA",
+        "title": "Webmaster/Front-End Web Develoepr",
+        "phone": "303-724-7771",
+        "email": "Jason.Rahm@ucdenver.edu",
+        "profileUrl": "" 
+      }
+    ]
+  }
+]
