@@ -1,36 +1,179 @@
 [
   {
-    "name": "",
-    "title": "",
-    "headshot": "",
-    "email": "",
-    "phone": "",
+    "firstName": "Linda",
+    "lastName": "Johnson",
+    "degrees": "DNP, MSN, WHNP-BC",
+    "title": "Women's Health Specialty Director, Assistant Professor",
+    "headshot": "/images/faculty/linda-johnson.jpg",
+    "email": "Linda.Johnson@ucdenver.edu​",
+    "phone": null,
     "bio": [
-      "",
-      ""
+      "Linda L. Johnson, DNP, MSN, WHNP-BC, has been in the nursing field and caring for women since 1976. She graduated from the University of Colorado College Of Nursing; first with her Master’s Degree in Nursing in 2003, then with her Doctorate in Nursing Practice in May, 2015. Currently Dr. Johnson is the Interim Specialty Director of the Women’s Health Nurse Practitioner with the University of Colorado College Of Nursing. Additionally, she spends part of her time in clinical practice at CU Healthcare Partners @ Belleview Point.",
+      "Prior to working at the University of Colorado, she was Co-Clinical Director at Boulder Valley Women’s Health Center, Boulder Colorado. In partial fulfillment of her Doctor of Nursing practice, she implemented her quality improvement project, “Improving Contraceptive Adherence in Women Who Use Subdermal Implants”.  Dr. Johnson currently helps students find clinical placements to learn how to provide excellence as they transcend into the Women’s Health Nurse Practitioner role. In clinical practice, she precepts students in the advanced practice nursing program. In this role, Dr. Johnson teaches students how to apply quality improvement in clinical settings to improve reproductive health care."
     ],
     "education": [
       {
-        "degree": "",
-        "institution": "",
-        "field": "",
-        "date"
+        "degree": "DNP",
+        "institution": "University of Colorado College of Nursing",
+        "field": "Nursing",
+        "date": 2015
+      },
+      {
+        "degree": "MS",
+        "institution": "University of Colorado College of Nursing",
+        "field": "Nursing",
+        "date": 2003
+      },
+      {
+        "degree": "ADN",
+        "institution": "University of Nebraska Medical Center College of Nursing",
+        "field": "Nursing",
+        "date": 1982
+      },
+      {
+        "degree": "LPN",
+        "institution": "Southeast Community College, Kearney, Nebraska​",
+        "field": "Nursing",
+        "date": 1976
       }
     ],
-    "honors": [
+    "awards": [
       {
-        "name": "",
-        "organization": "",
-        "year": []
+        "name": "Member",
+        "organization": "Sigma Tau Epsilon",
+        "year": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
+      },
+      {
+        "name": "Member",
+        "organization": "National Association of Nurse Practitioners in Reproductive Health",
+        "year": [2015]
+      }
+    ],
+    "research": null,
+    "practice": null,
+    "publications": null
+  },
+  {
+    "firstName": "Suzanne",
+    "lastName": "Carrington",
+    "degrees":  "DNP, CNM",
+    "title": "University Nurse Midwives",
+    "headshot": "/images/faculty/suzanne-carrington.jpg",
+    "email": "Suzanne.Carrington@ucdenver.edu",
+    "phone": "720-848-1060",
+    "bio": [
+      "Suzanne Carrington began her nursing career working with various units, but she always wanted to work in obstetrics. Carrington was able to get her dream job on an L and D tertiary unit.  She immediately knew that this was her calling. Carrington earned her bachelor's degree from Syracuse University while working full time and also working as a research assistant on a project entitled \"High Risk Pregnancy and Maternal Attachment.\" She then attended midwifery school at Case Western Reserve University and obtained her MSN/CNM degree. Her master's research study was on paternal-fetal attachment and Couvade Syndrome. Carrington received the Helen Lathrop Bunge Award in recognition of clinical expertise, creative ability, and social and professional responsibility.  After working in Cleveland for several years in a clinic serving a poor neighborhood, she and her family moved to Pennsylvania, and then New Jersey, where she worked in a busy triage unit of a hospital that facilitated nearly 6,000 deliveries per year.",
+      "About 10 years ago, Carrington began working at North Suburban in a midwifery group that primarily cared for the underserved. She then went back to school and completed her DNP in 2010.  Her doctoral research study was entitled \"Teaching Indigenous Mayan Traditional Birth Attendants in the Prevention and Treatment of Postpartum Hemorrhage,\" based on work she completed in several villages in Guatemala."
+    ],
+    "education": null,
+    "awards": null,
+    "research": null,
+    "practice": ["Carrington currently practices as part of the CU University Nurse Midwives."],
+    "publications": null
+  },
+  {
+    "firstName": "Krista",
+    "lastName": "Estes",
+    "degrees": "DNP, FNP-C",
+    "title": "Associate Professor",
+    "headshot": "/images/faculty/krista-estes.jpg",
+    "email": "Krista.Estes@ucdenver.edu",
+    "phone": null,
+    "bio": [
+      "Krista Estes, DNP, FNP-C is a clinical teaching track assistant professor in the College of Nursing. Originally from Kansas City, Estes received her bachelor of science in kinesiology from Kansas State University. She then received her bachelor of science in nursing, master of science in nursing (Family Nurse Practitioner), and her doctor of nursing practice degrees from the University of Kansas. Prior to moving to Colorado, she worked as a family nurse practitioner in the Emergency Department at St. Joseph, St. Mary's, and Shawnee Mission Medical Centers in Kansas City. Since relocating to Colorado, she has worked as a family nurse practitioner in Parker, CO and at The Little Clinic in Denver. In addition to national certification as a family nurse practitioner through the American Academy of Nurse Practitioners, she is a Certified Registered Medical Examiner on the Federal Motor Carrier Safety Administration's National Registry of Certified Medical Examiners. Estes is recognized as an Advanced Practice Nurse Practitioner, with full prescriptive authority, by the state of Colorado."
+    ],
+    "education": [
+      {
+        "degree": "DNP",
+        "institution": "University of Kansas",
+        "field": "Nursing",
+        "date": 2010
+      },
+      {
+        "degree": "MSN",
+        "institution": "University of Kansas",
+        "field": "Family Nurse Practitioner",
+        "date": 2008
+      },
+      {
+        "degree": "BSN",
+        "institution": "University of Kansas",
+        "field": "Nursing",
+        "date": 2005
+      },
+      {
+        "degree": "BS",
+        "institution": "Kansas State University",
+        "field": "Kinesiology",
+        "date": 2002
+      }
+    ],
+    "awards": [
+      {
+        "name": "Dean's Award for Excellence in Teaching",
+        "organization": "University of Colorado",
+        "year": [2014]
+      },
+      {
+        "name": "Top 25 NP Program Professors",
+        "organization": "Nurse Practioner Schools",
+        "year": [2014]
+      },
+      {
+        "name": "Accepted to Teaching Scholars Program",
+        "organization": "University of Colorado",
+        "year": [2014]
+      },
+      {
+        "name": "Presidents Teaching and Learning Collaborative for Scholarship of Teaching and Learning",
+        "organization": "University of Colorado",
+        "year": [2013]
+      },
+      {
+        "name": "G. & M. Varnes Nursing Scholarship",
+        "organization": "University of Kansas",
+        "year": [2007, 2008]
+      },
+      {
+        "name": "Goppert Scholarship",
+        "organization": "University of Kansas",
+        "year": [2004, 2005]
+      },
+      {
+        "name": "Sad Sackette Unit 59 Scholarship",
+        "organization": "University of Kansas",
+        "year": [2003, 2004, 2005]
+      },
+      {
+        "name": "Cadaver Dissection Team Teaching Assistant",
+        "organization": "Kansas State University",
+        "year": [2001]
       }
     ],
     "research": [
       {
-        "year": "",
-        "name": ""
+        "name": "President's Teaching and Learning Collaborative for Scholarship of Teaching and Learning. Project title, \"Breaking Down the Silos: Fostering an Interdisciplinary Approach to Learning Advanced Physical Assessment\"",
+        "year": "2013, 2014"
+      },
+      {
+        "name": "Research Assistant, Skin and Soft Tissue Infections in One Urban Emergency Department: Improving Patient Care, Dr. Diane Ebbert, PhD, ARNP, FNP-BS",
+        "year": "2010"
+      },
+      {
+        "name": "Research Assistant, The Perceived Experience of Peer Counselors in Providing Social Support and Perinatal and Breastfeeding Education to Pregnant and Parenting Adolescents in a Randomized Controlled Trial, Dr. Ginger Breedlove, PhD, CNM, ARNP, FACNM",
+        "year": "2007"
       }
     ],
-    "practice": [],
-    "publications": []
-   }
+    "practice": [
+      "Certified Registered Medical Examiner on the Federal Motor Carrier Safety Administration's National Registry of Certified Medical Examiners",
+      "Identification of Practice Variation among Nurse Practitioners: In one urban emergency department, reviewed 100 charts of nurse practitioners for: patient age, gender, temperature, heart rate, abscess size, associated cellulitis, performed procedure, wound packing, culture performance, culture results, antimicrobial choice, and skin decolonization/education recommendations. With practice variation being identified among providers, developed an evidence-based CA-MRSA SSTI educational website for emergency department provider use and implemented a quality improvement project."
+    ],
+    "publications": [
+      "Estes, K. & Weber, M. (2015). Pharmacotherapeutics for nurse practitioner prescribers, Chapter 30: Anxiety and Depression.",
+      "Estes, K. (2014). Skin infections in high school wrestlers: A nurse practitioner's guide to diagnosis, treatment, and return to participation. Journal of the American Association of Nurse Practitioners. DOI: 10.1002/2327-6924.12136",
+      "Robinson, M., Estes, K., & Knapfel, S. (2014). Use of technology in the classroom to increase professional preparation. Journal of Nurse Practitioners, 10(10), e93-e97.",
+      "Estes, K. (2011). Methicillin-resistant staphylococcus aureus skin and soft tissue infections: Impacting patient care. Critical Care Nursing Quarterly, 34(2), 101-109.",
+      "Estes, K. & Thomure, J. (2009). Aspirin for the primary prevention of adverse cardiovascular events. Critical Care Nursing Quarterly, 31(4), 324-339."
+    ]
+ }
 ]

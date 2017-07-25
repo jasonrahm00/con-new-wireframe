@@ -1,6 +1,8 @@
-/****************************************
-          BASE STYLES
-****************************************/
+/**********************************************************
+    
+                  Base Styles
+
+**********************************************************/
 
 * {
   border-collapse: collapse;
@@ -184,9 +186,12 @@ main {
 }
 
 
-/****************************************
-          TABLE STYLES
-****************************************/
+
+/**********************************************************
+    
+                  Table Styles
+
+**********************************************************/
 
 table {
   width: 100%;
@@ -200,11 +205,15 @@ thead {
 
 th {
   border-right: 1px solid #fff;
-  padding: .85rem 0;
+  padding: .85rem;
 }
 
 tr:nth-child(2n) {
   background-color: whitesmoke;
+}
+
+tr:nth-child(odd) {
+  border-bottom: 1px solid #ddd;
 }
 
 tr:nth-child(2n) td {
@@ -222,9 +231,11 @@ td:last-child {
 
 
 
-/****************************************
-          MAIN NAVIGATION
-****************************************/
+/**********************************************************
+    
+                  Main Navigation
+
+**********************************************************/
 
 nav {
   background: #fff;
@@ -310,9 +321,11 @@ nav>ul>li.active>.submenu.mega {
 
 
 
-/****************************************
-          SIDE NAVIGATION
-****************************************/
+/**********************************************************
+    
+                  Side Navigation
+
+**********************************************************/
 
 main nav {
   position: initial;
@@ -339,9 +352,11 @@ main nav + div {
 
 
 
-/****************************************
-          ACCORDION
-****************************************/
+/**********************************************************
+    
+                  Accordion
+
+**********************************************************/
 
 .accordion-header {
   background: whitesmoke;
@@ -352,12 +367,11 @@ main nav + div {
   padding: 1rem;
 }
 
-.accordion-header h3 {
+.accordion-header * {
   margin: 0;
 }
 
 .accordion-header span {
-  font-size: .85rem;
   font-weight: normal;
   margin-top: 3px;
 }
@@ -369,20 +383,19 @@ main nav + div {
 .accordion-body {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   border-top: 0;
   display: none;
   padding: 1rem;
 }
 
-.custom-accordion section:last-child .accordion-body {
-  border-bottom: 1px solid #ddd;
-}
 
 
+/**********************************************************
+    
+                  Program Cards
 
-/****************************************
-          Program Cards
-****************************************/
+**********************************************************/
 
 .program-cards {
   display: flex;
@@ -438,9 +451,51 @@ main nav + div {
 
 
 
-/****************************************
-          Admission Pages
-****************************************/
+/**********************************************************
+    
+                  Faculty Styles
+
+**********************************************************/
+
+.faculty-cards>div {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 0; 
+}
+
+.faculty-cards span {
+  display: block;
+}
+
+.faculty-profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faculty-profile header {
+  width: 30%;
+}
+
+.faculty-profile header figcaption * {
+  display: block;
+}
+
+.faculty-profile>div {
+  width: 65%;
+}
+
+.faculty-profile>div>section:first-child {
+  margin-bottom: 3rem;
+}
+
+
+
+/**********************************************************
+    
+                  Admission Pages
+
+**********************************************************/
 
 .admission-selector {
   display: flex;
@@ -526,9 +581,11 @@ main nav + div {
 }
 
 
-/****************************************
-          Clinic Pages
-****************************************/
+/**********************************************************
+    
+                  Clinic Pages
+
+**********************************************************/
 
 .clinic {
   border-bottom: 1px solid #ddd;

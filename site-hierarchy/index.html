@@ -12,7 +12,7 @@
     <link href="styles.css" rel="stylesheet">
 
     <!-- JS Files -->
-    <script src="https://maps.googleapis.com/maps/api/js?language=en"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?language=en"></script>-->
     
   </head>
   
@@ -208,7 +208,7 @@
     
     <span class="breadcrumb" data-ng-bind="$state.current.data.breadcrumb">Breadcrumb</span>
     
-    <main data-ui-view>
+    <main data-ui-view data-ng-class="$state.current.name">
       <p>Must be viewed on loal server to view full functionality</p>
     </main>
     
@@ -235,6 +235,7 @@
     <script src="js/factories/program-factory.js"></script>
     <script src="js/factories/clinic-factory.js"></script>
     <script src="js/factories/admin-factory.js"></script>
+    <script src="js/factories/faculty-factory.js"></script>
 
     <!-- Directives -->
     <script src="js/directives/accordion-directive.js"></script>
@@ -248,6 +249,7 @@
     <script src="js/controllers/admissionsCtrl.js"></script>
     <script src="js/controllers/patientsCtrl.js"></script>
     <script src="js/controllers/administrationCtrl.js"></script>
+    <script src="js/controllers/facultyCtrl.js"></script>
     
   </body>
   

@@ -27,7 +27,8 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       data: {
         title: 'College of Nursing Faculty Profile',
         breadcrumb: 'Home > Faculty and Staff > Faculty Directory'
-      }
+      },
+      controller: 'facultyCtrl'
     })
     .state('faculty-profile', {
       url: '/faculty-staff/faculty-profile',
@@ -35,7 +36,8 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       data: {
         title: 'College of Nursing Faculty Profile',
         breadcrumb: 'Home > Faculty and Staff > Faculty Profile'
-      }
+      },
+      controller: 'facultyCtrl'
     });
   
 });
