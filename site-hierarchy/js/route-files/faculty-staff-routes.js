@@ -25,17 +25,17 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       url: '/faculty-staff/faculty-directory',
       templateUrl: '/pages/faculty/faculty-directory.html',
       data: {
-        title: 'College of Nursing Faculty Profile',
+        title: 'College of Nursing Faculty Direcotry',
         breadcrumb: 'Home > Faculty and Staff > Faculty Directory'
       },
       controller: 'facultyCtrl'
     })
     .state('faculty-profile', {
-      url: '/faculty-staff/faculty-profile',
+      url: '/faculty-staff/faculty-directory/faculty-profile',
       templateUrl: '/pages/faculty/faculty-profile.html',
       data: {
         title: 'College of Nursing Faculty Profile',
-        breadcrumb: 'Home > Faculty and Staff > Faculty Profile'
+        breadcrumb: 'Home > Faculty and Staff > Faculty Directory > Faculty Profile'
       },
       controller: 'facultyCtrl'
     });
