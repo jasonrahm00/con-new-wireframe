@@ -21,6 +21,14 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         breadcrumb: 'Home > Admissions > Program Admissions Landing'
       },
       controller: 'admissionsCtrl'
+    })
+  .state('info-sessions', {
+      url: '/admissions/information-sessions',
+      templateUrl: '/pages/admissions/info-sessions.html',
+      data: {
+        title: 'Program Admissions',
+        breadcrumb: 'Home > Admissions > Information Sessions'
+      }
     });
   
 });
