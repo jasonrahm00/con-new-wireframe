@@ -129,7 +129,7 @@ main {
 }
 
 .flex-container {
-  display: flex;
+  display: block;
 }
 
 .flex-wrap-wrap {
@@ -889,4 +889,10 @@ main nav + div {
     display: none;
   }
   
+}
+
+@media (min-width: 796px) {
+  .flex-container {
+    display: flex;
+  }
 }

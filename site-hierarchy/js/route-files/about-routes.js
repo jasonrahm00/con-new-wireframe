@@ -51,6 +51,33 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         title: 'CU College of Nursing News',
         breadcrumb: 'Home > About > News'
       }
+    })
+  .state('administration', {
+      url: '/about/administration',
+      templateUrl: '/pages/about/administration.html',
+      data: {
+        title: 'College of Nursing Administration',
+        breadcrumb: 'Home > About > Administration'
+      },
+      controller: 'administrationCtrl'
+    })
+    .state('faculty-directory', {
+      url: '/about/faculty-directory',
+      templateUrl: '/pages/about/faculty/faculty-directory.html',
+      data: {
+        title: 'College of Nursing Faculty Direcotry',
+        breadcrumb: 'Home > About > Faculty Directory'
+      },
+      controller: 'facultyCtrl'
+    })
+    .state('faculty-profile', {
+      url: '/about/faculty-directory/faculty-profile',
+      templateUrl: '/pages/about/faculty/faculty-profile.html',
+      data: {
+        title: 'College of Nursing Faculty Profile',
+        breadcrumb: 'Home > About > Faculty Directory > Faculty Profile'
+      },
+      controller: 'facultyCtrl'
     });
   
 });
