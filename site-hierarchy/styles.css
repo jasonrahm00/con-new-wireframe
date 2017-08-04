@@ -462,14 +462,14 @@ main nav + div {
 
 **********************************************************/
 
-.faculty-cards>div {
+.faculty-directory>div {
   border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
   padding: 1rem 1rem 1rem 0; 
 }
 
-.faculty-cards span {
+.faculty-directory span {
   display: block;
 }
 
