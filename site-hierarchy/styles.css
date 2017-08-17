@@ -17,6 +17,15 @@ body {
   margin: 0 auto;
 }
 
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+}
+
 iframe {
   height: 1200px;
   width: 100%;
@@ -78,11 +87,11 @@ main {
 }
 
 .around {
-  justify-content: space-around;
+  justify-content: space-around !important;
 }
 
 .between {
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
 
 .black-background {
