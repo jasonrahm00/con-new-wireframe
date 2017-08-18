@@ -1,0 +1,124 @@
+[
+  {
+    "number": "NURS 6859",
+    "name": "Advanced Professional Role",
+    "credits": {
+        "didactic": 2,
+        "clinical": 0
+    },
+    "clinicalHours": 0,
+    "degree": [
+      "MS",
+      "BS-DNP"
+    ],
+    "specialty": [
+      "CNS",
+      "AGPCNP",
+      "FNP"
+    ]
+  },
+  {
+    "number": "NURS 6761",
+    "name": "Adv Assessment",
+    "credits": {
+        "didactic": 3,
+        "clinical": 3
+    },
+    "clinicalHours": 0,
+    "degree": [
+      "MS",
+      "BS-DNP",
+      "FNP"
+    ],
+    "specialty": [
+      "CNS",
+      "AGPCNP"
+    ]
+  },
+  {
+    "number": "NURS 5902",
+    "name": "AG CNS Advanced Practicum II",
+    "credits": {
+        "didactic": 3,
+        "clinical": 3
+    },
+    "clinicalHours": 90,
+    "degree": [
+      "MS",
+      "BS-DNP"
+    ],
+    "specialty": [
+      "CNS"
+    ]
+  },
+  {
+    "number": "NURS 6303",
+    "name": "Epidemiology",
+    "credits": {
+        "didactic": 3,
+        "clinical": 0
+    },
+    "clinicalHours": 0,
+    "degree": [
+      "BS-DNP"
+    ],
+    "specialty": [
+      "CNS",
+      "AGPCNP",
+      "FNP"
+    ]
+  },
+  {
+    "number": "NURS 5972",
+    "name": "AGPCNP Advanced Practicum II",
+    "credits": {
+        "didactic": 0,
+        "clinical": 3
+    },
+    "clinicalHours": 135,
+    "degree": [
+      "MS",
+      "BS-DNP",
+      "Cert"
+    ],
+    "specialty": [
+      "AGPCNP"
+    ]
+  },
+  {
+    "number": "NURS 5931",
+    "name": "FNP Advanced Practicum I",
+    "credits": {
+        "didactic": 0,
+        "clinical": 3
+    },
+    "clinicalHours": 135,
+    "degree": [
+      "MS",
+      "BS-DNP",
+      "CERT"
+    ],
+    "specialty": [
+      "FNP"
+    ]
+  },
+  {
+    "number": "NURS 6862",
+    "name": "Advanced Clinical Skills",
+    "credits": {
+        "didactic": 1,
+        "clinical": 0
+    },
+    "clinicalHours": 0,
+    "degree": [
+      "Cert",
+      "MS",
+      "BS-DNP"
+    ],
+    "specialty": [
+      "FNP",
+      "AGPCNP",
+      "CNS"
+    ]
+  }
+]

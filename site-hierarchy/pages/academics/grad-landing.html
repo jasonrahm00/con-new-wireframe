@@ -1,57 +1,11 @@
 <header>
-  <h1><span data-ng-if="programChoice">{{ programChoice.name }}</span><span data-ng-if="!programChoice">Graduate Program</span> Page (Specialty-Required Template)</h1>
-  <h2>Program Description</h2>
-  <p>This page is to describe the degree level and expose core courses required for each specialty to achieve that degree.</p>
+  <h1><span data-ng-if="programChoice">{{ programChoice.name }}</span><span data-ng-if="!programChoice">Graduate Program</span> Page</h1>
+  <h2>Degree Level Description</h2>
+  <p>This page is to describe the degree level, link to availbale specialty pages for that degree and describe benefits of achieving the advanced degree (more money, more power, more fame)</p>
 </header>
 
-<section class="dynamic-container">
-  <h2>Grad Program Core Courses</h2>
-  <p>Each degree should have a set of core courses that need to be completed. List these here in a separate accordion before showing courses for the specialty.</p>
-  <div class="custom-accordion large-margin-bottom" data-toggle-speed="fast" data-toggle-easing="linear" data-slide-up-speed="fast" data-slide-up-easing="linear">
-
-    <section>
-      <div class="accordion-header">
-        <h3>Course 1</h3>
-        <span>Credit Hours</span>
-      </div>
-      <div class="accordion-body">
-        <p>Brief course description</p>
-      </div>
-    </section>
-
-    <section>
-      <div class="accordion-header">
-        <h3>Course 2</h3>
-        <span>Credit Hours</span>
-      </div>
-      <div class="accordion-body">
-        <p>Brief course description</p>
-      </div>
-    </section>
-
-    <section>
-      <div class="accordion-header">
-        <h3>Course 3</h3>
-        <span>Credit Hours</span>
-      </div>
-      <div class="accordion-body">
-        <p>Brief course description</p>
-      </div>
-    </section>
-
-    <section>
-      <div class="accordion-header">
-        <h3>Course 4</h3>
-        <span>Credit Hours</span>
-      </div>
-      <div class="accordion-body">
-        <p>Brief course description</p>
-      </div>
-    </section>
-
-  </div>
-</section>
-
+<!-- This needs to become a dynamic list of available specialties for the chosen degree level -->
+<!--
 <section class="dynamic-container specialty-selector">
   <h2>Grad Program Specialties and Coursework</h2>
   <p>Select the specialty you wish to study to read a brief description and see an accordion of required courses.</p>
@@ -115,6 +69,7 @@
 
 
 </section>  
+-->
 
 <section class="next-steps">
   <h2>Next Steps</h2>
