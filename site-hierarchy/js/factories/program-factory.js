@@ -28,11 +28,6 @@ angular.module('conWireframe').factory('programFactory', function($q, dataServic
     this.programLevel = x;
     return this;
   };
-  
-  programObject.setProgramChoice = function(x) {
-    this.programChoice = x;
-    return this;
-  };
 
   return programObject;
   

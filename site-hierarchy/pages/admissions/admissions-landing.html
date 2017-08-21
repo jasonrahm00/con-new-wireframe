@@ -10,7 +10,7 @@
       <h3>Undergraduate Admissions</h3>
       <ul>
         <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'undergraduate'">
-          <a data-ui-sref="program-admissions" data-ng-click="setProgramChoice(program)">{{ program.name }} Admissions</a>
+          <a data-ui-sref="program-admissions">{{ program.name }} Admissions</a>
         </li>
       </ul>
     </section>
@@ -18,7 +18,7 @@
       <h3>Graduate Admissions</h3>
       <ul>
         <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'">
-          <a data-ui-sref="program-admissions" data-ng-click="setProgramChoice(program)">{{ program.name }} Admissions</a>
+          <a data-ui-sref="program-admissions">{{ program.name }} Admissions</a>
         </li>
       </ul>
     </section>

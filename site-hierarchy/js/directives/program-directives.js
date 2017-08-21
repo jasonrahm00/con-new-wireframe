@@ -38,6 +38,16 @@ angular.module('conWireframe').directive('careerOptions', function(){
 
 });
 
+angular.module('conWireframe').directive('programHeader', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: '/templates/programs/program-header.html'
+  };
+
+});
+
 angular.module('conWireframe').directive('programBody', function(){
   
   return {
