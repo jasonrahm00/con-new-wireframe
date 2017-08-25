@@ -3,9 +3,9 @@
   <section class="width-30" data-ng-if="$state.current.name === 'specialty-landing-page'">
     <h2>Available Degrees</h2>
     <ul>
-      <li><a data-ui-sref="grad-landing-page">Masters Degree</a></li>
-      <li><a data-ui-sref="grad-landing-page">BS-DNP Degree</a></li>
-      <li><a data-ui-sref="grad-landing-page">BS-PhD Program</a></li>
+      <li><a data-ui-sref="grad-specialty-req-page">Masters Degree</a></li>
+      <li><a data-ui-sref="grad-specialty-req-page">BS-DNP Degree</a></li>
+      <li><a data-ui-sref="grad-specialty-req-page">BS-PhD Program</a></li>
     </ul>
   </section>
   
@@ -24,6 +24,8 @@
     <h2>Admissions</h2>
     <ul>
       <li><admission-requirements></admission-requirements></li>
+      <li data-ng-if="$state.current.name === 'specialty-landing-page'"><admission-requirements></admission-requirements></li>
+      <li data-ng-if="$state.current.name === 'specialty-landing-page'"><admission-requirements></admission-requirements></li>
     </ul>
   </section>
 

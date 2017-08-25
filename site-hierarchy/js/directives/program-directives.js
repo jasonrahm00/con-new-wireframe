@@ -67,3 +67,13 @@ angular.module('conWireframe').directive('programOutcomes', function(){
   };
 
 });
+
+angular.module('conWireframe').directive('programNextSteps', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: '/templates/programs/program-next-steps.html'
+  };
+
+});

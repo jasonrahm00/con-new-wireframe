@@ -30,9 +30,9 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       },
       controller: 'academicsCtrl'
     })
-    .state('grad-landing-page', {
+    .state('grad-specialty-req-page', {
       url: '/academics/graduate-program-page',
-      templateUrl: '/pages/academics/grad-landing.html',
+      templateUrl: '/pages/academics/grad-specialty-req.html',
       data: {
         title: 'Graduate Program Page',
         breadcrumb: 'Home > Academics > Graduate Program Name'
