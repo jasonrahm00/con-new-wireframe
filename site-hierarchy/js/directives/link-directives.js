@@ -3,7 +3,7 @@ angular.module('conWireframe').directive('applyNow', function(){
   return {
     restrict: 'E',
     replace: true,
-    template: '<span><a class="button">Apply Now</a></span>'
+    template: '<span class="apply-now"><a class="button margin-top-small">Apply Now</a></span>'
   };
   
 });

@@ -52,6 +52,10 @@ main {
   margin-bottom: 45px;
 }
 
+main>* {
+  margin-bottom: 4rem;
+}
+
 .after-apply {
   margin: 3.5rem 0;
 }
@@ -84,6 +88,11 @@ main {
   float: left;
   margin-right: 20px;
   margin-bottom: 40px;
+}
+
+.apply-now {
+  display: block;
+  margin-top: 2rem;
 }
 
 .around {
@@ -614,6 +623,18 @@ main nav + div {
 
 .clinic>div {
   width: 250px;
+}
+
+
+
+/**********************************************************
+    
+                  Program Pages
+
+**********************************************************/
+
+.program-body>* {
+  margin-bottom: 4rem;
 }
 
 

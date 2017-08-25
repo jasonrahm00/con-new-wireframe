@@ -57,3 +57,13 @@ angular.module('conWireframe').directive('programBody', function(){
   };
 
 });
+
+angular.module('conWireframe').directive('programOutcomes', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: '/templates/programs/program-outcomes.html'
+  };
+
+});
