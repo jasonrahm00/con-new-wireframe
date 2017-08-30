@@ -3,7 +3,7 @@ angular.module('conWireframe').directive('applyNow', function(){
   return {
     restrict: 'E',
     replace: true,
-    template: '<span class="apply-now"><a class="button margin-top-small">Apply Now</a><p class="red">If application is not open, hide apply button and display application open date</p></span>'
+    template: '<span class="apply-now"><a class="button margin-top-small">Apply Now</a><p class="red">If application is not open, hide apply button</p></span>'
   };
   
 });
