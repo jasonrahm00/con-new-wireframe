@@ -101,6 +101,11 @@
   {
     "level": "graduate",
     "url": "default-program-page",
+    "name": "DNP-PHN Program"
+  },
+  {
+    "level": "graduate",
+    "url": "default-program-page",
     "name": "Dual Degree Program"
   },
   
