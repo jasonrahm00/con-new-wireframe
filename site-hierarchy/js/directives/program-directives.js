@@ -77,3 +77,13 @@ angular.module('conWireframe').directive('programNextSteps', function(){
   };
 
 });
+
+angular.module('conWireframe').directive('admissionsLinks', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: '/templates/programs/admissions-links.html'
+  };
+
+});

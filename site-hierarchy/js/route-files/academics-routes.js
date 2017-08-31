@@ -31,7 +31,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       controller: 'academicsCtrl'
     })
     .state('grad-specialty-req-page', {
-      url: '/academics/graduate-program-page',
+      url: '/academics/grad-specialty-req-page',
       templateUrl: '/pages/academics/grad-specialty-req.html',
       data: {
         title: 'Graduate Program Page',
@@ -40,7 +40,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       controller: 'academicsCtrl'
     })
     .state('specialty-landing-page', {
-      url: '/academics/specialty-program-page',
+      url: '/academics/specialty-landing-page',
       templateUrl: '/pages/academics/specialty-landing.html',
       data: {
         title: 'Specialty Program Page',

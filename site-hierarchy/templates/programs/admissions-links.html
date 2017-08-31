@@ -1,0 +1,8 @@
+<section data-ng-if="$state.current.name !== 'program-admissions'">
+  <h2>Admissions</h2>
+  <ul>
+    <li><admission-requirements></admission-requirements></li>
+    <li data-ng-if="$state.current.name === 'specialty-landing-page'"><admission-requirements></admission-requirements></li>
+    <li data-ng-if="$state.current.name === 'specialty-landing-page'"><admission-requirements></admission-requirements></li>
+  </ul>
+</section>

@@ -1,24 +1,21 @@
-<div class="flex-container around">
+<div data-ng-class="$state.current.name === 'specialty-landing-page' ? 'flex-container around' : ''">
   
   <section class="width-30" data-ng-if="$state.current.name === 'specialty-landing-page'">
-    <h2>Available Degrees</h2>
+    <h2>Program Options</h2>
     <ul>
       <li><a data-ui-sref="grad-specialty-req-page">Masters Degree</a></li>
       <li><a data-ui-sref="grad-specialty-req-page">BS-DNP Degree</a></li>
       <li><a data-ui-sref="grad-specialty-req-page">BS-PhD Program</a></li>
+      <li><a data-ui-sref="grad-certificate">Graduate Certificate</a></li>
+      <li><a data-ui-sref="post-grad-certificate">Post-Graduate Certificate</a></li>
     </ul>
   </section>
 
-  <section data-ng-class="$state.current.name === 'specialty-landing-page' ? 'width-30' : 'width-45'">
-    <h2>Admissions</h2>
-    <ul>
-      <li><admission-requirements></admission-requirements></li>
-      <li data-ng-if="$state.current.name === 'specialty-landing-page'"><admission-requirements></admission-requirements></li>
-      <li data-ng-if="$state.current.name === 'specialty-landing-page'"><admission-requirements></admission-requirements></li>
-    </ul>
-  </section>
-  
-  <section data-ng-class="$state.current.name === 'specialty-landing-page' ? 'width-30' : 'width-45'">
+  <div class="width-30" data-ng-if="$state.current.name === 'specialty-landing-page'">
+    <admissions-links></admissions-links>
+  </div>
+
+  <section data-ng-class="$state.current.name === 'specialty-landing-page' ? 'width-30' : ''">
     <h2>Plans of Study</h2>
     <ul data-ng-if="$state.current.name === 'default-program-page'">
       <li><a href="">Plan of Study</a></li>

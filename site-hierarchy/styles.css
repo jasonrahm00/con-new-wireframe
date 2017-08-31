@@ -75,10 +75,6 @@ main>* {
   padding-left: 10%;
 }
 
-.align-self-end {
-  align-self: flex-end;
-}
-
 .alumni-snapshot>div {
   border: 1px solid #ddd;
   margin: 0px 15px;
@@ -89,19 +85,6 @@ main>* {
   float: left;
   margin-right: 20px;
   margin-bottom: 40px;
-}
-
-.apply-now {
-  display: block;
-  margin-top: 2rem;
-}
-
-.around {
-  justify-content: space-around !important;
-}
-
-.between {
-  justify-content: space-between !important;
 }
 
 .black-background {
@@ -145,18 +128,6 @@ main>* {
 
 .dynamic-container {
   min-height: 400px;
-}
-
-.flex-container {
-  display: block;
-}
-
-.flex-wrap-wrap {
-  flex-wrap: wrap;
-}
-
-.full-width {
-  width: 100%;
 }
 
 .gold-background {
@@ -646,6 +617,38 @@ main nav + div {
 
 /**********************************************************
     
+                  Flexbox Styles
+
+**********************************************************/
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.around {
+  justify-content: space-around !important;
+}
+
+.between {
+  justify-content: space-between !important;
+}
+
+.evenly {
+  justify-content: space-evenly;
+}
+
+.flex-container {
+  display: block;
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+
+
+
+/**********************************************************
+    
               Custom Margins and Padding
 
 **********************************************************/
@@ -847,6 +850,8 @@ main nav + div {
 .padding-x-small {
   padding: 1rem;
 }
+
+
 
 /**********************************************************
     

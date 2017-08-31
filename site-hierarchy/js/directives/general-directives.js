@@ -1,3 +1,13 @@
+angular.module('conWireframe').directive('applyNow', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: '/templates/general/apply-now.html'
+  };
+  
+});
+
 angular.module('conWireframe').directive('deadlines', function(){
   
   return {
@@ -24,6 +34,26 @@ angular.module('conWireframe').directive('faqs', function(){
     restrict: 'E',
     replace: true,
     templateUrl: '/templates/general/faqs.html'
+  };
+  
+});
+
+angular.module('conWireframe').directive('admissionRequirements', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    template: '<a data-ui-sref="program-admissions">View Requirements</a>'
+  };
+  
+});
+
+angular.module('conWireframe').directive('programLink', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    template: '<a data-ui-sref="{{ program.url }}">{{ program.name }}</a>'
   };
   
 });
