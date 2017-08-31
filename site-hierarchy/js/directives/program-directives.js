@@ -77,13 +77,3 @@ angular.module('conWireframe').directive('programNextSteps', function(){
   };
 
 });
-
-angular.module('conWireframe').directive('deadlines', function(){
-  
-  return {
-    restrict: 'E',
-    replace: true,
-    templateUrl: '/templates/programs/deadlines.html'
-  };
-  
-});
