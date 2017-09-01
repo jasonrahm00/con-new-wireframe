@@ -6,10 +6,6 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, $q, prog
     $scope.programs = programFactory.programs;
   });
   
-  $scope.setProgramChoice = function(program) {
-    programFactory.setProgramChoice(program);
-  };
-  
   jQuery(window).click(function () {
     jQuery('nav>ul>li').removeClass('active');
   });

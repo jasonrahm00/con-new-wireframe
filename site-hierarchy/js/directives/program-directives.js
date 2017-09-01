@@ -87,3 +87,23 @@ angular.module('conWireframe').directive('admissionsLinks', function(){
   };
 
 });
+
+angular.module('conWireframe').directive('whyCu', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: '/templates/programs/why-cu.html'
+  };
+
+});
+
+angular.module('conWireframe').directive('gradCertApply', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: '/templates/programs/grad-cert-apply.html'
+  };
+
+});

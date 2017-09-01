@@ -27,9 +27,9 @@
             <li>
               <span>Info and Deadlines</span>
               <ul>
-                <li><a href="">Contact Admissions</a></li>
-                <li><a href="">Language Requirements</a></li>
-                <li><a href="">Transfer Credit</a></li>
+                <li>Contact Admissions</li>
+                <li>Language Requirements</li>
+                <li>Transfer Credit</li>
               </ul>
             </li>
             <li>
@@ -46,14 +46,15 @@
                 <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'">
                   <a data-ui-sref="program-admissions">{{ program.name }} Admissions</a>
                 </li>
+                <li><a data-ui-sref="program-admissions">Post-Graduate Certificate Admissions</a></li>
               </ul>
             </li>
             <li>
               <span>Tuition and Funding</span>
               <ul>
-                <li><a href="">Tuition and Fees</a></li>
-                <li><a href="">Scholarships &amp; Financial Aid</a></li>
-                <li><a href="">WICHE Tuition Assistance</a></li>
+                <li>Tuition and Fees</li>
+                <li>Scholarships &amp; Financial Aid</li>
+                <li>WICHE Tuition Assistance</li>
               </ul>
             </li>
           </ul>
@@ -100,7 +101,7 @@
           <ul class="submenu">
             <li><a data-ui-sref="patients">CU Healthcare Partners</a></li>
             <li><a data-ui-sref="find-clinic">Find a Clinic</a></li>
-            <li><a href="">Services Offered</a></li>
+            <li>Services Offered</li>
             <li><a data-ui-sref="center-home">Sheridan Health Services</a></li>
             <li><a data-ui-sref="midwifery-center">The Center for Midwifery</a></li>
             <li><a data-ui-sref="center-home">Anschutz Campus Health Center</a></li>
@@ -174,7 +175,7 @@
             <li><a data-ui-sref="news">News</a></li>
             <li><a data-ui-sref="events">Events</a></li>
             <li><a href="https://giving.cu.edu/fund-search?field_campuses=1046&field_fund_keywords[0]=1063&sort_order=ASC" target="_blank">Make a Gift</a></li>
-            <li><a href="">Campus Map</a></li>
+            <li><a href="http://myatlascms.com/map/?id=95" target="_blank">Campus Map</a></li>
             <li><a href="http://www.ucdenver.edu/anschutz/about/Pages/visitors.aspx" target="_blank">Visitor Info</a></li>
             <li><a href="https://cu.taleo.net/careersection/2/moresearch.ftl?lang=en&location=4100103016&portal=101430233&radius=1&radiusType=K&searchExpanded=true" target="_blank">Employement Opportunities</a></li>
             <li><a data-ui-sref="contact">Contact Us</a></li>
@@ -227,7 +228,6 @@
     <!-- Controllers -->
     <script src="js/controllers/mainCtrl.js"></script>
     <script src="js/controllers/academicsCtrl.js"></script>
-    <script src="js/controllers/admissionsCtrl.js"></script>
     <script src="js/controllers/patientsCtrl.js"></script>
     <script src="js/controllers/administrationCtrl.js"></script>
     <script src="js/controllers/facultyCtrl.js"></script>

@@ -10,8 +10,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       data: {
         title: 'Admissions',
         breadcrumb: 'Home > Admissions'
-      },
-      controller: 'admissionsCtrl'
+      }
     })
   .state('program-admissions', {
       url: '/admissions/program-level/program-admissions',
@@ -19,8 +18,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       data: {
         title: 'Program Admissions',
         breadcrumb: 'Home > Admissions > Program Admissions Landing'
-      },
-      controller: 'admissionsCtrl'
+      }
     })
   .state('info-sessions', {
       url: '/admissions/information-sessions',

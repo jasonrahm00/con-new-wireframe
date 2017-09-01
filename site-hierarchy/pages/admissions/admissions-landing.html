@@ -7,7 +7,7 @@
   <h2>Admission Requirements</h2>
   
   <div class="flex-container around">
-    <section>
+    <section class="width-35">
       <h3>Undergraduate Admissions</h3>
       <ul>
         <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'undergraduate'">
@@ -15,12 +15,13 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="width-35">
       <h3>Graduate Admissions</h3>
       <ul>
         <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'">
           <a data-ui-sref="program-admissions">{{ program.name }} Admissions</a>
         </li>
+        <li><a data-ui-sref="program-admissions">Post-Graduate Certificate Admissions</a></li>
       </ul>
     </section>
   </div>
@@ -41,7 +42,7 @@
   
   <section>
     <h2>Comfirmed</h2>
-    <p class="red">Complete all necessary new-student paperwork and attend the campus orientation. Online-only students, be ready to learn when the program starts.</p>
+    <p>Complete all necessary new-student forms and attend the campus orientation. Online-only students receive an online orientation to the College.</p>
   </section>
   
 </div>

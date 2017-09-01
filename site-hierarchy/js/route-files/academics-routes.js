@@ -66,12 +66,21 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       },
       controller: 'academicsCtrl'
     })
-  .state('grad-certificate', {
-      url: '/academics/graduate-level-certificate',
-      templateUrl: '/pages/academics/grad-certificate.html',
+  .state('grad-certificate-landing', {
+      url: '/academics/grad-certificate-landing',
+      templateUrl: '/pages/academics/grad-certificates/grad-certificate-landing.html',
+      data: {
+        title: 'Available Graduate-Level Certificates',
+        breadcrumb: 'Home > Academics > Graduate-Level Certificate'
+      },
+      controller: 'academicsCtrl'
+    })
+  .state('grad-certificate-page', {
+      url: '/academics/grad-certificate-landing/grad-certificate-page',
+      templateUrl: '/pages/academics/grad-certificates/grad-certificate-page.html',
       data: {
         title: 'Graduate-Level Certificate',
-        breadcrumb: 'Home > Academics > Graduate-Level Certificate'
+        breadcrumb: 'Home > Academics > Graduate-Level Certificates > Graduate-Level Certificates'
       },
       controller: 'academicsCtrl'
     })

@@ -4,9 +4,7 @@ angular.module('conWireframe').factory('programFactory', function($q, dataServic
   
   var programObject = {
     "programs": [],
-    "selectedProgram": {},
-    "sortedPrograms": [],
-    "programChoice": {}
+    "sortedPrograms": []
   };
   
   programObject.getPrograms = function() {
@@ -21,11 +19,6 @@ angular.module('conWireframe').factory('programFactory', function($q, dataServic
         deferred.reject(response);
         return deferred.promise;
     });
-    return this;
-  };
-  
-  programObject.setProgramLevel = function(x) {
-    this.programLevel = x;
     return this;
   };
 
