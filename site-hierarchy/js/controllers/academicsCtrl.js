@@ -1,4 +1,4 @@
-angular.module('conWireframe').controller('academicsCtrl', function ($scope, programFactory) {
+angular.module('conWireframe').controller('academicsCtrl', function ($scope, programFactory, coursebookFactory) {
   
   'use strict';
   
@@ -16,5 +16,9 @@ angular.module('conWireframe').controller('academicsCtrl', function ($scope, pro
     }
     
   };
+  
+  coursebookFactory.getCoursebook().then(function() {
+    $scope.coursebook = coursebookFactory.courses;
+  });
     
 });

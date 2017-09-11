@@ -10,6 +10,6 @@ angular.module('conWireframe').controller('administrationCtrl', function ($scope
   $scope.selectTeam = function(team) {
     adminFactory.selectTeam(team);
     $scope.selectedTeam = adminFactory.selectedTeam;
-  }
+  };
     
 });

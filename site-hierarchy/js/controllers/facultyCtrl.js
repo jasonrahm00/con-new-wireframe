@@ -6,7 +6,6 @@ angular.module('conWireframe').controller('facultyCtrl', function ($scope, $q, f
 
   facultyFactory.getAllFaculty().then(function() {
     $scope.allFaculty = facultyFactory.allFaculty;
-    console.log($scope.teacher);
   });
   
   $scope.setTeacher = function(person) {

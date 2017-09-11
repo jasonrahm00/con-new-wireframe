@@ -92,6 +92,15 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         breadcrumb: 'Home > Academics > Continuing Nursing Education'
       },
       controller: 'academicsCtrl'
-    });
+    })
+  .state('coursebook', {
+      url: '/academics/coursebook',
+      templateUrl: '/pages/academics/coursebook.html',
+      data: {
+        title: 'College of Nursing Coursebook',
+        breadcrumb: 'Home > Academics > Coursebook'
+      },
+      controller: 'academicsCtrl'
+  });
   
 });
