@@ -20,6 +20,14 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         breadcrumb: 'Home > Admissions > Program Admissions Landing'
       }
     })
+  .state('specialty-required-admissions', {
+      url: '/admissions/program-level/specialty-required-admissions',
+      templateUrl: '/pages/admissions/specialty-required.html',
+      data: {
+        title: 'Program Admissions',
+        breadcrumb: 'Home > Admissions > Program Admissions Landing (Specialty Required)'
+      }
+    })
   .state('info-sessions', {
       url: '/admissions/information-sessions',
       templateUrl: '/pages/admissions/info-sessions.html',

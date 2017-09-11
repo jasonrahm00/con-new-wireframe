@@ -19,7 +19,8 @@
       <h3>Graduate Admissions</h3>
       <ul>
         <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'">
-          <a data-ui-sref="program-admissions">{{ program.name }} Admissions</a>
+          <a data-ui-sref="program-admissions" data-ng-if="program.url !== 'grad-specialty-req-page'">{{ program.name }} Admissions</a>
+          <a data-ui-sref="specialty-required-admissions" data-ng-if="program.url === 'grad-specialty-req-page'">{{ program.name }} Admissions</a>
         </li>
         <li><a data-ui-sref="program-admissions">Post-Graduate Certificate Admissions</a></li>
       </ul>

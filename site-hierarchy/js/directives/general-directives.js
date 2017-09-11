@@ -38,16 +38,6 @@ angular.module('conWireframe').directive('faqs', function(){
   
 });
 
-angular.module('conWireframe').directive('admissionRequirements', function(){
-  
-  return {
-    restrict: 'E',
-    replace: true,
-    template: '<a data-ui-sref="program-admissions">View Requirements</a>'
-  };
-  
-});
-
 angular.module('conWireframe').directive('programLink', function(){
   
   return {
