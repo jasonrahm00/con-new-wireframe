@@ -56,12 +56,27 @@
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Adult Gerontology"
+    "name": "Adult-Gerontology Acute Care Nurse Practitioner"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Pediatrics"
+    "name": "Adult-Gerontology Primary Care Nurse Practitioner"
+  },
+  {
+    "level": "specialties",
+    "url": "specialty-landing-page",
+    "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology"
+  },
+  {
+    "level": "specialties",
+    "url": "specialty-landing-page",
+    "name": "Primary Care Pediatric Nurse Practitioner"
+  },
+  {
+    "level": "specialties",
+    "url": "specialty-landing-page",
+    "name": "Acute Care Pediatric Nurse Practitioner"
   },
   {
     "level": "specialties",
@@ -81,7 +96,7 @@
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Women's Health Practitioner"
+    "name": "Women's Health"
   },
   {
     "level": "specialties",
@@ -112,7 +127,7 @@
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Veteran & Military Academic Programs"
+    "name": "Veteran and Military Health Care"
   },
   {
     "level": "additional",
