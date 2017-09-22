@@ -101,6 +101,15 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         breadcrumb: 'Home > Academics > Coursebook'
       },
       controller: 'academicsCtrl'
+  })
+  .state('program-finder', {
+      url: '/academics/program-finder',
+      templateUrl: '/pages/academics/program-finder.html',
+      data: {
+        title: 'College of Nursing Program Finder',
+        breadcrumb: 'Home > Academics > Program Finder'
+      },
+      controller: 'programFinderCtrl'
   });
   
 });

@@ -399,7 +399,8 @@ main nav + div {
 
 **********************************************************/
 
-.program-cards {
+/******************** For Main Academics Page ********************/
+.academics .program-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -407,7 +408,7 @@ main nav + div {
   padding: 1rem;
 }
 
-.program-cards>div {
+.academics .program-cards>div {
   margin-bottom: 2rem;
   width: 350px;
 }
@@ -451,6 +452,26 @@ main nav + div {
   cursor: pointer;
 }
 
+/******************** For Program Finder ********************/
+
+.program-finder .program-cards>div {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.program-finder .program-cards a {
+  background: whitesmoke;
+  display: block;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.program-finder .program-cards span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 
 
 /**********************************************************

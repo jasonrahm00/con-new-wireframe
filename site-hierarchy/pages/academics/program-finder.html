@@ -1,0 +1,35 @@
+<header>
+  <h1>College of Nursing Program Finder</h1>
+  <p>Use eCommerce-style faceted search to help potential students find the right program. Check out <a href="https://www.pce.uw.edu/program-finder" target="_blank">University of Washington Program Finder</a> for inspiration.</p> 
+</header>
+
+<div class="flex-container between">
+  
+  <div class="width-20">
+    <h2 class="no-margin-top">Program Filters</h2>
+    <ul>
+      <li>Program Type (Course, Degree, Certificate)</li>
+      <li>Patient Population</li>
+      <li>Learning Format (Classroom, Online, Blended)</li>
+    </ul>
+  </div>
+  
+  <div class="program-cards width-75 flex-container between flex-wrap-wrap">
+    
+    <div class="width-45 margin-bottom-small" data-ng-repeat="program in programs">
+      <span>Program Type</span>
+      <a data-ui-sref="{{ program.url }}">{{ program.name }}</a>
+      <div>
+        <ul>
+          <li>Application Period</li>
+          <li>Next Start Date</li>
+          <li>Duration</li>
+        </ul>
+      </div>
+    </div>
+      
+  </div>
+  
+</div>
+
+<program-next-steps></program-next-steps>
