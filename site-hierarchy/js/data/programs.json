@@ -3,161 +3,161 @@
     "level": "undergraduate",
     "url": "default-program-page",
     "name": "Nursing BS - Traditional",
-    "type": "Degree",
+    "type": "degree",
     "format": "classroom"
   },
   {
     "level": "undergraduate",
     "url": "default-program-page",
     "name": "Dual Enrollment AAS and Nursing BS (online)",
-    "type": "Degree",
+    "type": "degree",
     "format": "online"
   },
   {
     "level": "undergraduate",
     "url": "default-program-page",
     "name": "Nursing BS-UCAN",
-    "type": "Degree",
+    "type": "degree",
     "format": "classroom"
   },
   {
     "level": "undergraduate",
     "url": "default-program-page",
     "name": "RN to Nursing BS (online)",
-    "type": "Degree",
+    "type": "degree",
     "format": "online"
   },
   {
     "level": "undergraduate",
     "url": "default-program-page",
     "name": "Integrated Nursing Pathway",
-    "type": "Degree",
+    "type": "degree",
     "format": "hybrid"
   },
   {
     "level": "graduate",
     "url": "grad-specialty-req-page",
     "name": "Masters Program",
-    "type": "Degree",
+    "type": "degree",
     "format": "classroom"
   },
   {
     "level": "graduate",
     "url": "grad-specialty-req-page",
     "name": "BS-DNP Program",
-    "type": "Degree",
+    "type": "degree",
     "format": "hybrid"
   },
   {
     "level": "graduate",
     "url": "grad-specialty-req-page",
     "name": "BS-PhD Program",
-    "type": "Degree",
+    "type": "degree",
     "format": "hybrid"
   },
   {
     "level": "graduate",
     "url": "default-program-page",
     "name": "PhD Program",
-    "type": "Degree",
+    "type": "degree",
     "format": "online"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
     "name": "Adult-Gerontology Acute Care Nurse Practitioner",
-    "type": "Specialty",
+    "type": "specialty",
     "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
     "name": "Adult-Gerontology Primary Care Nurse Practitioner",
-    "type": "Specialty",
+    "type": "specialty",
     "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
     "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology",
-    "type": "Specialty",
+    "type": "specialty",
     "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
     "name": "Primary Care Pediatric Nurse Practitioner",
-    "type": "Specialty",
+    "type": "specialty",
     "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
     "name": "Acute Care Pediatric Nurse Practitioner",
-    "type": "Specialty",
+    "type": "specialty",
     "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
     "name": "Psychiatric Mental Health",
-    "type": "Specialty",
+    "type": "specialty",
     "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
     "name": "Family Nurse Practitioner",
-    "type": "Specialty",
+    "type": "specialty",
     "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
     "name": "Nurse-Midwifery",
-    "type": "Specialty",
+    "type": "specialty",
     "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
     "name": "Women's Health",
-    "type": "Specialty",
+    "type": "specialty",
     "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
     "name": "Health Care Informatics",
-    "type": "Specialty",
+    "type": "specialty",
     "format": "online"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
     "name": "i-LEAD Nursing Leadership",
-    "type": "Specialty",
+    "type": "specialty",
     "format": "hybrid"
   },
   {
     "level": "graduate",
     "url": "default-program-page",
     "name": "DNP Program",
-    "type": "Degree",
+    "type": "degree",
     "format": "classroom"
   },
   {
     "level": "graduate",
     "url": "default-program-page",
     "name": "DNP-PHN Program",
-    "type": "Degree",
+    "type": "degree",
     "format": "hybrid"
   },
   {
     "level": "graduate",
     "url": "default-program-page",
     "name": "Dual Degree Program",
-    "type": "Degree",
+    "type": "degree",
     "format": "hybrid"
   },
   
@@ -165,35 +165,35 @@
     "level": "specialties",
     "url": "specialty-landing-page",
     "name": "Veteran and Military Health Care",
-    "type": "Specialty",
+    "type": "specialty",
     "format": "online"
   },
   {
     "level": "additional",
     "url": "non-degree-education",
     "name": "Non-Degree Education",
-    "type": "Professional Development",
+    "type": "development",
     "format": "varies"
   },
   {
     "level": "additional",
     "url": "post-grad-certificate",
     "name": "Post-Graduate Certificates",
-    "type": "Certificate",
+    "type": "certificate",
     "format": "classroom"
   },
   {
     "level": "additional",
     "url": "grad-certificate-landing",
     "name": "Graduate-Level Certificates",
-    "type": "Certificate",
+    "type": "certificate",
     "format": "classroom"
   },
   {
     "level": "additional",
     "url": "continuing-education",
     "name": "Continuing Nursing Education",
-    "type": "Professional Development",
+    "type": "development",
     "format": "classroom"
   }
 ] 

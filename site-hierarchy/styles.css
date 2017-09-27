@@ -454,6 +454,14 @@ main nav + div {
 
 /******************** For Program Finder ********************/
 
+.program-finder input[type="radio"] {
+  display: initial;
+}
+
+.program-finder label {
+  display: block;
+}
+
 .program-finder .program-cards>div {
   border: 1px solid #ddd;
   border-radius: 4px;
