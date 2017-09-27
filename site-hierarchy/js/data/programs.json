@@ -3,150 +3,197 @@
     "level": "undergraduate",
     "url": "default-program-page",
     "name": "Nursing BS - Traditional",
-    "essay": "500 - 700",
-    "gpa": "3.0",
-    "interview": "January 2018"
+    "type": "Degree",
+    "format": "classroom"
   },
   {
     "level": "undergraduate",
     "url": "default-program-page",
-    "name": "Dual Enrollment AAS and Nursing BS (online)"
+    "name": "Dual Enrollment AAS and Nursing BS (online)",
+    "type": "Degree",
+    "format": "online"
   },
   {
     "level": "undergraduate",
     "url": "default-program-page",
     "name": "Nursing BS-UCAN",
-    "essay": "500 - 700",
-    "gpa": "3.0",
-    "interview": "July 20, 2017"
+    "type": "Degree",
+    "format": "classroom"
   },
   {
     "level": "undergraduate",
     "url": "default-program-page",
-    "name": "RN to Nursing BS (online)"
+    "name": "RN to Nursing BS (online)",
+    "type": "Degree",
+    "format": "online"
   },
   {
     "level": "undergraduate",
     "url": "default-program-page",
-    "name": "Integrated Nursing Pathway"
+    "name": "Integrated Nursing Pathway",
+    "type": "Degree",
+    "format": "hybrid"
   },
   {
     "level": "graduate",
     "url": "grad-specialty-req-page",
     "name": "Masters Program",
-    "degree": "Bachelor of Science Nursing",
-    "interview": "April",
-    "references": "Four (at least one academic)"
+    "type": "Degree",
+    "format": "classroom"
   },
   {
     "level": "graduate",
     "url": "grad-specialty-req-page",
-    "name": "BS-DNP Program"
+    "name": "BS-DNP Program",
+    "type": "Degree",
+    "format": "hybrid"
   },
   {
     "level": "graduate",
     "url": "grad-specialty-req-page",
-    "name": "BS-PhD Program"
+    "name": "BS-PhD Program",
+    "type": "Degree",
+    "format": "hybrid"
   },
   {
     "level": "graduate",
     "url": "default-program-page",
-    "name": "PhD Program"
+    "name": "PhD Program",
+    "type": "Degree",
+    "format": "online"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Adult-Gerontology Acute Care Nurse Practitioner"
+    "name": "Adult-Gerontology Acute Care Nurse Practitioner",
+    "type": "Specialty",
+    "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Adult-Gerontology Primary Care Nurse Practitioner"
+    "name": "Adult-Gerontology Primary Care Nurse Practitioner",
+    "type": "Specialty",
+    "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology"
+    "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology",
+    "type": "Specialty",
+    "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Primary Care Pediatric Nurse Practitioner"
+    "name": "Primary Care Pediatric Nurse Practitioner",
+    "type": "Specialty",
+    "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Acute Care Pediatric Nurse Practitioner"
+    "name": "Acute Care Pediatric Nurse Practitioner",
+    "type": "Specialty",
+    "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Psychiatric Mental Health"
+    "name": "Psychiatric Mental Health",
+    "type": "Specialty",
+    "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Family Nurse Practitioner"
+    "name": "Family Nurse Practitioner",
+    "type": "Specialty",
+    "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Nurse-Midwifery"
+    "name": "Nurse-Midwifery",
+    "type": "Specialty",
+    "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Women's Health"
+    "name": "Women's Health",
+    "type": "Specialty",
+    "format": "hybrid"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Health Care Informatics"
+    "name": "Health Care Informatics",
+    "type": "Specialty",
+    "format": "online"
   },
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "i-LEAD Nursing Leadership"
+    "name": "i-LEAD Nursing Leadership",
+    "type": "Specialty",
+    "format": "hybrid"
   },
   {
     "level": "graduate",
     "url": "default-program-page",
-    "name": "DNP Program"
+    "name": "DNP Program",
+    "type": "Degree",
+    "format": "classroom"
   },
   {
     "level": "graduate",
     "url": "default-program-page",
-    "name": "DNP-PHN Program"
+    "name": "DNP-PHN Program",
+    "type": "Degree",
+    "format": "hybrid"
   },
   {
     "level": "graduate",
     "url": "default-program-page",
-    "name": "Dual Degree Program"
+    "name": "Dual Degree Program",
+    "type": "Degree",
+    "format": "hybrid"
   },
   
   {
     "level": "specialties",
     "url": "specialty-landing-page",
-    "name": "Veteran and Military Health Care"
+    "name": "Veteran and Military Health Care",
+    "type": "Specialty",
+    "format": "online"
   },
   {
     "level": "additional",
     "url": "non-degree-education",
-    "name": "Non-Degree Education"
+    "name": "Non-Degree Education",
+    "type": "Professional Development",
+    "format": "varies"
   },
   {
     "level": "additional",
     "url": "post-grad-certificate",
-    "name": "Post-Graduate Certificates"
+    "name": "Post-Graduate Certificates",
+    "type": "Certificate",
+    "format": "classroom"
   },
   {
     "level": "additional",
     "url": "grad-certificate-landing",
-    "name": "Graduate-Level Certificates"
+    "name": "Graduate-Level Certificates",
+    "type": "Certificate",
+    "format": "classroom"
   },
   {
     "level": "additional",
     "url": "continuing-education",
-    "name": "Continuing Nursing Education"
+    "name": "Continuing Nursing Education",
+    "type": "Professional Development",
+    "format": "classroom"
   }
 ] 
