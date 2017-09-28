@@ -11,7 +11,9 @@
     <section>
       <h3>Program Type</h3>
         <label for="{{ type }}" data-ng-repeat="type in typeGroup | orderBy:type">
-          <input id="{{ type }}" type="checkbox" data-ng-model="useType[type]">{{ type | capitalize}}
+          <input id="{{ type }}" type="checkbox" data-ng-model="useType[type]">
+          <span data-ng-if="type !== 'development'">{{ type | capitalize}}</span>
+          <span data-ng-if="type === 'development'">Professional Development</span>
           <span>({{ (filteredPrograms | filter:count('type', type)).length }})</span>
         </label>
     </section>
@@ -33,8 +35,8 @@
   <div class="program-cards width-75 flex-container between flex-wrap-wrap">
     
     <div class="width-45 margin-bottom-small" data-ng-repeat="program in filteredPrograms">
-      <span data-ng-if="prgoram.type !== 'development'">{{ program.type | capitalize }}</span>
-      <span data-ng-if="prgoram.type === 'development'">Professional Development</span>
+      <span data-ng-if="program.type !== 'development'">{{ program.type | capitalize }}</span>
+      <span data-ng-if="program.type === 'development'">Professional Development</span>
       <a data-ui-sref="{{ program.url }}">{{ program.name }}</a>
       <div>
         <ul>
