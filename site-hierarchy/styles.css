@@ -465,6 +465,7 @@ main nav + div {
 .program-finder .program-cards>div {
   border: 1px solid #ddd;
   border-radius: 4px;
+  height: 305px;
   padding: 1rem;
 }
 

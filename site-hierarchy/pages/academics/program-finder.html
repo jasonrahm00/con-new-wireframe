@@ -8,6 +8,8 @@
   <section class="width-20">
     <h2 class="no-margin-top">Filters</h2>
     
+    <p>Results: {{ (filteredPrograms).length }} </p>
+    
     <section>
       <h3>Program Type</h3>
         <label for="{{ type }}" data-ng-repeat="type in typeGroup | orderBy:type">
@@ -28,6 +30,20 @@
     
     <section>
       <h3>Patient Population</h3>
+      <ul>
+        <li>Rural</li>
+        <li>Urban</li>
+        <li>Global</li>
+        <li>Children</li>
+        <li>Adults</li>
+        <li>Elderly</li>
+        <li>Hospital</li>
+        <li>Private Practice</li>
+        <li>Veterans</li>
+        <li>Women</li>
+        <li>Indirect Care</li>
+        <li>Direct Care</li>
+      </ul>
     </section>
 
   </section>   
