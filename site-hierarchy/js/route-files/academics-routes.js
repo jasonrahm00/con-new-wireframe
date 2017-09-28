@@ -4,9 +4,9 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
     
     // View states for main pages linked in Nav
   
-    .state('academics', {
-      url: '/academics',
-      templateUrl: '/pages/academics/academics-landing.html',
+    .state('program-sort', {
+      url: '/academics/program-sort',
+      templateUrl: '/pages/academics/program-sort.html',
       data: {
         title: 'Academcis',
         breadcrumb: 'Home > Academics'
@@ -107,7 +107,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       templateUrl: '/pages/academics/program-finder.html',
       data: {
         title: 'College of Nursing Program Finder',
-        breadcrumb: 'Home > Academics > Program Finder'
+        breadcrumb: 'Home > Academics'
       },
       controller: 'programFinderCtrl'
   });
