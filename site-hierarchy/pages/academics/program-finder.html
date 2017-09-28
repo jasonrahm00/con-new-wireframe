@@ -4,65 +4,37 @@
 </header>
 
 <div class="flex-container between">
-  
-  <div class="width-20">
-    <h2 class="no-margin-top">Program Filters</h2>
-    
-    <div>
-      <h3>Program Type</h3>
-      
-      <label for="degree">
-        <input type="radio" id="degree" name="type" value="degree" data-ng-model="type">
-        Degree
-      </label>
-      
-      <label for="specialty">
-        <input type="radio" id="specialty" name="type" value="specialty" data-ng-model="type">
-        Specialty
-      </label>
-      
-      <label for="professional">
-        <input type="radio" id="professional" name="type" value="professional development" data-ng-model="type">
-        Professional Development
-      </label>
-      
-      <label for="certificate">
-        <input type="radio" id="certificate" name="type" value="certificate" data-ng-model="type">
-        Certificate
-      </label>
-      
-    </div>
-    
-    <div>
-      <h3>Learning Format</h3>
-      
-      <label for="classroom">
-        <input type="radio" id="classroom" value="classroom" name="format" data-ng-model="format">
-        Classroom
-      </label>
-      
-      <label for="online">
-        <input type="radio" id="online" value="online" name="format" data-ng-model="format">
-        Online
-      </label>
-      
-      <label for="hybrid">
-        <input type="radio" id="hybrid" value="hybrid" name="format" data-ng-model="format">
-        Hybrid
-      </label>
-      
-    </div>
-    
-    <div>
-      <h3>Patient Population</h3>
-    </div>
 
-  </div>
+  <section class="width-20">
+    <h2 class="no-margin-top">Filters</h2>
+    
+    <section>
+      <h3>Program Type</h3>
+        <label for="{{ type }}" data-ng-repeat="type in typeGroup | orderBy:type">
+          <input id="{{ type }}" type="checkbox" data-ng-model="useType[type]">{{ type | capitalize}}
+          <span>({{ (filteredPrograms | filter:count('type', type)).length }})</span>
+        </label>
+    </section>
+
+    <section class="margin-vertical-small">
+      <h3>Format</h3>
+      <label data-ng-repeat="format in formatGroup | orderBy:format">
+        <input type="checkbox" data-ng-model="useFormat[format]">{{ format | capitalize }}
+        <span>({{ (filteredPrograms | filter:count('format', format)).length }})</span>
+      </label>
+    </section>
+    
+    <section>
+      <h3>Patient Population</h3>
+    </section>
+
+  </section>   
   
   <div class="program-cards width-75 flex-container between flex-wrap-wrap">
     
-    <div class="width-45 margin-bottom-small" data-ng-repeat="program in programs">
-      <span>{{ program.type }}</span>
+    <div class="width-45 margin-bottom-small" data-ng-repeat="program in filteredPrograms">
+      <span data-ng-if="prgoram.type !== 'development'">{{ program.type | capitalize }}</span>
+      <span data-ng-if="prgoram.type === 'development'">Professional Development</span>
       <a data-ui-sref="{{ program.url }}">{{ program.name }}</a>
       <div>
         <ul>
@@ -76,6 +48,7 @@
     </div>
       
   </div>
+  
   
 </div>
 
