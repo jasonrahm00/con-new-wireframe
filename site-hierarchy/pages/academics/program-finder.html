@@ -12,6 +12,7 @@
     
     <section>
       <h3>Program Type</h3>
+        <p>Need to sort by degree level, too</p>
         <label for="{{ type }}" data-ng-repeat="type in typeGroup | orderBy:type">
           <input id="{{ type }}" type="checkbox" data-ng-model="useType[type]">
           <span data-ng-if="type !== 'development'">{{ type | capitalize}}</span>
@@ -26,6 +27,20 @@
         <input type="checkbox" data-ng-model="useFormat[format]">{{ format | capitalize }}
         <span>({{ (filteredPrograms | filter:count('format', format)).length }})</span>
       </label>
+    </section>
+    
+    <section>
+      <h3>Current Education Level</h3>
+      <p>Sort based on current education level. Or what you need to begin the program</p>
+      <ul>
+        <li>High School Diploma</li>
+        <li>RN (ADN) License</li>
+        <li>Associate Degree (or some college)</li>
+        <li>Bachelors in Nursing</li>
+        <li>Bachelors NOT in Nursing</li>
+        <li>Masters in Nursing</li>
+        <li>Masters NOT in Nursing</li>
+      </ul>
     </section>
     
     <section>
@@ -45,6 +60,7 @@
         <li>Direct Care</li>
       </ul>
     </section>
+    
 
   </section>   
   
