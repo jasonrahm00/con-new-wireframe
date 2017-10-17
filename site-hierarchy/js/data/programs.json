@@ -4,63 +4,99 @@
     "url": "default-program-page",
     "name": "Nursing BS - Traditional",
     "type": "degree",
-    "format": "classroom"
+    "format": "classroom",
+    "tuition": {
+      "nonResident": 16200,
+      "resident": 7650      
+    }
   },
   {
     "level": "undergraduate",
     "url": "default-program-page",
     "name": "Dual Enrollment AAS and Nursing BS (online)",
     "type": "degree",
-    "format": "online"
+    "format": "online",
+    "tuition": {
+      "nonResident": 0,
+      "resident": 0
+    }
   },
   {
     "level": "undergraduate",
     "url": "default-program-page",
     "name": "Nursing BS-UCAN",
     "type": "degree",
-    "format": "classroom"
+    "format": "classroom",
+    "tuition": {
+      "nonResident": 0,
+      "resident": 0
+    }
   },
   {
     "level": "undergraduate",
     "url": "default-program-page",
     "name": "RN to Nursing BS (online)",
     "type": "degree",
-    "format": "online"
+    "format": "online",
+    "tuition": {
+      "nonResident": 9270,
+      "resident": 7200      
+    }
   },
   {
     "level": "undergraduate",
     "url": "default-program-page",
     "name": "Integrated Nursing Pathway",
     "type": "degree",
-    "format": "hybrid"
+    "format": "hybrid",
+    "tuition": {
+      "nonResident": 0,
+      "resident": 0
+    }
   },
   {
     "level": "graduate",
     "url": "grad-specialty-req-page",
     "name": "Masters Program",
     "type": "degree",
-    "format": "classroom"
+    "format": "classroom",
+    "tuition": {
+      "nonResident": 1030,
+      "resident": 635
+    }
   },
   {
     "level": "graduate",
     "url": "grad-specialty-req-page",
     "name": "BS-DNP Program",
     "type": "degree",
-    "format": "hybrid"
+    "format": "hybrid",
+    "tuition": {
+      "nonResident": 1030,
+      "resident": 635
+    }
   },
   {
     "level": "graduate",
     "url": "grad-specialty-req-page",
-    "name": "BS-PhD Program",
+    "name": "MS-PhD Program",
     "type": "degree",
-    "format": "hybrid"
+    "format": "hybrid",
+    "tuition": {
+      "nonResident": 0,
+      "resident": 0
+    }
   },
   {
     "level": "graduate",
     "url": "default-program-page",
     "name": "PhD Program",
     "type": "degree",
-    "format": "online"
+    "format": "online",
+    "tuition": {
+      "nonResident": 1020,
+      "resident": 600
+    }
   },
   {
     "level": "specialties",
@@ -144,21 +180,33 @@
     "url": "default-program-page",
     "name": "DNP Program",
     "type": "degree",
-    "format": "classroom"
+    "format": "classroom",
+    "tuition": {
+      "nonResident": 1030,
+      "resident": 635
+    }
   },
   {
     "level": "graduate",
     "url": "default-program-page",
     "name": "DNP-PHN Program",
     "type": "degree",
-    "format": "hybrid"
+    "format": "hybrid",
+    "tuition": {
+      "nonResident": 1030,
+      "resident": 635
+    }
   },
   {
     "level": "graduate",
     "url": "default-program-page",
     "name": "Dual Degree Program",
     "type": "degree",
-    "format": "hybrid"
+    "format": "hybrid",
+    "tuition": {
+      "nonResident": 0,
+      "resident": 0
+    }
   },
   
   {
@@ -173,27 +221,43 @@
     "url": "non-degree-education",
     "name": "Non-Degree Education",
     "type": "development",
-    "format": "varies"
+    "format": "varies",
+    "tuition": {
+      "nonResident": 0,
+      "resident": 635
+    }
   },
   {
     "level": "additional",
     "url": "post-grad-certificate",
     "name": "Post-Graduate Certificates",
     "type": "certificate",
-    "format": "classroom"
+    "format": "classroom",
+    "tuition": {
+      "nonResident": 1030,
+      "resident": 635
+    }
   },
   {
     "level": "additional",
     "url": "grad-certificate-landing",
     "name": "Graduate-Level Certificates",
     "type": "certificate",
-    "format": "classroom"
+    "format": "classroom",
+    "tuition": {
+      "nonResident": 1030,
+      "resident": 635
+    }
   },
   {
     "level": "additional",
     "url": "continuing-education",
     "name": "Continuing Nursing Education",
     "type": "development",
-    "format": "classroom"
+    "format": "classroom",
+    "tuition": {
+      "nonResident": 0,
+      "resident": 0
+    }
   }
 ] 

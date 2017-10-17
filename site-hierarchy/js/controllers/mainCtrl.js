@@ -15,5 +15,11 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, $q, prog
     jQuery('nav>ul>li').not(this).removeClass('active');
     jQuery(this).toggleClass('active');
   });
+  
+  $scope.setProgram = function(program) {
+    programFactory.selectProgram(program);
+    $scope.selectedProgram = programFactory.selectedProgram;
+    console.log($scope.selectedProgram);
+  };
     
 });

@@ -43,7 +43,17 @@ angular.module('conWireframe').directive('programLink', function(){
   return {
     restrict: 'E',
     replace: true,
-    template: '<a data-ui-sref="{{ program.url }}">{{ program.name }}</a>'
+    template: '<a data-ui-sref="{{ program.url }}" data-ng-click="setProgram(program)">{{ program.name }}</a>'
+  };
+  
+});
+
+angular.module('conWireframe').directive('tuition', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: '/templates/general/tuition.html'
   };
   
 });

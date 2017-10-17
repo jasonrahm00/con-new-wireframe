@@ -1,0 +1,33 @@
+<section>
+  <h2>Tuition</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">CO Residency Status</th>
+        <th scope="col">
+          Cost 
+          <span data-ng-if="selectedProgram.level === 'undergraduate'">(total tuition)</span>
+          <span data-ng-if="selectedProgram.level !== 'undergraduate'">(per credit hour)</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="width-50">Non-Resident</td>
+        <td class="width-50">
+          <span data-ng-if="selectedProgram.tuition.nonResident !== 0">{{ selectedProgram.tuition.nonResident | currency}}</span>
+          <span data-ng-if="selectedProgram.tuition.nonResident === 0">N/A</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="width-50">Resident</td>
+        <td class="width-50">
+          <span data-ng-if="selectedProgram.tuition.resident !== 0">{{ selectedProgram.tuition.resident | currency }}</span>
+          <span data-ng-if="selectedProgram.tuition.resident === 0">N/A</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+</section>

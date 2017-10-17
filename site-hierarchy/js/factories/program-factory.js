@@ -4,7 +4,8 @@ angular.module('conWireframe').factory('programFactory', function($q, dataServic
   
   var programObject = {
     "programs": [],
-    "sortedPrograms": []
+    "sortedPrograms": [],
+    "selectedProgram": {}
   };
   
   programObject.getPrograms = function() {
@@ -21,6 +22,11 @@ angular.module('conWireframe').factory('programFactory', function($q, dataServic
     });
     return this;
   };
+  
+  programObject.selectProgram = function(program) {
+    this.selectedProgram = program;
+    return this;
+  }
 
   return programObject;
   
