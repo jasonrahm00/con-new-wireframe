@@ -213,10 +213,6 @@ tr:nth-child(2n) {
   background-color: whitesmoke;
 }
 
-tr:nth-child(odd) {
-  border-bottom: 1px solid #ddd;
-}
-
 tr:nth-child(2n) td {
   border-right: 1px solid #fff;
 }
