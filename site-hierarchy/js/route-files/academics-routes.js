@@ -110,6 +110,15 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         breadcrumb: 'Home > Academics'
       },
       controller: 'programFinderCtrl'
+  })
+  .state('decision-tree', {
+      url: '/academics/decision-tree',
+      templateUrl: '/pages/academics/decision-tree.html',
+      data: {
+        title: 'College of Nursing Degree Decision Tree',
+        breadcrumb: 'Home > Academics > Decision Tree'
+      },
+      controller: 'treeCtrl'
   });
   
 });

@@ -1,0 +1,82 @@
+{
+  "name": "Highest Degree Earned",
+  "parent": "null",
+  "children": [
+    {
+      "name": "High School Diploma",
+      "parent": "Highest Degree Earned",
+      "children":[
+        {
+          "name": "Integrated Nursing Pathway",
+          "parent": "Highest Degree Earned"
+        }
+      ]
+    },
+    {
+      "name": "Bachelors Degree",
+      "parent": "Highest Degree Earned",
+      "children":[
+        {
+          "name": "Nursing Bachelors",
+          "parent": "Bachelors Degree",
+          "children": [
+            {
+              "name": "Masters Degree",
+              "parent": "Nursing Bachelors",
+              "children": [
+                {
+                  "name": "Work Directly with Patients",
+                  "parent": "Masters Degree",
+                  "children": [
+                    {
+                      "name": "Rural",
+                      "parent": "Work Directly with Patients"
+                    },
+                    {
+                      "name": "Urabn",
+                      "parent": "Work Directly with Patients"
+                    },
+                    {
+                      "name": "Global",
+                      "parent": "Work Directly with Patients"
+                    },
+                    {
+                      "name": "Underserved",
+                      "parent": "Work Directly with Patients"
+                    }
+                  ]
+                },
+                {
+                  "name": "Word in Administration/Leadership",
+                  "parent": "Masters Degree"
+                }
+              ]
+            },
+            {
+              "name": "DNP Degree",
+              "parent": "Nursing Bachelors"
+            },
+            {
+              "name": "PhD Degree",
+              "parent": "Nursing Bachelors"
+            }
+          ]
+        },
+        {
+          "name": "Bachelors not in Nursing",
+          "parent": "Bachelors Degree",
+          "children": [
+            {
+              "name": "Nursing BS Accelerated",
+              "parent": "Bachelors not in Nursing"
+            },
+            {
+              "name": "Nursing BS Traditional",
+              "parent": "Bachelors not in Nursing"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
