@@ -117,8 +117,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       data: {
         title: 'College of Nursing Degree Decision Tree',
         breadcrumb: 'Home > Academics > Decision Tree'
-      },
-      controller: 'treeCtrl'
+      }
   });
   
 });
