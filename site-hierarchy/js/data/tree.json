@@ -1,78 +1,114 @@
 {
-  "name": "Highest Degree Earned",
+  "name": "What is the highest degree you have earned?",
   "parent": "null",
   "children": [
     {
       "name": "High School Diploma",
-      "parent": "Highest Degree Earned",
       "children":[
         {
-          "name": "Integrated Nursing Pathway",
+          "name": "Please explore our Integrated Nursing Pathway",
           "parent": "Highest Degree Earned"
         }
       ]
     },
     {
       "name": "Bachelors Degree",
-      "parent": "Highest Degree Earned",
       "children":[
         {
-          "name": "Nursing Bachelors",
-          "parent": "Bachelors Degree",
+          "name": "Is your Bachelors Degree in Nursing?",
           "children": [
             {
-              "name": "Masters Degree",
-              "parent": "Nursing Bachelors",
+              "name": "Would you like to pursue a Masters Degree?",
               "children": [
                 {
-                  "name": "Work Directly with Patients",
-                  "parent": "Masters Degree",
+                  "name": "Do you want to work directly with patients?",
                   "children": [
                     {
-                      "name": "Rural",
-                      "parent": "Work Directly with Patients"
+                      "name": "Is there a particular patient population you'd like to serve?",
+                      "children": [
+                        {
+                          "name": "Rural"
+                        },
+                        {
+                          "name": "Urban"
+                        },
+                        {
+                          "name": "Global"
+                        },
+                        {
+                          "name": "Underserved"
+                        },
+                        {
+                          "name": "Veterans"
+                        }
+                      ]
                     },
                     {
-                      "name": "Urabn",
-                      "parent": "Work Directly with Patients"
+                      "name": "Would you like to work in a particular setting?",
+                      "children": [
+                        {
+                          "name": "Walk-In Clinic"
+                        },
+                        {
+                          "name": "Private Practice"
+                        },
+                        {
+                          "name": "Hospital"
+                        },
+                        {
+                          "name": "Urgent Care"
+                        }
+                      ]
                     },
                     {
-                      "name": "Global",
-                      "parent": "Work Directly with Patients"
-                    },
-                    {
-                      "name": "Underserved",
-                      "parent": "Work Directly with Patients"
+                      "name": "Is there a particular age-group you'd like to work with?",
+                      "children": [
+                        {
+                          "name": "Newborns",
+                          "children": [
+                            {
+                              "name": "Check out our Nurse-Midwifery Masters Specialty Program"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Children"
+                        },
+                        {
+                          "name": "Teens"
+                        },
+                        {
+                          "name": "Adults"
+                        },
+                        {
+                          "name": "Elderly"
+                        }
+                      ]
                     }
+                    
                   ]
                 },
                 {
-                  "name": "Word in Administration/Leadership",
-                  "parent": "Masters Degree"
+                  "name": "Do you want to work in Administration/Leadership?"
                 }
               ]
             },
             {
-              "name": "DNP Degree",
-              "parent": "Nursing Bachelors"
+              "name": "Would you like to pursue a DNP Degree?"
             },
             {
-              "name": "PhD Degree",
-              "parent": "Nursing Bachelors"
+              "name": "Would you like to pursue a PhD Degree?"
             }
           ]
         },
         {
-          "name": "Bachelors not in Nursing",
-          "parent": "Bachelors Degree",
+          "name": "Is your Bachelors Degree in a Non-Nursing Field?",
           "children": [
             {
-              "name": "Nursing BS Accelerated",
-              "parent": "Bachelors not in Nursing"
+              "name": "Earn a BS in Nursing in 12 months with our Accelerated program"
             },
             {
-              "name": "Nursing BS Traditional",
-              "parent": "Bachelors not in Nursing"
+              "name": "Choose the Traditional Nursing BS option for a longer program"
             }
           ]
         }

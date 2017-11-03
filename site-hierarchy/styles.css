@@ -694,7 +694,7 @@ main nav + div {
 }
 
 .node text {
-  font: 10px sans-serif;
+  font: .85rem sans-serif;
   pointer-events: none;
 }
 

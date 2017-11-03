@@ -2,6 +2,7 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
   
   //indent tree directive refactor source
     //https://bl.ocks.org/mbostock/1093025
+    //v4 example https://jsfiddle.net/psggohjv/3/
   
   return {
     restrict: 'E',
@@ -11,7 +12,7 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
 
         var margin = {top: 30, right: 20, bottom: 30, left: 20},
             width = 960 - margin.left - margin.right,
-            barHeight = 20,
+            barHeight = 40,
             barWidth = width * .8;
 
         var i = 0,
@@ -19,14 +20,11 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
             root;
 
         var tree = d3.layout.tree()
-            .nodeSize([0, 20]);
+            .nodeSize([0, 40]);
 
-        var diagonal = d3.svg.diagonal()
-            .projection(function(d) { return [d.y, d.x]; });
-
-        var svg = d3.select("body").append("svg")
+        var svg = d3.select("decision-tree").append("svg")
             .attr("width", width + margin.left + margin.right)
-          .append("g")
+            .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
         d3.json("/js/data/tree.json", function(error, data) {
@@ -41,7 +39,7 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
 
           // Compute the flattened node list. TODO use d3.layout.hierarchy.
           var nodes = tree.nodes(root);
-
+          
           var height = Math.max(500, nodes.length * barHeight + margin.top + margin.bottom);
 
           d3.select("svg").transition()
@@ -89,7 +87,7 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
               .duration(duration)
               .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
               .style("opacity", 1)
-            .select("rect")
+              .select("rect")
               .style("fill", color);
 
           // Transition exiting nodes to the parent's new position.
@@ -102,32 +100,7 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
           // Update the links…
           var link = svg.selectAll("path.link")
               .data(tree.links(nodes), function(d) { return d.target.id; });
-
-          // Enter any new links at the parent's previous position.
-          link.enter().insert("path", "g")
-              .attr("class", "link")
-              .attr("d", function(d) {
-                var o = {x: source.x0, y: source.y0};
-                return diagonal({source: o, target: o});
-              })
-            .transition()
-              .duration(duration)
-              .attr("d", diagonal);
-
-          // Transition links to their new position.
-          link.transition()
-              .duration(duration)
-              .attr("d", diagonal);
-
-          // Transition exiting nodes to the parent's new position.
-          link.exit().transition()
-              .duration(duration)
-              .attr("d", function(d) {
-                var o = {x: source.x, y: source.y};
-                return diagonal({source: o, target: o});
-              })
-              .remove();
-
+          
           // Stash the old positions for transition.
           nodes.forEach(function(d) {
             d.x0 = d.x;
@@ -150,6 +123,8 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
         function color(d) {
           return d._children ? "#3182bd" : d.children ? "#c6dbef" : "#fd8d3c";
         }
+        
+        
         
         
       });
