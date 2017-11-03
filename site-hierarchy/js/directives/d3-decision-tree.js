@@ -120,6 +120,7 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
           update(d);
         }
 
+        // Called in transition and node build methods to update the color depneding on the state and whether the node has children
         function color(d) {
           return d._children ? "#3182bd" : d.children ? "#c6dbef" : "#fd8d3c";
         }

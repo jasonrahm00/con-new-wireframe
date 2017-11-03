@@ -694,7 +694,7 @@ main nav + div {
 }
 
 .node text {
-  font: .85rem sans-serif;
+  font: .85rem;
   pointer-events: none;
 }
 
@@ -703,7 +703,6 @@ path.link {
   stroke: #9ecae1;
   stroke-width: 1.5px;
 }
-
 
 
 /**********************************************************
