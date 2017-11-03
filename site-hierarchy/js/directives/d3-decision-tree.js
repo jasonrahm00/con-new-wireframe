@@ -2,7 +2,9 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
   
   //indent tree directive refactor source
     //https://bl.ocks.org/mbostock/1093025
-    //v4 example https://jsfiddle.net/psggohjv/3/
+  
+  //Collapse all nodes on page load
+    //http://bl.ocks.org/larskotthoff/7022289
   
   return {
     restrict: 'E',
@@ -27,11 +29,21 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+        //Collapse all nodes under root on page load
+          //https://bl.ocks.org/d3noob/43a860bc0024792f8803bba8ca0d5ecd
+        function collapse(node) {
+          if(node.children) {
+            node._children = node.children
+            node._children.forEach(collapse)
+            node.children = null
+          }
+        }
+        
         d3.json("/js/data/tree.json", function(error, data) {
           if (error) throw error;
-
           data.x0 = 0;
           data.y0 = 0;
+          data.children.forEach(collapse);
           update(root = data);
         });
 
@@ -123,10 +135,7 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
         function color(d) {
           return d._children ? "#3182bd" : d.children ? "#c6dbef" : "#fd8d3c";
         }
-        
-        
-        
-        
+
       });
     }
   }
