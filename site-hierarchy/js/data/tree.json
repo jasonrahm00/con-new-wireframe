@@ -7,7 +7,7 @@
       "children":[
         {
           "name": "Please explore our Integrated Nursing Pathway",
-          "parent": "Highest Degree Earned"
+          "url": "http://www.ucdenver.edu/academics/colleges/nursing/programs-admissions/undergraduate-programs/integrated-nursing-pathway/Pages/default.aspx"
         }
       ]
     },
@@ -67,7 +67,8 @@
                           "name": "Newborns",
                           "children": [
                             {
-                              "name": "Check out our Nurse-Midwifery Masters Specialty Program"
+                              "name": "Check out our Nurse-Midwifery Masters Program",
+                              "url": "http://www.ucdenver.edu/academics/colleges/nursing/programs-admissions/graduate-programs/graduate-specialties/Pages/nurse-midwifery.aspx"
                             }
                           ]
                         },
@@ -105,10 +106,12 @@
           "name": "Is your Bachelors Degree in a Non-Nursing Field?",
           "children": [
             {
-              "name": "Earn a BS in Nursing in 12 months with our Accelerated program"
+              "name": "Earn a BS in Nursing in 12 months with our Accelerated program",
+              "url": "http://www.ucdenver.edu/academics/colleges/nursing/programs-admissions/undergraduate-programs/UCAN/Pages/default.aspx"
             },
             {
-              "name": "Choose the Traditional Nursing BS option for a longer program"
+              "name": "Choose the Traditional Nursing BS option for a longer program",
+              "url": "http://www.ucdenver.edu/academics/colleges/nursing/programs-admissions/undergraduate-programs/nursing-bs/Pages/nursing-bs.aspx"
             }
           ]
         }

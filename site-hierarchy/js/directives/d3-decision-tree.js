@@ -68,12 +68,16 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
               .style("opacity", 1e-6);
 
           // Enter any new nodes at the parent's previous position.
-          nodeEnter.append("svg:rect")
-              .attr("y", -barHeight / 2)
-              .attr("height", barHeight)
-              .attr("width", barWidth)
-              .style("fill", color)
-              .on("click", click);
+          
+          nodeEnter .append("a")
+            .attr("href", function(d) { return d.url })
+            .attr("target", "blank")
+              .append("svg:rect")
+                .attr("y", -barHeight / 2)
+                .attr("height", barHeight)
+                .attr("width", barWidth)
+                .style("fill", color)
+                .on("click", click);
 
           nodeEnter.append("svg:text")
               .attr("dy", 3.5)
@@ -122,7 +126,7 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
 
         // Called in transition and node build methods to update the color depneding on the state and whether the node has children
         function color(d) {
-          return d._children ? "#3182bd" : d.children ? "#c6dbef" : "#fd8d3c";
+          return d._children ? "#cfbb7c" : d.children ? "#d2d2d2" : "#cbd3eb";
         }
 
       });
