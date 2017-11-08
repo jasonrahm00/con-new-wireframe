@@ -685,17 +685,42 @@ main nav + div {
 
 **********************************************************/
 
-.node rect {
+/******************** Decision Tree ********************/
+
+.decision-tree .node rect {
   cursor: pointer;
   stroke: #000;
   stroke-opacity: 1.0;
   stroke-width: 2px;
 }
 
-.node text {
+.decision-tree .node text {
   font: .85rem;
   pointer-events: none;
 }
+
+/******************** Program Pathways ********************/
+
+.program-pathways .node {
+  cursor: pointer;
+}
+
+.program-pathways .node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.program-pathways .node text {
+  font: 10px sans-serif;
+}
+
+.program-pathways .link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
 
 
 /**********************************************************

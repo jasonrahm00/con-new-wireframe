@@ -118,6 +118,14 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         title: 'College of Nursing Degree Decision Tree',
         breadcrumb: 'Home > Academics > Decision Tree'
       }
+  })
+  .state('program-pathways', {
+      url: '/academics/program-pathways',
+      templateUrl: '/pages/academics/program-pathways.html',
+      data: {
+        title: 'College of Nursing Program Pathways',
+        breadcrumb: 'Home > Academics > Program Pathways'
+      }
   });
   
 });

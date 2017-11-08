@@ -1,0 +1,258 @@
+{
+  "name": "CON Program Pathways",
+  "children": [
+    {
+      "name": "Bachelors",
+      "children": [
+        {
+          "name": "Accelerated BS Program"
+        },
+        {
+          "name": "Traditional BS Program"
+        },
+        {
+          "name": "RN to Nursing BS"
+        },
+        {
+          "name": "Integrated Pathway"
+        },
+        {
+          "name": "Dual Enrollment ADN and Nursing BS"
+        }
+      ]
+    },
+    {
+      "name": "Masters",
+      "children": [
+        {
+          "name": "Acute Care Pediatric NP"
+        },
+        {
+          "name": "Adult-Gerontology Acute Care Nurse Practitioner"
+        },
+        {
+          "name": "Adult-Gerontology Primary Care Nurse Practitioner"
+        },
+        {
+          "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology"
+        },
+        {
+          "name": "Family Nurse Practitioner"
+        },
+        {
+          "name": "Health Care Informatics"
+        },
+        {
+          "name": "i-LEAD Nursing Leadership and Health Care Systems"
+        },
+        {
+          "name": "Nurse-Midwifery"
+        },
+        {
+          "name": "Primary Care Pediatric Nurse Practitioner"
+        },
+        {
+          "name": "Psychiatric Mental Health Nurse Practitioner"
+        },
+        {
+          "name": "Veteran and Military Health Care"
+        },
+        {
+          "name": "Women's Health"
+        }
+      ]
+    },
+    {
+      "name": "DNP",
+      "children": [
+        {
+          "name": "BS to DNP",
+          "description": "For nurses with a bachelors who want a DNP and a Masters in a specialty",
+          "children": [
+            {
+              "name": "Acute Care Pediatric NP"
+            },
+            {
+              "name": "Adult-Gerontology Acute Care Nurse Practitioner"
+            },
+            {
+              "name": "Adult-Gerontology Primary Care Nurse Practitioner"
+            },
+            {
+              "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology"
+            },
+            {
+              "name": "Family Nurse Practitioner"
+            },
+            {
+              "name": "Health Care Informatics"
+            },
+            {
+              "name": "i-LEAD Nursing Leadership and Health Care Systems"
+            },
+            {
+              "name": "Nurse-Midwifery"
+            },
+            {
+              "name": "Primary Care Pediatric Nurse Practitioner"
+            },
+            {
+              "name": "Psychiatric Mental Health Nurse Practitioner"
+            },
+            {
+              "name": "Veteran and Military Health Care"
+            },
+            {
+              "name": "Women's Health"
+            }
+          ]
+        },
+        {
+          "name": "DNP-PHN",
+          "description": "For nurses with a masters in public health who want a DNP in the public health sector (indirect care)",
+          "children": [
+            {
+              "name": "Post Graduate doctor of Nursing Practice program - public health focus"
+            }
+          ]
+        },
+        {
+          "name": "DNP/MPH Dual Degree",
+          "description": "Need BS in nursing, DNP and Masters in Public health (Indirect care)"
+        },
+        {
+          "name": "DNP-APRN",
+          "description": "For those who have bachelors in nursing and masters in advanced practice specialty (direct care depending on masters)",
+          "children": [
+            {
+              "name": "Post Graduate DNP APRN"
+            }
+          ]
+        },
+        {
+          "name": "Post-Graduate DNP Health Systems Leadership",
+          "description": "Indirect care DNP option"
+        }
+      ]
+    },
+    {
+      "name": "PhD",
+      "children": [
+        {
+          "name": "Post-Bachelors BS-PhD Program",
+          "description": "Have bachelors, apply directly to Grad School. Must have GRE"
+        },
+        {
+          "name": "Post-Bachelors MS-PhD Program",
+          "description": "Apply to masters specialty program. Gain masters first and then apply to PhD program.",
+          "children": [
+            {
+              "name": "Acute Care Pediatric NP"
+            },
+            {
+              "name": "Adult-Gerontology Acute Care Nurse Practitioner"
+            },
+            {
+              "name": "Adult-Gerontology Primary Care Nurse Practitioner"
+            },
+            {
+              "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology"
+            },
+            {
+              "name": "Family Nurse Practitioner"
+            },
+            {
+              "name": "Health Care Informatics"
+            },
+            {
+              "name": "i-LEAD Nursing Leadership and Health Care Systems"
+            },
+            {
+              "name": "Nurse-Midwifery"
+            },
+            {
+              "name": "Primary Care Pediatric Nurse Practitioner"
+            },
+            {
+              "name": "Psychiatric Mental Health Nurse Practitioner"
+            },
+            {
+              "name": "Veteran and Military Health Care"
+            },
+            {
+              "name": "Women's Health"
+            }
+          ]
+        },
+        {
+          "name": "Post-Masters PhD Program",
+          "description": "Have masters. Apply directly to PhD program. No GRE required"
+        }
+      ]
+    },
+    {
+      "name": "Graduate Certificates",
+      "children": [
+        {
+          "name": "Health Care Systems (i-LEAD)"
+        },
+        {
+          "name": "Informatics"
+        },
+        {
+          "name": "Nursing Education"
+        },
+        {
+          "name": "Palliative Care"
+        },
+        {
+          "name": "Veteran and Military Health Care"
+        }
+      ]
+    },
+    {
+      "name": "Post-Grad Certificates",
+      "children": [
+        {
+          "name": "Acute Care Pediatric NP"
+        },
+        {
+          "name": "Adult-Gerontology Acute Care Nurse Practitioner"
+        },
+        {
+          "name": "Adult-Gerontology Primary Care Nurse Practitioner"
+        },
+        {
+          "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology"
+        },
+        {
+          "name": "Family Nurse Practitioner"
+        },
+        {
+          "name": "Health Care Informatics"
+        },
+        {
+          "name": "i-LEAD Nursing Leadership and Health Care Systems"
+        },
+        {
+          "name": "Nurse-Midwifery"
+        },
+        {
+          "name": "Primary Care Pediatric Nurse Practitioner"
+        },
+        {
+          "name": "Psychiatric Mental Health Nurse Practitioner"
+        },
+        {
+          "name": "Veteran and Military Health Care"
+        },
+        {
+          "name": "Women's Health"
+        }
+      ]
+    },
+    {
+      "name": "Non-Degree"
+    }
+  ]
+}
