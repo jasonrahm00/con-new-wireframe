@@ -35,7 +35,7 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
           }
         }
 
-        d3.json("/js/data/tree.json", function(json) {
+        d3.json("/js/data/decision-tree.json", function(json) {
           json.x0 = 0;
           json.y0 = 0;
           json.children.forEach(collapse);

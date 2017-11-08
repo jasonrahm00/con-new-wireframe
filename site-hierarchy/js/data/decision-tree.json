@@ -12,6 +12,15 @@
       ]
     },
     {
+      "name": "Associates Degree in Nursing (Practicing RN)",
+      "children": [
+        {
+          "name": "Choose our RN to BS Program and earn your Bachelors Degree in Nursing",
+          "url": "http://www.ucdenver.edu/academics/colleges/nursing/programs-admissions/undergraduate-programs/rn-to-nursing-bs/Pages/default.aspx"
+        }
+      ]
+    },
+    {
       "name": "Bachelors Degree",
       "children":[
         {
@@ -110,7 +119,7 @@
               "url": "http://www.ucdenver.edu/academics/colleges/nursing/programs-admissions/undergraduate-programs/UCAN/Pages/default.aspx"
             },
             {
-              "name": "Choose the Traditional Nursing BS option for a longer program",
+              "name": "Earn a BS in Nursing in 24 months with our Traditional Nursing Bachelors  program",
               "url": "http://www.ucdenver.edu/academics/colleges/nursing/programs-admissions/undergraduate-programs/nursing-bs/Pages/nursing-bs.aspx"
             }
           ]
