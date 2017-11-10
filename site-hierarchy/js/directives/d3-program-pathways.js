@@ -10,8 +10,8 @@ angular.module('conWireframe').directive('programPathways', function(d3Service){
       d3Service.d3().then(function(d3) {
 
         var margin = {top: 20, right: 120, bottom: 20, left: 120},
-            width = 960 - margin.right - margin.left,
-            height = 800 - margin.top - margin.bottom;
+            width = 1080 - margin.right - margin.left,
+            height = 1000 - margin.top - margin.bottom;
 
         var i = 0,
             duration = 750,
@@ -48,8 +48,6 @@ angular.module('conWireframe').directive('programPathways', function(d3Service){
           update(root);
         });
 
-        d3.select(self.frameElement).style("height", "800px");
-
         function update(source) {
 
           // Compute the new tree layout.
@@ -66,7 +64,7 @@ angular.module('conWireframe').directive('programPathways', function(d3Service){
           // Enter any new nodes at the parent's previous position.
           var nodeEnter = node.enter().append("g")
               .attr("class", "node")
-              .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+              .attr("transform", function() { return "translate(" + source.y0 + "," + source.x0 + ")"; })
               .on("click", click);
 
           nodeEnter.append("circle")
@@ -74,9 +72,9 @@ angular.module('conWireframe').directive('programPathways', function(d3Service){
               .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
           nodeEnter.append("text")
-              .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
-              .attr("dy", ".35em")
-              .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+              .attr("x", function(d) { return d.children || d._children ? 0 : 20; })
+              .attr("dy", function(d) { return d.children || d._children ? "25px" : ".5em"; })
+              .attr("text-anchor", function(d) { return d.children || d._children ? "middle" : "start"; })
               .text(function(d) { return d.name; })
               .style("fill-opacity", 1e-6);
 
@@ -86,7 +84,7 @@ angular.module('conWireframe').directive('programPathways', function(d3Service){
               .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
           nodeUpdate.select("circle")
-              .attr("r", 4.5)
+              .attr("r", 10)
               .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
           nodeUpdate.select("text")
@@ -95,7 +93,7 @@ angular.module('conWireframe').directive('programPathways', function(d3Service){
           // Transition exiting nodes to the parent's new position.
           var nodeExit = node.exit().transition()
               .duration(duration)
-              .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+              .attr("transform", function() { return "translate(" + source.y + "," + source.x + ")"; })
               .remove();
 
           nodeExit.select("circle")
@@ -111,7 +109,7 @@ angular.module('conWireframe').directive('programPathways', function(d3Service){
           // Enter any new links at the parent's previous position.
           link.enter().insert("path", "g")
               .attr("class", "link")
-              .attr("d", function(d) {
+              .attr("d", function() {
                 var o = {x: source.x0, y: source.y0};
                 return diagonal({source: o, target: o});
               });
@@ -124,7 +122,7 @@ angular.module('conWireframe').directive('programPathways', function(d3Service){
           // Transition exiting nodes to the parent's new position.
           link.exit().transition()
               .duration(duration)
-              .attr("d", function(d) {
+              .attr("d", function() {
                 var o = {x: source.x, y: source.y};
                 return diagonal({source: o, target: o});
               })

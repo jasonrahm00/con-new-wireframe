@@ -1,5 +1,6 @@
 {
   "name": "CON Program Pathways",
+  "parent": null,
   "children": [
     {
       "name": "Bachelors",
@@ -112,7 +113,7 @@
           "description": "For nurses with a masters in public health who want a DNP in the public health sector (indirect care)",
           "children": [
             {
-              "name": "Post Graduate doctor of Nursing Practice program - public health focus"
+              "name": "Post Graduate DNP program - Public Health Focus"
             }
           ]
         },
