@@ -692,6 +692,10 @@ main nav + div {
   stroke-width: 2px;
 }
 
+.node rect:hover {
+  stroke-width: 3.5px;
+}
+
 .node text {
   font: .85rem;
   pointer-events: none;
