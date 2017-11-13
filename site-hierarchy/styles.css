@@ -707,8 +707,8 @@ main nav + div {
 
 .program-pathways .node circle {
   fill: #fff;
-  stroke: steelblue;
-  stroke-width: 1.5px;
+  stroke: #cfbb7c;
+  stroke-width: 2px;
 }
 
 .program-pathways .node text {

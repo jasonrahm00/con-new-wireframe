@@ -73,10 +73,21 @@ angular.module('conWireframe').directive('programPathways', function(d3Service){
 
           nodeEnter.append("text")
               .attr("x", function(d) { return d.children || d._children ? 0 : 20; })
-              .attr("dy", function(d) { return d.children || d._children ? "25px" : ".5em"; })
+              .attr("y", function(d) { return d.children || d._children ? "25px" : ".5em"; })
               .attr("text-anchor", function(d) { return d.children || d._children ? "middle" : "start"; })
-              .text(function(d) { return d.name; })
-              .style("fill-opacity", 1e-6);
+              .style("fill-opacity", 1e-6)
+              .text(function(d) { return d.name; }).call(getBB);
+          
+          nodeEnter.insert("rect", "text")
+              .attr("x", function(d) { return d.bbox.x })
+              .attr("y", function(d) { return d.bbox.y })
+              .attr("height", function(d) { return d.bbox.height })
+              .attr("width", function(d) { return d.bbox.width })
+              .style("fill", "#fff");
+            
+          function getBB(selection) {
+            selection.each(function(d) { d.bbox = this.getBBox(); })
+          }
 
           // Transition nodes to their new position.
           var nodeUpdate = node.transition()
@@ -85,7 +96,7 @@ angular.module('conWireframe').directive('programPathways', function(d3Service){
 
           nodeUpdate.select("circle")
               .attr("r", 10)
-              .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+              .style("fill", function(d) { return d._children ? "#cfbb7c" : "#fff"; });
 
           nodeUpdate.select("text")
               .style("fill-opacity", 1);
