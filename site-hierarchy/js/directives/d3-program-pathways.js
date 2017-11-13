@@ -69,7 +69,7 @@ angular.module('conWireframe').directive('programPathways', function(d3Service){
 
           nodeEnter.append("circle")
               .attr("r", 1e-6)
-              .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+              .style("fill", function(d) { return d._children ? "#cfbb7c" : "#fff"; });
 
           nodeEnter.append("text")
               .attr("x", function(d) { return d.children || d._children ? 0 : 20; })
