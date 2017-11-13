@@ -20,9 +20,9 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
         var tree = d3.layout.tree()
             .size([0, 40]);
 
-        var vis = d3.select("decision-tree").append("svg:svg")
+        var vis = d3.select("decision-tree").append("svg")
             .attr("width", w)
-            .append("svg:g")
+            .append("g")
             .attr("transform", "translate(20,30)");
 
         //Collapse all nodes under root on page load
@@ -62,7 +62,7 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
           var node = vis.selectAll("g.node")
               .data(nodes, function(d) { return d.id || (d.id = ++i); });
 
-          var nodeEnter = node.enter().append("svg:g")
+          var nodeEnter = node.enter().append("g")
               .attr("class", "node")
               .attr("transform", function() { return "translate(" + source.y0 + "," + source.x0 + ")"; })
               .style("opacity", 1e-6);
@@ -72,14 +72,14 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
           nodeEnter .append("a")
             .attr("href", function(d) { return d.url })
             .attr("target", "blank")
-              .append("svg:rect")
+              .append("rect")
                 .attr("y", -barHeight / 2)
                 .attr("height", barHeight)
                 .attr("width", barWidth)
                 .style("fill", color)
                 .on("click", click);
 
-          nodeEnter.append("svg:text")
+          nodeEnter.append("text")
               .attr("dy", 3.5)
               .attr("dx", 5.5)
               .text(function(d) { return d.name; });

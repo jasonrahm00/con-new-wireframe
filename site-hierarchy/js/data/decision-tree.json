@@ -6,8 +6,22 @@
       "name": "High School Diploma",
       "children":[
         {
-          "name": "Please explore our Integrated Nursing Pathway",
-          "url": "http://www.ucdenver.edu/academics/colleges/nursing/programs-admissions/undergraduate-programs/integrated-nursing-pathway/Pages/default.aspx"
+          "name": "Are you looking for options to gain entry into our BSN program?",
+          "children": [
+            {
+              "name": "Explore our Integrated Nursing Pathway",
+              "url": "http://www.ucdenver.edu/academics/colleges/nursing/programs-admissions/undergraduate-programs/integrated-nursing-pathway/Pages/default.aspx"
+            }
+          ]
+        },
+        {
+          "name": "Are you currently a student at ACC, FRCC or PCC/SCCC Commnity Colleges in Colorado?",
+          "children": [
+            {
+              "name": "Check out our Dual Enrollment ADN to Nursing BS program",
+              "url": "http://www.ucdenver.edu/academics/colleges/nursing/programs-admissions/undergraduate-programs/dual-enroll-adn-bs-online/Pages/adn-nursing-bs.aspx"
+            }
+          ]
         }
       ]
     },
@@ -30,7 +44,7 @@
               "name": "Would you like to pursue a Masters Degree?",
               "children": [
                 {
-                  "name": "Do you want to work directly with patients?",
+                  "name": "Do you want to work directly with patients (direct care)?",
                   "children": [
                     {
                       "name": "Is there a particular patient population you'd like to serve?",
@@ -99,15 +113,84 @@
                   ]
                 },
                 {
-                  "name": "Do you want to work in Administration/Leadership?"
+                  "name": "Do you want to work in administration/leadership (indirect care)?",
+                  "children": [
+                    {
+                      "name": "Health Care Informatics"
+                    },
+                    {
+                      "name": "Nursing Leadership and Health Care Systems (i-LEAD)"
+                    },
+                    {
+                      "name": "Veteran and Military Health Care"
+                    }
+                  ]                  
                 }
               ]
             },
             {
-              "name": "Would you like to pursue a DNP Degree?"
+              "name": "Would you like to pursue a DNP Degree?",
+              "children": [
+                {
+                  "name": "Would you like work directly with patients (direct care)?",
+                  "children": [
+                    {
+                      "name": "Acute Care Pediatric NP"
+                    },
+                    {
+                      "name": "Adult-Gerontology Acute Care Nurse Practitioner"
+                    },
+                    {
+                      "name": "Adult-Gerontology Primary Care Nurse Practitioner"
+                    },
+                    {
+                      "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology"
+                    },
+                    {
+                      "name": "Family Nurse Practitioner"
+                    },
+                    {
+                      "name": "Primary Care Pediatric Nurse Practitioner"
+                    },
+                    {
+                      "name": "Psychiatric Mental Health Nurse Practitioner"
+                    },
+                    {
+                      "name": "Women's Health"
+                    }
+                  ]
+                },
+                {
+                  "name": "Would you like to work in administration/leadership (indirect care)?",
+                  "children": [
+                    {
+                      "name": "Health Care Systems and Nusing Leadership (i-LEAD) BS-DNP",
+                      "url": "http://www.ucdenver.edu/academics/colleges/nursing/programs-admissions/graduate-programs/graduate-specialties/Pages/ilead.aspx" 
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "name": "Would you like to pursue a PhD Degree?"
+              "name": "Would you like to pursue a PhD Degree?",
+              "children": [
+                {
+                  "name": "Do you want to earn a masters in a specialty along the way to your PhD?",
+                  "children": [
+                    {
+                      "name": "With the Post-Bachelors MS-PhD Program, earn a masters in a specialty before applying to grad school."
+                    }
+                  ]
+                },
+                {
+                  "name": "Do you want to apply directly to grad school?",
+                  "children": [
+                    {
+                      "name": "Our Post-Bachelors BS-PhD option allows entrance to the PhD program with a nursing bachelors. The GRE is required."
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -121,6 +204,113 @@
             {
               "name": "Earn a BS in Nursing in 24 months with our Traditional Nursing Bachelors  program",
               "url": "http://www.ucdenver.edu/academics/colleges/nursing/programs-admissions/undergraduate-programs/nursing-bs/Pages/nursing-bs.aspx"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Masters Degree",
+      "children": [
+        {
+          "name": "Do you want to pursue a higher degree?",
+          "children": [
+            {
+              "name": "Do you want to pursue a DNP degree?",
+              "children": [
+                {
+                  "name": "Do you want to work directly with patients?",
+                  "children": [
+                    {
+                      "name": "Become an Advanced Practice Registered Nurse with our DNP-APRN program"
+                    }
+                  ]
+                },
+                {
+                  "name": "Do you want to work in administration/leadership?",
+                  "children": [
+                    {
+                      "name": "Is your masters in public health?",
+                      "children": [
+                        {
+                          "name": "Check out our Post Graduate DNP program with Public Health Focus"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Is your masters in an area other than public health?",
+                      "children": [
+                        {
+                          "name": "Earn a DNP in health systems leadership with our Post-Graduate DNP Health Systems Leadership option"
+                        },
+                        {
+                          "name": "Our DNP/MPH option awards both a masters in public health and a DNP"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Do you want to pursue a PhD degree?",
+              "children": [
+                {
+                  "name": "Apply directly to grad school with our Post-Masters PhD option."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Do you want to gain certification in an additional specialty?",
+          "children": [
+            {
+              "name": "Do you want this speicalty to be in direct care?",
+              "children": [
+                {
+                  "name": "Acute Care Pediatric NP"
+                },
+                {
+                  "name": "Adult-Gerontology Acute Care Nurse Practitioner"
+                },
+                {
+                  "name": "Adult-Gerontology Primary Care Nurse Practitioner"
+                },
+                {
+                  "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology"
+                },
+                {
+                  "name": "Family Nurse Practitioner"
+                },
+                {
+                  "name": "Nurse-Midwifery"
+                },
+                {
+                  "name": "Primary Care Pediatric Nurse Practitioner"
+                },
+                {
+                  "name": "Psychiatric Mental Health Nurse Practitioner"
+                },
+
+                {
+                  "name": "Women's Health"
+                }
+              ]
+            },
+            {
+              "name": "Do you want this speicalty to be in indirect care?",
+              "children": [
+                {
+                  "name": "Health Care Informatics"
+                },
+                {
+                  "name": "Nursing Leadership and Health Care Systems (i-LEAD)"
+                },
+                {
+                  "name": "Veteran and Military Health Care"
+                }
+              ]
             }
           ]
         }
