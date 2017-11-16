@@ -26,6 +26,7 @@ body>header {
 body>header>div,
 body>nav>div,
 main,
+.ankle>div,
 .main-header-container { 
   margin: 0 auto;
   max-width: 1170px;
@@ -45,9 +46,22 @@ body>header>div h2 strong {
   color: #fff;
 }
 
+footer {
+  background-color: #000; 
+  border-top: 1px solid #aaa;
+  height: 138px;
+  width: 100%;
+}
+
 h1 {
   font-weight: 700;
 }
+
+main {
+  min-height: 500px;
+}
+
+
 
 .logo-wrapper {
   float: left;
@@ -113,14 +127,10 @@ nav {
   color: #333;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  list-style-type: none;
+nav:after {
+  clear: both;
+  content: '';
+  display: block;
 }
 
 nav a {
@@ -130,14 +140,6 @@ nav a {
   padding: 15px;
 }
 
-nav li:last-child a {
-  border-right: 1px solid #ccc;
-}
-
-nav a:hover {
-  background-color: #ccc;
-}
-
 nav a,
 nav a:visited,
 nav a:hover {
@@ -145,10 +147,81 @@ nav a:hover {
   text-decoration: none;
 }
 
-nav:after {
-  clear: both;
-  content: '';
+nav a:hover,
+nav li.active a {
+  background-color: #ccc;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+}
+
+nav li:last-child a {
+  border-right: 1px solid #ccc;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/**********************************************************
+    
+                  CON Footer Nav
+
+**********************************************************/
+
+.ankle {
+  background-color: #222;
+  border-top: 1px solid #cfb87c;
+  margin-top: 30px;
+  padding: 30px 0;
+}
+
+.ankle * {
+  color: white;
+}
+
+.ankle *.yellow,
+.ankle *.yellow a {
+  color: #333;
+}
+
+.ankle>div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ankle>div>div {
+  width: 22.5%;
+}
+
+.ankle a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.ankle li,
+.ankle span {
+  margin-bottom: 10px;
+}
+
+.ankle li {
+  list-style-type: none;
+}
+
+.ankle span {
   display: block;
+  font-weight: bold;
+}
+
+.ankle ul {
+  margin: 0;
+  padding: 0;
 }
 
 

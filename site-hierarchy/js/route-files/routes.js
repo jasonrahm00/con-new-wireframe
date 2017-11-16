@@ -29,7 +29,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       url: '/clinics',
       templateUrl: '/pages/generic.html',
       data: {
-        title: '/pages/generic.html',
+        title: 'CU College of Nursing Clinics',
         h1: 'Clinics'
       }
     }).state('clinical-practice', {
@@ -40,7 +40,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         h1: 'Clinical Practice'
       }
     }).state('faculty-research', {
-      url: '/about',
+      url: '/faculty-research',
       templateUrl: '/pages/generic.html',
       data: {
         title: 'Faculty and Research at CU College of Nursing',

@@ -36,22 +36,79 @@
     <nav>
       <div>
         <ul>
-          <li><a data-ui-sref="programs">Programs</a></li>
-          <li><a data-ui-sref="student-life">Student Life</a></li>
-          <li><a data-ui-sref="clinics">Clinics</a></li>
-          <li><a data-ui-sref="clinical-practice">Clinical Practice</a></li>
-          <li><a data-ui-sref="faculty-research">Faculty & Research</a></li>
-          <li><a data-ui-sref="about">About</a></li>
+          <li data-ui-sref-active="active"><a data-ui-sref="programs">Programs</a></li>
+          <li data-ui-sref-active="active"><a data-ui-sref="student-life">Student Life</a></li>
+          <li data-ui-sref-active="active"><a data-ui-sref="clinics">Clinics</a></li>
+          <li data-ui-sref-active="active"><a data-ui-sref="clinical-practice">Clinical Practice</a></li>
+          <li data-ui-sref-active="active"><a data-ui-sref="faculty-research">Faculty & Research</a></li>
+          <li data-ui-sref-active="active"><a data-ui-sref="about">About</a></li>
         </ul>
       </div>
     </nav>
     
     <main data-ui-view data-ng-class="$state.current.name">
-      <p>Must be viewed on loal server to view full functionality</p>
+      <p>Must be viewed on local server to experience full functionality</p>
     </main>
     
+    <div class="ankle">
+      <div>
+        
+        <div>
+          <span>Student Resources</span>
+          <ul>
+            <li class="yellow"><a>Register for Classes</a></li>
+            <li><a>Course Catalog</a></li>
+            <li><a>Contact an Advisor</a></li>
+            <li><a>Student Services</a></li>
+            <li><a>Student Organizations</a></li>
+            <li><a>Policies and Handbooks</a></li>
+            <li class="yellow"><a>Student Events</a></li>
+            <li><a>Degree Plans</a></li>
+            <li><a>Preparing for Graduation</a></li>
+            <li class="yellow"><a>Student Job Opportunities</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span>Faculty Resources</span>
+          <ul>
+            <li><a>Center for Faculty Development</a></li>
+            <li><a>Academic Calendar</a></li>
+            <li><a>Univeristy Policies</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span>Staff Resources</span>
+          <ul>
+            <li><a>Intranet</a></li>
+            <li><a>Human Resources</a></li>
+            <li><a>Jobs@CU</a></li>
+            <li><a>Policies</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="yellow">Alumni Resources</span>
+          <ul>
+            <li><a>Alumni Beneifts</a></li>
+            <li><a>Order Transcripts</a></li>
+            <li><a>Update Your Information</a></li>
+            <li><a>Alumni Events</a></li>
+            <li><a>Alumni Magazine</a></li>
+            <li><a>Nursing Career Resources</a></li>
+            <li><a>Continuing Nursing Education</a></li>
+            <li><a>Giving to the College</a></li>
+          </ul>
+        </div>
+      </div>
+    
+    </div>
+    
     <footer>
-      
+      <div style="margin: 0px auto; max-width: 1170px; padding: 30px 0; text-align: center;">
+        <p><strong style="color: white;">Main Univeristy Footer</strong></p>
+      </div>
     </footer>
     
     <!-- JS Files -->
