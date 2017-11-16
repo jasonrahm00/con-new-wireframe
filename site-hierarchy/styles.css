@@ -6,166 +6,82 @@
 
 * {
   border-collapse: collapse;
+  box-sizing: border-box;
+  color: #333;
+  font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+}
+
+body>header {
+  background-color: #333;
+  height: 50px;
+  left: 0;
+  line-height: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+body>header>div,
+body>nav>div,
+main,
+.main-header-container { 
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 15px;
+}
+
+body>header>div h2 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+  vertical-align: middle;
+}
+
+body>header>div h2 strong {
+  color: #fff;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.logo-wrapper {
+  float: left;
+}
+
+.logo-wrapper img {
+  margin-right: 6px;
+  max-width: 30px;
+  vertical-align: middle;
 }
 
 html {
   overflow-y: scroll; 
 }
 
-body {
+.main-header-container {
   margin: 0 auto;
   max-width: 1170px;
-  padding: 0 15px;
 }
 
-figure {
-  margin: 0;
-}
-
-figcaption {
-  font-style: italic;
-  text-align: center;
-}
-
-iframe.con-page {
-  height: 1200px;
-  width: 100%;
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-label.button {
-  border: 1px solid #ddd;
-  color: black;
-  display: inline-block;
-  font-size: 20px;
-  font-weight: normal;
-  margin-bottom: 3px;
-  min-width: 12%;
-  padding: 10px;
-  text-align: center;
-}
-
-main {
-  margin-top: 100px;
-  margin-bottom: 45px;
-}
-
-main>* {
-  margin-bottom: 4rem;
-}
-
-.after-apply {
-  margin: 3.5rem 0;
-}
-
-.after-apply section {
-  width: 20%;
-}
-
-.after-apply section:first-child {
-  border-right: 1px solid #ddd;
-  padding-right: 10%;
-}
-
-.after-apply section:last-child {
-  border-left: 1px solid #ddd;
-  padding-left: 10%;
-}
-
-.alumni-snapshot>div {
-  border: 1px solid #ddd;
-  margin: 0px 15px;
-  padding: 1.25rem;
-}
-
-.alumni-snapshot img {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 40px;
-}
-
-.black-background {
-  background: #fff;
-}
-
-.breadcrumb {
-  background-color: #fff;
-  display: block;
-  font-size: .85rem;
-  padding-top: 10px;
-  position: fixed;
-  top: 50px;
-  width: 100%;
-  z-index: 99999;
-}
-
-.button {
-  background: black;
-  color: #fff;
+.main-header-container h2{
+  font-size: 30px;
+  margin: 75px 0 25px 0;
   font-weight: bold;
-  padding: 5px;
+}
+
+.main-header-container a,
+.main-header-container a:visited {
+  color: #333;
+}
+
+.main-header-container a,
+.main-header-container a:hover{
   text-decoration: none;
-}
-
-.button:hover {
-  background: #cfb77c;
-  cursor: pointer;
-}
-
-.careers>div {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 550px;
-}
-
-.center {
-  text-align: center;
-}
-
-.center-container {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.dynamic-container {
-  min-height: 400px;
-}
-
-.gold-background {
-  background-color: #cfb77c;
-}
-
-.gray-background {
-  background-color: #ededed;
-}
-
-.next-steps>ul {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
-}
-
-.next-steps a {
-  background: black;
-  color: white;
-  display: inline-block;
-  font-weight: bold;
-  padding: 1.25rem;
-  text-decoration: none;
-}
-
-.next-steps a:hover {
-  background: #cfb77c;
-}
-
-.program-tabs li:first-child,
-.program-tabs li:nth-child(2) {
-  margin-right: 5px;
 }
 
 .red {
@@ -173,179 +89,66 @@ main>* {
   font-size: 1.15rem;
 }
 
+strong {
+  font-weight: 700;
+}
+
 .yellow {
   background: yellow;
 }
 
-.white-background {
-  background: #fff;
-}
-
-#mapContainer {
-  height: 480px;
-}
-
 
 
 /**********************************************************
     
-                  Table Styles
-
-**********************************************************/
-
-table {
-  text-align: center;
-  width: 100%;
-}
-
-
-thead {
-  background-color: #89abe3;
-  border-bottom: 1px solid #ddd;
-}
-
-th {
-  border-right: 1px solid #fff;
-  padding: .85rem;
-}
-
-tr:nth-child(2n) {
-  background-color: whitesmoke;
-}
-
-tr:nth-child(2n) td {
-  border-right: 1px solid #fff;
-}
-
-td {
-  border-right: 1px solid #ddd;
-  padding: .65rem .25rem;
-}
-
-td:last-child {
-  border-right: 0;
-}
-
-
-
-/**********************************************************
-    
-                  Main Navigation
+                      Main Nav
 
 **********************************************************/
 
 nav {
-  background: #fff;
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 999999999;
-}
-
-nav li {
-  list-style-type: none;
+  background: #eee;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #333;
 }
 
 nav ul {
+  margin: 0;
   padding: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
+nav li {
+  display: inline;
+  list-style-type: none;
 }
 
-nav>ul>li>a {
-  color: black;
+nav a {
+  border-left: 1px solid #ccc;
+  display: inline-block;
+  float: left;
+  padding: 15px;
+}
+
+nav li:last-child a {
+  border-right: 1px solid #ccc;
+}
+
+nav a:hover {
+  background-color: #ccc;
+}
+
+nav a,
+nav a:visited,
+nav a:hover {
+  color: #333;
   text-decoration: none;
 }
 
-nav>ul>li>a {
-  padding: 1rem;
-}
-
-nav>ul>li:hover>a {
-  background: whitesmoke;
-}
-
-nav>ul>li.active>a {
-  background: whitesmoke;
-}
-
-nav>ul>li>ul {
-  display: none;
-}
-
-nav>ul>li.active>.submenu {
+nav:after {
+  clear: both;
+  content: '';
   display: block;
-}
-
-nav>ul>li.active>.submenu.mega {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.submenu {
-  background: whitesmoke;
-  min-width: 250px;
-  padding: 1rem;
-  position: absolute;
-  z-index: 1000;  
-}
-
-.submenu.mega .main-page-link {
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
-.submenu.mega {
-  justify-content: space-between;
-  left: 0;
-  width: 960px;
-}
-
-.submenu-trigger:hover {
-  cursor: pointer;  
-}
-
-.submenu span {
-  font-weight: bold;
-  font-size: 1.10rem;
-}
-
-.submenu a {
-  display: block;
-  padding: .5rem .5rem .5rem 0;
-}
-
-
-
-/**********************************************************
-    
-                  Side Navigation
-
-**********************************************************/
-
-main nav {
-  position: initial;
-  top: initial;
-  width: 20%;
-  z-index: 1;
-}
-
-main nav>ul>li {
-  display: block;
-}
-
-main nav li a {
-  display: table-cell;
-  padding: 1rem; 
-}
-main nav li:hover a {
-  cursor: pointer;
-}
-
-main nav + div {
-  width: 70%;
 }
 
 
@@ -391,265 +194,6 @@ main nav + div {
 
 /**********************************************************
     
-                  Program Cards
-
-**********************************************************/
-
-/******************** For Main Academics Page ********************/
-.academics .program-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  min-height: 170px;
-  padding: 1rem;
-}
-
-.academics .program-cards>div {
-  margin-bottom: 2rem;
-  width: 350px;
-}
-
-.toggle-content {
-  background: whitesmoke;
-  border: 1px solid #ddd;
-  border-top: none;
-  display: none;
-  padding: 1rem .75rem;
-}
-
-.toggle-content a {
-  background: #000;
-  color: white;
-  display: block;
-  font-size: 1rem;
-  font-weight: normal;
-  margin-top: 1rem;
-  text-align: center;
-  text-decoration: none;
-  padding: .5rem;
-}
-
-.toggle-content a:hover {
-  color: #cfb77c;
-  text-decoration: none;
-}
-
-.toggle-target {
-  color: #000;
-  border: 1px solid #ddd;
-  display: block;
-  font-size: .85rem;
-  padding: 1rem .75rem;
-  text-align: center;
-}
-
-.toggle-target:hover {
-  border-color: #cfb87c;
-  cursor: pointer;
-}
-
-/******************** For Program Finder ********************/
-
-.program-finder input[type="radio"] {
-  display: initial;
-}
-
-.program-finder label {
-  display: block;
-}
-
-.program-finder .program-cards>div {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  height: 305px;
-  padding: 1rem;
-}
-
-.program-finder .program-cards a {
-  background: whitesmoke;
-  display: block;
-  text-align: center;
-  padding: 3rem 0;
-}
-
-.program-finder .program-cards span {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-
-/**********************************************************
-    
-                  Faculty Styles
-
-**********************************************************/
-
-.faculty-directory>div {
-  border-bottom: 1px solid #ddd;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1rem 1rem 0; 
-}
-
-.faculty-directory span {
-  display: block;
-}
-
-.faculty-profile {
-  display: flex;
-  justify-content: space-between;
-}
-
-.faculty-profile header {
-  width: 30%;
-}
-
-.faculty-profile header figure {
-  text-align: center;
-}
-
-.faculty-profile header figcaption * {
-  display: block;
-}
-
-.faculty-profile>div {
-  width: 65%;
-}
-
-.faculty-profile>div>section:first-child {
-  margin-bottom: 3rem;
-}
-
-
-
-/**********************************************************
-    
-                  Admission Pages
-
-**********************************************************/
-
-.admission-selector {
-  display: flex;
-  justify-content: space-around;
-}
-
-.admission-selector>div {
-  margin: 1rem 0;
-  text-align: center;
-  width: 30%;
-}
-
-.admission-selector label {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.admission-selector select {
-  width: 100%;
-}
-
-.snapshot {
-  background: #ddd;
-  padding: 1rem;
-  width: 320px;
-}
-
-.snapshot h4 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.snapshot ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 1rem;
-}
-
-.snapshot li {
-  margin: .5rem 0;
-}
-
-.step-two {
-  min-height: 235px;
-}
-
-.step-two a {
-  background: black;
-  color: #fff;
-  font-weight: bold;
-  padding: 5px;
-  text-decoration: none;
-}
-
-.step-two a:hover {
-  background: #cfb77c;
-  cursor: pointer;
-}
-
-.step-two .flex-container.around>div:first-child {
-  position: relative;
-}
-
-.step-two .flex-container.around>div:first-child span {
-  display: block;
-}
-
-.step-two .flex-container.around a {
-  display: block;
-  text-align: center;
-  width: 100%;
-}
-
-.step-two .flex-container.around span:last-child a {
-  position: absolute;
-  bottom: 0;
-}
-
-.step-three {
-  min-height: 120px;
-}
-
-
-
-/**********************************************************
-    
-                  Clinic Pages
-
-**********************************************************/
-
-.clinic {
-  border-bottom: 1px solid #ddd;
-  min-height: 180px;
-  padding: 1rem;
-}
-
-.clinic:last-child {
-  border-bottom: 0;
-}
-
-.clinic>div {
-  width: 250px;
-}
-
-
-
-/**********************************************************
-    
-                  Program Pages
-
-**********************************************************/
-
-.program-body>* {
-  margin-bottom: 4rem;
-}
-
-
-
-/**********************************************************
-    
                   Flexbox Styles
 
 **********************************************************/
@@ -678,31 +222,6 @@ main nav + div {
   flex-wrap: wrap;
 }
 
-
-/**********************************************************
-    
-                Decision Tree Styles
-
-**********************************************************/
-
-.node rect {
-  cursor: pointer;
-  fill: #fff;
-  fill-opacity: .5;
-  stroke: #3182bd;
-  stroke-width: 1.5px;
-}
-
-.node text {
-  font: .85rem;
-  pointer-events: none;
-}
-
-path.link {
-  fill: none;
-  stroke: #9ecae1;
-  stroke-width: 1.5px;
-}
 
 
 /**********************************************************
@@ -926,7 +445,8 @@ path.link {
   
 }
 
-@media (min-width: 796px) {
+@media (min-width: 992px) {
+  
   .flex-container {
     display: flex;
   }

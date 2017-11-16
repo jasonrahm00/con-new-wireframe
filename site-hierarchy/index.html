@@ -8,6 +8,8 @@
     <title data-ng-bind="$state.current.data.title">CON Sitefinity Wireframe</title>
 
     <!-- Style Sheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300" media="all" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="styles.css" rel="stylesheet">
 
@@ -17,181 +19,40 @@
   </head>
   
   <body data-ng-controller="mainCtrl">
+  
+    <header>
+      <div>
+        <div class="logo-wrapper">
+          <img src="images/logo-black.png" alt="CU Logo">
+        </div>
+        <h2>University of Colorado <strong>Denver | Anschutz Medical Campus</strong></h2>
+      </div>
+    </header>
+  
+    <div class="main-header-container">
+      <h2><a data-ui-sref="home">College of Nursing</a></h2>
+    </div>
     
     <nav>
-      <ul>
-        <li><a data-ui-sref="home">Home</a></li>
-        <li><a class="submenu-trigger">Admissions &amp; Aid</a>
-          <ul class="submenu mega">
-            <li class="main-page-link"><a data-ui-sref="admissions">Admissions Homepage</a></li>
-            <li>
-              <span>Info and Deadlines</span>
-              <ul>
-                <li><a data-ui-sref="events">Info Sessions</a></li>
-                <li>Contact Admissions</li>
-                <li>Language Requirements</li>
-                <li>Transfer Credit</li>
-              </ul>
-            </li>
-            <li>
-              <span>Undergrad Admissions</span>
-              <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'undergraduate'">
-                  <a data-ui-sref="program-admissions">{{ program.name }} Admissions</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span>Graduate Admissions</span>
-              <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'">
-                  <a data-ui-sref="program-admissions" data-ng-if="program.url !== 'grad-specialty-req-page'">{{ program.name }} Admissions</a>
-                  <a data-ui-sref="specialty-required-admissions" data-ng-if="program.url === 'grad-specialty-req-page'">{{ program.name }} Admissions</a>
-                </li>
-                <li><a data-ui-sref="program-admissions">Post-Graduate Certificate Admissions</a></li>
-              </ul>
-            </li>
-            <li>
-              <span>Tuition and Funding</span>
-              <ul>
-                <li>Tuition and Fees</li>
-                <li>Scholarships &amp; Financial Aid</li>
-                <li>WICHE Tuition Assistance</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a class="submenu-trigger">Academics</a>
-          <ul class="submenu mega">
-            <li class="main-page-link"><a data-ui-sref="program-finder">Academics Homepage</a></li>  
-            <li class="main-page-link"><a data-ui-sref="decision-tree">Decision Tree</a></li>
-            <li>
-              <span>Undergraduate Programs</span>
-              <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'undergraduate'">
-                  <program-link></program-link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span>Graduate Programs</span>
-              <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'graduate'">
-                  <program-link></program-link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span>Graduate Specialties</span>
-              <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'specialties'">
-                  <program-link></program-link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span>Additional Programs</span>
-              <ul>
-                <li data-ng-repeat="program in programs | orderBy:'name'" data-ng-if="program.level === 'additional'">
-                  <program-link></program-link>
-                </li>
-              </ul>
-            </li>
-            
-          </ul>
-        </li>
-        <li><a class="submenu-trigger">Students</a>
-          <ul class="submenu mega">
-            <li class="main-page-link"><a data-ui-sref="students">Student Life</a></li>
-            <li>
-              <span>Academic Resources</span>
-              <ul>
-                <li><a href="http://www.ucdenver.edu/academics/colleges/nursing/students/Pages/academic-resources.aspx" target="_blank">Academic Calendar</a></li>
-                <li><a href="http://www.ucdenver.edu/academics/colleges/nursing/students/clinical-education/Pages/clinical-education.aspx" target="_blank">Clinical Education</a></li>
-                <li><a href="http://www.ucdenver.edu/academics/colleges/nursing/students/Pages/CourseSchedules.aspx" target="_blank">Course Schedules</a></li>
-                <li><a href="http://www.ucdenver.edu/academics/colleges/nursing/students/Pages/academic-resources.aspx" target="_blank">General Resources</a></li>
-                <li><a href="http://www.ucdenver.edu/academics/colleges/nursing/students/Preceptor/Pages/Become%20a%20Preceptor.aspx" target="_blank">Graduate Preceptors</a></li>
-                <li><a href="http://www.ucdenver.edu/academics/colleges/nursing/students/Pages/policies-forms.aspx" target="_blank">Policies and Forms</a></li>
-              </ul>
-            </li>     
-            <li>
-              <span>Campus Resources</span>
-              <ul>
-                <li><a href="">Campus Map</a></li>
-                <li><a href="http://www.ucdenver.edu/anschutz/about/location/Police/Pages/default.aspx" target="_blank">Campus Police</a></li>
-                <li><a href="http://www.ucdenver.edu/about/departments/FacilitiesManagement/ParkingMaps/Pages/MapsInformation.aspx">Parking Information</a></li>
-                <li><a href="http://www.ucdenver.edu/about/departments/printing/Pages/PrintingServices.aspx" target="_blank">Printing Services</a></li>
-                <li><a href="http://cuanschutz.bncollege.com/webapp/wcs/stores/servlet/BNCBHomePage?storeId=87741&catalogId=10001&langId=-1" target="_blank">Campus Bookstore</a></li>
-                <li><a href="http://www.ucdenver.edu/academics/colleges/nursing/clinical-practice-community/PatientServices/CHC/Pages/default.aspx" target="_blank">Campus Health Center</a></li>
-              </ul>
-            </li>
-            <li>
-              <span>Clubs/Organizations</span>
-              <ul>
-                <li><a href="http://www.ucdenver.edu/academics/colleges/nursing/students/clubs-organizations/Pages/cusna.aspx" target="_blank">CU Student Nurses Association</a></li>
-                <li><a href="http://www.ucdenver.edu/academics/colleges/nursing/students/clubs-organizations/Pages/nursing-student-council.aspx" target="_blank">Nursing Student Council</a></li>
-                <li><a href="http://www.ucdenver.edu/anschutz/studentresources/student-assistance/organizations/senate/Pages/StudentSenate.aspx" target="_blank">Student Senate</a></li>
-                <li><a href="https://www.nursingsociety.org/" target="_blank">Sigma Theta Tau</a></li>
-                <li><a href="http://www.ucdenver.edu/academics/colleges/nursing/students/Pages/student-ambassadors.aspx" target="_blank">Student Ambassadors</a></li>
-              </ul>
-            </li>  
-            <li>
-              <span>Jobs/Financial Aid</span>
-              <ul>
-                <li><a href="http://www.ucdenver.edu/student-services/resources/CostsAndFinancing/FASO/Pages/FASO.aspx" target="_blank">CU Denver Financial Aid Office</a></li>
-                <li><a href="https://forms.ucdenver.edu/secure/con_scholarship_spring17_copy" target="_blank">College of Nursing Scholarships</a></li>
-                <li><a href="http://www.ucdenver.edu/life/services/careercenter/Pages/default.aspx" target="_blank">CU Denver Career Center</a></li>
-                <li><a href="http://www.ucdenver.edu/academics/colleges/nursing/students/Pages/nursing-jobs.aspx" target="_blank">Nursing Jobs</a></li>
-                <li><a href="https://fafsa.ed.gov/" target="_blank">FAFSA</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a class="submenu-trigger">Patients</a>
-          <ul class="submenu">
-            <li><a data-ui-sref="patients">CU Healthcare Partners</a></li>
-            <li><a data-ui-sref="find-clinic">Find a Clinic</a></li>
-            <li>Services Offered</li>
-            <li><a data-ui-sref="center-home">Sheridan Health Services</a></li>
-            <li><a data-ui-sref="midwifery-center">The Center for Midwifery</a></li>
-            <li><a data-ui-sref="center-home">Anschutz Campus Health Center</a></li>
-            <li><a data-ui-sref="center-home">University Nurse Midwives</a></li>
-          </ul>
-        </li>
-        <li><a class="submenu-trigger">Research</a>
-          <ul class="submenu">
-            <li class="main-page-link"><a data-ui-sref="research">Research Home</a></li>
-            <li><a data-ui-sref="ors">Office of Research and Scholarship</a></li>
-            <li><a data-ui-sref="crns">Center for Research and Nursing Scholarship</a></li>
-            <li><a data-ui-sref="ccnr">Colorado Collaborative for Nursing Research</a></li>            
-            <li><a data-ui-sref="cpaww">Canines Providing Assistance to Wounded Warriors</a></li>
-          </ul>
-        </li>
-        <li><a data-ui-sref="alumni">Alumni</a></li>
-        <li><a class="submenu-trigger">About Us</a>
-          <ul class="submenu">
-            <li><a data-ui-sref="about">Overview</a></li>
-            <li><a data-ui-sref="meet-dean">Meet the Dean</a></li>
-            <li><a data-ui-sref="faculty-directory">Faculty Directory</a></li>
-            <li><a data-ui-sref="administration">Administration</a></li>
-            <li><a data-ui-sref="history">History</a></li>
-            <li><a data-ui-sref="news">News</a></li>
-            <li><a data-ui-sref="events">Events</a></li>
-            <li><a href="https://giving.cu.edu/fund-search?field_campuses=1046&field_fund_keywords[0]=1063&sort_order=ASC" target="_blank">Make a Gift</a></li>
-            <li><a href="http://myatlascms.com/map/?id=95" target="_blank">Campus Map</a></li>
-            <li><a href="http://www.ucdenver.edu/anschutz/about/Pages/visitors.aspx" target="_blank">Visitor Info</a></li>
-            <li><a href="https://cu.taleo.net/careersection/2/moresearch.ftl?lang=en&location=4100103016&portal=101430233&radius=1&radiusType=K&searchExpanded=true" target="_blank">Employement Opportunities</a></li>
-            <li><a data-ui-sref="contact">Contact Us</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div>
+        <ul>
+          <li><a data-ui-sref="programs">Programs</a></li>
+          <li><a data-ui-sref="student-life">Student Life</a></li>
+          <li><a data-ui-sref="clinics">Clinics</a></li>
+          <li><a data-ui-sref="clinical-practice">Clinical Practice</a></li>
+          <li><a data-ui-sref="faculty-research">Faculty & Research</a></li>
+          <li><a data-ui-sref="about">About</a></li>
+        </ul>
+      </div>
     </nav>
-    
-    <span class="breadcrumb" data-ng-bind="$state.current.data.breadcrumb">Breadcrumb</span>
     
     <main data-ui-view data-ng-class="$state.current.name">
       <p>Must be viewed on loal server to view full functionality</p>
     </main>
+    
+    <footer>
+      
+    </footer>
     
     <!-- JS Files -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -203,42 +64,23 @@
     <script src="js/app.js"></script>
     
     <!-- Route Files -->
-    <script src="js/route-files/academics-routes.js"></script>
-    <script src="js/route-files/admissions-routes.js"></script>
-    <script src="js/route-files/patient-routes.js"></script>
-    <script src="js/route-files/student-routes.js"></script>
-    <script src="js/route-files/alumni-routes.js"></script>
-    <script src="js/route-files/research-routes.js"></script>
-    <script src="js/route-files/about-routes.js"></script>
+    <script src="js/route-files/routes.js"></script>
 
     <!-- Services -->
     <script src="js/services/data-service.js"></script>
-    <script src="js/services/d3-service.js"></script>
     
     
     <!-- Factories -->
     <script src="js/factories/program-factory.js"></script>
     <script src="js/factories/clinic-factory.js"></script>
-    <script src="js/factories/admin-factory.js"></script>
-    <script src="js/factories/faculty-factory.js"></script>
-    <script src="js/factories/coursebook-factory.js"></script>
 
     <!-- Directives -->
     <script src="js/directives/accordion-directive.js"></script>
     <script src="js/directives/card-directive.js"></script>
-    <script src="js/directives/clinic-map.js"></script>
-    <script src="js/directives/program-directives.js"></script>
     <script src="js/directives/general-directives.js"></script>
-    <script src="js/directives/admissions-directives.js"></script>
-    <script src="js/directives/d3-decision-tree.js"></script>
     
     <!-- Controllers -->
     <script src="js/controllers/mainCtrl.js"></script>
-    <script src="js/controllers/academicsCtrl.js"></script>
-    <script src="js/controllers/patientsCtrl.js"></script>
-    <script src="js/controllers/administrationCtrl.js"></script>
-    <script src="js/controllers/facultyCtrl.js"></script>
-    <script src="js/controllers/programFinderCtrl.js"></script>
     
   </body>
   

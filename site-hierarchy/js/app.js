@@ -16,7 +16,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       url: '/',
       templateUrl: '/pages/home.html',
       data: {
-        title: 'CON Wireframe'
+        title: 'CON OIT Sitemap'
       }
     });
   $urlRouterProvider.otherwise('/');
