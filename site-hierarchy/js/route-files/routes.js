@@ -6,45 +6,37 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
   
     .state('about', {
       url: '/about',
-      templateUrl: '/pages/generic.html',
+      templateUrl: '/pages/about.html',
       data: {
-        title: 'About the CU College of Nursing',
-        h1: "About Us"
+        title: 'About the CU College of Nursing'
       }
-    }).state('student-life', {
+    })
+    .state('student-life', {
       url: '/student-life',
-      templateUrl: '/pages/generic.html',
+      templateUrl: '/pages/student-life.html',
       data: {
-        title: 'Life at CU College of Nursing',
-        h1: 'Student Life'
+        title: 'Life at CU College of Nursing'
       }
-    }).state('programs', {
-      url: '/programs',
-      templateUrl: '/pages/generic.html',
-      data: {
-        title: 'CU College of Nursing Programs',
-        h1: 'Nursing Programs'
-      }
-    }).state('clinics', {
+    })
+    .state('clinics', {
       url: '/clinics',
-      templateUrl: '/pages/generic.html',
+      templateUrl: '/pages/clinics.html',
       data: {
-        title: 'CU College of Nursing Clinics',
-        h1: 'Clinics'
+        title: 'CU College of Nursing Clinics'
       }
-    }).state('clinical-practice', {
+    })
+    .state('clinical-practice', {
       url: '/clinical-practice',
-      templateUrl: '/pages/generic.html',
+      templateUrl: '/pages/clinical-practice.html',
       data: {
-        title: 'CU College of Nursing Clinical Practice',
-        h1: 'Clinical Practice'
+        title: 'CU College of Nursing Clinical Practice'
       }
-    }).state('faculty-research', {
+    })
+    .state('faculty-research', {
       url: '/faculty-research',
-      templateUrl: '/pages/generic.html',
+      templateUrl: '/pages/faculty-research.html',
       data: {
-        title: 'Faculty and Research at CU College of Nursing',
-        h1: 'Faculty and Research'
+        title: 'Faculty and Research at CU College of Nursing'
       }
     });
           

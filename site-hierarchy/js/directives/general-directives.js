@@ -57,3 +57,15 @@ angular.module('conWireframe').directive('tuition', function(){
   };
   
 });
+
+angular.module('conWireframe').directive('childPages', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: function(elem, attr) {
+      return '/templates/' + attr.selectedPage + '.html'
+    }
+  };
+  
+});
