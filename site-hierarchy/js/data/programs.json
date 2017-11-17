@@ -1,263 +1,263 @@
 [
   {
-    "level": "undergraduate",
-    "url": "default-program-page",
-    "name": "Nursing BS - Traditional",
-    "type": "degree",
-    "format": "classroom",
-    "tuition": {
-      "nonResident": 16200,
-      "resident": 7650      
-    }
+    "degree": "bs",
+    "name": "Accelerated Nursing Bachelors Program"
   },
   {
-    "level": "undergraduate",
-    "url": "default-program-page",
-    "name": "Dual Enrollment AAS and Nursing BS (online)",
-    "type": "degree",
-    "format": "online",
-    "tuition": {
-      "nonResident": 0,
-      "resident": 0
-    }
+    "degree": "bs",
+    "name": "Traditional Bachelors Program"
   },
   {
-    "level": "undergraduate",
-    "url": "default-program-page",
-    "name": "Nursing BS-UCAN",
-    "type": "degree",
-    "format": "classroom",
-    "tuition": {
-      "nonResident": 0,
-      "resident": 0
-    }
+    "degree": "bs",
+    "name": "RN to Nursing Bachelors"
   },
   {
-    "level": "undergraduate",
-    "url": "default-program-page",
-    "name": "RN to Nursing BS (online)",
-    "type": "degree",
-    "format": "online",
-    "tuition": {
-      "nonResident": 9270,
-      "resident": 7200      
-    }
+    "degree": "bs",
+    "name": "Integrated Nursing Pathway"
   },
   {
-    "level": "undergraduate",
-    "url": "default-program-page",
-    "name": "Integrated Nursing Pathway",
-    "type": "degree",
-    "format": "hybrid",
-    "tuition": {
-      "nonResident": 0,
-      "resident": 0
-    }
+    "degree": "bs",
+    "name": "Dual Enrollment ADN and Nursing Bachelors"
   },
   {
-    "level": "graduate",
-    "url": "grad-specialty-req-page",
-    "name": "Masters Program",
-    "type": "degree",
-    "format": "classroom",
-    "tuition": {
-      "nonResident": 1030,
-      "resident": 635
-    }
+    "degree": "ms",
+    "name": "Acute Care Pediatric Nurse Practitioner Masters Program"
   },
   {
-    "level": "graduate",
-    "url": "grad-specialty-req-page",
-    "name": "BS-DNP Program",
-    "type": "degree",
-    "format": "hybrid",
-    "tuition": {
-      "nonResident": 1030,
-      "resident": 635
-    }
+    "degree": "ms",
+    "name": "Adult-Gerontology Acute Care Nurse Practitioner Masters Program"
   },
   {
-    "level": "graduate",
-    "url": "grad-specialty-req-page",
-    "name": "MS-PhD Program",
-    "type": "degree",
-    "format": "hybrid",
-    "tuition": {
-      "nonResident": 0,
-      "resident": 0
-    }
+    "degree": "ms",
+    "name": "Adult-Gerontology Primary Care Nurse Practitioner Masters Program"
   },
   {
-    "level": "graduate",
-    "url": "default-program-page",
-    "name": "PhD Program",
-    "type": "degree",
-    "format": "online",
-    "tuition": {
-      "nonResident": 1020,
-      "resident": 600
-    }
+    "degree": "ms",
+    "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology Masters Program"
   },
   {
-    "level": "specialties",
-    "url": "specialty-landing-page",
-    "name": "Adult-Gerontology Acute Care Nurse Practitioner",
-    "type": "specialty",
-    "format": "hybrid"
+    "degree": "ms",
+    "name": "Family Nurse Practitioner Masters Program"
   },
   {
-    "level": "specialties",
-    "url": "specialty-landing-page",
-    "name": "Adult-Gerontology Primary Care Nurse Practitioner",
-    "type": "specialty",
-    "format": "hybrid"
+    "degree": "ms",
+    "name": "Health Care Informatics Masters Program"
   },
   {
-    "level": "specialties",
-    "url": "specialty-landing-page",
-    "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology",
-    "type": "specialty",
-    "format": "hybrid"
+    "degree": "ms",
+    "name": "i-LEAD Nursing Leadership and Health Care Systems Masters Program"
   },
   {
-    "level": "specialties",
-    "url": "specialty-landing-page",
-    "name": "Primary Care Pediatric Nurse Practitioner",
-    "type": "specialty",
-    "format": "hybrid"
+    "degree": "ms",
+    "name": "Nurse-Midwifery Masters Program"
   },
   {
-    "level": "specialties",
-    "url": "specialty-landing-page",
-    "name": "Acute Care Pediatric Nurse Practitioner",
-    "type": "specialty",
-    "format": "hybrid"
+    "degree": "ms",
+    "name": "Primary Care Pediatric Nurse Practitioner Masters Program"
   },
   {
-    "level": "specialties",
-    "url": "specialty-landing-page",
-    "name": "Psychiatric Mental Health",
-    "type": "specialty",
-    "format": "hybrid"
+    "degree": "ms",
+    "name": "Psychiatric Mental Health Nurse Practitioner Masters Program"
   },
   {
-    "level": "specialties",
-    "url": "specialty-landing-page",
-    "name": "Family Nurse Practitioner",
-    "type": "specialty",
-    "format": "hybrid"
+    "degree": "ms",
+    "name": "Veteran and Military Health Care Masters Program"
   },
   {
-    "level": "specialties",
-    "url": "specialty-landing-page",
-    "name": "Nurse-Midwifery",
-    "type": "specialty",
-    "format": "hybrid"
+    "degree": "ms",
+    "name": "Women's Health Masters Program"
   },
   {
-    "level": "specialties",
-    "url": "specialty-landing-page",
-    "name": "Women's Health",
-    "type": "specialty",
-    "format": "hybrid"
+    "degree": "dnp",
+    "name": "Acute Care Pediatric Nurse Practitioner BS to DNP Program"
   },
   {
-    "level": "specialties",
-    "url": "specialty-landing-page",
-    "name": "Health Care Informatics",
-    "type": "specialty",
-    "format": "online"
+    "degree": "dnp",
+    "name": "Adult-Gerontology Acute Care Nurse Practitioner BS to DNP Program"
   },
   {
-    "level": "specialties",
-    "url": "specialty-landing-page",
-    "name": "i-LEAD Nursing Leadership",
-    "type": "specialty",
-    "format": "hybrid"
+    "degree": "dnp",
+    "name": "Adult-Gerontology Primary Care Nurse Practitioner BS to DNP Program"
   },
   {
-    "level": "graduate",
-    "url": "default-program-page",
-    "name": "DNP Program",
-    "type": "degree",
-    "format": "classroom",
-    "tuition": {
-      "nonResident": 1030,
-      "resident": 635
-    }
+    "degree": "dnp",
+    "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology BS to DNP Program"
   },
   {
-    "level": "graduate",
-    "url": "default-program-page",
-    "name": "DNP-PHN Program",
-    "type": "degree",
-    "format": "hybrid",
-    "tuition": {
-      "nonResident": 1030,
-      "resident": 635
-    }
+    "degree": "dnp",
+    "name": "Family Nurse Practitioner BS to DNP Program"
   },
   {
-    "level": "graduate",
-    "url": "default-program-page",
-    "name": "Dual Degree Program",
-    "type": "degree",
-    "format": "hybrid",
-    "tuition": {
-      "nonResident": 0,
-      "resident": 0
-    }
-  },
-  
-  {
-    "level": "specialties",
-    "url": "specialty-landing-page",
-    "name": "Veteran and Military Health Care",
-    "type": "specialty",
-    "format": "online"
+    "degree": "dnp",
+    "name": "i-LEAD Nursing Leadership and Health Care Systems BS to DNP Program"
   },
   {
-    "level": "additional",
-    "url": "non-degree-education",
-    "name": "Non-Degree Education",
-    "type": "development",
-    "format": "varies",
-    "tuition": {
-      "nonResident": 0,
-      "resident": 635
-    }
+    "degree": "dnp",
+    "name": "Primary Care Pediatric Nurse Practitioner BS to DNP Program"
   },
   {
-    "level": "additional",
-    "url": "post-grad-certificate",
-    "name": "Post-Graduate Certificates",
-    "type": "certificate",
-    "format": "classroom",
-    "tuition": {
-      "nonResident": 1030,
-      "resident": 635
-    }
+    "degree": "dnp",
+    "name": "Psychiatric Mental Health Nurse Practitioner BS to DNP Program"
   },
   {
-    "level": "additional",
-    "url": "grad-certificate-landing",
-    "name": "Graduate-Level Certificates",
-    "type": "certificate",
-    "format": "classroom",
-    "tuition": {
-      "nonResident": 1030,
-      "resident": 635
-    }
+    "degree": "dnp",
+    "name": "Women's Health BS to DNP Program"
   },
   {
-    "level": "additional",
-    "url": "continuing-education",
-    "name": "Continuing Nursing Education",
-    "type": "development",
-    "format": "classroom",
-    "tuition": {
-      "nonResident": 0,
-      "resident": 0
-    }
+    "degree": "dnp",
+    "name": "Post Graduate DNP program - Public Health Focus"
+  },
+  {
+    "degree": "dnp",
+    "name": "DNP/MPH Dual Degree"
+  },
+  {
+    "degree": "dnp",
+    "name": "Post Graduate DNP APRN"
+  },
+  {
+    "degree": "dnp",
+    "name": "Post-Graduate DNP Health Systems Leadership"
+  },
+  {
+    "degree": "phd",
+    "name": "Acute Care Pediatric Nurse Practitioner Post-Bachelors BS-PhD Program"
+  },
+  {
+    "degree": "phd",
+    "name": "Adult-Gerontology Acute Care Nurse Practitioner Post-Masters PhD Program"
+  },
+  {
+    "degree": "phd",
+    "name": "Adult-Gerontology Primary Care Nurse Practitioner Post-Bachelors MS-PhD"
+  },
+  {
+    "degree": "phd",
+    "name": "Clinical Nurse Specialist Adult-Gerontology Post-Bachelors MS-PhD"
+  },
+  {
+    "degree": "phd",
+    "name": "Health Care Informatics Family Nurse Practitioner Post-Bachelors MS-PhD"
+  },
+  {
+    "degree": "phd",
+    "name": "Nursing Leadership and Health Care Systems Post-Bachelors MS-PhD"
+  },
+  {
+    "degree": "phd",
+    "name": "Nurse-Midwifery Post-Bachelors MS-PhD"
+  },
+  {
+    "degree": "phd",
+    "name": "Primary Care Pediatric Nurse Practitioner Post-Bachelors MS-PhD"
+  },
+  {
+    "degree": "phd",
+    "name": "Psychiatric Mental Health Nurse Practitioner Post-Bachelors MS-PhD"
+  },
+  {
+    "degree": "phd",
+    "name": "Veteran and Military Health Care Post-Bachelors MS-PhD"
+  },
+  {
+    "degree": "phd",
+    "name": "Women's Health Post-Bachelors MS-PhD"
+  },
+  {
+    "degree": "phd",
+    "name": "Post-Bachelors BS-PhD Program"
+  },
+  {
+    "degree": "phd",
+    "name": "Post-Masters PhD Program"
+  },
+  {
+    "degree": "phd",
+    "name": "Post-Bachelors MS-PhD"
+  },
+  {
+    "degree": "cert",
+    "name": "Health Care Systems Graduate Certificate",
+    "type": "grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Informatics Graduate Certificate",
+    "type": "grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Nursing Education Graduate Certificate",
+    "type": "grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Palliative Care Graduate Certificate",
+    "type": "grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Veteran and Military Health Care Graduate Certificate",
+    "type": "grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Acute Care Pediatric Nurse Practitioner Post-Graduate Certificate",
+    "type": "post-grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Adult-Gerontology Acute Care Nurse Practitioner Post-Graduate Certificate",
+    "type": "post-grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Adult-Gerontology Primary Care Nurse Practitioner Post-Graduate Certificate",
+    "type": "post-grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Clinical Nurse Specialist Adult-Gerontology Post-Graduate Certificate",
+    "type": "post-grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Family Nurse Practitioner Post-Graduate Certificate",
+    "type": "post-grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Health Care Informatics Post-Graduate Certificate",
+    "type": "post-grad"
+  },
+  {
+    "degree": "cert",
+    "name": "i-LEAD Nursing Leadership and Health Care Systems Post-Graduate Certificate",
+    "type": "post-grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Nurse-Midwifery Post-Graduate Certificate",
+    "type": "post-grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Primary Care Pediatric Nurse Practitioner Post-Graduate Certificate",
+    "type": "post-grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Psychiatric Mental Health Nurse Practitioner Post-Graduate Certificate",
+    "type": "post-grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Women's Health Post-Graduate Certificate",
+    "type": "post-grad"
+  },
+  {
+    "degree": "cert",
+    "name": "Non-Degree Options",
+    "type": "non-degree"
   }
-] 
+]

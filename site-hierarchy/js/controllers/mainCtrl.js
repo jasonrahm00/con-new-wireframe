@@ -1,7 +1,7 @@
 angular.module('conWireframe').controller('mainCtrl', function ($scope, $q, programFactory) {
   
   'use strict';
-
+  
   var degreeKeys = [
     {
       "key": "dnp",
@@ -23,11 +23,7 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, $q, prog
       "key": "cert",
       "name": "Professional Development and Certificates"
     }
-  ]
-  
-  programFactory.getPrograms().then(function() {
-    $scope.programs = programFactory.programs;
-  });
+  ];
   
   function setProgram(x) {
     $scope.chosenProgram = x;  

@@ -9,14 +9,16 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       templateUrl: '/pages/programs/programs.html',
       data: {
         title: 'CU College of Nursing Programs'
-      }
+      },
+      controller: 'programCtrl'
     })
     .state('degrees', {
       url: '/programs/degrees',
       templateUrl: '/pages/programs/degrees.html',
       data: {
         title: 'CU College of Nursing Programs'
-      }
+      },
+      controller: 'programCtrl'
     });
           
 });
