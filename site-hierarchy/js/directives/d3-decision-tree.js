@@ -78,10 +78,12 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
                 .attr("width", barWidth)
                 .style("fill", color)
                 .on("click", click);
-
-          nodeEnter.append("text")
+          
+          nodeEnter .select("a")
+            .append("text")
               .attr("dy", 3.5)
               .attr("dx", 5.5)
+              .attr("fill", textColor)
               .text(function(d) { return d.name; });
 
           // Transition nodes to their new position.
@@ -90,12 +92,16 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
               .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
               .style("opacity", 1);
 
-          node.transition()
+          var nodeTransition = node.transition()
               .duration(duration)
               .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
-              .style("opacity", 1)
-              .select("rect")
+              .style("opacity", 1);
+          
+          nodeTransition .select("rect")
               .style("fill", color);
+          
+          nodeTransition .select("text")
+              .style("fill", textColor);
 
           // Transition exiting nodes to the parent's new position.
           node.exit().transition()
@@ -126,7 +132,11 @@ angular.module('conWireframe').directive('decisionTree', function(d3Service){
 
         // Called in transition and node build methods to update the color depneding on the state and whether the node has children
         function color(d) {
-          return d._children ? "#cfbb7c" : d.children ? "#d2d2d2" : "#cbd3eb";
+          return d._children ? "#cfbb7c" : d.children ? "#000" : "#89abe3";
+        }
+        
+        function textColor(d) {
+          return d._children ? "#000" : d.children ? "#fff" : "#000";
         }
 
       });
