@@ -65,6 +65,22 @@ main {
   min-height: 500px;
 }
 
+.breadcrumb {
+  margin: 20px auto;
+  max-width: 1170px;
+  padding: 0 15px;
+}
+
+.breadcrumb li {
+  list-style-type: none;
+  display: inline;
+}
+
+.breadcrumb ul {
+  margin: 0;
+  padding: 0;
+}
+
 .faux-link {
   cursor: pointer;
   text-decoration: underline;

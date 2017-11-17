@@ -46,6 +46,16 @@
       </div>
     </nav>
     
+    <div class="breadcrumb" data-ng-if="$state.current.name !== 'home' ">
+      <ul>
+        <li><a href="/">Home</a> / </li>
+        <li data-ng-repeat="link in breadcrumbLinks">
+          <span data-ng-if="!$last"><a data-ui-sref="{{ link }}">{{ link | capitalize }}</a> / </span>
+          <span data-ng-if="$last">{{ link | capitalize }}</span>
+        </li>
+      </ul>
+    </div>
+    
     <main data-ui-view data-ng-class="$state.current.name">
       <p>Must be viewed on local server to experience full functionality</p>
     </main>

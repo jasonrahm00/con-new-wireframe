@@ -8,7 +8,8 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       url: '/programs',
       templateUrl: '/pages/programs/programs-landing.html',
       data: {
-        title: 'CU College of Nursing Programs'
+        title: 'CU College of Nursing Programs',
+        breadcrumb: 'Programs'
       },
       controller: 'programCtrl'
     })
@@ -16,7 +17,8 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       url: '/programs/degrees',
       templateUrl: '/pages/programs/degree-level.html',
       data: {
-        title: 'CU College of Nursing Degrees'
+        title: 'CU College of Nursing Degrees',
+        breadcrumb: 'Degrees'
       },
       controller: 'programCtrl'
     })
@@ -24,7 +26,8 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       url: '/programs/degrees/degree-page',
       templateUrl: '/pages/programs/degree-page.html',
       data: {
-        title: 'CU College of Nursing Single Degree'
+        title: 'CU College of Nursing Single Degree',
+        breadcrumb: 'Degree Page'
       },
       controller: 'programCtrl'
     })
@@ -32,7 +35,8 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       url: '/programs/global-health',
       templateUrl: '/pages/programs/global-health.html',
       data: {
-        title: 'Global Health Nursing Programs'
+        title: 'Global Health Nursing Programs',
+        breadcrumb: 'Global Health'
       },
       controller: 'programCtrl'
     });
