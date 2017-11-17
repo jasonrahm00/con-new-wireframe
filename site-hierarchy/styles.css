@@ -698,7 +698,7 @@ main nav + div {
 .decision-tree .node text {
 =======
 .node rect:hover {
-  stroke-width: 3.5px;
+  stroke-width: 3px;
 }
 
 .node text {
