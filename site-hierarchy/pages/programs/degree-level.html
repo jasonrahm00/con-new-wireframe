@@ -1,6 +1,7 @@
 <h1>College of Nursing {{ degree }} <span data-ng-if="chosenDegree !== 'cert'">Degrees</span></h1>
+
 <section>
-  <h2>Available Programs</h2>
+  <h2>{{ availableOptions }} Available Programs</h2>
   <p>This page will be a content container with cards for each degree and further narrowing</p>
   <ul>
     <li data-ng-repeat="program in selectedPathways">

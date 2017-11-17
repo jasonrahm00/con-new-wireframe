@@ -57,11 +57,18 @@ h1 {
   font-weight: 700;
 }
 
+html {
+  overflow-y: scroll; 
+}
+
 main {
   min-height: 500px;
 }
 
-
+.faux-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 .logo-wrapper {
   float: left;
@@ -71,10 +78,6 @@ main {
   margin-right: 6px;
   max-width: 30px;
   vertical-align: middle;
-}
-
-html {
-  overflow-y: scroll; 
 }
 
 .main-header-container {

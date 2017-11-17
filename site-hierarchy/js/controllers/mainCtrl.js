@@ -1,8 +1,8 @@
 angular.module('conWireframe').controller('mainCtrl', function ($scope) {
   
   'use strict';
-  
-  var degreeKeys = [
+
+  $scope.degreeKeys = [
     {
       "key": "dnp",
       "name": "Doctor of Nursing Practice"
@@ -25,6 +25,8 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope) {
     }
   ];
   
+  $scope.degreesFiltered = false;
+  
   $scope.choosePathway = function(x) {
     $scope.chosenPathway = x;
   }
@@ -37,7 +39,7 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope) {
     
     setDegree(x);
     
-    degreeKeys.forEach(function(elem) {
+    $scope.degreeKeys.forEach(function(elem) {
       if(elem.key === x) {
         $scope.degree = elem.name;
       }
