@@ -33,18 +33,7 @@
       <h2><a data-ui-sref="home">College of Nursing</a></h2>
     </div>
     
-    <nav>
-      <div>
-        <ul>
-          <li data-ui-sref-active="active"><a data-ui-sref="programs">Programs</a></li>
-          <li data-ui-sref-active="active"><a data-ui-sref="student-life">Student Life</a></li>
-          <li data-ui-sref-active="active"><a data-ui-sref="clinics">Clinics</a></li>
-          <li data-ui-sref-active="active"><a data-ui-sref="clinical-practice">Clinical Practice</a></li>
-          <li data-ui-sref-active="active"><a data-ui-sref="faculty-research">Faculty &amp; Research</a></li>
-          <li data-ui-sref-active="active"><a data-ui-sref="about">About</a></li>
-        </ul>
-      </div>
-    </nav>
+    <main-nav></main-nav>
     
     <div class="breadcrumb" data-ng-if="$state.current.name !== 'home' ">
       <ul>
@@ -144,8 +133,8 @@
 
     <!-- Directives -->
     <script src="js/directives/accordion-directive.js"></script>
-    <script src="js/directives/card-directive.js"></script>
-    <script src="js/directives/general-directives.js"></script>
+    <script src="js/directives/nav-directives.js"></script>
+    
     
     <!-- Controllers -->
     <script src="js/controllers/mainCtrl.js"></script>

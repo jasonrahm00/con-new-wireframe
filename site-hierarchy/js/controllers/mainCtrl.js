@@ -50,7 +50,6 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope) {
     return location.hash
   }, function(value) {
     $scope.breadcrumbLinks = value.split('/').splice(1, value.length);
-    console.log($scope.breadcrumbLinks + ' ' + $scope.breadcrumbLinks.length);
-  })
+  });
   
 });

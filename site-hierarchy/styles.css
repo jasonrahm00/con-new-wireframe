@@ -169,6 +169,7 @@ nav a:hover {
 nav a:hover,
 nav li.active a {
   background-color: #ccc;
+  cursor: pointer;
 }
 
 nav li {
@@ -183,6 +184,35 @@ nav li:last-child a {
 nav ul {
   margin: 0;
   padding: 0;
+}
+
+nav .submenu-trigger {
+  position: relative;
+}
+
+nav .submenu {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-top: 0;
+  display: none;
+  position: absolute;
+  right: 0; 
+  text-align: center;
+  top: 49px;
+  z-index: 1000;
+}
+
+nav .submenu li a {
+  border: 0;
+  width: 100%;
+}
+
+nav .submenu li {
+  display: table-row;
+}
+
+nav .submenu-trigger.toggled .submenu {
+  display: table;
 }
 
 
@@ -604,5 +634,7 @@ nav ul {
   .width-10 {
     width: 10%;
   }
+  
+  /******************** Main Nav ********************/
 
 }
