@@ -1,4 +1,4 @@
-angular.module('conWireframe').controller('mainCtrl', function ($scope) {
+angular.module('conWireframe').controller('mainCtrl', function ($scope, $window) {
   
   'use strict';
 
@@ -31,13 +31,13 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope) {
     $scope.chosenPathway = x;
   }
   
-  function setDegree(x) {
+  function chooseDegree(x) {
     $scope.chosenDegree = x;  
   }
   
   $scope.setDegree = function(x) {
     
-    setDegree(x);
+    chooseDegree(x);
     
     $scope.degreeKeys.forEach(function(elem) {
       if(elem.key === x) {

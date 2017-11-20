@@ -7,7 +7,6 @@
 * {
   border-collapse: collapse;
   box-sizing: border-box;
-  color: #333;
   font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
 
@@ -27,7 +26,7 @@ body>header>div,
 body>nav>div,
 main,
 .ankle>div,
-.main-header-container { 
+.con-header-link { 
   margin: 0 auto;
   max-width: 1170px;
   padding: 0 15px;
@@ -62,7 +61,12 @@ html {
 }
 
 main {
+  color: #333;
   min-height: 500px;
+}
+
+strong {
+  font-weight: 700;
 }
 
 .breadcrumb {
@@ -96,24 +100,24 @@ main {
   vertical-align: middle;
 }
 
-.main-header-container {
+.con-header-link {
   margin: 0 auto;
   max-width: 1170px;
 }
 
-.main-header-container h2{
+.con-header-link h2{
   font-size: 30px;
   margin: 75px 0 25px 0;
   font-weight: bold;
 }
 
-.main-header-container a,
-.main-header-container a:visited {
+.con-header-link a,
+.con-header-link a:visited {
   color: #333;
 }
 
-.main-header-container a,
-.main-header-container a:hover{
+.con-header-link a,
+.con-header-link a:hover{
   text-decoration: none;
 }
 
@@ -122,8 +126,8 @@ main {
   font-size: 1.15rem;
 }
 
-strong {
-  font-weight: 700;
+.show-large {
+  display: none;
 }
 
 .yellow {
@@ -195,6 +199,7 @@ nav .submenu {
   border: 1px solid #ccc;
   border-top: 0;
   display: none;
+  min-width: 180px;
   position: absolute;
   right: 0; 
   text-align: center;
@@ -203,7 +208,9 @@ nav .submenu {
 }
 
 nav .submenu li a {
-  border: 0;
+  border-bottom: 1px solid #ccc;
+  border-left: 0;
+  border-right: 0;
   width: 100%;
 }
 
@@ -580,6 +587,12 @@ nav .submenu-trigger.toggled a>span {
   
 }
 
+@media (min-width: 700px) {
+  .show-large {
+    display: inline-block;
+  }
+}
+
 @media (min-width: 992px) {
   
   .flex-container {
@@ -647,7 +660,5 @@ nav .submenu-trigger.toggled a>span {
   .width-10 {
     width: 10%;
   }
-  
-  /******************** Main Nav ********************/
 
 }

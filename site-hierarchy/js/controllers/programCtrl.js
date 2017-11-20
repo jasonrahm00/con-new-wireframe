@@ -4,8 +4,6 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, $q, p
 
   $scope.selectedPathways = [];
   
-  $scope.availableOptions = 0;
-  
   programFactory.getPrograms().then(function() {
     var programs = programFactory.programs;
     
@@ -21,8 +19,6 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, $q, p
     } else {
       $scope.degreesFiltered = true;
     }
-
-    $scope.availableOptions = $scope.selectedPathways.length;    
     
   });
   
