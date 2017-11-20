@@ -215,6 +215,19 @@ nav .submenu-trigger.toggled .submenu {
   display: table;
 }
 
+nav .submenu-trigger a>span {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+nav .submenu-trigger.toggled a>span {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 
 
 /**********************************************************
