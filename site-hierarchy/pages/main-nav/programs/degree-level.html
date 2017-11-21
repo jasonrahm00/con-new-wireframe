@@ -2,6 +2,10 @@
 
 <section>
   <h2>{{ selectedPathways.length }} Available Pathways</h2>
+  
+  <label for="degreeChange" class="margin-right-x-small"><strong>Change Degree</strong></label>
+  <select id="degreeChange" data-ng-model="changeDegree" data-ng-options="degree.name for degree in degreeKeys"></select>
+  
   <p>This page will be a content container with cards for each degree and further narrowing</p>
   <ul>
     <li data-ng-repeat="program in selectedPathways">
