@@ -28,6 +28,7 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, $window)
   $scope.degreesFiltered = false;
   
   $scope.choosePathway = function(x) {
+    $scope.chosenDegree !== x.degree ? chooseDegree(x.degree) : '';
     $scope.chosenPathway = x;
   }
   
@@ -39,9 +40,9 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, $window)
     
     chooseDegree(x);
     
-    $scope.degreeKeys.forEach(function(elem) {
-      if(elem.key === x) {
-        $scope.degree = elem.name;
+    $scope.degreeKeys.forEach(function(item) {
+      if(item.key === x) {
+        $scope.degree = item.name;
       }
     });
   }

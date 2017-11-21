@@ -386,7 +386,12 @@ nav .submenu-trigger.toggled a>span {
 }
 
 .flex-container {
-  display: block;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 .flex-wrap-wrap {
@@ -627,10 +632,6 @@ nav .submenu-trigger.toggled a>span {
 }
 
 @media (min-width: 992px) {
-  
-  .flex-container {
-    display: flex;
-  }
   
   /******************** Custom Widths ********************/
 

@@ -7,9 +7,9 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, $q, p
   programFactory.getPrograms().then(function() {
     var programs = programFactory.programs;
     
-    programs.forEach(function(elem) {
-      if(elem.degree === $scope.chosenDegree) {
-        $scope.selectedPathways.push(elem)
+    programs.forEach(function(item) {
+      if(item.degree === $scope.chosenDegree) {
+        $scope.selectedPathways.push(item)
       }
     });
           

@@ -27,7 +27,8 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       templateUrl: '/pages/main-nav/programs/degree-page.html',
       data: {
         title: 'CU College of Nursing Single Degree',
-        breadcrumb: 'Degree Page'
+        breadcrumb: 'Degree Page',
+        image: '/images/hero-image.jpg'
       },
       controller: 'programCtrl'
     })

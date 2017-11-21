@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-
-    <!-- JS Files -->
-    <!--<script src="https://maps.googleapis.com/maps/api/js?language=en"></script>-->
     
   </head>
   
@@ -41,7 +38,7 @@
     
     <main-nav></main-nav>
 
-    <img class="hero-image" alt="Anschutz walkway photo" src="/images/hero-image.jpg" data-ng-if="$state.current.name === 'degree-page'">
+    <img class="hero-image" alt="Anschutz walkway photo" data-ng-src="{{ $state.current.data.image }}" data-ng-if="$state.current.data.image">
     
     <div class="breadcrumb" data-ng-if="$state.current.name !== 'home' ">
       <ul>
@@ -114,7 +111,7 @@
     
     <footer>
       <div style="margin: 0px auto; max-width: 1170px; padding: 30px 0; text-align: center;">
-        <p><strong style="color: white;">Main Univeristy Footer</strong></p>
+        <p><strong style="color: white;">Main University Footer</strong></p>
       </div>
     </footer>
     
