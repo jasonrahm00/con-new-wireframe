@@ -1,4 +1,4 @@
-angular.module('conWireframe').controller('programCtrl', function ($scope, $q, programFactory) {
+angular.module('conWireframe').controller('programCtrl', function ($scope, programFactory) {
   
   'use strict';
 
@@ -46,8 +46,5 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, $q, p
       
     }
   });
-  
-    
-  
-  
+
 });

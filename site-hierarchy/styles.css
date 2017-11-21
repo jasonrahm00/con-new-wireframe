@@ -99,26 +99,6 @@ strong {
   padding: 0;
 }
 
-.faux-link {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.hero-image {
-  height: auto;
-  width: 100%;
-}
-
-.logo-wrapper {
-  float: left;
-}
-
-.logo-wrapper img {
-  margin-right: 6px;
-  max-width: 30px;
-  vertical-align: middle;
-}
-
 .con-header-link {
   margin: 0 auto;
   max-width: 1170px;
@@ -140,9 +120,36 @@ strong {
   text-decoration: none;
 }
 
+.faux-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.hero-image {
+  height: auto;
+  width: 100%;
+}
+
+.logo-wrapper {
+  float: left;
+}
+
+.logo-wrapper img {
+  margin-right: 6px;
+  max-width: 30px;
+  vertical-align: middle;
+}
+
 .red {
   color: red;
-  font-size: 1.15rem;
+}
+
+.reuseable {
+  background: #bfcc80;
+}
+
+.reuseable:after {
+  content: "reusable content";
 }
 
 .show-large {
@@ -371,6 +378,10 @@ nav .submenu-trigger.toggled a>span {
 
 .align-self-end {
   align-self: flex-end;
+}
+
+.align-self-start {
+  align-self: flex-start;
 }
 
 .around {
