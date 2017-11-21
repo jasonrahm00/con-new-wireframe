@@ -1,29 +1,13 @@
-angular.module('conWireframe').controller('mainCtrl', function ($scope, $window) {
+angular.module('conWireframe').controller('mainCtrl', function ($scope, $window, dataService) {
   
   'use strict';
-
-  $scope.degreeKeys = [
-    {
-      "key": "dnp",
-      "name": "Doctor of Nursing Practice"
-    },
-    {
-      "key": "bs",
-      "name": "Bachelors"
-    },
-    {
-      "key": "ms",
-      "name": "Masters"
-    },
-    {
-      "key": "phd",
-      "name": "PhD"
-    },
-    {
-      "key": "cert",
-      "name": "Professional Development and Certificates"
-    }
-  ];
+  
+  dataService.getData('/js/data/degrees.json')
+    .then(function(response) {
+      $scope.degreeKeys = response;
+    }, function(response) {
+      console.log(response);
+    });
   
   $scope.degreesFiltered = false;
   
@@ -33,7 +17,8 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, $window)
   }
   
   function chooseDegree(x) {
-    $scope.chosenDegree = x;  
+    var chosenDegree = x;    
+    $scope.chosenDegree = chosenDegree;  
   }
   
   $scope.setDegree = function(x) {
