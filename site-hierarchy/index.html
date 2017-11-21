@@ -40,14 +40,16 @@
     </div>
     
     <main-nav></main-nav>
+
+    <img class="hero-image" alt="Anschutz walkway photo" src="/images/hero-image.jpg" data-ng-if="$state.current.name === 'degree-page'">
     
     <div class="breadcrumb" data-ng-if="$state.current.name !== 'home' ">
       <ul>
         <li><a href="/">Home</a> / </li>
         <li data-ng-repeat="link in breadcrumbLinks">
           <span data-ng-if="!$last"><a data-ui-sref="{{ link }}">{{ link | capitalize }}</a> / </span>
-          <span data-ng-if="$last">{{ link | capitalize }}</span>
         </li>
+        <li data-ng-bind="$state.current.data.breadcrumb"></li>
       </ul>
     </div>
     
@@ -59,7 +61,7 @@
       <div>
         
         <div>
-          <span>Student Resources</span>
+          <a data-ui-sref="student-resources">Student Resources</a>
           <ul>
             <li class="yellow"><a>Register for Classes</a></li>
             <li><a>Course Catalog</a></li>
@@ -75,7 +77,7 @@
         </div>
 
         <div>
-          <span>Faculty Resources</span>
+          <a data-ui-sref="faculty-resources">Faculty Resources</a>
           <ul>
             <li><a>Center for Faculty Development</a></li>
             <li><a>Academic Calendar</a></li>
@@ -84,7 +86,7 @@
         </div>
 
         <div>
-          <span>Staff Resources</span>
+          <a data-ui-sref="staff-resources">Staff Resources</a>
           <ul>
             <li><a>Intranet</a></li>
             <li><a>Human Resources</a></li>
@@ -94,7 +96,7 @@
         </div>
 
         <div>
-          <span class="yellow">Alumni Resources</span>
+          <a data-ui-sref="alumni-resources">Alumni</a>
           <ul>
             <li><a>Alumni Beneifts</a></li>
             <li><a>Order Transcripts</a></li>
