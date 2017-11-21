@@ -1,16 +1,13 @@
-angular.module('conWireframe').controller('mainCtrl', function ($scope, $window, dataService) {
+angular.module('conWireframe').controller('mainCtrl', function ($scope, $window, degreeFactory) {
   
   'use strict';
   
-  dataService.getData('/js/data/degrees.json')
-    .then(function(response) {
-      $scope.degreeKeys = response;
-    }, function(response) {
-      console.log(response);
-    });
-  
   $scope.degreesFiltered = false;
   
+  degreeFactory.getDegrees().then(function() {
+    $scope.degreeKeys = degreeFactory.degrees;
+  });
+
   $scope.choosePathway = function(x) {
     $scope.chosenDegree !== x.degree ? chooseDegree(x.degree) : '';
     $scope.chosenPathway = x;
