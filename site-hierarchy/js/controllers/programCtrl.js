@@ -9,7 +9,7 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
     
     programs.forEach(function(item) {
 
-      if(item.degree === $scope.chosenDegree) {
+      if(item.degree === degreeFactory.chosenDegree.key) {
         $scope.selectedPathways.push(item)
       }
       
@@ -23,7 +23,7 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
     }
     
   });
-  
+
   $scope.changeDegree = null;
   
   $scope.$watch('changeDegree', function(newVal, oldVal) {
@@ -33,7 +33,7 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
       $scope.selectedPathways = [];
       
       programFactory.programs.forEach(function(item) {
-        if(item.degree === $scope.chosenDegree) {
+        if(item.degree === degreeFactory.chosenDegree.key) {
           $scope.selectedPathways.push(item)
         }
       });

@@ -6,7 +6,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
   
     .state('programs', {
       url: '/programs',
-      templateUrl: '/pages/main-nav/programs/programs-landing.html',
+      templateUrl: '/pages/main-nav/programs/programs.html',
       data: {
         title: 'CU College of Nursing Programs',
         breadcrumb: 'Programs'
@@ -15,7 +15,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
     })
     .state('degrees', {
       url: '/programs/degrees',
-      templateUrl: '/pages/main-nav/programs/degree-level.html',
+      templateUrl: '/pages/main-nav/programs/degrees.html',
       data: {
         title: 'CU College of Nursing Degrees',
         breadcrumb: 'Degrees'

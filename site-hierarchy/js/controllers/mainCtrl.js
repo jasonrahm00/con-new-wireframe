@@ -3,31 +3,25 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, $window,
   'use strict';
   
   $scope.degreesFiltered = false;
+  $scope.degreeKeys = [];
   
-  degreeFactory.getDegrees().then(function() {
-    $scope.degreeKeys = degreeFactory.degrees;
-  });
-
-  $scope.choosePathway = function(x) {
-    $scope.chosenDegree !== x.degree ? chooseDegree(x.degree) : '';
-    $scope.chosenPathway = x;
-  }
-  
-  function chooseDegree(x) {
-    var chosenDegree = x;    
-    $scope.chosenDegree = chosenDegree;  
-  }
-  
-  $scope.setDegree = function(x) {
+  degreeFactory.getDegrees().then(function(){
     
-    chooseDegree(x);
-    
-    $scope.degreeKeys.forEach(function(item) {
-      if(item.key === x) {
-        $scope.degree = item.name;
-      }
+    degreeFactory.degrees.forEach(function(item) {
+      $scope.degreeKeys.push(item);
     });
-  }
+    
+    $scope.setDegree = function(x) {
+      degreeFactory.setDegree(x);
+      $scope.chosenDegree = degreeFactory.chosenDegree;
+    };
+
+  });
+  
+  $scope.choosePathway = function(x) {
+    $scope.chosenDegree !== x.degree ? degreeFactory.chooseDegree = x.degree : '';
+    $scope.chosenPathway = x;
+  };
   
   $scope.$watch(function() {
     return location.hash
