@@ -4,7 +4,7 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
   
   var degreeObject = {
     "degrees": [],
-    "chosenDegree": {}
+    "chosenDegree": undefined
   };
   
   degreeObject.getDegrees = function() {

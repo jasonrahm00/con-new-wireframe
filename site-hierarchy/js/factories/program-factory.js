@@ -4,6 +4,7 @@ angular.module('conWireframe').factory('programFactory', function($q, dataServic
   
   var programObject = {
     "programs": [],
+    "filteredPrograms": [],
     "selectedProgram": {}
   };
   
@@ -25,6 +26,20 @@ angular.module('conWireframe').factory('programFactory', function($q, dataServic
   programObject.selectProgram = function(program) {
     this.selectedProgram = program;
     return this;
+  }
+  
+  programObject.filterPrograms = function(x) {
+    
+    programObject.filteredPrograms = [];
+    
+    programObject.programs.forEach(function(item) {
+      if(item.degree === x.key) {
+        programObject.filteredPrograms.push(item);
+      }
+    });
+    
+    return this;
+    
   }
 
   return programObject;
