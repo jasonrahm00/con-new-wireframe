@@ -1,0 +1,94 @@
+[
+  {
+    "key": "dnp",
+    "name": "Doctor of Nursing Practice",
+    "dates": [
+      {
+        "path": "all",
+        "open": "September 1, 2017",
+        "close": "December 15, 2017",
+        "interview": "February, 2018",
+        "decision": "April 1, 2018",
+        "start": "August"
+      }
+    ]    
+  },
+  {
+    "key": "bs",
+    "name": "Bachelors",
+    "dates": [
+      {
+        "path": "rn-bs",
+        "open": "July 1, 2017",
+        "close": "November 1, 2017",
+        "interview": "N/A",
+        "decision": "Rolling",
+        "start": "January 2018"
+      },
+      {
+        "path": "trad",
+        "open": "August 23, 2017",
+        "close": "November 15, 2017",
+        "interview": "January 12, 2018",
+        "decision": "February 15, 2018",
+        "start": "June 2018"
+      },
+      {
+        "path": "ucan",
+        "open": "March 1, 2017",
+        "close": "June 15, 2017",
+        "interview": "July 20, 2017",
+        "decision": "September 15, 2017",
+        "start": "January 2018"
+      },
+      {
+        "path": "int",
+        "open": "January 1, 2017",
+        "close": "March 31, 2017",
+        "interview": "May 2017",
+        "decision": "July 1, 2017",
+        "start": "Fall 2017"
+      }
+    ]  
+  },
+  {
+    "key": "ms",
+    "name": "Masters",
+    "dates": [
+      {
+        "path": "indirect",
+        "open": "January 16, 2017",
+        "close": "July 25, 2017",
+        "interview": "Ongoing",
+        "decision": "Ongoing",
+        "start": "Jnauary 2018"
+      },
+      {
+        "path": "direct",
+        "open": "September 2, 2017",
+        "close": "December 15, 2017",
+        "interview": "February 23, 2018",
+        "decision": "April 1, 2018",
+        "start": "August 2018"
+      }
+    ]  
+  },
+  {
+    "key": "phd",
+    "name": "PhD",
+    "dates": [
+      {
+        "path": "all",
+        "open": "July 1, 2017",
+        "close": "December 15, 2017",
+        "interview": "Early Spring 2018",
+        "decision": "April 1, 2018",
+        "start": "August 2018"
+      }
+    ]  
+  },
+  {
+    "key": "cert",
+    "name": "Professional Development and Certificates"
+  }
+]

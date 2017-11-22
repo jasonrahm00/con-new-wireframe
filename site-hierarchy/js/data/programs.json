@@ -1,107 +1,133 @@
 [
   {
     "degree": "bs",
-    "name": "Accelerated Nursing Bachelors Program"
+    "name": "Accelerated Nursing Bachelors Program",
+    "path": "ucan"
   },
   {
     "degree": "bs",
-    "name": "Traditional Bachelors Program"
+    "name": "Traditional Bachelors Program",
+    "path": "trad"
   },
   {
     "degree": "bs",
-    "name": "RN to Nursing Bachelors"
+    "name": "RN to Nursing Bachelors",
+    "path": "rn-bs"
   },
   {
     "degree": "bs",
-    "name": "Integrated Nursing Pathway"
+    "name": "Integrated Nursing Pathway",
+    "path": "int"
   },
   {
     "degree": "bs",
-    "name": "Dual Enrollment ADN and Nursing Bachelors"
+    "name": "Dual Enrollment ADN and Nursing Bachelors",
+    "path": "dual"
   },
   {
     "degree": "ms",
-    "name": "Acute Care Pediatric Nurse Practitioner Masters Program"
+    "name": "Acute Care Pediatric Nurse Practitioner Masters Program",
+    "path": "direct"
   },
   {
     "degree": "ms",
-    "name": "Adult-Gerontology Acute Care Nurse Practitioner Masters Program"
+    "name": "Adult-Gerontology Acute Care Nurse Practitioner Masters Program",
+    "path": "direct"
   },
   {
     "degree": "ms",
-    "name": "Adult-Gerontology Primary Care Nurse Practitioner Masters Program"
+    "name": "Adult-Gerontology Primary Care Nurse Practitioner Masters Program",
+    "path": "direct"
   },
   {
     "degree": "ms",
-    "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology Masters Program"
+    "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology Masters Program",
+    "path": "direct"
   },
   {
     "degree": "ms",
-    "name": "Family Nurse Practitioner Masters Program"
+    "name": "Family Nurse Practitioner Masters Program",
+    "path": "direct"
   },
   {
     "degree": "ms",
-    "name": "Health Care Informatics Masters Program"
+    "name": "Health Care Informatics Masters Program",
+    "path": "indirect"
   },
   {
     "degree": "ms",
-    "name": "i-LEAD Nursing Leadership and Health Care Systems Masters Program"
+    "name": "i-LEAD Nursing Leadership and Health Care Systems Masters Program",
+    "path": "indirect"
   },
   {
     "degree": "ms",
-    "name": "Nurse-Midwifery Masters Program"
+    "name": "Nurse-Midwifery Masters Program",
+    "path": "direct"
   },
   {
     "degree": "ms",
-    "name": "Primary Care Pediatric Nurse Practitioner Masters Program"
+    "name": "Primary Care Pediatric Nurse Practitioner Masters Program",
+    "path": "direct"
   },
   {
     "degree": "ms",
-    "name": "Psychiatric Mental Health Nurse Practitioner Masters Program"
+    "name": "Psychiatric Mental Health Nurse Practitioner Masters Program",
+    "path": "direct"
   },
   {
     "degree": "ms",
-    "name": "Veteran and Military Health Care Masters Program"
+    "name": "Veteran and Military Health Care Masters Program",
+    "path": "indirect"
   },
   {
     "degree": "ms",
-    "name": "Women's Health Masters Program"
+    "name": "Women's Health Masters Program",
+    "path": "direct"
   },
   {
     "degree": "dnp",
-    "name": "Acute Care Pediatric Nurse Practitioner BS to DNP Program"
+    "name": "Acute Care Pediatric Nurse Practitioner BS to DNP Program",
+    "path": "direct"
   },
   {
     "degree": "dnp",
-    "name": "Adult-Gerontology Acute Care Nurse Practitioner BS to DNP Program"
+    "name": "Adult-Gerontology Acute Care Nurse Practitioner BS to DNP Program",
+    "path": "direct"
   },
   {
     "degree": "dnp",
-    "name": "Adult-Gerontology Primary Care Nurse Practitioner BS to DNP Program"
+    "name": "Adult-Gerontology Primary Care Nurse Practitioner BS to DNP Program",
+    "path": "direct"
   },
   {
     "degree": "dnp",
-    "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology BS to DNP Program"
+    "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology BS to DNP Program",
+    "path": ""
   },
   {
     "degree": "dnp",
-    "name": "Family Nurse Practitioner BS to DNP Program"
+    "name": "Family Nurse Practitioner BS to DNP Program",
+    "path": "direct"
   },
   {
     "degree": "dnp",
-    "name": "i-LEAD Nursing Leadership and Health Care Systems BS to DNP Program"
+    "name": "i-LEAD Nursing Leadership and Health Care Systems BS to DNP Program",
+    "path": "indirect"
   },
   {
     "degree": "dnp",
-    "name": "Primary Care Pediatric Nurse Practitioner BS to DNP Program"
+    "name": "Primary Care Pediatric Nurse Practitioner BS to DNP Program",
+    "path": "direct"
   },
   {
     "degree": "dnp",
-    "name": "Psychiatric Mental Health Nurse Practitioner BS to DNP Program"
+    "name": "Psychiatric Mental Health Nurse Practitioner BS to DNP Program",
+    "path": "direct"
   },
   {
     "degree": "dnp",
-    "name": "Women's Health BS to DNP Program"
+    "name": "Women's Health BS to DNP Program",
+    "path": "direct"
   },
   {
     "degree": "dnp",
@@ -173,7 +199,8 @@
   },
   {
     "degree": "phd",
-    "name": "Post-Bachelors MS-PhD"
+    "name": "Post-Bachelors MS-PhD",
+    "path": ""
   },
   {
     "degree": "cert",

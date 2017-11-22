@@ -1,50 +1,47 @@
-angular.module('conWireframe').controller('programCtrl', function ($scope, programFactory) {
+angular.module('conWireframe').controller('programCtrl', function ($scope, degreeFactory, programFactory) {
   
   'use strict';
 
-  $scope.selectedPathways = [];
+  $scope.chosenPathway = programFactory.selectedProgram;
+  $scope.filteredPrograms = programFactory.filteredPrograms;
+  $scope.degreeKeys = [];
+  $scope.chosenDegree = degreeFactory.chosenDegree;
+  $scope.changeDegree = null;
   
-  var allPrograms = [];
-  
-  programFactory.getPrograms().then(function() {
-    var programs = programFactory.programs;
+  degreeFactory.getDegrees().then(function(){
     
-    programs.forEach(function(item) {
-      
-      allPrograms.push(item);
-      
-      if(item.degree === $scope.chosenDegree) {
-        $scope.selectedPathways.push(item)
-      }
-      
+    degreeFactory.degrees.forEach(function(item) {
+      $scope.degreeKeys.push(item);
     });
-          
-    if($scope.selectedPathways.length === 0) {
-      $scope.selectedPathways = allPrograms;
-      $scope.degreesFiltered = false;
-    } else {
-      $scope.degreesFiltered = true;
-    }
     
   });
   
-  $scope.changeDegree = null;
+  programFactory.getPrograms();
   
+  $scope.choosePathway = function(x) {
+    programFactory.selectProgram(x);
+  };
+  
+  $scope.setDegree = function(x) {
+    degreeFactory.setDegree(x);
+    programFactory.filterPrograms(degreeFactory.chosenDegree);
+  };
+
+  /*
   $scope.$watch('changeDegree', function(newVal, oldVal) {
     if(newVal !== oldVal) {
-      
       $scope.setDegree(newVal.key);
       $scope.selectedPathways = [];
       
-      allPrograms.forEach(function(item) {
-        if(item.degree === $scope.chosenDegree) {
+      programFactory.programs.forEach(function(item) {
+        if(item.degree === degreeFactory.chosenDegree.key) {
           $scope.selectedPathways.push(item)
         }
       });
       
-      $scope.degreesFiltered = true;
-      
+      $scope.degreesFiltered = true;      
     }
   });
+  */
 
 });
