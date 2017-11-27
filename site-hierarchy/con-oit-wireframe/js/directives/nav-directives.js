@@ -17,11 +17,11 @@ angular.module('conWireframe').directive('mainNav', function($window){
         var screenWidth = $window.innerWidth;
         
         if(screenWidth < 400) {
-          scope.templateUrl = '/templates/main-nav/small-mobile-nav.html'
+          scope.templateUrl = 'con-oit-wireframe/templates/main-nav/small-mobile-nav.html'
         } else if(screenWidth >= 400 && screenWidth < 992) {
-          scope.templateUrl = '/templates/main-nav/mobile-nav.html';
+          scope.templateUrl = 'con-oit-wireframe/templates/main-nav/mobile-nav.html';
         } else if(screenWidth >= 992) {
-          scope.templateUrl = '/templates/main-nav/desktop-nav.html';
+          scope.templateUrl = 'con-oit-wireframe/templates/main-nav/desktop-nav.html';
         }
       }
       

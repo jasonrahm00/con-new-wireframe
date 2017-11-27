@@ -10,7 +10,7 @@ angular.module('conWireframe').factory('programFactory', function($q, dataServic
   
   programObject.getPrograms = function() {
     var deferred = $q.defer();
-    return dataService.getData('/js/data/programs.json')
+    return dataService.getData('con-oit-wireframe/js/data/programs.json')
       .then(function(response) {
         programObject.programs = response;
         deferred.resolve(response);

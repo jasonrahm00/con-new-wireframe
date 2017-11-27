@@ -9,7 +9,7 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
   
   degreeObject.getDegrees = function() {
     var deferred = $q.defer();
-    return dataService.getData('/js/data/degrees.json')
+    return dataService.getData('con-oit-wireframe/js/data/degrees.json')
       .then(function(response) {
         degreeObject.degrees = response;
         deferred.resolve(response);

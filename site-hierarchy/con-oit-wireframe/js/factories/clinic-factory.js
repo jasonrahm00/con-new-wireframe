@@ -9,7 +9,7 @@ angular.module('conWireframe').factory('clinicFactory', function($q, dataService
   
   clinicObject.getClinics = function() {
     var deferred = $q.defer();
-    return dataService.getData('/js/data/clinics.json')
+    return dataService.getData('con-oit-wireframe/js/data/clinics.json')
       .then(function(response) {
         clinicObject.locations = response;
         deferred.resolve(response);

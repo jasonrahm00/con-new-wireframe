@@ -6,7 +6,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
   
     .state('programs', {
       url: '/programs',
-      templateUrl: '/pages/main-nav/programs/programs.html',
+      templateUrl: 'con-oit-wireframe/pages/main-nav/programs/programs.html',
       data: {
         title: 'CU College of Nursing Programs',
         breadcrumb: 'Programs'
@@ -15,7 +15,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
     })
     .state('degrees', {
       url: '/programs/degrees',
-      templateUrl: '/pages/main-nav/programs/degrees.html',
+      templateUrl: 'con-oit-wireframe/pages/main-nav/programs/degrees.html',
       data: {
         title: 'CU College of Nursing Degrees',
         breadcrumb: 'Degrees'
@@ -24,17 +24,17 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
     })
     .state('degree-page', {
       url: '/programs/degrees/degree-page',
-      templateUrl: '/pages/main-nav/programs/degree-page.html',
+      templateUrl: 'con-oit-wireframe/pages/main-nav/programs/degree-page.html',
       data: {
         title: 'CU College of Nursing Single Degree',
         breadcrumb: 'Degree Page',
-        image: '/images/hero-image.jpg'
+        image: 'con-oit-wireframe/images/hero-image.jpg'
       },
       controller: 'programCtrl'
     })
     .state('global-health', {
       url: '/programs/global-health',
-      templateUrl: '/pages/main-nav/programs/global-health.html',
+      templateUrl: 'con-oit-wireframe/pages/main-nav/programs/global-health.html',
       data: {
         title: 'Global Health Nursing Programs',
         breadcrumb: 'Global Health'

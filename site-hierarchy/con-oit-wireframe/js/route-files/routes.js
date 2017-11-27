@@ -6,7 +6,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
   
     .state('about', {
       url: '/about',
-      templateUrl: '/pages/main-nav/about.html',
+      templateUrl: 'con-oit-wireframe/pages/main-nav/about.html',
       data: {
         title: 'About the CU College of Nursing',
         breadcrumb: 'About'
@@ -14,7 +14,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
     })
     .state('student-life', {
       url: '/student-life',
-      templateUrl: '/pages/main-nav/student-life.html',
+      templateUrl: 'con-oit-wireframe/pages/main-nav/student-life.html',
       data: {
         title: 'Life at CU College of Nursing',
         breadcrumb: 'Student Life'
@@ -22,7 +22,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
     })
     .state('clinics', {
       url: '/clinics',
-      templateUrl: '/pages/main-nav/clinics.html',
+      templateUrl: 'con-oit-wireframe/pages/main-nav/clinics.html',
       data: {
         title: 'CU College of Nursing Clinics',
         breadcrumb: 'Clinics'
@@ -30,7 +30,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
     })
     .state('clinical-practice', {
       url: '/clinical-practice',
-      templateUrl: '/pages/main-nav/clinical-practice.html',
+      templateUrl: 'con-oit-wireframe/pages/main-nav/clinical-practice.html',
       data: {
         title: 'CU College of Nursing Clinical Practice',
         breadcrumb: 'Clinical Practice'
@@ -38,7 +38,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
     })
     .state('faculty-research', {
       url: '/faculty-research',
-      templateUrl: '/pages/main-nav/faculty-research.html',
+      templateUrl: 'con-oit-wireframe/pages/main-nav/faculty-research.html',
       data: {
         title: 'Faculty and Research at CU College of Nursing',
         breadcrumb: 'Faculty Research'
@@ -46,7 +46,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
     })
   .state('alumni-resources', {
       url: '/alumni-resources',
-      templateUrl: '/pages/ankle-nav/alumni-resources.html',
+      templateUrl: 'con-oit-wireframe/pages/ankle-nav/alumni-resources.html',
       data: {
         title: 'Alumni Resources at CU College of Nursing',
         breadcrumb: 'Alumni Resources'
@@ -54,7 +54,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
     })
   .state('student-resources', {
       url: '/student-resources',
-      templateUrl: '/pages/ankle-nav/student-resources.html',
+      templateUrl: 'con-oit-wireframe/pages/ankle-nav/student-resources.html',
       data: {
         title: 'Student Resources at CU College of Nursing',
         breadcrumb: 'Student Resources'
@@ -62,7 +62,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
     })
   .state('staff-resources', {
       url: '/staff-resources',
-      templateUrl: '/pages/ankle-nav/staff-resources.html',
+      templateUrl: 'con-oit-wireframe/pages/ankle-nav/staff-resources.html',
       data: {
         title: 'Staff Resources at CU College of Nursing',
         breadcrumb: 'Staff Resources'
@@ -70,7 +70,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
     })
   .state('faculty-resources', {
       url: '/faculty-resources',
-      templateUrl: '/pages/ankle-nav/faculty-resources.html',
+      templateUrl: 'con-oit-wireframe/pages/ankle-nav/faculty-resources.html',
       data: {
         title: 'Faculty Resources at CU College of Nursing',
         breadcrumb: 'Faculty Resources'

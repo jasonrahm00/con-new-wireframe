@@ -14,7 +14,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
   
     .state('home', {
       url: '/',
-      templateUrl: '/pages/home.html',
+      templateUrl: 'con-oit-wireframe/pages/home.html',
       data: {
         title: 'CON OIT Sitemap',
         breadcrumb: 'Home'
