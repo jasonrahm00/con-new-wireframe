@@ -694,18 +694,16 @@ main nav + div {
   stroke-width: 2px;
 }
 
-<<<<<<< HEAD
 .decision-tree .node text {
-=======
+  font: .85rem;
+  pointer-events: none;
+}
+
 .node rect:hover {
   stroke-width: 3px;
 }
 
-.node text {
->>>>>>> decision-tree
-  font: .85rem;
-  pointer-events: none;
-}
+
 
 /******************** Program Pathways ********************/
 
