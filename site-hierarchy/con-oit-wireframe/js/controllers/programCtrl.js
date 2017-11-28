@@ -6,17 +6,17 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
   $scope.filteredPrograms = programFactory.filteredPrograms;
   $scope.degreeKeys = [];
   $scope.chosenDegree = degreeFactory.chosenDegree;
-  $scope.changeDegree = null;
   
-  degreeFactory.getDegrees().then(function(){
+  programFactory.getPrograms()
+    .then(degreeFactory.getDegrees)
+    .then(function() {
     
-    degreeFactory.degrees.forEach(function(item) {
-      $scope.degreeKeys.push(item);
-    });
+      $scope.allPrograms = programFactory.programs;
     
+      degreeFactory.degrees.forEach(function(item) {
+        $scope.degreeKeys.push(item);
+      });
   });
-  
-  programFactory.getPrograms();
   
   $scope.choosePathway = function(x) {
     programFactory.selectProgram(x);
@@ -25,23 +25,19 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
   $scope.setDegree = function(x) {
     degreeFactory.setDegree(x);
     programFactory.filterPrograms(degreeFactory.chosenDegree);
+    $scope.chosenDegree = degreeFactory.chosenDegree;
   };
 
-  /*
-  $scope.$watch('changeDegree', function(newVal, oldVal) {
+  $scope.$watch('chosenDegree', function(newVal, oldVal) {
     if(newVal !== oldVal) {
-      $scope.setDegree(newVal.key);
-      $scope.selectedPathways = [];
       
-      programFactory.programs.forEach(function(item) {
-        if(item.degree === degreeFactory.chosenDegree.key) {
-          $scope.selectedPathways.push(item)
-        }
-      });
+      degreeFactory.setDegree(newVal.key);
+      programFactory.filterPrograms(newVal);
       
-      $scope.degreesFiltered = true;      
+      $scope.chosenDegree = degreeFactory.chosenDegree;
+      $scope.filteredPrograms = programFactory.filteredPrograms;
+      
     }
   });
-  */
 
 });
