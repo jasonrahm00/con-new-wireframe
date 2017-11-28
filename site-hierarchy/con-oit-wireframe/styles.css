@@ -16,6 +16,25 @@ a:visited {
   color: #333;
 }
 
+body>footer {
+  background-color: #000; 
+  border-top: 1px solid #aaa;
+  height: 138px;
+  width: 100%;
+}
+
+body>footer>div {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+body>footer>div>p {
+  color: white;
+  font-weight: bold;
+}
+
 body>header {
   background-color: #333;
   height: 50px;
@@ -51,12 +70,7 @@ body>header>div h2 strong {
   color: #fff;
 }
 
-footer {
-  background-color: #000; 
-  border-top: 1px solid #aaa;
-  height: 138px;
-  width: 100%;
-}
+
 
 h1 {
   font-weight: 700;
@@ -265,7 +279,7 @@ nav .submenu-trigger.toggled a>span {
 
 /**********************************************************
     
-                  CON Footer Nav
+                  CON Ankle Nav
 
 **********************************************************/
 
@@ -277,12 +291,18 @@ nav .submenu-trigger.toggled a>span {
   padding: 30px 0;
 }
 
-.ankle * {
+.ankle a {
   color: white;
 }
 
-.ankle *.yellow,
-.ankle *.yellow a {
+.angle .red,
+.ankle .red a {
+  color: red;
+}
+
+.ankle .yellow,
+.ankle .yellow a,
+.ankle .yellow a:visited {
   color: #333;
 }
 
@@ -307,7 +327,7 @@ nav .submenu-trigger.toggled a>span {
 }
 
 .ankle>div>div {
-  width: 22.5%;
+  width: 30%;
 }
 
 .ankle li {

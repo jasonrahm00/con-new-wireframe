@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
 
     <title data-ng-bind="$state.current.data.title">CON Sitefinity Wireframe</title>
 
@@ -73,22 +74,14 @@
           </ul>
         </div>
 
-        <div>
-          <a data-ui-sref="faculty-resources">Faculty Resources</a>
-          <ul>
-            <li><a>Center for Faculty Development</a></li>
-            <li><a>Academic Calendar</a></li>
-            <li><a>University Policies</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <a data-ui-sref="staff-resources">Staff Resources</a>
+        <div class="yellow">
+          <a data-ui-sref="faculty-staff">Faculty and Staff Resources</a>
           <ul>
             <li><a>Intranet</a></li>
             <li><a>Human Resources</a></li>
             <li><a>Jobs@CU</a></li>
-            <li><a>Policies</a></li>
+            <li><a>Academic Calendar</a></li>
+            <li><a>University Policies</a></li>
           </ul>
         </div>
 
@@ -99,8 +92,8 @@
             <li><a>Order Transcripts</a></li>
             <li><a>Update Your Information</a></li>
             <li><a>Alumni Events</a></li>
-            <li><a>Alumni Magazine</a></li>
-            <li><a>Nursing Career Resources</a></li>
+            <li class="red"><strike>Alumni Magazine</strike></li>
+            <li class="red"><strike>Nursing Career Resources</strike></li>
             <li><a>Continuing Nursing Education</a></li>
             <li><a>Giving to the College</a></li>
           </ul>
@@ -110,8 +103,8 @@
     </div>
     
     <footer>
-      <div style="margin: 0px auto; max-width: 1170px; padding: 30px 0; text-align: center;">
-        <p><strong style="color: white;">Main University Footer</strong></p>
+      <div>
+        <p>Main University Footer</p>
       </div>
     </footer>
     

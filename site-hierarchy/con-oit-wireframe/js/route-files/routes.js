@@ -60,20 +60,12 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         breadcrumb: 'Student Resources'
       }
     })
-  .state('staff-resources', {
-      url: '/staff-resources',
-      templateUrl: 'con-oit-wireframe/pages/ankle-nav/staff-resources.html',
-      data: {
-        title: 'Staff Resources at CU College of Nursing',
-        breadcrumb: 'Staff Resources'
-      }
-    })
-  .state('faculty-resources', {
-      url: '/faculty-resources',
-      templateUrl: 'con-oit-wireframe/pages/ankle-nav/faculty-resources.html',
+  .state('faculty-staff', {
+      url: '/faculty-staff-resources',
+      templateUrl: 'con-oit-wireframe/pages/ankle-nav/faculty-staff.html',
       data: {
         title: 'Faculty Resources at CU College of Nursing',
-        breadcrumb: 'Faculty Resources'
+        breadcrumb: 'Faculty & Staff Resources'
       }
     });
           
