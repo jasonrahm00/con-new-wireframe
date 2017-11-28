@@ -19,6 +19,10 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
   });
   
   $scope.choosePathway = function(x) {
+    if(!$scope.chosenDegree) {
+      degreeFactory.setDegree(x.degree);
+      $scope.chosenDegree = degreeFactory.chosenDegree;
+    }
     programFactory.selectProgram(x);
   };
   
