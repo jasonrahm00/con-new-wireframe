@@ -13,17 +13,8 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       },
       controller: 'programCtrl'
     })
-    .state('degrees', {
-      url: '/programs/degrees',
-      templateUrl: 'con-oit-wireframe/pages/main-nav/programs/degrees.html',
-      data: {
-        title: 'CU College of Nursing Degrees',
-        breadcrumb: 'Degrees'
-      },
-      controller: 'programCtrl'
-    })
     .state('degree-page', {
-      url: '/programs/degrees/degree-page',
+      url: '/programs/degree-page',
       templateUrl: 'con-oit-wireframe/pages/main-nav/programs/degree-page.html',
       data: {
         title: 'CU College of Nursing Single Degree',

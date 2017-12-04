@@ -284,7 +284,10 @@
   },
   {
     "degree": "cert",
-    "name": "Non-Degree Options",
-    "type": "non-degree"
+    "name": "Non-Degree Options"
+  },
+  {
+    "degree": "cert",
+    "name": "Global Health Nursing"
   }
 ]

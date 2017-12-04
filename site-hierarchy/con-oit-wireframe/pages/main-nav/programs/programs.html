@@ -1,16 +1,40 @@
 <header>
   <h1>Nursing Degrees and Programs</h1>
-  <p>This page will have some sort of card layout but may not be interactive or filterable. Just a listing of main degree/ed categories with links to the degree listing page. This page is the category listing page, the next page is the sub-category listing page, the sub-pages are list availabel pathways for the degree.</p>
+  <p>This is the product listing page and will have all available degrees/pathways/education options in a card layout with filters for faceted search.</p>
 </header>
 
-<section>
-  <h2>Sub-Pages</h2>
-  <ul>
-    <li><a data-ui-sref="degrees" data-ng-click="setDegree('bs')">Bachelors Programs</a></li>
-    <li><a data-ui-sref="degrees" data-ng-click="setDegree('ms')">Masters Programs</a></li>
-    <li><a data-ui-sref="degrees" data-ng-click="setDegree('dnp')">Doctor of Nursing Practice Programs</a></li>
-    <li><a data-ui-sref="degrees" data-ng-click="setDegree('phd')">PhD Programs</a></li>
-    <li><a data-ui-sref="degrees" data-ng-click="setDegree('cert')">Professional Development &amp; Certificates</a></li>
-    <li><a data-ui-sref="global-health">Global Health Nursing Programs</a></li>
-  </ul>
+<section class="flex-container between flex-wrap-wrap">
+  
+  <aside class="width-25">
+    <label for="degreeChange">Choose Degree</label>
+    <select id="degreeChange" data-ng-model="chosenDegree" data-ng-options="degree.name for degree in degreeKeys">
+      <option value="" disabled>Choose Degree</option>
+    </select>
+  </aside>
+  
+  <article class="width-65">
+    
+    <h2>
+      <span data-ng-if="filteredPrograms.length > 0">{{ filteredPrograms.length }} {{ chosenDegree.name }}</span>
+      <span data-ng-if="filteredPrograms.length === 0">{{ allPrograms.length }}&nbsp;</span>
+      Options
+    </h2>
+    
+    <ul>    
+      <li data-ng-if="filteredPrograms.length > 0" data-ng-repeat="program in filteredPrograms">
+        <span data-ng-switch on="program.name">
+          <a data-ng-switch-when="Global Health Nursing" data-ui-sref="global-health">{{ program.name }}</a>
+          <a data-ng-switch-default data-ui-sref="degree-page" data-ng-click="choosePathway(program)">{{ program.name }}</a>
+        </span>
+      </li>    
+      <li data-ng-if="filteredPrograms.length === 0" data-ng-repeat="program in allPrograms">
+        <span data-ng-switch on="program.name">
+          <a data-ng-switch-when="Global Health Nursing" data-ui-sref="global-health" data-ng-click="choosePathway(program)">{{ program.name }}</a>
+          <a data-ng-switch-default data-ui-sref="degree-page" data-ng-click="choosePathway(program)">{{ program.name }}</a>
+        </span>
+      </li>
+    </ul>
+    
+  </article>
+
 </section>
