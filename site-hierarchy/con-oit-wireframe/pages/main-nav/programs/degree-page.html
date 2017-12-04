@@ -1,6 +1,6 @@
 <div class="flex-container between flex-wrap-reverse">
 
-  <aside class="width-20 reuseable margin-top-small">
+  <aside class="width-25 reuseable margin-top-small align-self-end">
     
     <section>
       <h2>Estimated Costs</h2>
@@ -26,8 +26,30 @@
       <p>Nursing BS Honors Program</p>
     </section>
     
-    <section>
-      <h2>Imporant Dates</h2>
+    <section data-ng-if="degreeDates">
+      <h2>Important Dates</h2>
+      <ul>
+        <li>
+          <strong>Application Open</strong><br>
+          {{ degreeDates.open }}
+        </li>
+        <li>
+          <strong>Application Close</strong><br>
+          {{ degreeDates.close }}
+        </li>
+        <li>
+          <strong>Interview</strong><br>
+          {{ degreeDates.interview }}
+        </li>
+        <li>
+          <strong>Decision</strong><br>
+          {{ degreeDates.decision }}
+        </li>
+        <li>
+          <strong>Program Start</strong><br>
+          {{ degreeDates.start }}
+        </li>
+      </ul>
     </section>
     
   </aside>

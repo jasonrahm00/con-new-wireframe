@@ -5,6 +5,7 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
   $scope.chosenPathway = programFactory.selectedProgram;
   $scope.filteredPrograms = programFactory.filteredPrograms;
   $scope.degreeKeys = [];
+  $scope.degreeDates = degreeFactory.dates;
   
   programFactory.getPrograms()
     .then(degreeFactory.getDegrees)
@@ -24,7 +25,8 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
       degreeFactory.setDegree(x.degree);
       $scope.chosenDegree = degreeFactory.chosenDegree;
     }
-    programFactory.selectProgram(x);
+    degreeFactory.getDates(x);
+    programFactory.selectProgram(x);    
   };
   
   $scope.setDegree = function(x) {

@@ -4,7 +4,8 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
   
   var degreeObject = {
     "degrees": [],
-    "chosenDegree": undefined
+    "chosenDegree": undefined,
+    "dates": undefined
   };
   
   degreeObject.getDegrees = function() {
@@ -37,6 +38,27 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
     return this;
     
   };
+  
+  degreeObject.getDates = function(x) {
+    var availableDates = degreeObject.chosenDegree.dates,
+        path = x.path;
+    
+    degreeObject.dates = undefined;
+    
+    if(availableDates) {
+      
+      if(availableDates.length == 1) {
+        degreeObject.dates = availableDates[0];
+      } else {
+        for(var i = 0; i < degreeObject.chosenDegree.dates.length; i++) {
+          if(degreeObject.chosenDegree.dates[i].path === path) {
+            degreeObject.dates = degreeObject.chosenDegree.dates[i];
+          }
+        }
+      }
+    }
+    return this;
+  }
 
   return degreeObject;
   
