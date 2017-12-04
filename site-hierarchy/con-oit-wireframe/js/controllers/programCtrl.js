@@ -5,17 +5,18 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
   $scope.chosenPathway = programFactory.selectedProgram;
   $scope.filteredPrograms = programFactory.filteredPrograms;
   $scope.degreeKeys = [];
-  $scope.chosenDegree = degreeFactory.chosenDegree;
   
   programFactory.getPrograms()
     .then(degreeFactory.getDegrees)
     .then(function() {
     
       $scope.allPrograms = programFactory.programs;
+      $scope.chosenDegree = degreeFactory.chosenDegree;
     
       degreeFactory.degrees.forEach(function(item) {
         $scope.degreeKeys.push(item);
       });
+    
   });
   
   $scope.choosePathway = function(x) {
