@@ -42,3 +42,13 @@ angular.module('conWireframe').directive('toggleClass', function(){
   };
   
 });
+
+angular.module('conWireframe').directive('ankleNav', function(){
+  
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: 'con-oit-wireframe/templates/ankle-nav.html'
+  };
+  
+});

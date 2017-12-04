@@ -32,12 +32,14 @@ angular.module('conWireframe').factory('programFactory', function($q, dataServic
     
     programObject.filteredPrograms = [];
     
-    programObject.programs.forEach(function(item) {
-      if(item.degree === x.key) {
-        programObject.filteredPrograms.push(item);
-      }
-    });
-    
+    if(x !== 'reset') {
+      programObject.programs.forEach(function(item) {
+        if(item.degree === x.key) {
+          programObject.filteredPrograms.push(item);
+        }
+      });
+    }
+
     return this;
     
   }

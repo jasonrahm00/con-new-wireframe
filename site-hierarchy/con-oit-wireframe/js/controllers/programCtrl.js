@@ -36,13 +36,21 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
   $scope.$watch('chosenDegree', function(newVal, oldVal) {
     if(newVal !== oldVal) {
       
-      degreeFactory.setDegree(newVal.key);
-      programFactory.filterPrograms(newVal);
-      
-      $scope.chosenDegree = degreeFactory.chosenDegree;
-      $scope.filteredPrograms = programFactory.filteredPrograms;
-      
+      if(newVal !== undefined) {
+        degreeFactory.setDegree(newVal.key);
+        programFactory.filterPrograms(newVal);
+
+        $scope.chosenDegree = degreeFactory.chosenDegree;
+        $scope.filteredPrograms = programFactory.filteredPrograms;
+      }
     }
   });
+  
+  $scope.resetFilters = function() {
+    degreeFactory.setDegree('reset');
+    programFactory.filterPrograms('reset');
+    $scope.chosenDegree = degreeFactory.chosenDegree;
+    $scope.filteredPrograms = programFactory.filteredPrograms;
+  }
 
 });

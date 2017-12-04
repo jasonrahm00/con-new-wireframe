@@ -6,17 +6,21 @@
 <section class="flex-container between flex-wrap-wrap">
   
   <aside class="width-25">
+    
     <label for="degreeChange">Choose Degree</label>
     <select id="degreeChange" data-ng-model="chosenDegree" data-ng-options="degree.name for degree in degreeKeys">
       <option value="" disabled>Choose Degree</option>
     </select>
+
+    <input class="margin-top-small" type="button" value="Reset Filters" data-ng-click="resetFilters()">
+    
   </aside>
   
   <article class="width-65">
     
     <h2>
-      <span data-ng-if="filteredPrograms.length > 0">{{ filteredPrograms.length }} {{ chosenDegree.name }}</span>
-      <span data-ng-if="filteredPrograms.length === 0">{{ allPrograms.length }}&nbsp;</span>
+      <span data-ng-if="filteredPrograms.length > 0">{{ filteredPrograms.length }}</span>
+      <span data-ng-if="filteredPrograms.length === 0">{{ allPrograms.length }}</span>
       Options
     </h2>
     

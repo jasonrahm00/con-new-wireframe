@@ -24,12 +24,16 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
   
   degreeObject.setDegree = function(x) {
     
-    degreeObject.degrees.forEach(function(item) {
-      if(item.key === x) {
-        degreeObject.chosenDegree = item;
-      }
-    });
-    
+    if(x === 'reset') {
+      degreeObject.chosenDegree = undefined;
+    } else {
+      degreeObject.degrees.forEach(function(item) {
+        if(item.key === x) {
+          degreeObject.chosenDegree = item;
+        }
+      });
+    }
+
     return this;
     
   };
