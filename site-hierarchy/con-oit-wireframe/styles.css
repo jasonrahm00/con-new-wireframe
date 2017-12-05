@@ -113,6 +113,10 @@ strong {
   padding: 0;
 }
 
+.center {
+  text-align: center;
+}
+
 .con-header-link {
   margin: 0 auto;
   max-width: 1170px;

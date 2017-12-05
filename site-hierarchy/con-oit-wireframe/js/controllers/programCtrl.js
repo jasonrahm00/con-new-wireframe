@@ -6,6 +6,7 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
   $scope.filteredPrograms = programFactory.filteredPrograms;
   $scope.degreeKeys = [];
   $scope.degreeDates = degreeFactory.dates;
+  $scope.appOpen = degreeFactory.appOpen;
   
   programFactory.getPrograms()
     .then(degreeFactory.getDegrees)

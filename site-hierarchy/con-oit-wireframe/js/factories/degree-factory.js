@@ -5,8 +5,23 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
   var degreeObject = {
     "degrees": [],
     "chosenDegree": undefined,
-    "dates": undefined
+    "dates": undefined,
+    "appOpen": false
   };
+  
+  function openApp(x, y) {
+    
+    degreeObject.appOpen = false;
+    
+    var today = Date.parse(new Date()),
+        open = Date.parse(x),
+        close = Date.parse(y);
+    
+    if(open <= today && close >= today) {
+      degreeObject.appOpen = true;
+    }
+      
+  }
   
   degreeObject.getDegrees = function() {
     var deferred = $q.defer();
@@ -56,6 +71,9 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
           }
         }
       }
+      
+      openApp(degreeObject.dates.open, degreeObject.dates.close);
+      
     }
     return this;
   }
