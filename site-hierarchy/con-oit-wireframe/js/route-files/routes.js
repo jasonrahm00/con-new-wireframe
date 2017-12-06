@@ -9,7 +9,9 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       templateUrl: 'con-oit-wireframe/pages/main-nav/about.html',
       data: {
         title: 'About the CU College of Nursing',
-        breadcrumb: 'About'
+        breadcrumb: 'About',
+        image: 'con-oit-wireframe/images/about.jpg',
+        imgAlt: 'Exterior of the Ed2 North building on the Anschutz Medical Campus'
       }
     })
     .state('student-life', {

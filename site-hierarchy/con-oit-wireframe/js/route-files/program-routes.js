@@ -9,7 +9,9 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       templateUrl: 'con-oit-wireframe/pages/main-nav/programs/programs.html',
       data: {
         title: 'CU College of Nursing Programs',
-        breadcrumb: 'Programs'
+        breadcrumb: 'Programs',
+        image: 'con-oit-wireframe/images/programs.jpg',
+        imgAlt: 'Students in a classroom'
       },
       controller: 'programCtrl'
     })
@@ -19,7 +21,8 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       data: {
         title: 'CU College of Nursing Single Degree',
         breadcrumb: 'Degree Page',
-        image: 'con-oit-wireframe/images/hero-image.jpg'
+        image: 'con-oit-wireframe/images/anschutz-walkway.jpg',
+        imgAlt: 'Anschutz walkway photo'
       },
       controller: 'programCtrl'
     })

@@ -27,7 +27,7 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
       $scope.chosenDegree = degreeFactory.chosenDegree;
     }
     degreeFactory.getDates(x);
-    programFactory.selectProgram(x);    
+    programFactory.selectProgram(x);
   };
   
   $scope.setDegree = function(x) {
@@ -38,7 +38,6 @@ angular.module('conWireframe').controller('programCtrl', function ($scope, degre
 
   $scope.$watch('chosenDegree', function(newVal, oldVal) {
     if(newVal !== oldVal) {
-      
       if(newVal !== undefined) {
         degreeFactory.setDegree(newVal.key);
         programFactory.filterPrograms(newVal);

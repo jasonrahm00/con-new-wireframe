@@ -143,11 +143,6 @@ strong {
   text-decoration: underline;
 }
 
-.hero-image {
-  height: auto;
-  width: 100%;
-}
-
 .logo-wrapper {
   float: left;
 }
@@ -176,6 +171,11 @@ strong {
 
 .yellow {
   background: yellow;
+}
+
+#heroImage {
+  height: auto;
+  width: 100%;
 }
 
 

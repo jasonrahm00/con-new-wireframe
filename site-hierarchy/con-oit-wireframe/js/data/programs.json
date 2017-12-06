@@ -42,7 +42,11 @@
   {
     "degree": "ms",
     "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology Masters Program",
-    "path": "direct"
+    "path": "direct",
+    "image": {
+      "url": "con-oit-wireframe/images/gerontology.jpg",
+      "imgAlt": "An elderly woman and a nurse in a lab coat converse in a hospital hallway."
+    }
   },
   {
     "degree": "ms",
@@ -62,12 +66,20 @@
   {
     "degree": "ms",
     "name": "Nurse-Midwifery Masters Program",
-    "path": "direct"
+    "path": "direct",
+    "image": {
+      "url": "con-oit-wireframe/images/midwifery.jpg",
+      "imgAlt": "Closeup of a newborns hand holding a woman's index finger."
+    }
   },
   {
     "degree": "ms",
     "name": "Primary Care Pediatric Nurse Practitioner Masters Program",
-    "path": "direct"
+    "path": "direct",
+    "image": {
+      "url": "con-oit-wireframe/images/pediatrics.jpg",
+      "imgAlt": "A young girl lying down looks up at a nurse as she holds a stethescope to the girls chest so the child can listen to her own heartbeat."
+    }
   },
   {
     "degree": "ms",
@@ -87,7 +99,11 @@
   {
     "degree": "dnp",
     "name": "Acute Care Pediatric Nurse Practitioner BS to DNP Program",
-    "path": "direct"
+    "path": "direct",
+    "image": {
+      "url": "con-oit-wireframe/images/pediatrics.jpg",
+      "imgAlt": "A young girl lying down looks up at a nurse as she holds a stethescope to the girls chest so the child can listen to her own heartbeat."
+    }
   },
   {
     "degree": "dnp",
@@ -102,7 +118,11 @@
   {
     "degree": "dnp",
     "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology BS to DNP Program",
-    "path": "direct"
+    "path": "direct",
+    "image": {
+      "url": "con-oit-wireframe/images/gerontology.jpg",
+      "imgAlt": "An elderly woman and a nurse in a lab coat converse in a hospital hallway."
+    }
   },
   {
     "degree": "dnp",
@@ -117,7 +137,11 @@
   {
     "degree": "dnp",
     "name": "Primary Care Pediatric Nurse Practitioner BS to DNP Program",
-    "path": "direct"
+    "path": "direct",
+    "image": {
+      "url": "con-oit-wireframe/images/pediatrics.jpg",
+      "imgAlt": "A young girl lying down looks up at a nurse as she holds a stethescope to the girls chest so the child can listen to her own heartbeat."
+    }
   },
   {
     "degree": "dnp",
@@ -159,7 +183,11 @@
   },
   {
     "degree": "phd",
-    "name": "Clinical Nurse Specialist Adult-Gerontology Post-Bachelors MS-PhD"
+    "name": "Clinical Nurse Specialist Adult-Gerontology Post-Bachelors MS-PhD",
+    "image": {
+      "url": "con-oit-wireframe/images/gerontology.jpg",
+      "imgAlt": "An elderly woman and a nurse in a lab coat converse in a hospital hallway."
+    }
   },
   {
     "degree": "phd",
@@ -171,11 +199,19 @@
   },
   {
     "degree": "phd",
-    "name": "Nurse-Midwifery Post-Bachelors MS-PhD"
+    "name": "Nurse-Midwifery Post-Bachelors MS-PhD",
+    "image": {
+      "url": "con-oit-wireframe/images/midwifery.jpg",
+      "imgAlt": "Closeup of a newborns hand holding a woman's index finger."
+    }
   },
   {
     "degree": "phd",
-    "name": "Primary Care Pediatric Nurse Practitioner Post-Bachelors MS-PhD"
+    "name": "Primary Care Pediatric Nurse Practitioner Post-Bachelors MS-PhD",
+    "image": {
+      "url": "con-oit-wireframe/images/pediatrics.jpg",
+      "imgAlt": "A young girl lying down looks up at a nurse as she holds a stethescope to the girls chest so the child can listen to her own heartbeat."
+    }
   },
   {
     "degree": "phd",

@@ -3,6 +3,18 @@
   <p>This is the product listing page and will have all available degrees/pathways/education options in a card layout with filters for faceted search.</p>
 </header>
 
+<section class="yellow">
+  <h2>Additional Sub-Pages</h2>
+  <p>The following pages should be available (either for linking or CCNE requirements) but not part of the filter.</p>
+  <ul>
+    <li>Link technical requirements page from each admissions requirements page/section</li>
+    <li>SARA page is required to exist on our website.</li>
+    <li>Add WICHE info to program content type and make available on subsequent degree pages. Separate WICHE page not necessary. Just exit links to the WICHE site and College Board.</li>
+    <li>Link credit transfer page from admission requirements</li>
+    <li>Link to NEXus page from coordinating program page</li>
+  </ul>
+</section>
+
 <section class="flex-container between flex-wrap-wrap">
   
   <aside class="width-25">
@@ -19,7 +31,7 @@
   <article class="width-65">
     
     <h2>
-      <span data-ng-if="filteredPrograms.length > 0">{{ filteredPrograms.length }}</span>
+      <span data-ng-if="filteredPrograms.length > 0">{{ filteredPrograms.length }} {{ chosenDegree.name }}</span>
       <span data-ng-if="filteredPrograms.length === 0">{{ allPrograms.length }}</span>
       Options
     </h2>

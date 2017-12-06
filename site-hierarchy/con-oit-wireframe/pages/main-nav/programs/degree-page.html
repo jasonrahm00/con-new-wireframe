@@ -76,19 +76,19 @@
       <h2>Program Video</h2>
     </section>
 
-    <section data-ng-if="chosenDegree !== 'bs'">
-      <h2>Faculty (Grad-Level Degrees Only)</h2>
-    </section>
-
     <section>
       <h2>Careers</h2>
     </section>
 
-    <section>
-      <h2>Admission Requirements</h2>
+    <section data-ng-if="chosenDegree.key !== 'bs'">
+      <h2>Faculty (Grad-Level Degrees Only)</h2>
     </section>
     
-    <section>
+    <section class="reuseable">
+      <h2>Admission Requirements</h2>
+    </section>
+
+    <section class="reuseable">
       <h2>FAQs</h2>
     </section>
     

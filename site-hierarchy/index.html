@@ -39,7 +39,7 @@
     
     <main-nav></main-nav>
 
-    <img class="hero-image" alt="Anschutz walkway photo" data-ng-src="{{ $state.current.data.image }}" data-ng-if="$state.current.data.image">
+    <img id="heroImage" alt="{{ $state.current.data.imgAlt }}" data-ng-src="{{ $state.current.data.image }}" data-ng-if="$state.current.data.image">
     
     <div class="breadcrumb" data-ng-if="$state.current.name !== 'home' ">
       <ul>

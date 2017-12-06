@@ -7,5 +7,5 @@ angular.module('conWireframe').controller('mainCtrl', function ($scope, $window)
   }, function(value) {
     $scope.breadcrumbLinks = value.split('/').splice(1, value.length);
   });
-  
+
 });

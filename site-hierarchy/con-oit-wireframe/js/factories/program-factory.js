@@ -24,7 +24,7 @@ angular.module('conWireframe').factory('programFactory', function($q, dataServic
   };
   
   programObject.selectProgram = function(program) {
-    this.selectedProgram = program;
+    this.selectedProgram = program;;
     return this;
   }
   
