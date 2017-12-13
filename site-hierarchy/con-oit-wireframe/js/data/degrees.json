@@ -2,6 +2,7 @@
   {
     "key": "dnp",
     "name": "Doctor of Nursing Practice",
+    "description": "Description of the DNP Degree",
     "dates": [
       {
         "path": "all",
@@ -16,6 +17,7 @@
   {
     "key": "bs",
     "name": "Bachelors",
+    "description": "Description of the BS Degree",
     "dates": [
       {
         "path": "rn-bs",
@@ -54,6 +56,7 @@
   {
     "key": "ms",
     "name": "Masters",
+    "description": "Description of the Masters Degree",
     "dates": [
       {
         "path": "indirect",
@@ -76,6 +79,7 @@
   {
     "key": "phd",
     "name": "PhD",
+    "description": "Description of the PhD Degree",
     "dates": [
       {
         "path": "all",
@@ -89,6 +93,7 @@
   },
   {
     "key": "cert",
-    "name": "Professional Development and Certificates"
+    "name": "Professional Development and Certificates",
+    "description": "Description of Continuing Education Options"
   }
 ]

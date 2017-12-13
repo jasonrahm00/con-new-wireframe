@@ -36,6 +36,8 @@
       Options
     </h2>
     
+    <p data-ng-if="filteredPrograms.length > 0">{{ chosenDegree.description }}</p>
+    
     <ul>    
       <li data-ng-if="filteredPrograms.length > 0" data-ng-repeat="program in filteredPrograms">
         <span data-ng-switch on="program.name">

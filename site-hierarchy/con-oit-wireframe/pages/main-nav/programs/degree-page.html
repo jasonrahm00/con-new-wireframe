@@ -29,8 +29,8 @@
       <h2>Scholarships and Aid</h2>
     </section>
     
-    <section data-ng-if="chosenDegree === 'bs'">
-      <p>Nursing BS Honors Program</p>
+    <section data-ng-if="chosenDegree.key === 'bs'">
+      <h2>Nursing BS Honors Program</h2>
     </section>
     
     <section data-ng-if="degreeDates">
@@ -71,6 +71,30 @@
       <p><strong>Elevator Pitch:</strong> Eget vulputate. Egestas odio Facilisis lacinia sociis etiam metus nullam risus dui ultricies nibh euismod eros montes pharetra, dis pharetra malesuada suscipit.</p>
       <p>Maecenas diam gravida quisque risus elementum placerat nascetur Phasellus mattis nisl dapibus dictum sollicitudin blandit. Tellus convallis imperdiet suspendisse nulla libero justo iaculis. Lectus Fusce erat vestibulum cum.</p>
     </header>
+    
+    <div class="yellow" data-ng-if="chosenDegree.key === 'phd'">
+      <section>
+        <h2>PhD Research Areas</h2>
+        <p>Students pursuing a Nursing PhD Degree choose between one of the three following areas of focus.</p>
+        <ul>
+          <li><a class="faux-link">Health Care Systems Research</a></li>
+          <li><a class="faux-link">Caring Science</a></li>
+          <li><a class="faux-link">Biobehavioral Sciences</a></li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>PhD Pathways</h2>
+        <p class="red">This information is probably better as a filter option</p>
+        <p>The College of Nursing has three major pathways to the PhD. Applicants may enter the PhD program with either a bachelor's in nursing or master's in nursing.</p>
+        <ul>
+          <li>The <strong>post-bachelors BS-PhD pathway</strong> offers direct admission to the PhD program for applicants who already hold a bachelors degree in nursing and have completed the GRE. Coursework is individualized for each student. Email <a href="mailto:CON.PhD@UCDenver.edu">CON.PhD@UCDenver.edu</a> to learn more about this option.</li>
+          <li>The <strong>post-bachelors MS-PhD pathway</strong> offers a 30-credit MS degree (or an advanced practice specialty) leading into PhD coursework and research. Both degrees are awarded. For more information, visit the <a>MS-PhD program</a> page for application and program specifics.</li>
+          <li>The <strong>post-masters PhD pathway</strong> is designed for applicants who alreday hold a masters degree in nursing. Two to three years of post-master’s doctoral course work leads to the PhD dissertation and PhD degree. Applicants with a master's in nursing should follow all PhD program <a>requirements for admission</a>.</li>
+        </ul>
+      </section>
+      
+    </div>
 
     <section>
       <h2>Program Video</h2>
@@ -86,6 +110,10 @@
     
     <section class="reuseable">
       <h2>Admission Requirements</h2>
+    </section>
+    
+    <section class="reuseable" data-ng-if="chosenDegree.key !== 'cert'">
+      <h2>Expected Program Outcomes</h2>
     </section>
 
     <section class="reuseable">
