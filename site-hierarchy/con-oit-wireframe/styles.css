@@ -70,7 +70,9 @@ body>header>div h2 strong {
   color: #fff;
 }
 
-
+button:hover {
+  cursor: pointer;
+}
 
 h1 {
   font-weight: 700;

@@ -21,35 +21,35 @@
     "dates": [
       {
         "path": "rn-bs",
-        "open": "July 1, 2017",
-        "close": "November 1, 2017",
+        "open": "January 1, 2018",
+        "close": "April 1, 2018",
         "interview": "N/A",
         "decision": "Rolling",
-        "start": "January 2018"
+        "start": "August"
       },
       {
         "path": "trad",
-        "open": "August 23, 2017",
-        "close": "November 15, 2017",
-        "interview": "January 12, 2018",
-        "decision": "February 15, 2018",
-        "start": "June 2018"
+        "open": "TBD",
+        "close": "TBD",
+        "interview": "TBD",
+        "decision": "TBD",
+        "start": "June"
       },
       {
         "path": "ucan",
-        "open": "March 1, 2017",
-        "close": "June 15, 2017",
-        "interview": "July 20, 2017",
-        "decision": "September 15, 2017",
-        "start": "January 2018"
+        "open": "March 1, 2018",
+        "close": "June 15, 2018",
+        "interview": "TBD",
+        "decision": "TBD",
+        "start": "January"
       },
       {
         "path": "int",
-        "open": "January 1, 2017",
-        "close": "March 31, 2017",
-        "interview": "May 2017",
-        "decision": "July 1, 2017",
-        "start": "Fall 2017"
+        "open": "January 1, 2018",
+        "close": "March 31, 2018",
+        "interview": "May",
+        "decision": "July 1, 2018",
+        "start": "Fall"
       }
     ]  
   },
@@ -60,19 +60,19 @@
     "dates": [
       {
         "path": "indirect",
-        "open": "January 16, 2017",
-        "close": "July 25, 2017",
+        "open": "September 1, 2017",
+        "close": "January 26, 2018",
         "interview": "Ongoing",
         "decision": "Ongoing",
-        "start": "January 2018"
+        "start": "August"
       },
       {
         "path": "direct",
-        "open": "September 2, 2017",
+        "open": "September 1, 2017",
         "close": "December 15, 2017",
         "interview": "February 23, 2018",
         "decision": "April 1, 2018",
-        "start": "August 2018"
+        "start": "August"
       }
     ]  
   },
@@ -83,11 +83,11 @@
     "dates": [
       {
         "path": "all",
-        "open": "July 1, 2017",
-        "close": "December 15, 2017",
-        "interview": "Early Spring 2018",
-        "decision": "April 1, 2018",
-        "start": "August 2018"
+        "open": "July 1, 2018",
+        "close": "December 15, 2018",
+        "interview": "Early Spring",
+        "decision": "April 1, 2019",
+        "start": "August"
       }
     ]  
   },
