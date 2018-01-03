@@ -164,7 +164,8 @@ strong {
 }
 
 .reuseable:after {
-  content: "reusable content";
+  content: "reuseable content";
+  font-size: .8rem;
 }
 
 .show-large {

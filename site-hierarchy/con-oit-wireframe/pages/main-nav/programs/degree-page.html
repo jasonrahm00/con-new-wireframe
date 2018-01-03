@@ -114,6 +114,14 @@
     
     <section class="reuseable" data-ng-if="chosenDegree.key !== 'cert'">
       <h2>Expected Program Outcomes</h2>
+      <ol>
+        <li data-ng-repeat="outcome in chosenDegree.outcomes">{{ outcome }}</li>
+      </ol>
+    </section>
+    
+    <section class="reuseable" data-ng-if="chosenDegree.key !== 'bs'">
+      <h2>Specialty Program Competencies</h2>
+      <p class="red">How do we combine program and specialty competencies on the same page? That's a lot of content.</p>
     </section>
 
     <section class="reuseable">

@@ -12,7 +12,19 @@
         "decision": "April 1, 2018",
         "start": "August"
       }
-    ]    
+    ],
+    "outcomes": [
+      "Implement ethical, competent nursing practice with individuals, families and communities based on understanding the human experiences of health, illness, healing, and dying.",
+      "Use technology and information systems to promote health, facilitate appropriate and ethical decision making, support collaboration, and foster communication.",
+      "Promote health and safe environments of local to global populations and communities through the development, implementation, and evaluation of models, programs, and policies.",
+      "Manage care ethically with individuals, families, and populations to achieve quality, cost effective outcomes.",
+      "Advocate for social justice initiatives that enhance access, quality, and socio-cultural acceptability of health care for all.",
+      "Provide leadership in the delivery and management of health care for diverse populations and environments across the continuum of care.",
+      "Practice relationship-centered caring based on the human experience of health, illness, healing, and dying.",
+      "Practice nursing reflectively, guided by theory, based on best evidence.",
+      "Participate in generating and testing knowledge regarding nursing science, nursing practice, and health care delivery.",
+      "Engage in professional stewardship to improve interdisciplinary collaboration and nursing practice, education, research, and health care delivery."
+    ]
   },
   {
     "key": "bs",
@@ -51,7 +63,16 @@
         "decision": "July 1, 2018",
         "start": "Fall"
       }
-    ]  
+    ],
+    "outcomes": [
+      "Display novice, professional nursing leadership qualities to promote quality and safe care.",
+      "Engage in effective communication and collaboration in intra– and interdisciplinary teams across a variety of contexts.",
+      "Provide socially just, ethical, and inclusive care to diverse populations across the continuum of care.",
+      "Apply principles of healthcare informatics as a meaningful user of health information systems and technology.",
+      "Reference relevant theoretical frameworks to improve patient and population health outcomes across a range of settings.",
+      "Integrate evidence-based practice into patient-centered care using the nursing process across a range of settings.",
+      "Articulate how policy, advocacy, finance, and regulatory environments influence healthcare delivery."
+    ]
   },
   {
     "key": "ms",
@@ -74,7 +95,19 @@
         "decision": "April 1, 2018",
         "start": "August"
       }
-    ]  
+    ],
+    "outcomes": [
+      "Implement caring and competent nursing practice with individuals, families, and communities based on understanding the human experience of health, illness, and healing.",
+      "Integrate the ethical use of technology and information systems to augment the human capacity for health, facilitate decision-making, support collaboration, and foster communication.",
+      "Promote health of local to global communities through promoting safe environments and safe and effective health care addressing the interaction among individuals, communities, and their environmental contexts.",
+      "Manage care to achieve quality, cost effective and ethical outcomes in the delivery of health care for individuals, families, and populations.",
+      "Engage in leadership to promote social justice related to access, quality and socio-cultural acceptability of health care through relationship-centered caring, advocacy and empowerment.",
+      "Negotiate and adapt the delivery and management of health care and health systems for diverse populations and environments.",
+      "Practice relationship-centered caring through self-awareness by developing and maintaining respectful relationships, communicating effectively and integrating the influence of the human experience of health, illness, and healing.",
+      "Practice nursing reflectively, guided by theory, based on best evidence and integrating creative and critical thinking.",
+      "Participate in generating and testing knowledge regarding nursing, healthcare, and reflective caring practice.",
+      "Actively engage in self-directed learning to maintain state of the art nursing practice and to facilitate the education of future practitioners, paraprofessionals, and healthy communities."
+    ]
   },
   {
     "key": "phd",
@@ -89,7 +122,15 @@
         "decision": "April 1, 2019",
         "start": "August"
       }
-    ]  
+    ],
+    "outcomes": [
+      "Create new knowledge through the research process.",
+      "Demonstrates commitment to the profession through publications and conference presentations or engagement in professional organizations.",
+      "Examines multiple theories and methodologies for application to research problems.",
+      "Engages with fellow scientists and students in scholarly discourse.",
+      "Demonstrates ethical responsibility and action as a scientist.",
+      "Considers research findings relevant to public health and healthcare policy."
+    ]
   },
   {
     "key": "cert",
