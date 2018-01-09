@@ -34,6 +34,15 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         breadcrumb: 'Global Health'
       },
       controller: 'programCtrl'
+    })
+    .state('app-closed', {
+      url: '/programs/app-closed',
+      templateUrl: 'con-oit-wireframe/pages/main-nav/programs/app-closed.html',
+      data: {
+        title: 'Request More Information',
+        breadcrumb: 'Request More Information'
+      },
+      controller: 'programCtrl'
     });
           
 });

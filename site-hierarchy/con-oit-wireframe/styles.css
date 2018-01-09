@@ -115,6 +115,22 @@ strong {
   padding: 0;
 }
 
+a.button {
+  background: #000;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+a.button:hover {
+  background: #cfb87c;
+  color: #000;
+}
+
 .center {
   text-align: center;
 }
@@ -160,7 +176,7 @@ strong {
 }
 
 .reuseable {
-  background: #bfcc80;
+  background: #eee;
 }
 
 .reuseable:after {

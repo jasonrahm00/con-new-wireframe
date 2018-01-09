@@ -17,11 +17,13 @@
     <section>
       <h2>Begin Your Application</h2>
       <div class="center" data-ng-if="appOpen">
-        <button>Apply Now*</button>
+        <a class="button" href="https://nursingcas.liaisoncas.com/applicant-ux/#/login" target="_blank">Apply Now*</a>
         <p>*Applications submitted through the NursingCAS application portal.</p>
       </div>
       
-      <p data-ng-if="!appOpen"><strong>Application Closed.</strong> Create a <a href="https://nursingcas.liaisoncas.com/applicant-ux/#/login" target="_blank">NursingCAS</a> account so you are ready when the application is available.</p>
+      <div class="center" data-ng-if="!appOpen">
+        <a class="button" data-ui-sref="app-closed">Apply Now</a>
+      </div>
       
     </section>
 
