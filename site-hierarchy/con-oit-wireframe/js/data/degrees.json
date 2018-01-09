@@ -34,7 +34,7 @@
       {
         "path": "rn-bs",
         "open": "January 1, 2018",
-        "close": "April 1, 2018",
+        "close": "April 1, 2019",
         "interview": "N/A",
         "decision": "Rolling",
         "start": "August"
@@ -49,8 +49,8 @@
       },
       {
         "path": "ucan",
-        "open": "March 1, 2018",
-        "close": "June 15, 2018",
+        "open": "January 1, 2018",
+        "close": "June 15, 2019",
         "interview": "TBD",
         "decision": "TBD",
         "start": "January"
@@ -58,7 +58,7 @@
       {
         "path": "int",
         "open": "January 1, 2018",
-        "close": "March 31, 2018",
+        "close": "March 31, 2019",
         "interview": "May",
         "decision": "July 1, 2018",
         "start": "Fall"
