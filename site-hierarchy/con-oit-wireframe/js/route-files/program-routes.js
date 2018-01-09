@@ -35,9 +35,9 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       },
       controller: 'programCtrl'
     })
-    .state('app-closed', {
-      url: '/programs/app-closed',
-      templateUrl: 'con-oit-wireframe/pages/main-nav/programs/app-closed.html',
+    .state('more-info', {
+      url: '/programs/more-info',
+      templateUrl: 'con-oit-wireframe/pages/main-nav/programs/more-info.html',
       data: {
         title: 'Request More Information',
         breadcrumb: 'Request More Information'
