@@ -24,7 +24,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         image: 'con-oit-wireframe/images/anschutz-walkway.jpg',
         imgAlt: 'Anschutz walkway photo'
       },
-      controller: 'programCtrl'
+      controller: 'degreeCtrl'
     })
     .state('global-health', {
       url: '/programs/global-health',
