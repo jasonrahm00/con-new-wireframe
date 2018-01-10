@@ -171,6 +171,12 @@ a.button:hover {
   vertical-align: middle;
 }
 
+.outline {
+  border: 2px solid red;
+  margin-bottom: 1rem;
+  padding: 5px;
+}
+
 .red {
   color: red;
 }

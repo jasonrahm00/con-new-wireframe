@@ -36,7 +36,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
       controller: 'programCtrl'
     })
     .state('more-info', {
-      url: '/programs/more-info',
+      url: '/programs/degree-page/more-info',
       templateUrl: 'con-oit-wireframe/pages/main-nav/programs/more-info.html',
       data: {
         title: 'Request More Information',

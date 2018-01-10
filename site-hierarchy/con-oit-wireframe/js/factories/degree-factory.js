@@ -6,7 +6,7 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
     "degrees": [],
     "chosenDegree": undefined,
     "dates": undefined,
-    "appOpen": null
+    "appOpen": false
   };
   
   function openApp(x, y) {
