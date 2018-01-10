@@ -1,65 +1,76 @@
 <div class="flex-container between flex-wrap-reverse">
 
-  <aside class="width-25 reuseable margin-top-small align-self-end padding-x-small">
+  <aside class="width-25 margin-top-small align-self-end">
     
-    <section>
-      <h2>Estimated Costs</h2>
-    </section>
+    <div class="margin-bottom-small" data-ng-if="chosenPathway === undefined">
+      <label for="defaultProgramData">Choose Default Data</label>
+      <select id="defaultProgramData" data-ng-model="defaultProgramData">
+        <option value="" disabled>Load Default Data</option>
+        <option value="Application Open">Application Open</option>
+        <option value="Application Closed">Application Closed</option>
+      </select>
+    </div>
     
-    <section>
-      <h2>Upcoming Info Sessions</h2>
-    </section>
-    
-    <section>
-      <h2>Contact Admissions</h2>
-    </section>
+    <div class="reuseable padding-x-small">
+      <section>
+        <h2>Estimated Costs</h2>
+      </section>
 
-    <section>
-      <h2>Begin Your Application</h2>
-      <div class="center" data-ng-if="appOpen">
-        <a class="button" href="https://nursingcas.liaisoncas.com/applicant-ux/#/login" target="_blank">Apply Now*</a>
-        <p>*Applications submitted through the NursingCAS application portal.</p>
-      </div>
-      
-      <div class="center" data-ng-if="!appOpen">
-        <a class="button" data-ui-sref="more-info">Apply Now</a>
-      </div>
-      
-    </section>
+      <section>
+        <h2>Upcoming Info Sessions</h2>
+      </section>
 
-    <section>
-      <h2>Scholarships and Aid</h2>
-    </section>
-    
-    <section data-ng-if="chosenDegree.key === 'bs'">
-      <h2>Nursing BS Honors Program</h2>
-    </section>
-    
-    <section data-ng-if="degreeDates">
-      <h2>Important Dates</h2>
-      <ul>
-        <li>
-          <strong>Application Open</strong><br>
-          {{ degreeDates.open }}
-        </li>
-        <li>
-          <strong>Application Close</strong><br>
-          {{ degreeDates.close }}
-        </li>
-        <li>
-          <strong>Interview</strong><br>
-          {{ degreeDates.interview }}
-        </li>
-        <li>
-          <strong>Decision</strong><br>
-          {{ degreeDates.decision }}
-        </li>
-        <li>
-          <strong>Program Start</strong><br>
-          {{ degreeDates.start }}
-        </li>
-      </ul>
-    </section>
+      <section>
+        <h2>Contact Admissions</h2>
+      </section>
+
+      <section>
+        <h2>Begin Your Application</h2>
+        <div class="center" data-ng-if="appOpen">
+          <a class="button" href="https://nursingcas.liaisoncas.com/applicant-ux/#/login" target="_blank">Apply Now*</a>
+          <p>*Applications submitted through the NursingCAS application portal.</p>
+        </div>
+
+        <div class="center" data-ng-if="!appOpen">
+          <a class="button" data-ui-sref="more-info">Apply Now</a>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>Scholarships and Aid</h2>
+      </section>
+
+      <section data-ng-if="chosenDegree.key === 'bs'">
+        <h2>Nursing BS Honors Program</h2>
+      </section>
+
+      <section data-ng-if="degreeDates">
+        <h2>Important Dates</h2>
+        <ul>
+          <li>
+            <strong>Application Open</strong><br>
+            {{ degreeDates.open }}
+          </li>
+          <li>
+            <strong>Application Close</strong><br>
+            {{ degreeDates.close }}
+          </li>
+          <li>
+            <strong>Interview</strong><br>
+            {{ degreeDates.interview }}
+          </li>
+          <li>
+            <strong>Decision</strong><br>
+            {{ degreeDates.decision }}
+          </li>
+          <li>
+            <strong>Program Start</strong><br>
+            {{ degreeDates.start }}
+          </li>
+        </ul>
+      </section>
+    </div>
     
   </aside>
   
@@ -67,8 +78,8 @@
     
     <header>
       <h1>
-        <span data-ng-if="chosenPathway">{{ chosenPathway.name }}</span>
-        <span data-ng-if="!chosenPathway">Degree-Level Page</span>
+        <span data-ng-if="chosenPathway !== undefined">{{ chosenPathway.name }}</span>
+        <span data-ng-if="chosenPathway === undefined">Degree-Level Page ({{ defaultName }})</span>
       </h1>
       <p><strong>Elevator Pitch:</strong> Eget vulputate. Egestas odio Facilisis lacinia sociis etiam metus nullam risus dui ultricies nibh euismod eros montes pharetra, dis pharetra malesuada suscipit.</p>
       <p>Maecenas diam gravida quisque risus elementum placerat nascetur Phasellus mattis nisl dapibus dictum sollicitudin blandit. Tellus convallis imperdiet suspendisse nulla libero justo iaculis. Lectus Fusce erat vestibulum cum.</p>

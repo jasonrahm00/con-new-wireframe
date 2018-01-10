@@ -6,7 +6,7 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
     "degrees": [],
     "chosenDegree": undefined,
     "dates": undefined,
-    "appOpen": false
+    "appOpen": null
   };
   
   function openApp(x, y) {
@@ -31,7 +31,7 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
         deferred.resolve(response);
         return deferred.promise;
     }, function(response) {
-        console.log(response);
+        console.error(response);
         deferred.reject(response);
         return deferred.promise;
     });

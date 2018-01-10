@@ -5,7 +5,7 @@ angular.module('conWireframe').factory('programFactory', function($q, dataServic
   var programObject = {
     "programs": [],
     "filteredPrograms": [],
-    "selectedProgram": {}
+    "selectedProgram": undefined
   };
   
   programObject.getPrograms = function() {
@@ -16,7 +16,7 @@ angular.module('conWireframe').factory('programFactory', function($q, dataServic
         deferred.resolve(response);
         return deferred.promise;
     }, function(response) {
-        console.log(response);
+        console.error(response);
         deferred.reject(response);
         return deferred.promise;
     });
