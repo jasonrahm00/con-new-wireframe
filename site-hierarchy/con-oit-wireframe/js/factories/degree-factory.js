@@ -9,9 +9,9 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
       "name": "Application Open",
       "dates": {
         "open": "January 1, 2018",
-        "close": "December 31, 2018",
-        "interview": "February, 2018",
-        "decision": "April 1, 2018",
+        "close": "December 31, 2050",
+        "interview": "Sometime",
+        "decision": "April 1",
         "start": "August"
       }
     },

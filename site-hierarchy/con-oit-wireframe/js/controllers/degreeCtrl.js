@@ -2,7 +2,7 @@ angular.module('conWireframe').controller('degreeCtrl', function ($scope, degree
   
   'use strict';
   
-  $scope.appOpen = degreeFactory.appOpen ? degreeFactory.appOpen : degreeFactory.degreeDefaults.appOpen;
+  $scope.appOpen = degreeFactory.appOpen !== null ? degreeFactory.appOpen : degreeFactory.degreeDefaults.appOpen;
   $scope.chosenDegree = degreeFactory.chosenDegree;
   $scope.chosenPathway = programFactory.selectedProgram;
   $scope.defaultName = degreeFactory.degreeDefaults.name;
