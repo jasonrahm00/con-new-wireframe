@@ -2,7 +2,7 @@ angular.module('conWireframe').controller('degreeCtrl', function ($scope, degree
   
   'use strict';
   
-var defaultDegreeData = [
+  var defaultDegreeData = [
     {
       "appOpen": false,
       "name": "Application Closed",
@@ -11,7 +11,7 @@ var defaultDegreeData = [
         "close": "December 15, 2017",
         "interview": "February, 2018",
         "decision": "April 1, 2018",
-        "start": "August"
+        "start": "TBD"
       }
     },
     {
@@ -33,6 +33,8 @@ var defaultDegreeData = [
   $scope.degreeDates = degreeFactory.dates;
   $scope.appOpen = degreeFactory.appOpen;
   
+  //Used to set default data if there is no data assigned by programCtrl
+    //Used to demo proposed dynamic features of degree-page
   function setDefaults(x) {
     for(var i = 0; i < defaultDegreeData.length; i++) {
       var dataSet = defaultDegreeData[i];
@@ -44,9 +46,13 @@ var defaultDegreeData = [
       }
     }
   }
-  
+
+  //Makes watcher available if no degree data is set
   if($scope.chosenPathway === undefined) {
+    
+    //Calls setDefaults() whenever Choose Default selector is changed
     $scope.$watch('chosenDefault', function(newVal, oldVal) {
+      
       if(newVal !== oldVal) {
         setDefaults(newVal)
       }

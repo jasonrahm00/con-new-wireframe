@@ -6,28 +6,34 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
     "degrees": [],
     "chosenDegree": undefined,
     "dates": undefined,
-    "appOpen": false
+    "appOpen": null
   };
   
-  function openApp(x, y) {
+  //Expects open- and closeDate dependencies and checks if 'today' falls within the date range
+  function openApp(openDate, closeDate) {
     
     degreeObject.appOpen = false;
     
     var today = Date.parse(new Date()),
-        open = Date.parse(x),
-        close = Date.parse(y);
+        open = Date.parse(openDate),
+        close = Date.parse(closeDate);
     
+    //Sets degreeObject.appOpen property to true or false depending on conditional date range check
     if(open <= today && close >= today) {
       degreeObject.appOpen = true;
-    }
-      
+    } else {
+      degreeObject.appOpen = false;
+    } 
   }
-  
+
   degreeObject.getDegrees = function() {
     var deferred = $q.defer();
+    //Sends degree file url to dataService
     return dataService.getData('con-oit-wireframe/js/data/degrees.json')
       .then(function(response) {
+         //Assignes returned object to degreeObject.degrees property
         degreeObject.degrees = response;
+        //Resolves promise and returns result to controller
         deferred.resolve(response);
         return deferred.promise;
     }, function(response) {
@@ -38,11 +44,16 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
     return this;
   };
   
+  //Used to filter or reset available degree options
+    //Expects string input from controller function call
   degreeObject.setDegree = function(x) {
-    
+
     if(x === 'reset') {
+      //Resets chosenDegree property to undefined if reset button is clicked on page
       degreeObject.chosenDegree = undefined;
     } else {
+      //Takes injected string and checks agains availabel degree.key datapoints
+        //If match is found, entire degree object assigned to 'chosenDegree' property
       degreeObject.degrees.forEach(function(item) {
         if(item.key === x) {
           degreeObject.chosenDegree = item;
@@ -54,17 +65,25 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
     
   };
   
+  //Expects individual program pathway object as dependency
+    //Used to match against degree data to find important date information
   degreeObject.getDates = function(x) {
     var availableDates = degreeObject.chosenDegree.dates,
         path = x.path;
     
     degreeObject.dates = undefined;
     
+    //Check to see if selected degree has any date information
     if(availableDates) {
       
+      //If only one date object available, sets dates property to that object
       if(availableDates.length == 1) {
         degreeObject.dates = availableDates[0];
       } else {
+        //If multiple dates are available
+          //Iterate over those objects
+            //Find the one where the 'path' propery matches the 'path' property from injected object
+            //When match is found, it is assigned to degreeObject.dates property
         for(var i = 0; i < degreeObject.chosenDegree.dates.length; i++) {
           if(degreeObject.chosenDegree.dates[i].path === path) {
             degreeObject.dates = degreeObject.chosenDegree.dates[i];
@@ -72,6 +91,7 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
         }
       }
       
+      //openApp function called to determine if application is currently available
       openApp(degreeObject.dates.open, degreeObject.dates.close);
       
     }

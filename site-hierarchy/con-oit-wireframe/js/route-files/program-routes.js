@@ -2,8 +2,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
   
   $stateProvider
     
-    // View states for main pages linked in Nav
-  
+    // View states for program page and sub-pages
     .state('programs', {
       url: '/programs',
       templateUrl: 'con-oit-wireframe/pages/main-nav/programs/programs.html',

@@ -1,3 +1,4 @@
+//Main nav directive with responsive design
 angular.module('conWireframe').directive('mainNav', function($window){
   
   return {
@@ -13,6 +14,7 @@ angular.module('conWireframe').directive('mainNav', function($window){
       
       changeTemplate();
       
+      //Watches screen width and returns nav template for different breakpoints
       function changeTemplate() {
         var screenWidth = $window.innerWidth;
         
@@ -30,6 +32,8 @@ angular.module('conWireframe').directive('mainNav', function($window){
   
 });
 
+//Directive that adds or removes the 'toggled' class when any element with the 'toggle-class' attribute is clicked on
+  //Use case example found on expand/collapse menu for mobile and small-screen nav
 angular.module('conWireframe').directive('toggleClass', function(){
   
   return {
@@ -43,6 +47,7 @@ angular.module('conWireframe').directive('toggleClass', function(){
   
 });
 
+//Directive used to create ankleNav component and reduce code living in index file
 angular.module('conWireframe').directive('ankleNav', function(){
   
   return {

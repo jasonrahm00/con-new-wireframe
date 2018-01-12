@@ -2,7 +2,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
   
   $stateProvider
     
-    // View states for main pages linked in Nav
+    // View states for main pages linked in main nav and footer
   
     .state('about', {
       url: '/about',
