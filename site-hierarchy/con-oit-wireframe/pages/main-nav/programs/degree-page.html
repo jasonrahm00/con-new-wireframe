@@ -3,9 +3,8 @@
   <aside class="width-25 margin-top-small align-self-end">
 
     <div class="margin-bottom-small" data-ng-show="chosenPathway === undefined">
-      <label class="red" for="defaultData">Chose Default Data</label>
-      <select id="defaultData" data-ng-model="chosenDefault">
-        <option value="" disabled>Choose Default Data</option>
+      <label class="red" for="defaultData">Choose Default Data</label>
+      <select id="defaultData" data-ng-model="defaultName">
         <option value="Application Open">Application Open</option>
         <option value="Application Closed">Application Closed</option>
       </select>
@@ -133,7 +132,7 @@
       </ol>
     </section>
     
-    <section class="reuseable" data-ng-if="chosenDegree.key !== 'bs'">
+    <section class="reuseable" data-ng-if="chosenDegree.key !== 'bs' && chosenDegree">
       <h2>Specialty Program Competencies</h2>
       <p class="red">Use accordions to combine program and specialty competencies on the same page.</p>
     </section>

@@ -41,7 +41,7 @@ angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvid
         title: 'Request More Information',
         breadcrumb: 'Request More Information'
       },
-      controller: 'programCtrl'
+      controller: 'degreeCtrl'
     });
           
 });

@@ -2,13 +2,54 @@ angular.module('conWireframe').factory('degreeFactory', function($q, dataService
 
   'use strict';
   
+  /********************* Default data *********************/
+  var defaultDegreeData = [
+    {
+      "appOpen": true,
+      "name": "Application Open",
+      "dates": {
+        "open": "January 1, 2018",
+        "close": "December 31, 2018",
+        "interview": "February, 2018",
+        "decision": "April 1, 2018",
+        "start": "August"
+      }
+    },
+    {
+      "appOpen": false,
+      "name": "Application Closed",
+      "dates": {
+        "open": "September 1, 2017",
+        "close": "December 15, 2017",
+        "interview": "February, 2018",
+        "decision": "April 1, 2018",
+        "start": "TBD"
+      }
+    }
+  ];
+  
+  /********************* Degree Object *********************/
   var degreeObject = {
     "degrees": [],
     "chosenDegree": undefined,
     "dates": undefined,
-    "appOpen": null
+    "appOpen": null,
+    "degreeDefaults": defaultDegreeData[0]
   };
   
+  /********************* degreeObject functions and methods *********************/
+  
+  //Set default data when called from degreeCtrl
+  degreeObject.setDefaults = function(x) {
+    for(var i = 0; i < defaultDegreeData.length; i++) {
+      var dataSet = defaultDegreeData[i];
+      if(dataSet.name === x) {
+        degreeObject.degreeDefaults = dataSet;
+      }
+    }
+    return this;
+  }
+
   //Expects open- and closeDate dependencies and checks if 'today' falls within the date range
   function openApp(openDate, closeDate) {
     

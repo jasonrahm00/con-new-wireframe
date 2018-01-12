@@ -8,6 +8,7 @@ angular.module('conWireframe').run(function($rootScope, $state) {
   
 });
 
+//State provider for home and default routes
 angular.module('conWireframe').config(function ($stateProvider, $urlRouterProvider) {
   
   $stateProvider
@@ -31,6 +32,7 @@ angular.module('conWireframe').filter('capitalize', function() {
   }
 });
 
+//Removes duplicates from array for ng-repeat
 angular.module('conWireframe').filter('unique', function () {
 
   return function (items, filterOn) {
