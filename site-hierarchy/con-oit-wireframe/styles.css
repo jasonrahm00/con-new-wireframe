@@ -16,6 +16,10 @@ a:visited {
   color: #333;
 }
 
+aside {
+  width: 345px;
+}
+
 body>footer {
   background-color: #000; 
   border-top: 1px solid #aaa;
