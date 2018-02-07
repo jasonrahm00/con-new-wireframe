@@ -17,15 +17,64 @@
 
 <section class="flex-container between flex-wrap-wrap">
   
-  <aside class="width-25">
+  <aside class="width-30">
     
-    <label for="degreeChange">Choose Degree</label>
+    <section>
+      <h2>Working Filter</h2>
+      <label for="degreeChange">Choose Degree</label>
 
-    <select id="degreeChange" data-ng-model="chosenDegree" data-ng-options="degree.name for degree in degreeKeys">
-      <option value="" disabled>Choose Degree</option>
-    </select>
+      <select id="degreeChange" data-ng-model="chosenDegree" data-ng-options="degree.name for degree in degreeKeys">
+        <option value="" disabled>Choose Degree</option>
+      </select>
 
-    <input class="margin-top-small" type="button" value="Reset Filters" data-ng-click="resetFilters()">
+      <input class="margin-top-small" type="button" value="Reset Filters" data-ng-click="resetFilters()">
+    </section>
+    
+    <hr class="margin-vertical-medium">
+    
+    <section>
+      <h2 class="yellow">Additional Filters to Build</h2>
+      
+      <div>
+        <p><strong>Learning Format</strong></p>
+        <label class="font-normal" for="classroom">
+          <input type="radio" name="format" id="classroom" value="classroom">
+          Classroom
+        </label>
+        <label class="font-normal" for="online">
+          <input type="radio" name="format" id="online" value="online">
+          Online
+        </label>
+        <label class="font-normal" for="hybrid">
+          <input type="radio" name="format" id="hybrid" value="hybrid">
+          Hybrid
+        </label>
+      </div>
+
+      <div class="margin-vertical-small">
+        <label for="specialty">Specialty</label>
+        <select id="specialty">
+          <option disabled selected>Specialty</option>
+          <option data-ng-repeat="program in allPrograms | unique:'specialty'" data-ng-if="program.specialty">{{ program.specialty }}</option>
+        </select>
+      </div>
+      
+      <div>
+        <label for="edLevel">Current Education Level</label>
+        <select id="edLevel">
+          <option disabled selected>Education Level</option>
+          <option>High School Diploma</option>
+          <option>RN (ADN) License</option>
+          <option>Associate Degree</option>
+          <option>Bachelors in Nursing</option>
+          <option>Bachelors NOT in Nursing</option>
+          <option>Masters in Nursing</option>
+          <option>Masters NOT in Nursing</option>
+        </select>
+      </div>
+
+    </section>
+    
     
   </aside>
   

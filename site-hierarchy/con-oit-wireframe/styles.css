@@ -165,6 +165,10 @@ a.button:hover {
   text-decoration: underline;
 }
 
+.font-normal {
+  font-weight: normal;
+}
+
 .logo-wrapper {
   float: left;
 }
@@ -477,7 +481,9 @@ label {
 }
 
 select {
-  
+  text-align: center;
+  text-align-last: center;
+  width: 100%;
 }
 
 

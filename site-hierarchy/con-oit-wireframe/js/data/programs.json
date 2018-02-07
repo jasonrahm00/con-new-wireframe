@@ -27,21 +27,25 @@
   {
     "degree": "ms",
     "name": "Acute Care Pediatric Nurse Practitioner Masters Program",
+    "specialty": "Acute Care Pediatric Nurse Practitioner",
     "path": "direct"
   },
   {
     "degree": "ms",
     "name": "Adult-Gerontology Acute Care Nurse Practitioner Masters Program",
+    "specialty": "Adult-Gerontology Acute Care Nurse Practitioner",
     "path": "direct"
   },
   {
     "degree": "ms",
     "name": "Adult-Gerontology Primary Care Nurse Practitioner Masters Program",
+    "specialty": "Adult-Gerontology Primary Care Nurse Practitioner",
     "path": "direct"
   },
   {
     "degree": "ms",
     "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology Masters Program",
+    "specialty": "Clinical Nurse Specialist (CNS) Adult-Gerontology",
     "path": "direct",
     "image": {
       "url": "con-oit-wireframe/images/gerontology.jpg",
@@ -51,21 +55,25 @@
   {
     "degree": "ms",
     "name": "Family Nurse Practitioner Masters Program",
+    "specialty": "Family Nurse Practitioner",
     "path": "direct"
   },
   {
     "degree": "ms",
     "name": "Health Care Informatics Masters Program",
+    "specialty": "Health Care Informatics",
     "path": "indirect"
   },
   {
     "degree": "ms",
     "name": "i-LEAD Nursing Leadership and Health Care Systems Masters Program",
+    "specialty": "i-LEAD Nursing Leadership and Health Care Systems",
     "path": "indirect"
   },
   {
     "degree": "ms",
     "name": "Nurse-Midwifery Masters Program",
+    "specialty": "Nurse-Midwifery",
     "path": "direct",
     "image": {
       "url": "con-oit-wireframe/images/midwifery.jpg",
@@ -75,6 +83,7 @@
   {
     "degree": "ms",
     "name": "Primary Care Pediatric Nurse Practitioner Masters Program",
+    "specialty": "Primary Care Pediatric Nurse Practitioner",
     "path": "direct",
     "image": {
       "url": "con-oit-wireframe/images/pediatrics.jpg",
@@ -84,21 +93,25 @@
   {
     "degree": "ms",
     "name": "Psychiatric Mental Health Nurse Practitioner Masters Program",
+    "specialty": "Psychiatric Mental Health Nurse Practitioner",
     "path": "direct"
   },
   {
     "degree": "ms",
     "name": "Veteran and Military Health Care Masters Program",
+    "specialty": "Veteran and Military Health Care",
     "path": "indirect"
   },
   {
     "degree": "ms",
     "name": "Women's Health Masters Program",
+    "specialty": "Women's Health",
     "path": "direct"
   },
   {
     "degree": "dnp",
     "name": "Acute Care Pediatric Nurse Practitioner BS to DNP Program",
+    "specialty": "Acute Care Pediatric Nurse Practitioner",
     "path": "direct",
     "image": {
       "url": "con-oit-wireframe/images/pediatrics.jpg",
@@ -108,16 +121,19 @@
   {
     "degree": "dnp",
     "name": "Adult-Gerontology Acute Care Nurse Practitioner BS to DNP Program",
+    "specialty": "Adult-Gerontology Acute Care Nurse Practitioner",
     "path": "direct"
   },
   {
     "degree": "dnp",
     "name": "Adult-Gerontology Primary Care Nurse Practitioner BS to DNP Program",
+    "specialty": "Adult-Gerontology Primary Care Nurse Practitioner",
     "path": "direct"
   },
   {
     "degree": "dnp",
     "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology BS to DNP Program",
+    "specialty": "Clinical Nurse Specialist (CNS) Adult-Gerontology",
     "path": "direct",
     "image": {
       "url": "con-oit-wireframe/images/gerontology.jpg",
@@ -127,16 +143,19 @@
   {
     "degree": "dnp",
     "name": "Family Nurse Practitioner BS to DNP Program",
+    "specialty": "Family Nurse Practitioner",
     "path": "direct"
   },
   {
     "degree": "dnp",
     "name": "i-LEAD Nursing Leadership and Health Care Systems BS to DNP Program",
+    "specialty": "i-LEAD Nursing Leadership and Health Care Systems",
     "path": "indirect"
   },
   {
     "degree": "dnp",
     "name": "Primary Care Pediatric Nurse Practitioner BS to DNP Program",
+    "specialty": "Primary Care Pediatric Nurse Practitioner",
     "path": "direct",
     "image": {
       "url": "con-oit-wireframe/images/pediatrics.jpg",
@@ -146,11 +165,13 @@
   {
     "degree": "dnp",
     "name": "Psychiatric Mental Health Nurse Practitioner BS to DNP Program",
+    "specialty": "Psychiatric Mental Health Nurse Practitioner",
     "path": "direct"
   },
   {
     "degree": "dnp",
     "name": "Women's Health BS to DNP Program",
+    "specialty": "Women's Health",
     "path": "direct"
   },
   {
@@ -171,19 +192,23 @@
   },
   {
     "degree": "phd",
-    "name": "Acute Care Pediatric Nurse Practitioner Post-Bachelors BS-PhD Program"
+    "name": "Acute Care Pediatric Nurse Practitioner Post-Bachelors BS-PhD Program",
+    "specialty": "Acute Care Pediatric Nurse Practitioner"
   },
   {
     "degree": "phd",
-    "name": "Adult-Gerontology Acute Care Nurse Practitioner Post-Masters PhD Program"
+    "name": "Adult-Gerontology Acute Care Nurse Practitioner Post-Masters PhD Program",
+    "specialty": "Adult-Gerontology Acute Care Nurse Practitioner"
   },
   {
     "degree": "phd",
-    "name": "Adult-Gerontology Primary Care Nurse Practitioner Post-Bachelors MS-PhD"
+    "name": "Adult-Gerontology Primary Care Nurse Practitioner Post-Bachelors MS-PhD",
+    "specialty": "Adult-Gerontology Primary Care Nurse Practitioner"
   },
   {
     "degree": "phd",
-    "name": "Clinical Nurse Specialist Adult-Gerontology Post-Bachelors MS-PhD",
+    "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology Post-Bachelors MS-PhD",
+    "specialty": "Clinical Nurse Specialist (CNS) Adult-Gerontology",
     "image": {
       "url": "con-oit-wireframe/images/gerontology.jpg",
       "imgAlt": "An elderly woman and a nurse in a lab coat converse in a hospital hallway."
@@ -191,15 +216,18 @@
   },
   {
     "degree": "phd",
-    "name": "Health Care Informatics Family Nurse Practitioner Post-Bachelors MS-PhD"
+    "name": "Health Care Informatics Family Nurse Practitioner Post-Bachelors MS-PhD",
+    "specialty": "Health Care Informatics Family Nurse Practitioner"
   },
   {
     "degree": "phd",
-    "name": "Nursing Leadership and Health Care Systems Post-Bachelors MS-PhD"
+    "name": "Nursing Leadership and Health Care Systems Post-Bachelors MS-PhD",
+    "specialty": "Nursing Leadership and Health Care Systems"
   },
   {
     "degree": "phd",
     "name": "Nurse-Midwifery Post-Bachelors MS-PhD",
+    "specialty": "Nurse-Midwifery",
     "image": {
       "url": "con-oit-wireframe/images/midwifery.jpg",
       "imgAlt": "Closeup of a newborns hand holding a woman's index finger."
@@ -208,6 +236,7 @@
   {
     "degree": "phd",
     "name": "Primary Care Pediatric Nurse Practitioner Post-Bachelors MS-PhD",
+    "specialty": "Primary Care Pediatric Nurse Practitioner",
     "image": {
       "url": "con-oit-wireframe/images/pediatrics.jpg",
       "imgAlt": "A young girl lying down looks up at a nurse as she holds a stethescope to the girls chest so the child can listen to her own heartbeat."
@@ -215,15 +244,18 @@
   },
   {
     "degree": "phd",
-    "name": "Psychiatric Mental Health Nurse Practitioner Post-Bachelors MS-PhD"
+    "name": "Psychiatric Mental Health Nurse Practitioner Post-Bachelors MS-PhD",
+    "specialty": "Psychiatric Mental Health Nurse Practitioner"
   },
   {
     "degree": "phd",
-    "name": "Veteran and Military Health Care Post-Bachelors MS-PhD"
+    "name": "Veteran and Military Health Care Post-Bachelors MS-PhD",
+    "specialty": "Veteran and Military Health Care"
   },
   {
     "degree": "phd",
-    "name": "Women's Health Post-Bachelors MS-PhD"
+    "name": "Women's Health Post-Bachelors MS-PhD",
+    "specialty": "Women's Health"
   },
   {
     "degree": "phd",
@@ -266,56 +298,67 @@
   {
     "degree": "cert",
     "name": "Acute Care Pediatric Nurse Practitioner Post-Graduate Certificate",
+    "specialty": "Acute Care Pediatric Nurse Practitioner",
     "type": "post-grad"
   },
   {
     "degree": "cert",
     "name": "Adult-Gerontology Acute Care Nurse Practitioner Post-Graduate Certificate",
+    "specialty": "Adult-Gerontology Acute Care Nurse Practitioner",
     "type": "post-grad"
   },
   {
     "degree": "cert",
     "name": "Adult-Gerontology Primary Care Nurse Practitioner Post-Graduate Certificate",
+    "specialty": "Adult-Gerontology Primary Care Nurse Practitioner",
     "type": "post-grad"
   },
   {
     "degree": "cert",
-    "name": "Clinical Nurse Specialist Adult-Gerontology Post-Graduate Certificate",
+    "name": "Clinical Nurse Specialist (CNS) Adult-Gerontology Post-Graduate Certificate",
+    "specialty": "Clinical Nurse Specialist (CNS) Adult-Gerontology",
     "type": "post-grad"
   },
   {
     "degree": "cert",
     "name": "Family Nurse Practitioner Post-Graduate Certificate",
+    "specialty": "Family Nurse Practitioner",
     "type": "post-grad"
   },
   {
     "degree": "cert",
     "name": "Health Care Informatics Post-Graduate Certificate",
+    "specialty": "Health Care Informatics",
     "type": "post-grad"
   },
   {
     "degree": "cert",
     "name": "i-LEAD Nursing Leadership and Health Care Systems Post-Graduate Certificate",
+    "specialty": "i-LEAD Nursing Leadership and Health Care Systems",
     "type": "post-grad"
   },
   {
     "degree": "cert",
     "name": "Nurse-Midwifery Post-Graduate Certificate",
+    "specialty": "Nurse-Midwifery",
     "type": "post-grad"
   },
   {
     "degree": "cert",
     "name": "Primary Care Pediatric Nurse Practitioner Post-Graduate Certificate",
+    "specialty": "Primary Care Pediatric Nurse Practitioner",
     "type": "post-grad"
   },
   {
     "degree": "cert",
     "name": "Psychiatric Mental Health Nurse Practitioner Post-Graduate Certificate",
+    "specialty": "Psychiatric Mental Health Nurse Practitioner",
     "type": "post-grad"
   },
   {
     "degree": "cert",
     "name": "Women's Health Post-Graduate Certificate",
+    "specialty": "Women's Health",
     "type": "post-grad"
   },
   {
